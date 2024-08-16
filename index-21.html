@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Superio | Just another HTML Template | Home Page 03</title>
+  <title>Superio | Just another HTML Template | Home Page 01</title>
 
   <!-- Stylesheets -->
   <link href="css/bootstrap.css" rel="stylesheet">
@@ -22,6 +22,7 @@
 
 <body data-anm=".anm">
 
+
   <div class="page-wrapper">
 
     <!-- Preloader -->
@@ -35,7 +36,7 @@
         <!--Nav Outer -->
         <div class="nav-outer">
           <div class="logo-box">
-            <div class="logo"><a href="index.html"><img src="images/index-21/header-logo.svg" alt="" title=""></a></div>
+            <div class="logo"><a href="index.html"><img src="images/logo.svg" alt="" title=""></a></div>
           </div>
 
           <nav class="nav main-menu">
@@ -46,9 +47,9 @@
                   <div class="mega-menu-bar row pt-0">
                     <div class="column col-lg-3 col-md-3 col-sm-12">
                       <ul>
-                        <li><a href="index.html">Home Page 01</a></li>
+                        <li class="current"><a href="index.html">Home Page 01</a></li>
                         <li><a href="index-2.html">Home Page 02</a></li>
-                        <li class="current"><a href="index-3.html">Home Page 03</a></li>
+                        <li><a href="index-3.html">Home Page 03</a></li>
                         <li><a href="index-4.html">Home Page 04</a></li>
                         <li><a href="index-5.html">Home Page 05</a></li>
                       </ul>
@@ -166,6 +167,7 @@
                   <li><a href="dashboard.html">Employers Dashboard</a></li>
                 </ul>
               </li>
+
               <li class="dropdown">
                 <span>Candidates</span>
                 <ul>
@@ -195,6 +197,7 @@
                   <li><a href="candidate-dashboard.html">Candidates Dashboard</a></li>
                 </ul>
               </li>
+
               <li class="dropdown">
                 <span>Blog</span>
                 <ul>
@@ -254,10 +257,11 @@
 
         <div class="outer-box">
           <!-- Add Listing -->
+          <a href="candidate-dashboard-cv-manager.html" class="upload-cv"> Upload your CV</a>
           <!-- Login/Register -->
           <div class="btn-box">
-            <a href="login-popup.html" class="theme-btn call-modal dark-color">Login / Register</a>
-            <a href="dashboard-post-job.html" class="theme-btn home21-jp-btn btn-style-dark bdrs120">Job Post</a>
+            <a href="login-popup.html" class="theme-btn btn-style-three call-modal">Login / Register</a>
+            <a href="dashboard-post-job.html" class="theme-btn btn-style-one">Job Post</a>
           </div>
         </div>
       </div>
@@ -275,7 +279,7 @@
               <a href="login-popup.html" class="call-modal"><span class="icon-user"></span></a>
             </div>
 
-            <a href="#nav-mobile" class="mobile-nav-toggler navbar-trigger"><span class="flaticon-menu-1"></span></a>
+            <a href="#nav-mobile" class="mobile-nav-toggler"><span class="flaticon-menu-1"></span></a>
           </div>
         </div>
       </div>
@@ -285,648 +289,198 @@
     </header>
     <!--End Main Header -->
 
-    <!-- Banner Section Three-->
-    <section class="banner-section-three at-home21">
+    <!-- Banner Section-->
+    <section class="banner-section">
       <div class="auto-container">
         <div class="row">
-          <div class="content-column col-xl-10 mx-auto">
-            <div class="inner-column">
-              <div class="title-box text-center wow fadeInUp">
-                <h3>We find the best jobs for you</h3>
-                <div class="text">Search your career opportunity through 12,800 jobs</div>
+          <div class="content-column col-lg-7 col-md-12 col-sm-12">
+            <div class="inner-column wow fadeInUp" data-wow-delay="1000ms">
+              <div class="title-box">
+                <h3>There Are <span class="colored">93,178</span> Postings Here<br> For you!</h3>
+                <div class="text">Find Jobs, Employment & Career Opportunities</div>
               </div>
+
               <!-- Job Search Form -->
-              <div class="job-search-form bdrs120 wow fadeInUp" data-wow-delay="200ms">
-                <form method="post" action="job-list-v10.html" class="bdrs120">
+              <div class="job-search-form">
+                <form method="post" action="job-list-v10.html">
                   <div class="row">
-                    <!-- Form Group -->
-                    <div class="form-group col-lg-4 col-md-12 col-sm-12">
+                    <div class="form-group col-lg-5 col-md-12 col-sm-12">
                       <span class="icon flaticon-search-1"></span>
                       <input type="text" name="field_name" placeholder="Job title, keywords, or company">
                     </div>
                     <!-- Form Group -->
-                    <div class="form-group col-lg-3 col-md-12 col-sm-12 location">
+                    <div class="form-group col-lg-4 col-md-12 col-sm-12 location">
                       <span class="icon flaticon-map-locator"></span>
                       <input type="text" name="field_name" placeholder="City or postcode">
                     </div>
                     <!-- Form Group -->
-                    <div class="form-group col-lg-3 col-md-12 col-sm-12 category">
-                      <span class="icon flaticon-briefcase"></span>
-                      <select class="chosen-select">
-                        <option value="">All Categories</option>
-                        <option value="44">Accounting / Finance</option>
-                        <option value="106">Automotive Jobs</option>
-                        <option value="46">Customer</option>
-                        <option value="48">Design</option>
-                        <option value="47">Development</option>
-                        <option value="45">Health and Care</option>
-                        <option value="105">Marketing</option>
-                        <option value="107">Project Management</option>
-                      </select>
-                    </div>
-                    <!-- Form Group -->
-                    <div class="form-group col-lg-2 col-md-12 col-sm-12 text-right">
-                      <button type="submit" class="theme-btn btn-style-two btn-style-dark bdrs120">Find Jobs</button>
+                    <div class="form-group col-lg-3 col-md-12 col-sm-12 btn-box">
+                      <button type="submit" class="theme-btn btn-style-one"><span class="btn-title">Find Jobs</span></button>
                     </div>
                   </div>
                 </form>
               </div>
               <!-- Job Search Form -->
+
+              <!-- Popular Search -->
+              <div class="popular-searches">
+                <span class="title">Popular Searches : </span>
+                <a href="#">Designer</a>,
+                <a href="#">Developer</a>,
+                <a href="#">Web</a>,
+                <a href="#">IOS</a>,
+                <a href="#">PHP</a>,
+                <a href="#">Senior</a>,
+                <a href="#">Engineer</a>,
+              </div>
+              <!-- End Popular Search -->
+            </div>
+          </div>
+
+          <div class="image-column col-lg-5 col-md-12">
+            <div class="image-box">
+              <figure class="main-image wow fadeIn" data-wow-delay="500ms"><img src="images/resource/banner-img-1.png" alt=""></figure>
+
+              <!-- Info BLock One -->
+              <div class="info_block anm wow fadeIn" data-wow-delay="1000ms" data-speed-x="2" data-speed-y="2">
+                <span class="icon flaticon-email-3"></span>
+                <p>Work Inquiry From <br>Ali Tufan</p>
+              </div>
+
+              <!-- Info BLock Two -->
+              <div class="info_block_two anm wow fadeIn" data-wow-delay="2000ms" data-speed-x="1" data-speed-y="1">
+                <p>10k+ Candidates</p>
+                <div class="image"><img src="images/resource/multi-peoples.png" alt=""></div>
+              </div>
+
+              <!-- Info BLock Three -->
+              <div class="info_block_three anm wow fadeIn" data-wow-delay="1500ms" data-speed-x="4" data-speed-y="4">
+                <span class="icon flaticon-briefcase"></span>
+                <p>Creative Agency</p>
+                <span class="sub-text">Startup</span>
+                <span class="right_icon fa fa-check"></span>
+              </div>
+
+              <!-- Info BLock Four -->
+              <div class="info_block_four anm wow fadeIn" data-wow-delay="2500ms" data-speed-x="3" data-speed-y="3">
+                <span class="icon flaticon-file"></span>
+                <div class="inner">
+                  <p>Upload Your CV</p>
+                  <span class="sub-text">It only takes a few seconds</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <img class="home21-hero-img wow fadeInUp" src="images/index-21/home21-hero-peoples.png" alt="" data-wow-delay="300ms">
       </div>
     </section>
-    <!-- End Banner Section Three-->
+    <!-- End Banner Section-->
 
-    <!-- Our Partners --> 
-    <section class="home21-client">
-      <div class="container wow fadeInUp">
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="sec-title text-center">
-              <h6>Trusted by the world’s best</h6>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-6 col-md-4 col-lg-3 col-xl-2">
-            <div class="partner_item"><img class="wa m-auto" src="images/index-22/client-1.png" alt="1.png"></div>
-          </div>
-          <div class="col-6 col-md-4 col-lg-3 col-xl-2">
-            <div class="partner_item"><img class="wa m-auto" src="images/index-22/client-2.png" alt="2.png"></div>
-          </div>
-          <div class="col-6 col-md-4 col-lg-3 col-xl-2">
-            <div class="partner_item"><img class="wa m-auto" src="images/index-22/client-3.png" alt="3.png"></div>
-          </div>
-          <div class="col-6 col-md-4 col-lg-3 col-xl-2">
-            <div class="partner_item"><img class="wa m-auto" src="images/index-22/client-4.png" alt="4.png"></div>
-          </div>
-          <div class="col-6 col-md-4 col-lg-3 col-xl-2">
-            <div class="partner_item"><img class="wa m-auto" src="images/index-22/client-5.png" alt="5.png"></div>
-          </div>
-          <div class="col-6 col-md-4 col-lg-3 col-xl-2">
-            <div class="partner_item"><img class="wa m-auto" src="images/index-22/client-6.png" alt="6.png"></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Featured Jobs -->
-    <section class="job-categories border-bottom-0 pt-0">
+    <!-- Job Categories -->
+    <section class="job-categories">
       <div class="auto-container">
-        <div class="d-flex align-items-center justify-content-between wow fadeInUp">
-          <div class="sec-title">
-            <h2>Featured Jobs</h2>
-            <div class="text">Know your worth and find the job that qualify your life</div>
-          </div>
-          <a href="" class="text ud-btn2">View All Jobs <i class="fal fa-long-arrow-right"></i></a>
+        <div class="sec-title text-center">
+          <h2>Popular Job Categories</h2>
+          <div class="text">2020 jobs live - 293 added today.</div>
         </div>
-        <div class="row wow fadeInUp">
-          <div class="job-carousel wow fadeInUp owl-carousel owl-theme default-dots">
-            <!-- Job Block -->
-            <div class="">
-              <div class="job-block at-jlv17 active">
-                <div class="inner-box">
-                  <div class="tags d-flex align-items-center">
-                    <a class="far fa-crown" href=""></a>
-                    <a class="far fa-bolt" href=""></a>
-                    <a class="flaticon-bookmark" href=""></a>
-                  </div>
-                  <div class="content ps-0">
-                    <span class="company-logo position-relative"><img class="wa mb-3" src="images/resource/company-logo/3-2.png" alt=""></span>
-                    <h4 class="fz22 mb-2"><a href="#">Software Engineer (Android) Libraries</a></h4>
-                    <p class="mb-2">by <span class="fw500 text">CreativeLayers</span> in Design & Creative</p>
-                    <ul class="job-other-info at-jsv6 at-jsv17 mt20 ms-0">
-                      <li class="time">Full Time</li>
-                      <li class="time2">London, UK</li>
-                      <li class="time2">450 - $900/month</li>
-                    </ul>
-                    <p class="text">220 days left to apply</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Job Block -->
-            <div class="">
-              <div class="job-block at-jlv17">
-                <div class="inner-box">
-                  <div class="tags d-flex align-items-center">
-                    <a class="far fa-crown" href=""></a>
-                    <a class="far fa-bolt" href=""></a>
-                    <a class="flaticon-bookmark" href=""></a>
-                  </div>
-                  <div class="content ps-0">
-                    <span class="company-logo position-relative"><img class="wa mb-3" src="images/resource/company-logo/3-1.png" alt=""></span>
-                    <h4 class="fz22 mb-2"><a href="#">Software Engineer (Android) Libraries</a></h4>
-                    <p class="mb-2">by <span class="fw500 text">CreativeLayers</span> in Design & Creative</p>
-                    <ul class="job-other-info at-jsv6 at-jsv17 mt20 ms-0">
-                      <li class="time">Full Time</li>
-                      <li class="time2">London, UK</li>
-                      <li class="time2">450 - $900/month</li>
-                    </ul>
-                    <p class="text">220 days left to apply</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Job Block -->
-            <div class="">
-              <div class="job-block at-jlv17">
-                <div class="inner-box">
-                  <div class="tags d-flex align-items-center">
-                    <a class="far fa-crown" href=""></a>
-                    <a class="far fa-bolt" href=""></a>
-                    <a class="flaticon-bookmark" href=""></a>
-                  </div>
-                  <div class="content ps-0">
-                    <span class="company-logo position-relative"><img class="wa mb-3" src="images/resource/company-logo/3-3.png" alt=""></span>
-                    <h4 class="fz22 mb-2"><a href="#">Software Engineer (Android) Libraries</a></h4>
-                    <p class="mb-2">by <span class="fw500 text">CreativeLayers</span> in Design & Creative</p>
-                    <ul class="job-other-info at-jsv6 at-jsv17 mt20 ms-0">
-                      <li class="time">Full Time</li>
-                      <li class="time2">London, UK</li>
-                      <li class="time2">450 - $900/month</li>
-                    </ul>
-                    <p class="text">220 days left to apply</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Job Block -->
-            <div class="">
-              <div class="job-block at-jlv17">
-                <div class="inner-box">
-                  <div class="tags d-flex align-items-center">
-                    <a class="far fa-crown" href=""></a>
-                    <a class="far fa-bolt" href=""></a>
-                    <a class="flaticon-bookmark" href=""></a>
-                  </div>
-                  <div class="content ps-0">
-                    <span class="company-logo position-relative"><img class="wa mb-3" src="images/resource/company-logo/3-2.png" alt=""></span>
-                    <h4 class="fz22 mb-2"><a href="#">Software Engineer (Android) Libraries</a></h4>
-                    <p class="mb-2">by <span class="fw500 text">CreativeLayers</span> in Design & Creative</p>
-                    <ul class="job-other-info at-jsv6 at-jsv17 mt20 ms-0">
-                      <li class="time">Full Time</li>
-                      <li class="time2">London, UK</li>
-                      <li class="time2">450 - $900/month</li>
-                    </ul>
-                    <p class="text">220 days left to apply</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Job Block -->
-            <div class="">
-              <div class="job-block at-jlv17">
-                <div class="inner-box">
-                  <div class="tags d-flex align-items-center">
-                    <a class="far fa-crown" href=""></a>
-                    <a class="far fa-bolt" href=""></a>
-                    <a class="flaticon-bookmark" href=""></a>
-                  </div>
-                  <div class="content ps-0">
-                    <span class="company-logo position-relative"><img class="wa mb-3" src="images/resource/company-logo/3-1.png" alt=""></span>
-                    <h4 class="fz22 mb-2"><a href="#">Software Engineer (Android) Libraries</a></h4>
-                    <p class="mb-2">by <span class="fw500 text">CreativeLayers</span> in Design & Creative</p>
-                    <ul class="job-other-info at-jsv6 at-jsv17 mt20 ms-0">
-                      <li class="time">Full Time</li>
-                      <li class="time2">London, UK</li>
-                      <li class="time2">450 - $900/month</li>
-                    </ul>
-                    <p class="text">220 days left to apply</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Job Block -->
-            <div class="">
-              <div class="job-block at-jlv17">
-                <div class="inner-box">
-                  <div class="tags d-flex align-items-center">
-                    <a class="far fa-crown" href=""></a>
-                    <a class="far fa-bolt" href=""></a>
-                    <a class="flaticon-bookmark" href=""></a>
-                  </div>
-                  <div class="content ps-0">
-                    <span class="company-logo position-relative"><img class="wa mb-3" src="images/resource/company-logo/3-3.png" alt=""></span>
-                    <h4 class="fz22 mb-2"><a href="#">Software Engineer (Android) Libraries</a></h4>
-                    <p class="mb-2">by <span class="fw500 text">CreativeLayers</span> in Design & Creative</p>
-                    <ul class="job-other-info at-jsv6 at-jsv17 mt20 ms-0">
-                      <li class="time">Full Time</li>
-                      <li class="time2">London, UK</li>
-                      <li class="time2">450 - $900/month</li>
-                    </ul>
-                    <p class="text">220 days left to apply</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Job Block -->
-            <div class="">
-              <div class="job-block at-jlv17">
-                <div class="inner-box">
-                  <div class="tags d-flex align-items-center">
-                    <a class="far fa-crown" href=""></a>
-                    <a class="far fa-bolt" href=""></a>
-                    <a class="flaticon-bookmark" href=""></a>
-                  </div>
-                  <div class="content ps-0">
-                    <span class="company-logo position-relative"><img class="wa mb-3" src="images/resource/company-logo/3-2.png" alt=""></span>
-                    <h4 class="fz22 mb-2"><a href="#">Software Engineer (Android) Libraries</a></h4>
-                    <p class="mb-2">by <span class="fw500 text">CreativeLayers</span> in Design & Creative</p>
-                    <ul class="job-other-info at-jsv6 at-jsv17 mt20 ms-0">
-                      <li class="time">Full Time</li>
-                      <li class="time2">London, UK</li>
-                      <li class="time2">450 - $900/month</li>
-                    </ul>
-                    <p class="text">220 days left to apply</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Job Block -->
-            <div class="">
-              <div class="job-block at-jlv17">
-                <div class="inner-box">
-                  <div class="tags d-flex align-items-center">
-                    <a class="far fa-crown" href=""></a>
-                    <a class="far fa-bolt" href=""></a>
-                    <a class="flaticon-bookmark" href=""></a>
-                  </div>
-                  <div class="content ps-0">
-                    <span class="company-logo position-relative"><img class="wa mb-3" src="images/resource/company-logo/3-1.png" alt=""></span>
-                    <h4 class="fz22 mb-2"><a href="#">Software Engineer (Android) Libraries</a></h4>
-                    <p class="mb-2">by <span class="fw500 text">CreativeLayers</span> in Design & Creative</p>
-                    <ul class="job-other-info at-jsv6 at-jsv17 mt20 ms-0">
-                      <li class="time">Full Time</li>
-                      <li class="time2">London, UK</li>
-                      <li class="time2">450 - $900/month</li>
-                    </ul>
-                    <p class="text">220 days left to apply</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Job Block -->
-            <div class="">
-              <div class="job-block at-jlv17">
-                <div class="inner-box">
-                  <div class="tags d-flex align-items-center">
-                    <a class="far fa-crown" href=""></a>
-                    <a class="far fa-bolt" href=""></a>
-                    <a class="flaticon-bookmark" href=""></a>
-                  </div>
-                  <div class="content ps-0">
-                    <span class="company-logo position-relative"><img class="wa mb-3" src="images/resource/company-logo/3-3.png" alt=""></span>
-                    <h4 class="fz22 mb-2"><a href="#">Software Engineer (Android) Libraries</a></h4>
-                    <p class="mb-2">by <span class="fw500 text">CreativeLayers</span> in Design & Creative</p>
-                    <ul class="job-other-info at-jsv6 at-jsv17 mt20 ms-0">
-                      <li class="time">Full Time</li>
-                      <li class="time2">London, UK</li>
-                      <li class="time2">450 - $900/month</li>
-                    </ul>
-                    <p class="text">220 days left to apply</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- End Featured Jobs -->
 
-    <div class="tab-menu__wrapper">
-      <section class="tab-menu -horiz js-tab-menu">
-        <div class="auto-container">
-          <div class="tab-menu__content">
-            <div class="row justify-content-center">
-
-              <div class="col-xl-auto col-md-4 col-auto">
-                <a href="#section-1" class="tab-menu__item js-scroll-to-id">
-                  <div class="icon text-dark-4 icon-case"></div>
-                  <div class="title text-dark-4">Search for jobs</div>
-                </a>
-              </div>
-
-              <div class="col-xl-auto col-md-4 col-auto">
-                <a href="#section-2" class="tab-menu__item js-scroll-to-id">
-                  <div class="icon text-dark-4 icon-contact"></div>
-                  <div class="title text-dark-4">Build a good resume</div>
-                </a>
-              </div>
-
-              <div class="col-xl-auto col-md-4 col-auto">
-                <a href="#section-3" class="tab-menu__item js-scroll-to-id">
-                  <div class="icon text-dark-4 icon-doc"></div>
-                  <div class="title text-dark-4">Perform during your interview</div>
-                </a>
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- About Section -->
-      <section id="section-1" class="about-section-two style-two layout-pt-150 layout-pb-60 js-tab-menu-content">
-        <div class="auto-container">
-          <div class="row grid-base justify-content-between align-items-center">
-            <!-- Content Column -->
-            <div class="content-column col-xl-4 col-lg-5 col-md-12 col-sm-12 order-2 order-lg-1">
-              <div class="inner-column -no-padding wow fadeInLeft">
-                <div class="sec-title">
-                  <h2 class="fw-700">Search for<br> jobs</h2>
-                  <div class="text mt-30">To start searching for jobs, you can attend job fairs online or in person, use job boards and career websites or reach out directly to recruiters in a targeted company to broaden your network.</div>
-                </div>
-                <ul class="list-style-one mt-24 mb-24">
-                  <li>Bring to the table win-win survival</li>
-                  <li>Capitalize on low hanging fruit to identify</li>
-                  <li>But I must explain to you how all this</li>
-                </ul>
-                <a href="#" class="theme-btn -blue">Discover More</a>
-              </div>
-            </div>
-
-            <!-- Image Column -->
-            <div class="image-column -no-margin col-lg-6 col-md-12 col-sm-12 order-1 order-lg-2 wow fadeInRight">
-              <figure class="image-box"><img src="images/index-12/images/1.png" alt=""></figure>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- End About Section -->
-
-      <!-- About Section -->
-      <section id="section-2" class="about-section-two style-two layout-pt-60 layout-pb-60 js-tab-menu-content">
-        <div class="auto-container">
-          <div class="row grid-base align-items-center">
-            <!-- Image Column -->
-            <div class="image-column -no-margin col-xl-5 col-lg-6 col-md-12 col-sm-12 wow fadeInRight">
-              <figure class="image-box"><img src="images/index-12/images/2.png" alt=""></figure>
-            </div>
-
-            <!-- Content Column -->
-            <div class="content-column col-xl-4 offset-xl-2 col-lg-5 offset-lg-1 col-md-12 col-sm-12">
-              <div class="wow fadeInLeft">
-                <div class="sec-title">
-                  <h2 class="fw-700">Build a good<br> resume</h2>
-                  <div class="text mt-30">An efficient resume should promote your abilities and include tangible accomplishments that are relevant to the job you apply for. You should also prepare a cover letter that is concise and elaborates on how you can put your skills to use in the organization.</div>
-                </div>
-                <a href="#" class="theme-btn -blue-light">Discover More</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- End About Section -->
-
-      <!-- About Section -->
-      <section id="section-3" class="about-section-two style-two layout-pt-60 layout-pb-60 js-tab-menu-content">
-        <div class="auto-container">
-          <div class="row grid-base justify-content-between align-items-center">
-            <!-- Content Column -->
-            <div class="col-xl-4 col-lg-5 col-md-12 col-sm-12 order-2 order-lg-1">
-              <div class="content-column">
-                <div class="inner-column -no-padding wow fadeInLeft">
-                  <div class="sec-title">
-                    <h2 class="color-blue-dark fw-700">Perform during your<br> interview</h2>
-                  </div>
-                  <div class="mt-30 mb-30">
-
-                    <div class="icon-item">
-                      <div class="icon-wrap -red">
-                        <img src="images/index-12/icons/1.svg" alt="icon">
-                      </div>
-                      <div class="content">
-                        <h4>Awesome design</h4>
-                        <p>Duis aute irure dolor reprehen derit in<br> volu velit.</p>
-                      </div>
-                    </div>
-
-                    <div class="icon-item">
-                      <div class="icon-wrap -green">
-                        <img src="images/index-12/icons/2.svg" alt="icon">
-                      </div>
-                      <div class="content">
-                        <h4>Easy Customize</h4>
-                        <p>Duis aute irure dolor reprehen derit in<br> volu velit.</p>
-                      </div>
-                    </div>
-
-                  </div>
-                  <a href="#" class="theme-btn -blue-light">Discover More</a>
-                </div>
-              </div>
-            </div>
-
-            <!-- Image Column -->
-            <div class="image-column -no-margin col-lg-6 col-md-12 col-sm-12 order-1 order-lg-2 wow fadeInRight">
-              <figure class="image-box -wide-right"><img src="images/index-12/images/3.png" alt=""></figure>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- End About Section -->
-    </div>
-
-    <!-- Browse by Category -->
-    <section class="layout-pt-60 layout-pb-60 border-bottom-none">
-      <div class="auto-container">
-        <div class="d-flex align-items-center justify-content-between wow fadeInUp">
-          <div class="sec-title">
-            <h2>Browse by Category</h2>
-            <div class="text">2020 jobs live - 293 added today.</div>
-          </div>
-          <a href="" class="text ud-btn2">See all <i class="fal fa-long-arrow-right"></i></a>
-        </div>
         <div class="row wow fadeInUp">
           <!-- Category Block -->
-          <div class="category-block-two at-home21 col-xl-2 col-lg-3 col-md-4 col-sm-6">
+          <div class="category-block col-lg-4 col-md-6 col-sm-12">
             <div class="inner-box">
               <div class="content">
                 <span class="icon flaticon-money-1"></span>
-                <h4><a href="#">Marketing</a></h4>
-                <p>(86 open positions)</p>
+                <h4><a href="#">Accounting / Finance</a></h4>
+                <p>(2 open positions)</p>
               </div>
             </div>
           </div>
+
           <!-- Category Block -->
-          <div class="category-block-two at-home21 col-xl-2 col-lg-3 col-md-4 col-sm-6">
+          <div class="category-block col-lg-4 col-md-6 col-sm-12">
             <div class="inner-box">
               <div class="content">
                 <span class="icon flaticon-promotion"></span>
-                <h4><a href="#">Design</a></h4>
-                <p>(43 open positions)</p>
+                <h4><a href="#">Marketing</a></h4>
+                <p>86 open positions)</p>
               </div>
             </div>
           </div>
+
           <!-- Category Block -->
-          <div class="category-block-two at-home21 col-xl-2 col-lg-3 col-md-4 col-sm-6">
+          <div class="category-block col-lg-4 col-md-6 col-sm-12">
             <div class="inner-box">
               <div class="content">
                 <span class="icon flaticon-vector"></span>
+                <h4><a href="#">Design</a></h4>
+                <p>43 open positions)</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category Block -->
+          <div class="category-block col-lg-4 col-md-6 col-sm-12">
+            <div class="inner-box">
+              <div class="content">
+                <span class="icon flaticon-web-programming"></span>
                 <h4><a href="#">Development</a></h4>
                 <p>(12 open positions)</p>
               </div>
             </div>
           </div>
+
           <!-- Category Block -->
-          <div class="category-block-two at-home21 col-xl-2 col-lg-3 col-md-4 col-sm-6">
-            <div class="inner-box">
-              <div class="content">
-                <span class="icon flaticon-web-programming"></span>
-                <h4><a href="#">Customer Service</a></h4>
-                <p>(72 open positions)</p>
-              </div>
-            </div>
-          </div>
-          <!-- Category Block -->
-          <div class="category-block-two at-home21 col-xl-2 col-lg-3 col-md-4 col-sm-6">
+          <div class="category-block col-lg-4 col-md-6 col-sm-12">
             <div class="inner-box">
               <div class="content">
                 <span class="icon flaticon-headhunting"></span>
+                <h4><a href="#">Human Resource</a></h4>
+                <p>55 open positions)</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category Block -->
+          <div class="category-block col-lg-4 col-md-6 col-sm-12">
+            <div class="inner-box">
+              <div class="content">
+                <span class="icon flaticon-rocket-ship"></span>
+                <h4><a href="#">Project Management</a></h4>
+                <p>(2 open positions)</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category Block -->
+          <div class="category-block col-lg-4 col-md-6 col-sm-12">
+            <div class="inner-box">
+              <div class="content">
+                <span class="icon flaticon-support-1"></span>
+                <h4><a href="#">Customer Service</a></h4>
+                <p>(2 open positions)</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category Block -->
+          <div class="category-block col-lg-4 col-md-6 col-sm-12">
+            <div class="inner-box">
+              <div class="content">
+                <span class="icon flaticon-first-aid-kit-1"></span>
                 <h4><a href="#">Health and Care</a></h4>
                 <p>(25 open positions)</p>
               </div>
             </div>
           </div>
+
           <!-- Category Block -->
-          <div class="category-block-two at-home21 col-xl-2 col-lg-3 col-md-4 col-sm-6">
+          <div class="category-block col-lg-4 col-md-6 col-sm-12">
             <div class="inner-box">
               <div class="content">
-                <span class="icon flaticon-rocket-ship"></span>
+                <span class="icon flaticon-car"></span>
                 <h4><a href="#">Automotive Jobs</a></h4>
-                <p>(92 open positions)</p>
+                <p>92 open positions</p>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- End Browse by Category -->
-
-    <!-- CTA Section -->
-    <section class="about-section-two cta-home21-1 bgc-home21 layout-pt-120 layout-pb-40">
-      <div class="auto-container">
-        <div class="row align-items-center">
-          <!-- Content Column -->
-          <div class="content-column col-lg-6 order-2">
-            <div class="inner-column wow fadeInRight pt-0">
-              <div class="sec-title mb-4">
-                <h2>Find a job using Superio in 3 <br class="d-none d-xl-block">easy steps</h2>
-                <div class="text">Search all the open positions on the web. Get your own personalized salary estimate. Read reviews on over 600,000 companies worldwide.</div>
-              </div>
-              <div class="findjob-process">
-                <div class="wrapper mb40">
-                  <div class="m-circle text-thm">1</div>
-                  <h5 class="title mt15">Register an account to start</h5>
-                  <p>Achieve virtually any design and layout from within the one template.</p>
-                </div>
-                <div class="wrapper mb60">
-                  <div class="m-circle before-none text-thm">2</div>
-                  <h5 class="title mt15">Computer Science</h5>
-                  <p>Achieve virtually any design and layout from within the one template.</p>
-                </div>
-                <div class="wrapper mb60">
-                  <div class="m-circle before-none text-thm">3</div>
-                  <h5 class="title mt15">Find the most suitable candidate</h5>
-                  <p>Achieve virtually any design and layout from within the one template.</p>
-                </div>
-              </div>
-              <a href="#" class="theme-btn btn-style-one">Get Started Now <i class="fal fa-long-arrow-right ms-3"></i></a>
-            </div>
-          </div>
-
-          <!-- Image Column -->
-          <div class="image-column col-lg-6 mb-4 mb-lg-0">
-            <figure class="image-box wow fadeInLeft mx-0"><img src="images/index-21/about-1.png" alt=""></figure>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- End CTA Section -->
-
-    <!-- Job Categories -->
-    <section class="layout-pt-60 layout-pb-120">
-      <div class="auto-container">
-        <div class="row justify-content-between align-items-end">
-          <div class="col-lg-6">
-            <div class="">
-              <h2 class="fw-700">Featured Candidates</h2>
-              <div class="text mt-9">Consectetur adipisicing elit, sed do eiusmod temp</div>
-            </div>
-          </div>
-
-          <div class="col-auto">
-            <a href="#" class="button-icon -arrow">
-              Browse All
-              <span class="fa fa-angle-right"></span>
-            </a>
-          </div>
-        </div>
-
-        <div class="row grid-base pt-50 wow fadeInUp">
-
-          <!-- Candidates Block -->
-          <div class="candidate -type-1 col-xl-auto col-lg-3 col-md-6 col-sm-12">
-            <div class="image">
-              <img src="images/index-12/candidates/1.png" alt="image">
-            </div>
-
-            <div class="content">
-              <h4><a href="#">Albert Flores</a></h4>
-              <p>President of Sales</p>
-            </div>
-          </div>
-
-          <!-- Candidates Block -->
-          <div class="candidate -type-1 col-xl-auto col-lg-3 col-md-6 col-sm-12">
-            <div class="image">
-              <img src="images/index-12/candidates/2.png" alt="image">
-            </div>
-
-            <div class="content">
-              <h4><a href="#">Jerome Bell</a></h4>
-              <p>Marketing Coordinator</p>
-            </div>
-          </div>
-
-          <!-- Candidates Block -->
-          <div class="candidate -type-1 col-xl-auto col-lg-3 col-md-6 col-sm-12">
-            <div class="image">
-              <img src="images/index-12/candidates/3.png" alt="image">
-            </div>
-
-            <div class="content">
-              <h4><a href="#">Darlene Robertson</a></h4>
-              <p>Dog Trainer</p>
-            </div>
-          </div>
-
-          <!-- Candidates Block -->
-          <div class="candidate -type-1 col-xl-auto col-lg-3 col-md-6 col-sm-12">
-            <div class="image">
-              <img src="images/index-12/candidates/4.png" alt="image">
-            </div>
-
-            <div class="content">
-              <h4><a href="#">Theresa Webb</a></h4>
-              <p>Web Designer</p>
-            </div>
-          </div>
-
-          <!-- Candidates Block -->
-          <div class="candidate -type-1 col-xl-auto col-lg-3 col-md-6 col-sm-12">
-            <div class="image">
-              <img src="images/index-12/candidates/5.png" alt="image">
-            </div>
-
-            <div class="content">
-              <h4><a href="#">Theresa Webb</a></h4>
-              <p>Web Designer</p>
             </div>
           </div>
 
@@ -935,344 +489,435 @@
     </section>
     <!-- End Job Categories -->
 
-    <!-- Top Companies Hiring Now -->
-    <section class="layout-pt-120 layout-pb-60 border-bottom-none bgc-home21">
+    <!-- Job Section -->
+    <section class="job-section">
       <div class="auto-container">
-        <div class="d-flex align-items-center justify-content-between wow fadeInUp">
-          <div class="sec-title">
-            <h2>Top Companies Hiring Now</h2>
-            <div class="text">2020 jobs live - 293 added today.</div>
-          </div>
-          <a href="" class="text ud-btn2">See all <i class="fal fa-long-arrow-right"></i></a>
+        <div class="sec-title text-center">
+          <h2>Featured Jobs</h2>
+          <div class="text">Know your worth and find the job that qualify your life</div>
         </div>
+
         <div class="row wow fadeInUp">
-          <div class="category-block-two at-home21 col-lg-3 col-sm-6">
-            <div class="d-block mb30 text-center bg-white p30 bdrs18">
-              <div class="details text-center">
-                <h5 class="mb-0 fz18 fw500">Marketing</h5>
-                <p class="text fz15">5 are actively hiring</p>
+          <!-- Job Block -->
+          <div class="job-block col-lg-6 col-md-12 col-sm-12">
+            <div class="inner-box">
+              <div class="content">
+                <span class="company-logo"><img src="images/resource/company-logo/1-1.png" alt=""></span>
+                <h4><a href="#">Software Engineer (Android), Libraries</a></h4>
+                <ul class="job-info">
+                  <li><span class="icon flaticon-briefcase"></span> Segment</li>
+                  <li><span class="icon flaticon-map-locator"></span> London, UK</li>
+                  <li><span class="icon flaticon-clock-3"></span> 11 hours ago</li>
+                  <li><span class="icon flaticon-money"></span> $35k - $45k</li>
+                </ul>
+                <ul class="job-other-info">
+                  <li class="time">Full Time</li>
+                  <li class="privacy">Private</li>
+                  <li class="required">Urgent</li>
+                </ul>
+                <button class="bookmark-btn"><span class="flaticon-bookmark"></span></button>
               </div>
-              <div class="thumb text-center mb25 mt25"><img src="images/index-21/company-logos.png" alt=""></div>
-              <a href="#" class="theme-btn btn-style-three bdrs30 border-1-dark btn-style-white">15 Open Position <i class="fal fa-long-arrow-right ms-3"></i></a>
             </div>
           </div>
-          <!-- Category Block -->
-          <div class="category-block-two at-home21 col-lg-3 col-sm-6">
-            <div class="d-block mb30 text-center bg-white p30 bdrs18">
-              <div class="details text-center">
-                <h5 class="mb-0 fz18 fw500">Marketing</h5>
-                <p class="text fz15">5 are actively hiring</p>
+
+          <!-- Job Block -->
+          <div class="job-block col-lg-6 col-md-12 col-sm-12">
+            <div class="inner-box">
+              <div class="content">
+                <span class="company-logo"><img src="images/resource/company-logo/1-2.png" alt=""></span>
+                <h4><a href="#">Recruiting Coordinator</a></h4>
+                <ul class="job-info">
+                  <li><span class="icon flaticon-briefcase"></span> Segment</li>
+                  <li><span class="icon flaticon-map-locator"></span> London, UK</li>
+                  <li><span class="icon flaticon-clock-3"></span> 11 hours ago</li>
+                  <li><span class="icon flaticon-money"></span> $35k - $45k</li>
+                </ul>
+                <ul class="job-other-info">
+                  <li class="time">Full Time</li>
+                  <li class="privacy">Private</li>
+                  <li class="required">Urgent</li>
+                </ul>
+                <button class="bookmark-btn"><span class="flaticon-bookmark"></span></button>
               </div>
-              <div class="thumb text-center mb25 mt25"><img src="images/index-21/company-logos.png" alt=""></div>
-              <a href="#" class="theme-btn btn-style-three bdrs30 border-1-dark btn-style-white">15 Open Position <i class="fal fa-long-arrow-right ms-3"></i></a>
             </div>
           </div>
-          <!-- Category Block -->
-          <div class="category-block-two at-home21 col-lg-3 col-sm-6">
-            <div class="d-block mb30 text-center bg-white p30 bdrs18">
-              <div class="details text-center">
-                <h5 class="mb-0 fz18 fw500">Marketing</h5>
-                <p class="text fz15">5 are actively hiring</p>
+
+          <!-- Job Block -->
+          <div class="job-block col-lg-6 col-md-12 col-sm-12">
+            <div class="inner-box">
+              <div class="content">
+                <span class="company-logo"><img src="images/resource/company-logo/1-3.png" alt=""></span>
+                <h4><a href="#">Product Manager, Studio</a></h4>
+                <ul class="job-info">
+                  <li><span class="icon flaticon-briefcase"></span> Segment</li>
+                  <li><span class="icon flaticon-map-locator"></span> London, UK</li>
+                  <li><span class="icon flaticon-clock-3"></span> 11 hours ago</li>
+                  <li><span class="icon flaticon-money"></span> $35k - $45k</li>
+                </ul>
+                <ul class="job-other-info">
+                  <li class="time">Full Time</li>
+                  <li class="privacy">Private</li>
+                  <li class="required">Urgent</li>
+                </ul>
+                <button class="bookmark-btn"><span class="flaticon-bookmark"></span></button>
               </div>
-              <div class="thumb text-center mb25 mt25"><img src="images/index-21/company-logos.png" alt=""></div>
-              <a href="#" class="theme-btn btn-style-three bdrs30 border-1-dark btn-style-white">15 Open Position <i class="fal fa-long-arrow-right ms-3"></i></a>
             </div>
           </div>
-          <!-- Category Block -->
-          <div class="category-block-two at-home21 col-lg-3 col-sm-6">
-            <div class="d-block mb30 text-center bg-white p30 bdrs18">
-              <div class="details text-center">
-                <h5 class="mb-0 fz18 fw500">Marketing</h5>
-                <p class="text fz15">5 are actively hiring</p>
+
+          <!-- Job Block -->
+          <div class="job-block col-lg-6 col-md-12 col-sm-12">
+            <div class="inner-box">
+              <div class="content">
+                <span class="company-logo"><img src="images/resource/company-logo/1-4.png" alt=""></span>
+                <h4><a href="#">Senior Product Designer</a></h4>
+                <ul class="job-info">
+                  <li><span class="icon flaticon-briefcase"></span> Segment</li>
+                  <li><span class="icon flaticon-map-locator"></span> London, UK</li>
+                  <li><span class="icon flaticon-clock-3"></span> 11 hours ago</li>
+                  <li><span class="icon flaticon-money"></span> $35k - $45k</li>
+                </ul>
+                <ul class="job-other-info">
+                  <li class="time">Full Time</li>
+                  <li class="privacy">Private</li>
+                  <li class="required">Urgent</li>
+                </ul>
+                <button class="bookmark-btn"><span class="flaticon-bookmark"></span></button>
               </div>
-              <div class="thumb text-center mb25 mt25"><img src="images/index-21/company-logos.png" alt=""></div>
-              <a href="#" class="theme-btn btn-style-three bdrs30 border-1-dark btn-style-white">15 Open Position <i class="fal fa-long-arrow-right ms-3"></i></a>
             </div>
           </div>
+
+          <!-- Job Block -->
+          <div class="job-block col-lg-6 col-md-12 col-sm-12">
+            <div class="inner-box">
+              <div class="content">
+                <span class="company-logo"><img src="images/resource/company-logo/1-5.png" alt=""></span>
+                <h4><a href="#">Senior Full Stack Engineer, Creator Success</a></h4>
+                <ul class="job-info">
+                  <li><span class="icon flaticon-briefcase"></span> Segment</li>
+                  <li><span class="icon flaticon-map-locator"></span> London, UK</li>
+                  <li><span class="icon flaticon-clock-3"></span> 11 hours ago</li>
+                  <li><span class="icon flaticon-money"></span> $35k - $45k</li>
+                </ul>
+                <ul class="job-other-info">
+                  <li class="time">Full Time</li>
+                  <li class="privacy">Private</li>
+                  <li class="required">Urgent</li>
+                </ul>
+                <button class="bookmark-btn"><span class="flaticon-bookmark"></span></button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Job Block -->
+          <div class="job-block col-lg-6 col-md-12 col-sm-12">
+            <div class="inner-box">
+              <div class="content">
+                <span class="company-logo"><img src="images/resource/company-logo/1-6.png" alt=""></span>
+                <h4><a href="#">Software Engineer (Android), Libraries</a></h4>
+                <ul class="job-info">
+                  <li><span class="icon flaticon-briefcase"></span> Segment</li>
+                  <li><span class="icon flaticon-map-locator"></span> London, UK</li>
+                  <li><span class="icon flaticon-clock-3"></span> 11 hours ago</li>
+                  <li><span class="icon flaticon-money"></span> $35k - $45k</li>
+                </ul>
+                <ul class="job-other-info">
+                  <li class="time">Full Time</li>
+                  <li class="privacy">Private</li>
+                  <li class="required">Urgent</li>
+                </ul>
+                <button class="bookmark-btn"><span class="flaticon-bookmark"></span></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="btn-box">
+          <a href="#" class="theme-btn btn-style-one bg-blue"><span class="btn-title">Load More Listing</span></a>
         </div>
       </div>
     </section>
-    <!-- End Top Companies Hiring Now -->
+    <!-- End Job Section -->
 
-    <!-- List Of USA Jobs -->
-    <section class="layout-pt-120 layout-pb-60 border-bottom-none">
-      <div class="auto-container">
-        <div class="text-center wow fadeInUp">
-          <div class="sec-title">
-            <h2>Few Simple Steps for Successful Business</h2>
-            <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</div>
-          </div>
+    <!-- Testimonial Section -->
+    <section class="testimonial-section">
+      <div class="container-fluid">
+        <!-- Sec Title -->
+        <div class="sec-title text-center">
+          <h2>Testimonials From Our Customers</h2>
+          <div class="text">Lorem ipsum dolor sit amet elit, sed do eiusmod tempor</div>
         </div>
-        <div class="row wow fadeInUp">
-          <!-- Category Block -->
-          <div class="category-block-two at-home21 text-center col-lg-4 col-sm-6">
-            <div class="d-block mb30">
-              <div class="thumb mb30"><img src="images/index-21/icon-logo-1.png" alt=""></div>
-              <div class="details">
-                <h5 class="mb10 fz20 fw500">Free Resume Assessments</h5>
-                <p class="text fz15">Achieve virtually any design and <br class="d-none d-lg-block"> layout from within the one template.</p>
-              </div>
-            </div>
-          </div>
-          <!-- Category Block -->
-          <div class="category-block-two at-home21 text-center col-lg-4 col-sm-6">
-            <div class="d-block mb30">
-              <div class="thumb mb30"><img src="images/index-21/icon-logo-2.png" alt=""></div>
-              <div class="details">
-                <h5 class="mb10 fz20 fw500">Job Fit Scoring</h5>
-                <p class="text fz15">Achieve virtually any design and <br class="d-none d-lg-block"> layout from within the one template.</p>
-              </div>
-            </div>
-          </div>
-          <!-- Category Block -->
-          <div class="category-block-two at-home21 text-center col-lg-4 col-sm-6">
-            <div class="d-block mb30">
-              <div class="thumb mb30"><img src="images/index-21/icon-logo-3.png" alt=""></div>
-              <div class="details">
-                <h5 class="mb10 fz20 fw500">Help Every Step of the Way</h5>
-                <p class="text fz15">Achieve virtually any design and <br class="d-none d-lg-block"> layout from within the one template.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- End List Of USA Jobs -->
 
-    <!-- Testimonial Section Three -->
-    <section class="testimonial-section-three at-home21 bgc-home21 layout-pb-70">
-      <div class="auto-container">
         <div class="carousel-outer wow fadeInUp">
+
           <!-- Testimonial Carousel -->
-          <div class="testimonial-carousel-two owl-carousel owl-theme">
-            <!-- Slide Item -->
-            <div class="slide-item">
-              <div class="content-column ms-0 me-3 me-lg-5">
-                <!--Testimonial Block -->
-                <div class="testimonial-block-three">
-                  <div class="inner-box">
-                    <div class="d-flex align-items-center mb-3 mb-lg-5 text-start justify-content-center justify-content-md-start">
-                      <img class="w70" src="images/index-21/quote.png" alt="">
-                      <div class="ml20">
-                        <h4 class="name">Gabriel Nolan</h4>
-                        <span class="designation">Consultant</span>
-                      </div>
-                    </div>
-                    <div class="text">Without JobHunt i’d be homeless, they found me a job and got me sorted out quickly with everything! Can’t quite… The Mitech team works really hard to ensure high level of quality</div>
-                    <div class="info-box">
-                    </div>
-                  </div>
+          <div class="testimonial-carousel owl-carousel owl-theme">
+
+            <!--Testimonial Block -->
+            <div class="testimonial-block">
+              <div class="inner-box">
+                <h4 class="title">Good theme</h4>
+                <div class="text">Without JobHunt i’d be homeless, they found me a job and got me sorted out quickly with everything! Can’t quite… The Mitech team works really hard to ensure high level of quality</div>
+                <div class="info-box">
+                  <div class="thumb"><img src="images/resource/testi-thumb-1.png" alt=""></div>
+                  <h4 class="name">Nicole Wells</h4>
+                  <span class="designation">Web Developer</span>
                 </div>
-              </div>
-              <div class="image-column me-0 ms-lg-5">
-                <figure class="image">
-                  <div class="video-box">
-                    <figure class="image">
-                      <a href="https://www.youtube.com/watch?v=Fvae8nxzVz4" class="play-now" data-fancybox="gallery" data-caption="">
-                        <i class="icon flaticon-play-button-3" aria-hidden="true"></i>
-                      </a>
-                    </figure>
-                  </div>
-                  <img src="images/index-21/about-2.png" alt="">
-                </figure>
               </div>
             </div>
 
-            <!-- Slide Item -->
-            <div class="slide-item">
-              <div class="content-column ms-0 me-3 me-lg-5">
-                <!--Testimonial Block -->
-                <div class="testimonial-block-three">
-                  <div class="inner-box">
-                    <div class="d-flex align-items-center mb-3 mb-lg-5 text-start justify-content-center justify-content-md-start">
-                      <img class="w70" src="images/index-21/quote.png" alt="">
-                      <div class="ml20">
-                        <h4 class="name">Gabriel Nolan</h4>
-                        <span class="designation">Consultant</span>
-                      </div>
-                    </div>
-                    <div class="text">Without JobHunt i’d be homeless, they found me a job and got me sorted out quickly with everything! Can’t quite… The Mitech team works really hard to ensure high level of quality</div>
-                    <div class="info-box">
-                    </div>
-                  </div>
+            <!--Testimonial Block -->
+            <div class="testimonial-block">
+              <div class="inner-box">
+                <h4 class="title">Great quality!</h4>
+                <div class="text">Without JobHunt i’d be homeless, they found me a job and got me sorted out quickly with everything! Can’t quite… The Mitech team works really hard to ensure high level of quality</div>
+                <div class="info-box">
+                  <div class="thumb"><img src="images/resource/testi-thumb-2.png" alt=""></div>
+                  <h4 class="name">Gabriel Nolan</h4>
+                  <span class="designation">Consultant</span>
                 </div>
-              </div>
-              <div class="image-column me-0 ms-lg-5">
-                <figure class="image">
-                  <div class="video-box">
-                    <figure class="image">
-                      <a href="https://www.youtube.com/watch?v=Fvae8nxzVz4" class="play-now" data-fancybox="gallery" data-caption="">
-                        <i class="icon flaticon-play-button-3" aria-hidden="true"></i>
-                      </a>
-                    </figure>
-                  </div>
-                  <img src="images/index-21/about-2.png" alt="">
-                </figure>
               </div>
             </div>
 
-            <!-- Slide Item -->
-            <div class="slide-item">
-              <div class="content-column ms-0 me-3 me-lg-5">
-                <!--Testimonial Block -->
-                <div class="testimonial-block-three">
-                  <div class="inner-box">
-                    <div class="d-flex align-items-center mb-3 mb-lg-5 text-start justify-content-center justify-content-md-start">
-                      <img class="w70" src="images/index-21/quote.png" alt="">
-                      <div class="ml20">
-                        <h4 class="name">Gabriel Nolan</h4>
-                        <span class="designation">Consultant</span>
-                      </div>
-                    </div>
-                    <div class="text">Without JobHunt i’d be homeless, they found me a job and got me sorted out quickly with everything! Can’t quite… The Mitech team works really hard to ensure high level of quality</div>
-                    <div class="info-box">
-                    </div>
-                  </div>
+            <!--Testimonial Block -->
+            <div class="testimonial-block">
+              <div class="inner-box">
+                <h4 class="title">Awesome Design </h4>
+                <div class="text">Without JobHunt i’d be homeless, they found me a job and got me sorted out quickly with everything! Can’t quite… The Mitech team works really hard to ensure high level of quality</div>
+                <div class="info-box">
+                  <div class="thumb"><img src="images/resource/testi-thumb-3.png" alt=""></div>
+                  <h4 class="name">Ashley Jenkins</h4>
+                  <span class="designation">Designer</span>
                 </div>
-              </div>
-              <div class="image-column me-0 ms-lg-5">
-                <figure class="image">
-                  <div class="video-box">
-                    <figure class="image">
-                      <a href="https://www.youtube.com/watch?v=Fvae8nxzVz4" class="play-now" data-fancybox="gallery" data-caption="">
-                        <i class="icon flaticon-play-button-3" aria-hidden="true"></i>
-                      </a>
-                    </figure>
-                  </div>
-                  <img src="images/index-21/about-2.png" alt="">
-                </figure>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- End Testimonial Section Three -->
+    <!-- End Testimonial Section -->
 
-    <!-- Blog Post -->
-    <section class="layout-pt-120 pb-0">
+    <!--Clients Section-->
+    <section class="clients-section">
+      <div class="sponsors-outer wow fadeInUp">
+        <!--Sponsors Carousel-->
+        <ul class="sponsors-carousel owl-carousel owl-theme">
+          <li class="slide-item">
+            <figure class="image-box"><a href="#"><img src="images/clients/1-1.png" alt=""></a></figure>
+          </li>
+          <li class="slide-item">
+            <figure class="image-box"><a href="#"><img src="images/clients/1-2.png" alt=""></a></figure>
+          </li>
+          <li class="slide-item">
+            <figure class="image-box"><a href="#"><img src="images/clients/1-3.png" alt=""></a></figure>
+          </li>
+          <li class="slide-item">
+            <figure class="image-box"><a href="#"><img src="images/clients/1-4.png" alt=""></a></figure>
+          </li>
+          <li class="slide-item">
+            <figure class="image-box"><a href="#"><img src="images/clients/1-5.png" alt=""></a></figure>
+          </li>
+          <li class="slide-item">
+            <figure class="image-box"><a href="#"><img src="images/clients/1-6.png" alt=""></a></figure>
+          </li>
+          <li class="slide-item">
+            <figure class="image-box"><a href="#"><img src="images/clients/1-7.png" alt=""></a></figure>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- End Clients Section-->
+
+    <!-- About Section -->
+    <section class="about-section">
       <div class="auto-container">
-        <div class="text-center wow fadeInUp">
-          <div class="sec-title">
-            <h2>Trending Koywords</h2>
-            <div class="text">Explore trending job searches in the USA</div>
+        <div class="row">
+          <!-- Content Column -->
+          <div class="content-column col-lg-6 col-md-12 col-sm-12 order-2">
+            <div class="inner-column wow fadeInUp">
+              <div class="sec-title">
+                <h2>Millions of Jobs. Find the one that suits you.</h2>
+                <div class="text">Search all the open positions on the web. Get your own personalized salary estimate. Read reviews on over 600,000 companies worldwide.</div>
+              </div>
+              <ul class="list-style-one">
+                <li>Bring to the table win-win survival</li>
+                <li>Capitalize on low hanging fruit to identify</li>
+                <li>But I must explain to you how all this</li>
+              </ul>
+              <a href="#" class="theme-btn btn-style-one bg-blue"><span class="btn-title">Get Started</span></a>
+            </div>
+          </div>
+
+          <!-- Image Column -->
+          <div class="image-column col-lg-6 col-md-12 col-sm-12">
+            <figure class="image wow fadeInLeft"><img src="images/resource/image-2.jpg" alt=""></figure>
+
+            <!-- Count Employers -->
+            <div class="count-employers wow fadeInUp">
+              <div class="check-box"><span class="flaticon-tick"></span></div>
+              <span class="title">300k+ Employers</span>
+              <figure class="image"><img src="images/resource/multi-logo.png" alt=""></figure>
+            </div>
           </div>
         </div>
-        <div class="row wow fadeInUp">
-          <div class="trending-keywords d-xl-flex align-items-center justify-content-center">
-            <a class="mb-2" href="">Marketing Jobs</a>
-            <a class="mb-2" href="">Designer</a>
-            <a class="mb-2" href="">Engimeering</a>
-            <a class="mb-2" href="">Developer</a>
-            <a class="mb-2" href="">Security Jobs</a>
-            <a class="mb-2" href="">Dallas</a>
-            <a href="">Digital Service</a>
+
+
+        <!-- Fun Fact Section -->
+        <div class="fun-fact-section">
+          <div class="row">
+            <!--Column-->
+            <div class="counter-column col-lg-4 col-md-4 col-sm-12 wow fadeInUp">
+              <div class="count-box"><span class="count-text" data-speed="3000" data-stop="4">0</span>M</div>
+              <h4 class="counter-title">4 million daily active users</h4>
+            </div>
+
+            <!--Column-->
+            <div class="counter-column col-lg-4 col-md-4 col-sm-12 wow fadeInUp" data-wow-delay="400ms">
+              <div class="count-box"><span class="count-text" data-speed="3000" data-stop="12">0</span>k</div>
+              <h4 class="counter-title">Over 12k open job positions</h4>
+            </div>
+
+            <!--Column-->
+            <div class="counter-column col-lg-4 col-md-4 col-sm-12 wow fadeInUp" data-wow-delay="800ms">
+              <div class="count-box"><span class="count-text" data-speed="3000" data-stop="20">0</span>M</div>
+              <h4 class="counter-title">Over 20 million stories shared</h4>
+            </div>
           </div>
         </div>
+        <!-- Fun Fact Section -->
       </div>
     </section>
-    <!-- End Blog Post -->
+    <!-- End About Section -->
 
-    <!-- Blog Post -->
-    <section class="layout-pt-120 layout-pb-120">
+    <!-- News Section -->
+    <section class="news-section">
       <div class="auto-container">
-        <div class="d-flex align-items-center justify-content-between wow fadeInUp">
-          <div class="sec-title">
-            <h2>Travel Articles</h2>
-            <div class="text">Fresh job related news content posted each day.</div>
-          </div>
-          <a href="" class="text ud-btn2">View All <i class="fal fa-long-arrow-right"></i></a>
+        <div class="sec-title text-center">
+          <h2>Recent News Articles</h2>
+          <div class="text">Fresh job related news content posted each day.</div>
         </div>
+
         <div class="row wow fadeInUp">
-          <!-- Blog Block -->
-          <div class="col-lg-4 col-sm-6">
-            <div class="blog -type-1 at-home21">
-              <div class="blog-image position-relative mb30">
-                <a href="" class="tag">Designer</a>
-                <img class="bdrs12" src="images/index-21/blog-1.png" alt="image">
+          <!-- News Block -->
+          <div class="news-block col-lg-4 col-md-6 col-sm-12">
+            <div class="inner-box">
+              <div class="image-box">
+                <figure class="image"><img src="images/resource/news-1.jpg" alt="" /></figure>
               </div>
-              <div class="blog-content">
-                <div class="d-flex align-items-center">
-                  <a href="" class="date fz15 dark-color">April 06 2023</a><span class="text-border-color mx-2">|</span><a href="" class="author fz15 dark-color">By Ali Tufan</a></div>
-                <h4><a href="#">21 Job Interview Tips: How To Make a Great <br class="d-none d-lg-block"> Impression</a></h4>
-              </div>
-            </div>
-          </div>
-          <!-- Blog Block -->
-          <div class="col-lg-4 col-sm-6">
-            <div class="blog -type-1 at-home21">
-              <div class="blog-image position-relative mb30">
-                <a href="" class="tag">Developer</a>
-                <img class="bdrs12" src="images/index-21/blog-2.png" alt="image">
-              </div>
-              <div class="blog-content">
-                <div class="d-flex align-items-center">
-                  <a href="" class="date fz15 dark-color">April 06 2023</a><span class="text-border-color mx-2">|</span><a href="" class="author dark-color fz15">By Ali Tufan</a></div>
-                <h4><a href="#">10 Ways to Avoid a Referee Disaster <br class="d-none d-lg-block">Zone</a></h4>
+              <div class="lower-content">
+                <ul class="post-meta">
+                  <li><a href="#">August 31, 2021</a></li>
+                  <li><a href="#">12 Comment</a></li>
+                </ul>
+                <h3><a href="blog-single.html">Attract Sales And Profits</a></h3>
+                <p class="text">A job ravenously while Far much that one rank beheld after outside....</p>
+                <a href="#" class="read-more">Read More <i class="fa fa-angle-right"></i></a>
               </div>
             </div>
           </div>
-          <!-- Blog Block -->
-          <div class="col-lg-4 col-sm-6">
-            <div class="blog -type-1 at-home21">
-              <div class="blog-image position-relative mb30">
-                <a href="" class="tag">Marketing</a>
-                <img class="bdrs12" src="images/index-21/blog-1.png" alt="image">
+
+          <!-- News Block -->
+          <div class="news-block col-lg-4 col-md-6 col-sm-12">
+            <div class="inner-box">
+              <div class="image-box">
+                <figure class="image"><img src="images/resource/news-2.jpg" alt="" /></figure>
               </div>
-              <div class="blog-content">
-                <div class="d-flex align-items-center">
-                  <a href="" class="date fz15 dark-color">April 06 2023</a><span class="text-border-color mx-2">|</span><a href="" class="author dark-color fz15">By Ali Tufan</a></div>
-                <h4><a href="#">Tips to Keep Your Resume Relevant to the <br class="d-none d-lg-block"> Position</a></h4>
+              <div class="lower-content">
+                <ul class="post-meta">
+                  <li><a href="#">August 31, 2021</a></li>
+                  <li><a href="#">12 Comment</a></li>
+                </ul>
+                <h3><a href="blog-single.html">5 Tips For Your Job Interviews</a></h3>
+                <p class="text">A job ravenously while Far much that one rank beheld after outside....</p>
+                <a href="#" class="read-more">Read More <i class="fa fa-angle-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- News Block -->
+          <div class="news-block col-lg-4 col-md-6 col-sm-12">
+            <div class="inner-box">
+              <div class="image-box">
+                <figure class="image"><img src="images/resource/news-3.jpg" alt="" /></figure>
+              </div>
+              <div class="lower-content">
+                <ul class="post-meta">
+                  <li><a href="#">August 31, 2021</a></li>
+                  <li><a href="#">12 Comment</a></li>
+                </ul>
+                <h3><a href="blog-single.html">An Overworked Newspaper Editor</a></h3>
+                <p class="text">A job ravenously while Far much that one rank beheld after outside....</p>
+                <a href="#" class="read-more">Read More <i class="fa fa-angle-right"></i></a>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- End Blog Post -->
+    <!-- End News Section -->
 
-    <!-- Subscribe Section -->
-    <section class="subscribe-section at-home21">
+    <!-- App Section -->
+    <section class="app-section">
+      <div class="auto-container">
+        <div class="row">
+          <!-- Image Column -->
+          <div class="image-column col-lg-6 col-md-12 col-sm-12">
+            <div class="bg-shape"></div>
+            <figure class="image wow fadeInLeft"><img src="images/resource/mobile-app.png" alt=""></figure>
+          </div>
+
+          <div class="content-column col-lg-6 col-md-12 col-sm-12">
+            <div class="inner-column wow fadeInRight">
+              <div class="sec-title">
+                <span class="sub-title">DOWNLOAD & ENJOY</span>
+                <h2>Get the Superio Job<br> Search App</h2>
+                <div class="text">Search through millions of jobs and find the right fit. Simply<br> swipe right to apply.</div>
+              </div>
+              <div class="download-btn">
+                <a href="#"><img src="images/icons/apple.png" alt=""></a>
+                <a href="#"><img src="images/icons/google.png" alt=""></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End App Section -->
+
+    <!-- Call To Action -->
+    <section class="call-to-action">
       <div class="auto-container">
         <div class="outer-box wow fadeInUp">
-          <div class="sec-title">
-            <h2 class="mb-3">Subscribe Our Newsletter</h2>
-            <div>Advertise your jobs to millions of monthly users and search<br> 15.8 million CVs in our database.</div>
-          </div>
-          <div class="form-column">
-            <div class="subscribe-form">
-              <form method="post" action="#">
-                <div class="form-group">
-                  <div class="response"></div>
-                </div>
-                <div class="form-group">
-                  <input type="email" name="email" class="email bdrs120" value="" placeholder="Your e-mail" required>
-                  <button type="button" id="subscribe-newslatters" class="theme-btn home21-style btn-style-one bg-dark bdrs120">Subscribe <i class="fal fa-long-arrow-right ms-3"></i></button>
-                </div>
-              </form>
+          <div class="content-column">
+            <div class="sec-title">
+              <h2>Recruiting?</h2>
+              <div class="text">Advertise your jobs to millions of monthly users and search 15.8 million<br> CVs in our database.</div>
+              <a href="#" class="theme-btn btn-style-one bg-blue"><span class="btn-title">Start Recruiting Now</span></a>
             </div>
+          </div>
+
+          <div class="image-column" style="background-image: url(images/resource/image-1.png);">
+            <figure class="image"><img src="images/resource/image-1.png" alt=""></figure>
           </div>
         </div>
       </div>
     </section>
-    <!-- End Subscribe Section -->
+    <!-- End Call To Action -->
 
     <!-- Main Footer -->
-    <footer class="main-footer style-seven">
-      <!--Widgets Section-->
-      <div class="widgets-section">
-        <div class="auto-container">
-
+    <footer class="main-footer">
+      <div class="auto-container">
+        <!--Widgets Section-->
+        <div class="widgets-section wow fadeInUp">
           <div class="row">
-            <div class="big-column col-xl-3 col-lg-3 col-md-12">
+            <div class="big-column col-xl-4 col-lg-3 col-md-12">
               <div class="footer-column about-widget">
-                <div class="logo"><a href="#"><img src="images/index-21/footer-logo.svg" alt=""></a></div>
+                <div class="logo"><a href="#"><img src="images/logo.svg" alt=""></a></div>
                 <p class="phone-num"><span>Call us </span><a href="thebeehost@support.com">123 456 7890</a></p>
                 <p class="address">329 Queensberry Street, North Melbourne VIC<br> 3051, Australia. <br><a href="mailto:support@superio.com" class="email">support@superio.com</a></p>
               </div>
             </div>
 
-            <div class="big-column col-xl-9 col-lg-9 col-md-12">
+            <div class="big-column col-xl-8 col-lg-9 col-md-12">
               <div class="row">
                 <div class="footer-column col-lg-3 col-md-6 col-sm-12">
                   <div class="footer-widget links-widget">
@@ -1288,6 +933,7 @@
                     </div>
                   </div>
                 </div>
+
 
                 <div class="footer-column col-lg-3 col-md-6 col-sm-12">
                   <div class="footer-widget links-widget">
@@ -1318,15 +964,18 @@
                   </div>
                 </div>
 
+
                 <div class="footer-column col-lg-3 col-md-6 col-sm-12">
-                  <div class="footer-widget">
-                    <h4 class="widget-title">Mobile Apps</h4>
+                  <div class="footer-widget links-widget">
+                    <h4 class="widget-title">Helpful Resources</h4>
                     <div class="widget-content">
-                      <div class="download-btns">
-                        <div class="text">Click and Get started in seconds</div>
-                        <a class="mb20 d-block" href="#"><img src="images/index-21/apple.png" alt=""></a>
-                        <a href="#"><img src="images/index-21/google.png" alt=""></a>
-                      </div>
+                      <ul class="list">
+                        <li><a href="#">Site Map</a></li>
+                        <li><a href="#">Terms of Use</a></li>
+                        <li><a href="#">Privacy Center</a></li>
+                        <li><a href="#">Security Center</a></li>
+                        <li><a href="#">Accessibility Center</a></li>
+                      </ul>
                     </div>
                   </div>
                 </div>
@@ -1335,6 +984,7 @@
           </div>
         </div>
       </div>
+
 
       <!--Bottom-->
       <div class="footer-bottom">
@@ -1350,6 +1000,8 @@
           </div>
         </div>
       </div>
+
+      <!-- Scroll To Top -->
       <div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-angle-up"></span></div>
     </footer>
     <!-- End Main Footer -->
