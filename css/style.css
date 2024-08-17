@@ -9915,6 +9915,7 @@ Preloader
   margin-top: -25px;
   background-position: center center;
   background-repeat: no-repeat;
+  background-size: contain; /* Ensure the favicon retains its original size and aspect ratio */
   background-image: url(../images/favicon.png);
   content: "";
 }
@@ -9928,12 +9929,15 @@ Preloader
   text-align: center;
   margin: 0 auto;
   margin-top: 40px;
-  color: #1967D2;
   font-size: 14px;
   font-weight: 400;
   letter-spacing: 2px;
+  background: linear-gradient(135deg, #9d30b1, #8641f8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   content: "LOADING";
 }
+
 
 /*==========================
 Progress Bars
