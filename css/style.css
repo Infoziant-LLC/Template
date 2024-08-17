@@ -22363,3 +22363,13 @@ Work Section
   overflow: hidden;
 }
 
+
+
+@media (min-width: 1200px) { /* Targeting desktop screens */
+  .candidate .image img {
+    width: 230px;
+    height: 301px;
+    object-fit: cover; /* Ensures the image covers the area without distorting */
+    border-radius: 5%;
+  }
+}
