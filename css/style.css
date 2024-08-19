@@ -182,7 +182,7 @@ p,
 .job-detail.at-v5 p,
 .job-detail p.text,
 .text{
-  color: #202124 !important;
+  color: white;
   font-family: Jost;
   line-height: 28px;
 }
@@ -605,10 +605,10 @@ p,
 }
 .auto-container {
   position: static;
-  max-width: 1310px;
+  /* max-width: 800px; */
   padding: 0px 15px;
   margin: 0 auto;
-  width: 100%;
+  width: 90%;
 }
 
 .small-container {
@@ -1344,38 +1344,47 @@ Icons
 ===========================*/
 .icon-calendar {
   background-image: url(../images/icons/icon-calendar.svg);
+  filter: hue-rotate(800deg) saturate(50%) brightness(100%);
 }
 
 .icon-expiry {
   background-image: url(../images/icons/icon-expiry.svg);
+  filter: hue-rotate(800deg) saturate(50%) brightness(100%);
 }
 
 .icon-location {
   background-image: url(../images/icons/icon-location.svg);
+  filter: hue-rotate(800deg) saturate(50%) brightness(100%);
 }
 
 .icon-user-2 {
   background-image: url(../images/icons/icon-user-2.svg);
+  filter: hue-rotate(800deg) saturate(50%) brightness(100%);
 }
 
 .icon-clock {
   background-image: url(../images/icons/icon-clock.svg);
+  filter: hue-rotate(800deg) saturate(50%) brightness(100%);
 }
 
 .icon-rate {
   background-image: url(../images/icons/icon-rate.svg);
+  filter: hue-rotate(800deg) saturate(50%) brightness(100%);
 }
 
 .icon-salary {
   background-image: url(../images/icons/icon-salary.svg);
+  filter: hue-rotate(800deg) saturate(50%) brightness(100%);
 }
 
 .icon-language {
   background-image: url(../images/icons/icon-language.svg);
+  filter: hue-rotate(800deg) saturate(50%) brightness(100%);
 }
 
 .icon-degree {
   background-image: url(../images/icons/icon-degree.svg);
+  filter: hue-rotate(800deg) saturate(50%) brightness(100%);
 }
 
 img {
@@ -2003,9 +2012,9 @@ Accordian Box
   font-size: 16px;
   padding: 17px 30px;
   line-height: 30px;
-  color: #202124;
+  color: white;
   font-weight: 500;
-  background: transparent;
+  background: linear-gradient(to right, #8641f8, #9D30b1);
   cursor: pointer;
   transition: all 300ms ease;
 }
@@ -2045,6 +2054,7 @@ Accordian Box
   position: relative;
   padding: 24px 30px 26px;
   border-top: 1px solid #ECEDF2;
+  background-color: #E6E6FA;
 }
 
 .accordion-box .block .content p {
@@ -2364,9 +2374,9 @@ Buttons Styles
   position: relative;
   text-align: center;
   white-space: nowrap;
-  color: #ffffff;
-  background-color: #1967D2;
-  font-size: 15px;
+  color: white;
+  background: linear-gradient(to right,#8641f8,#9D30b1);
+  font-size: 17px;
   line-height: 20px;
   border-radius: 8px;
   font-weight: 400;
@@ -2387,8 +2397,8 @@ Buttons Styles
   position: relative;
   text-align: center;
   white-space: nowrap;
-  color: #202124;
-  background-color: #F9AB00;
+  color: white !important;
+  background-color: #732281;
   font-size: 15px;
   line-height: 20px;
   border-radius: 8px;
@@ -2398,7 +2408,7 @@ Buttons Styles
 
 .btn-style-two:hover {
   color: #202124;
-  background-color: #E9A000;
+  background-color: #581a63;
 }
 
 /* Btn Style Three */
@@ -2406,8 +2416,8 @@ Buttons Styles
   position: relative;
   text-align: center;
   white-space: nowrap;
-  color: #1967D2;
-  background-color: #E2EAF8;
+  color: #732281;
+  background-color: white;
   font-size: 15px;
   line-height: 20px;
   border-radius: 8px;
@@ -2416,8 +2426,8 @@ Buttons Styles
 }
 
 .btn-style-three:hover {
-  color: #FFFFFF;
-  background-color: #1967D2;
+  color: #732281;
+  background-color: rgb(225, 223, 223);
 }
 
 /* Btn Style Four */
@@ -2772,7 +2782,6 @@ Clients Section
 .clients-section {
   position: relative;
   padding: 60px 0 60px;
-  border-bottom: 1px solid #ECEDF2;
 }
 
 .clients-section.alternate {
@@ -3706,7 +3715,9 @@ Contact Section
   line-height: 30px;
   color: #7E7E7E !important;
 }
-
+.email{
+  color: #9D30b1;
+}
 .mm-add-listing .social-links {
   position: relative;
   display: block;
@@ -4344,13 +4355,13 @@ User Sidebar
 
 .user-sidebar .navigation > li.active > a,
 .user-sidebar .navigation > li:hover > a {
-  color: #1967D2;
-  background: rgba(25, 103, 210, 0.1);
+  color: #9D30b1;
+  background-color: #E6E6FA;
 }
 
 .user-sidebar .navigation li.active a i,
 .user-sidebar .navigation li:hover a i {
-  color: #1967D2;
+  color: #9D30b1;
 }
 
 .place.sky {
@@ -5021,7 +5032,7 @@ Chat Widget
 }
 
 .notification-list li .colored {
-  color: #1967D2;
+  color: #9D30b1;
 }
 
 .notification-list li.success .icon {
@@ -5030,7 +5041,7 @@ Chat Widget
 }
 
 .notification-list li.success .colored {
-  color: #34a853;
+  color: #9D30b1;
 }
 
 /*** 
@@ -5160,6 +5171,8 @@ Main Footer
 .main-footer .logo {
   position: relative;
   margin-bottom: 25px;
+  width: 154px;
+  height: 50px;
 }
 
 .main-footer .logo img {
@@ -5181,7 +5194,7 @@ Main Footer
 }
 
 .main-footer .phone-num a {
-  color: #1967D2;
+  color: #9D30b1;
 }
 
 .main-footer .address {
@@ -5929,6 +5942,8 @@ Main Header
   padding: 25px 0;
   margin-right: 100px;
   transition: all 300ms ease;
+  max-width: 154px;
+  height: 60px;
 }
 
 .main-header .menu-box {
@@ -6174,7 +6189,7 @@ Main Header
 .main-header .upload-cv {
   position: relative;
   font-size: 15px;
-  color: #1967D2;
+  color: #9D30b1;
   font-weight: 400;
   white-space: nowrap;
 }
@@ -7103,7 +7118,7 @@ Job Section
 }
 
 .job-block h4 a:hover {
-  color: #1967D2;
+  color: #9D30b1;
 }
 
 .job-block .job-info {
@@ -7618,7 +7633,7 @@ Job Section Four
 }
 
 .job-block-four h4 a:hover {
-  color: #1967D2;
+  color: #9D30b1;
 }
 
 .job-block-four .location {
@@ -7948,11 +7963,11 @@ Job Detail Section
 
 .job-detail-section .upper-box {
   position: relative;
-  background-image: url(../images/icons/bg-4.png);
+  /* background-image: url(../images/icons/bg-4.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-size: cover;
+  background-size: cover; */
   padding: 80px 0 70px;
 }
 .job-detail-section.at-jsv7 .upper-box,
@@ -7962,7 +7977,8 @@ Job Detail Section
 }
 
 .job-detail-section.style-three .upper-box {
-  background-image: url(../images/icons/bg-5.png);
+  /* background-image: url(../images/icons/bg-5.png); */
+  background-color: #E6E6FA;
 }
 
 .job-detail-section .job-block-outer {
@@ -8077,7 +8093,7 @@ Job Detail Section
 }
 
 .job-block-seven h4 a:hover {
-  color: #1967D2;
+  color: #9D30b1;
 }
 
 .job-block-seven .job-info {
@@ -8134,15 +8150,15 @@ Job Detail Section
   text-align: center;
   font-size: 16px;
   cursor: pointer;
-  color: #1967D2;
+  color: #9D30b1;
   border-radius: 7px;
-  background: rgba(25, 103, 210, 0.07);
+  background-color: #E6E6FA;
   transition: all 300ms ease;
   margin-left: 20px;
 }
 
 .job-block-seven .bookmark-btn:hover {
-  background: #1967D2;
+  background: linear-gradient(to right,#8641f8,#9D30b1);
   color: #fff;
 }
 .job-block-seven.at-jsv6 .bookmark-btn{
@@ -9662,11 +9678,12 @@ Page Title
   top: 0;
   height: 100%;
   width: 100%;
-  background-image: url(../images/icons/bg-4.png);
-  background-repeat: no-repeat;
+  /* background-image: url(../images/icons/bg-4.png);
+  background-repeat: no-repeat; */
   background-position: center;
   background-size: cover;
   content: "";
+  background-color: #E6E6FA;
 }
 
 .page-title h1 {
@@ -10252,13 +10269,15 @@ Registeration Banners
 .manage-job-table .applied {
   font-size: 15px;
   line-height: 20px;
-  color: #1967D2;
+  color: #9D30b1;
   font-weight: 400;
   text-decoration: underline;
 }
-
+.colored{
+  text-decoration: none !important;
+}
 .manage-job-table a {
-  color: inherit;
+  color: #9D30b1;
 }
 
 .manage-job-table .status {
@@ -10477,11 +10496,11 @@ Registeration Banners
   height: 30px;
   line-height: 30px;
   text-align: center;
-  background: rgba(25, 103, 210, 0.07);
+  background-color: #E6E6FA;
   border-radius: 8px;
   margin-right: 10px;
   min-width: auto;
-  color: #1967d2;
+  color: #9D30b1;
 }
 
 .resume-outer.theme-blue .resume-block .edit-box .year,
@@ -11230,7 +11249,7 @@ default table
   position: relative;
   padding: 20px 30px;
   font-size: 16px;
-  color: #1967D2;
+  color: #9D30b1;
   font-weight: 500;
   line-height: 30px;
   white-space: nowrap;
@@ -11565,7 +11584,7 @@ Testimonial Section Two
   position: relative;
   font-size: 18px;
   line-height: 24px;
-  color: #1967D2;
+  color: #9e32b1;
   font-weight: 400;
   margin-bottom: 10px;
 }
@@ -11963,7 +11982,7 @@ Radio bOX
   font-weight: 500;
   font-size: 18px;
   line-height: 24px;
-  color: #1967D2;
+  color: #9D30b1;
   margin-bottom: 12px;
 }
 
@@ -12041,7 +12060,7 @@ Radio bOX
   border-radius: 8px;
   margin-right: 10px;
   min-width: auto;
-  color: #1967d2;
+  color: #9D30b1;
 }
 
 /*** 
@@ -12181,6 +12200,12 @@ Candidates Section
 ====================================================================
 
 ***/
+.user-dashboard h2{
+  text-align: center;
+}
+.user-dashboard{
+  padding-top: 4%;
+}
 .candidates-section {
   position: relative;
   padding: 100px 0;
@@ -12528,12 +12553,12 @@ Candidates Section Two
 .option-list li a {
   position: relative;
   display: block;
-  background: rgba(25, 103, 210, 0.07);
+  background-color: #E6E6FA;
   border-radius: 8px;
   height: 30px;
   width: 30px;
   font-size: 16px;
-  color: #1967D2;
+  color: #9D30b1;
   line-height: 30px;
   text-align: center;
   transition: all 300ms ease;
@@ -12584,8 +12609,8 @@ Candidates Section Two
 
 .option-list li button:hover,
 .option-list li a:hover {
-  background: #1967D2;
-  color: #ffffff;
+  background: linear-gradient(to right,#8641f8,#9D30b1);
+  color: white;
 }
 
 .option-box .delete-btn {
@@ -12596,7 +12621,6 @@ Candidates Section Two
   font-weight: 400;
   margin-left: 40px;
 }
-
 .resume-action .theme-btn:after {
   display: none;
 }
@@ -13278,6 +13302,7 @@ Call To Action Two
   background-size: cover;
   padding: 170px 0 160px;
   text-align: center;
+  background: linear-gradient(to right, #8641f8, #9D30b1);
 }
 
 .call-to-action-two .sec-title {
@@ -13423,7 +13448,20 @@ Faqs Section
   position: relative;
   padding: 100px 0;
 }
-
+.auto-container-faq {
+  position: relative;
+ margin-left: auto;
+ margin-right: auto;
+  width: 65vw;
+}
+@media(max-width:320px){
+.auto-container-faq{
+  margin-left: 15%;
+}
+.accordion-box .block .acc-btn{
+  padding: 5px 10px;
+}
+}
 .faqs-section h3 {
   font-weight: 500;
   font-size: 26px;
@@ -14014,14 +14052,14 @@ Ls Outer
 }
 
 .top-filters .chosen-container-single .chosen-single div:after {
-  color: #1967D2;
+  color: #9D30b1;
   content: "\f17c";
   font-family: 'Flaticon';
   font-size: 10px;
 }
 
 .top-filters .chosen-container .chosen-single span {
-  color: #1967D2;
+  color: #9D30b1;
   margin: 0;
   min-width: auto;
 }
@@ -14150,7 +14188,7 @@ Listing Show More
   top: 0;
   height: 100%;
   border-radius: 20px;
-  background-color: #1967D2;
+  background-color: #9D30b1;
 }
 
 .ls-show-more .show-more {
@@ -14158,7 +14196,7 @@ Listing Show More
   font-weight: 500;
   font-size: 16px;
   line-height: 22px;
-  color: #1967D2;
+  color: #9D30b1;
   padding-bottom: 5px;
 }
 
@@ -14168,7 +14206,7 @@ Listing Show More
   bottom: 0;
   width: 60px;
   height: 2px;
-  background: #1967D2;
+  background: #9D30b1;
   content: "";
 }
 
@@ -14278,7 +14316,7 @@ Ls Section / style Three
 
 ***/
 .ls-section.style-three {
-  background: #F0F5F7;
+  background: #E6E6FA;
 }
 
 .ls-section.style-three .ls-switcher .sort-by .chosen-single {
@@ -21892,7 +21930,7 @@ Work Section
 }
 
 .work-section.style-two {
-  background: #F5F7FC;
+  background-color: #E6E6FA;
 }
 
 .work-block {
@@ -22185,6 +22223,9 @@ Work Section
 }
 .testimonial-style2 .nav-link.active {
   background-color: transparent;
+}
+#index21-test-img{
+  border-radius: 50%;
 }
 .testimonial-style2 .nav-link.active img {
   border-radius: 50%;
