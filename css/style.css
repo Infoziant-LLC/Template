@@ -5193,7 +5193,7 @@ Main Footer
 }
 
 .main-footer .address a {
-  color: #696969;
+  color: #9D30b1;
 }
 
 /*=== Cities Widget ===*/
@@ -6701,7 +6701,7 @@ Job Categories
 
 .category-block .inner-box:hover .icon {
   color: #ffffff;
-  background: #1967D2;
+  background: red;
 }
 
 .category-block h4 {
