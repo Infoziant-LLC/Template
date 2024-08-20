@@ -5181,7 +5181,7 @@ Main Footer
 }
 
 .main-footer .phone-num a {
-  color: #1967D2;
+  color: purple;
 }
 
 .main-footer .address {
@@ -14845,7 +14845,7 @@ Pricing Section
 
 .pricing-table .inner-box:hover,
 .pricing-table.tagged .inner-box {
-  border: 1px solid #1967D2;
+  border:purple;
   box-shadow: 0px 6px 15px rgba(64, 79, 104, 0.05);
 }
 
@@ -14867,7 +14867,7 @@ Pricing Section
   top: 0;
   height: 100%;
   width: 100%;
-  background: #34A853;
+  background: purple;
   opacity: 0.15;
   content: "";
   border-radius: 30px;
@@ -14878,7 +14878,7 @@ Pricing Section
   font-weight: 500;
   font-size: 18px;
   line-height: 24px;
-  color: #1967D2;
+  color: purple;
   margin-bottom: 10px;
 }
 
