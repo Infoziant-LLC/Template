@@ -1025,7 +1025,7 @@ input:checked + .slider:before {
 .default-form .form-group input[type="url"]:focus,
 .default-form .form-group select:focus,
 .default-form .form-group textarea:focus {
-  border-color: #1967D2;
+  border-color: #9D30b1;
   background: #ffffff;
 }
 
@@ -2418,7 +2418,7 @@ Buttons Styles
 
 .btn-style-three:hover {
   color: #FFFFFF;
-  background-color: #1967D2;
+  background: linear-gradient(to right,#8641f8,#9D30b1)
 }
 
 /* Btn Style Four */
@@ -3784,7 +3784,7 @@ Dashboard
 
 .ui-item h4 {
   font-size: 30px;
-  color: #1967D2;
+  color: #9D30b1;
   font-weight: 500;
   line-height: 1em;
   margin-bottom: 3px;
@@ -3803,9 +3803,9 @@ Dashboard
   width: 70px;
   line-height: 70px;
   font-size: 40px;
-  color: #1967d2;
+  color: #9D30b1;
   text-align: center;
-  background-color: rgba(25, 103, 210, 0.1);
+  background-color:  #E6E6FA;
   border-radius: 8px;
 }
 
@@ -3841,6 +3841,7 @@ Graph widget
 ============================*/
 .graph-widget .widget-content {
   padding-top: 80px;
+
 }
 
 .graph-widget .tab-buttons {
@@ -4345,13 +4346,13 @@ User Sidebar
 
 .user-sidebar .navigation > li.active > a,
 .user-sidebar .navigation > li:hover > a {
-  color: #1967D2;
-  background: rgba(25, 103, 210, 0.1);
+  color: #9D30b1;
+  background: #E6E6FA;
 }
 
 .user-sidebar .navigation li.active a i,
 .user-sidebar .navigation li:hover a i {
-  color: #1967D2;
+  color: #9D30b1;
 }
 
 .place.sky {
@@ -4742,7 +4743,7 @@ Chat Widget
   display: block;
   width: 16.02px;
   height: 16px;
-  background: #1967D2;
+  background: #9D30b1;
   border-radius: 50%;
   color: #ffffff;
   line-height: 16px;
@@ -5013,8 +5014,8 @@ Chat Widget
   top: 0;
   height: 35px;
   width: 35px;
-  background: rgba(25, 103, 210, 0.15);
-  color: #1967D2;
+  background:  #E6E6FA;
+  color: #9D30b1;
   text-align: center;
   line-height: 35px;
   border-radius: 50%;
@@ -5022,7 +5023,7 @@ Chat Widget
 }
 
 .notification-list li .colored {
-  color: #1967D2;
+  color:#9D30b1;
 }
 
 .notification-list li.success .icon {
@@ -10255,7 +10256,7 @@ Registeration Banners
 .manage-job-table .applied {
   font-size: 15px;
   line-height: 20px;
-  color: #1967D2;
+  color: #9D30b1;
   font-weight: 400;
   text-decoration: underline;
 }
@@ -10284,7 +10285,7 @@ Registeration Banners
   font-weight: 500;
   font-size: 16px;
   line-height: 22px;
-  color: #1967D2;
+  color:  #9D30b1;
 }
 
 .aplicants-upper-bar .aplicantion-status {
@@ -10297,7 +10298,7 @@ Registeration Banners
   font-weight: 500;
   font-size: 16px;
   line-height: 22px;
-  color: #1967D2;
+  color: #9D30b1;
   margin-left: 115px;
 }
 
@@ -11233,7 +11234,7 @@ default table
   position: relative;
   padding: 20px 30px;
   font-size: 16px;
-  color: #1967D2;
+  color: #9D30b1;
   font-weight: 500;
   line-height: 30px;
   white-space: nowrap;
@@ -11966,7 +11967,7 @@ Radio bOX
   font-weight: 500;
   font-size: 18px;
   line-height: 24px;
-  color: #1967D2;
+  color: #9D30b1;
   margin-bottom: 12px;
 }
 
@@ -12458,7 +12459,7 @@ Candidates Section Two
 .candidate-block-three .candidate-info li.designation {
   display: block;
   font-size: 14px;
-  color: #1967D2;
+  color: #9D30b1;
   line-height: 19px;
   padding-left: 0;
 }
@@ -12531,12 +12532,12 @@ Candidates Section Two
 .option-list li a {
   position: relative;
   display: block;
-  background: rgba(25, 103, 210, 0.07);
+  background: #E6E6FA;
   border-radius: 8px;
   height: 30px;
   width: 30px;
   font-size: 16px;
-  color: #1967D2;
+  color: #9D30b1;
   line-height: 30px;
   text-align: center;
   transition: all 300ms ease;
@@ -12587,7 +12588,7 @@ Candidates Section Two
 
 .option-list li button:hover,
 .option-list li a:hover {
-  background: #1967D2;
+  background: #9D30b1;
   color: #ffffff;
 }
 
@@ -12595,7 +12596,7 @@ Candidates Section Two
   position: relative;
   display: block;
   font-size: 20px;
-  color: #1967D2;
+  color: #9D30b1;
   font-weight: 400;
   margin-left: 40px;
 }
@@ -12686,6 +12687,7 @@ Candidates Section Two
   flex-direction: column;
   align-items: flex-start;
 }
+
 
 .candidate-block-four .thumb {
   position: relative;
