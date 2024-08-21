@@ -5994,8 +5994,10 @@ Main Header
 
 .main-menu .navigation > li.current > a,
 .main-menu .navigation > li.current > span {
-  color: #1967D2;
+  color: #4C7FF1;
+  /* text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3); */
 }
+
 
 .main-menu .navigation > li.dropdown > span {
   padding-right: 18px;
@@ -6275,10 +6277,29 @@ Main Header
   height: 50px;
   line-height: 50px;
 }
-.home21-jp-btn:hover{
-  background-color:#F9AB00;
-  color: #202124;
+.theme-btn:hover {
+  
+  color: #fff;
 }
+.theme-btn:hover {
+  
+  color: #fff;
+}
+
+.theme-clone:hover{
+  background: linear-gradient(135deg, #9d30b1, #8641f8);
+  
+  color: #fff;
+
+}
+.gradient-text {
+  background: linear-gradient(135deg, #9d30b1, #8641f8);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+
 .bdrs120{
   border-radius: 120px !important;
 }
@@ -9911,6 +9932,7 @@ Preloader
   margin-top: -25px;
   background-position: center center;
   background-repeat: no-repeat;
+  background-size: contain; /* Ensure the favicon retains its original size and aspect ratio */
   background-image: url(../images/favicon.png);
   content: "";
 }
@@ -9924,12 +9946,15 @@ Preloader
   text-align: center;
   margin: 0 auto;
   margin-top: 40px;
-  color: #1967D2;
   font-size: 14px;
   font-weight: 400;
   letter-spacing: 2px;
+  background: linear-gradient(135deg, #9d30b1, #8641f8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   content: "LOADING";
 }
+
 
 /*==========================
 Progress Bars
@@ -17722,6 +17747,14 @@ Product Tabs
   transition: all 0.15s ease-in-out;
 }
 
+.theme-btn.-black {
+  background-color: #000;
+  color: white;
+  padding: 15px 50px;
+  border-radius: 8px;
+  transition: all 0.15s ease-in-out;
+}
+
 .theme-btn.-blue:hover {
   background-color: rgba(25, 103, 210, 0.1);
   color: #1967D2;
@@ -22373,4 +22406,15 @@ Work Section
 
 .overflow-hidden {
   overflow: hidden;
+}
+
+
+
+@media (min-width: 1200px) { /* Targeting desktop screens */
+  .candidate .image img {
+    width: 230px;
+    height: 301px;
+    object-fit: cover; /* Ensures the image covers the area without distorting */
+    border-radius: 5%;
+  }
 }
