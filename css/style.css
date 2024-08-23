@@ -529,9 +529,9 @@ p,
 .mb25{
   margin-bottom: 25px;
 }
-.mb30{
+/* .mb30{
   margin-bottom: 30px;
-}
+} */
 .mb35{
   margin-bottom: 35px;
 }
@@ -7043,7 +7043,7 @@ Job Section
 }
 
 .job-section.alternate {
-  padding: 20px 0 70px;
+  padding: 30px;
 }
 
 .job-section .tab-buttons {
@@ -10594,6 +10594,7 @@ Section Title
   margin-top: 15px;
   font-size: 15px;
   line-height: 26px;
+  color: black;
 }
 
 .sec-title.light h2,
@@ -11525,7 +11526,7 @@ Testimonial Section Two
 ***/
 .testimonial-section-two {
   position: relative;
-  padding: 100px 0;
+  padding: 50px 0;
   min-height: 568px;
 }
 
@@ -17269,15 +17270,15 @@ Product Tabs
 }
 
 .layout-pt-60 {
-  padding-top: 60px !important;
+  padding-top: 30px !important;
 }
 
 .layout-pt-70 {
-  padding-top: 70px !important;
+  padding-top: 30px !important;
 }
 
 .layout-pt-120 {
-  padding-top: 120px !important;
+  padding-top: 50px !important;
 }
 
 .layout-pt-150 {
@@ -17293,18 +17294,20 @@ Product Tabs
 }
 
 .layout-pb-60 {
-  padding-bottom: 60px !important;
+  padding-bottom: 10px !important;
 }
 .layout-pb-70 {
-  padding-bottom: 70px !important;
+  padding-bottom: 20px !important;
 }
-
+.layout-pb-test{
+  padding-bottom: 100px !important;
+}
 .layout-pb-100 {
   padding-bottom: 100px !important;
 }
 
 .layout-pb-120 {
-  padding-bottom: 120px !important;
+  padding-bottom: 40px !important;
 }
 
 @media (max-width: 991px) {
@@ -17694,6 +17697,7 @@ Product Tabs
 
 .mt-9 {
   margin-top: 9px !important;
+  color: black;
 }
 
 .mt-50 {
@@ -17738,7 +17742,9 @@ Product Tabs
   display: flex !important;
   margin-top: 48px;
 }
-
+#browse-all{
+  color: black;
+}
 .theme-btn.-blue {
   background-color: #1967D2;
   color: white;
