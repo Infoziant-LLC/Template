@@ -6648,6 +6648,12 @@ Mobile Header
   order: 3;
   transform: scaleX(-1);
   display: none;
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Ensure the navbar stays on top of other elements */
+  background-color: #ffffff; /* Add background color if needed */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for better visibility */
+
 }
 
 .mobile-header .login-box .icon-user {
