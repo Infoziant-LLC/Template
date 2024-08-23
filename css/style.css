@@ -182,7 +182,7 @@ p,
 .job-detail.at-v5 p,
 .job-detail p.text,
 .text{
-  color: #202124 !important;
+  color: white;
   font-family: Jost;
   line-height: 28px;
 }
@@ -606,10 +606,10 @@ p,
 }
 .auto-container {
   position: static;
-  max-width: 1310px;
+  /* max-width: 800px; */
   padding: 0px 15px;
   margin: 0 auto;
-  width: 100%;
+  width: 90%;
 }
 
 .small-container {
@@ -1345,38 +1345,47 @@ Icons
 ===========================*/
 .icon-calendar {
   background-image: url(../images/icons/icon-calendar.svg);
+  filter: hue-rotate(800deg) saturate(50%) brightness(100%);
 }
 
 .icon-expiry {
   background-image: url(../images/icons/icon-expiry.svg);
+  filter: hue-rotate(800deg) saturate(50%) brightness(100%);
 }
 
 .icon-location {
   background-image: url(../images/icons/icon-location.svg);
+  filter: hue-rotate(800deg) saturate(50%) brightness(100%);
 }
 
 .icon-user-2 {
   background-image: url(../images/icons/icon-user-2.svg);
+  filter: hue-rotate(800deg) saturate(50%) brightness(100%);
 }
 
 .icon-clock {
   background-image: url(../images/icons/icon-clock.svg);
+  filter: hue-rotate(800deg) saturate(50%) brightness(100%);
 }
 
 .icon-rate {
   background-image: url(../images/icons/icon-rate.svg);
+  filter: hue-rotate(800deg) saturate(50%) brightness(100%);
 }
 
 .icon-salary {
   background-image: url(../images/icons/icon-salary.svg);
+  filter: hue-rotate(800deg) saturate(50%) brightness(100%);
 }
 
 .icon-language {
   background-image: url(../images/icons/icon-language.svg);
+  filter: hue-rotate(800deg) saturate(50%) brightness(100%);
 }
 
 .icon-degree {
   background-image: url(../images/icons/icon-degree.svg);
+  filter: hue-rotate(800deg) saturate(50%) brightness(100%);
 }
 
 img {
@@ -2004,9 +2013,9 @@ Accordian Box
   font-size: 16px;
   padding: 17px 30px;
   line-height: 30px;
-  color: #202124;
+  color: white;
   font-weight: 500;
-  background: transparent;
+  background: linear-gradient(to right, #8641f8, #9D30b1);
   cursor: pointer;
   transition: all 300ms ease;
 }
@@ -2046,6 +2055,7 @@ Accordian Box
   position: relative;
   padding: 24px 30px 26px;
   border-top: 1px solid #ECEDF2;
+  background-color: #E6E6FA;
 }
 
 .accordion-box .block .content p {
@@ -2365,9 +2375,11 @@ Buttons Styles
   position: relative;
   text-align: center;
   white-space: nowrap;
+
   color: #ffffff;
   background: linear-gradient(to right,#8641f8,#9D30b1);
   font-size: 15px;
+
   line-height: 20px;
   border-radius: 8px;
   font-weight: 400;
@@ -2388,8 +2400,8 @@ Buttons Styles
   position: relative;
   text-align: center;
   white-space: nowrap;
-  color: #202124;
-  background-color: #F9AB00;
+  color: white !important;
+  background-color: #732281;
   font-size: 15px;
   line-height: 20px;
   border-radius: 8px;
@@ -2399,7 +2411,7 @@ Buttons Styles
 
 .btn-style-two:hover {
   color: #202124;
-  background-color: #E9A000;
+  background-color: #581a63;
 }
 
 /* Btn Style Three */
@@ -2407,8 +2419,10 @@ Buttons Styles
   position: relative;
   text-align: center;
   white-space: nowrap;
+
   color: #9D30b1;
   background-color: #E2EAF8;
+
   font-size: 15px;
   line-height: 20px;
   border-radius: 8px;
@@ -2417,8 +2431,10 @@ Buttons Styles
 }
 
 .btn-style-three:hover {
+
   color: #FFFFFF;
   background: linear-gradient(to right,#8641f8,#9D30b1)
+
 }
 
 /* Btn Style Four */
@@ -2773,7 +2789,6 @@ Clients Section
 .clients-section {
   position: relative;
   padding: 60px 0 60px;
-  border-bottom: 1px solid #ECEDF2;
 }
 
 .clients-section.alternate {
@@ -3707,7 +3722,9 @@ Contact Section
   line-height: 30px;
   color: #7E7E7E !important;
 }
-
+.email{
+  color: #9D30b1;
+}
 .mm-add-listing .social-links {
   position: relative;
   display: block;
@@ -4347,7 +4364,9 @@ User Sidebar
 .user-sidebar .navigation > li.active > a,
 .user-sidebar .navigation > li:hover > a {
   color: #9D30b1;
+
   background: #E6E6FA;
+
 }
 
 .user-sidebar .navigation li.active a i,
@@ -5023,7 +5042,9 @@ Chat Widget
 }
 
 .notification-list li .colored {
+
   color:#9D30b1;
+
 }
 
 .notification-list li.success .icon {
@@ -5032,7 +5053,7 @@ Chat Widget
 }
 
 .notification-list li.success .colored {
-  color: #34a853;
+  color: #9D30b1;
 }
 
 /*** 
@@ -5162,6 +5183,8 @@ Main Footer
 .main-footer .logo {
   position: relative;
   margin-bottom: 25px;
+  width: 154px;
+  height: 50px;
 }
 
 .main-footer .logo img {
@@ -5932,6 +5955,8 @@ Main Header
   padding: 25px 0;
   margin-right: 100px;
   transition: all 300ms ease;
+  max-width: 154px;
+  height: 60px;
 }
 
 .main-header .menu-box {
@@ -5982,8 +6007,10 @@ Main Header
 
 .main-menu .navigation > li.current > a,
 .main-menu .navigation > li.current > span {
-  color: #1967D2;
+  color: #4C7FF1;
+  /* text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3); */
 }
+
 
 .main-menu .navigation > li.dropdown > span {
   padding-right: 18px;
@@ -6177,7 +6204,7 @@ Main Header
 .main-header .upload-cv {
   position: relative;
   font-size: 15px;
-  color: #1967D2;
+  color: #9D30b1;
   font-weight: 400;
   white-space: nowrap;
 }
@@ -6263,10 +6290,29 @@ Main Header
   height: 50px;
   line-height: 50px;
 }
-.home21-jp-btn:hover{
-  background-color:#F9AB00;
-  color: #202124;
+.theme-btn:hover {
+  
+  color: #fff;
 }
+.theme-btn:hover {
+  
+  color: #fff;
+}
+
+.theme-clone:hover{
+  background: linear-gradient(135deg, #9d30b1, #8641f8);
+  
+  color: #fff;
+
+}
+.gradient-text {
+  background: linear-gradient(135deg, #9d30b1, #8641f8);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+
 .bdrs120{
   border-radius: 120px !important;
 }
@@ -7621,7 +7667,7 @@ Job Section Four
 }
 
 .job-block-four h4 a:hover {
-  color: #1967D2;
+  color: #9D30b1;
 }
 
 .job-block-four .location {
@@ -7951,12 +7997,14 @@ Job Detail Section
 
 .job-detail-section .upper-box {
   position: relative;
+
   /* background-image: url(../images/icons/bg-4.png); */
   background:   #E6E6FA;
+
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-size: cover;
+  background-size: cover; */
   padding: 80px 0 70px;
 }
 .job-detail-section.at-jsv7 .upper-box,
@@ -7966,7 +8014,8 @@ Job Detail Section
 }
 
 .job-detail-section.style-three .upper-box {
-  background-image: url(../images/icons/bg-5.png);
+  /* background-image: url(../images/icons/bg-5.png); */
+  background-color: #E6E6FA;
 }
 
 .job-detail-section .job-block-outer {
@@ -8140,7 +8189,7 @@ Job Detail Section
   cursor: pointer;
   color: #9D30b1;
   border-radius: 7px;
-  background: rgba(25, 103, 210, 0.07);
+  background-color: #E6E6FA;
   transition: all 300ms ease;
   margin-left: 20px;
 }
@@ -9666,11 +9715,14 @@ Page Title
   top: 0;
   height: 100%;
   width: 100%;
+
   background-color:#E6E6FA;
   background-repeat: no-repeat;
+
   background-position: center;
   background-size: cover;
   content: "";
+  background-color: #E6E6FA;
 }
 
 .page-title h1 {
@@ -9898,6 +9950,7 @@ Preloader
   margin-top: -25px;
   background-position: center center;
   background-repeat: no-repeat;
+  background-size: contain; /* Ensure the favicon retains its original size and aspect ratio */
   background-image: url(../images/favicon.png);
   content: "";
 }
@@ -9911,12 +9964,15 @@ Preloader
   text-align: center;
   margin: 0 auto;
   margin-top: 40px;
-  color: #1967D2;
   font-size: 14px;
   font-weight: 400;
   letter-spacing: 2px;
+  background: linear-gradient(135deg, #9d30b1, #8641f8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   content: "LOADING";
 }
+
 
 /*==========================
 Progress Bars
@@ -10260,9 +10316,11 @@ Registeration Banners
   font-weight: 400;
   text-decoration: underline;
 }
-
+.colored{
+  text-decoration: none !important;
+}
 .manage-job-table a {
-  color: inherit;
+  color: #9D30b1;
 }
 
 .manage-job-table .status {
@@ -10481,11 +10539,11 @@ Registeration Banners
   height: 30px;
   line-height: 30px;
   text-align: center;
-  background: rgba(25, 103, 210, 0.07);
+  background-color: #E6E6FA;
   border-radius: 8px;
   margin-right: 10px;
   min-width: auto;
-  color: #1967d2;
+  color: #9D30b1;
 }
 
 .resume-outer.theme-blue .resume-block .edit-box .year,
@@ -11569,7 +11627,7 @@ Testimonial Section Two
   position: relative;
   font-size: 18px;
   line-height: 24px;
-  color: #1967D2;
+  color: #9e32b1;
   font-weight: 400;
   margin-bottom: 10px;
 }
@@ -12045,7 +12103,7 @@ Radio bOX
   border-radius: 8px;
   margin-right: 10px;
   min-width: auto;
-  color: #1967d2;
+  color: #9D30b1;
 }
 
 /*** 
@@ -12185,6 +12243,12 @@ Candidates Section
 ====================================================================
 
 ***/
+.user-dashboard h2{
+  text-align: center;
+}
+.user-dashboard{
+  padding-top: 4%;
+}
 .candidates-section {
   position: relative;
   padding: 100px 0;
@@ -12532,7 +12596,9 @@ Candidates Section Two
 .option-list li a {
   position: relative;
   display: block;
+
   background: #E6E6FA;
+
   border-radius: 8px;
   height: 30px;
   width: 30px;
@@ -12588,8 +12654,10 @@ Candidates Section Two
 
 .option-list li button:hover,
 .option-list li a:hover {
+
   background: #9D30b1;
   color: #ffffff;
+
 }
 
 .option-box .delete-btn {
@@ -12600,7 +12668,6 @@ Candidates Section Two
   font-weight: 400;
   margin-left: 40px;
 }
-
 .resume-action .theme-btn:after {
   display: none;
 }
@@ -13284,6 +13351,7 @@ Call To Action Two
   background-size: cover;
   padding: 170px 0 160px;
   text-align: center;
+  background: linear-gradient(to right, #8641f8, #9D30b1);
 }
 
 .call-to-action-two .sec-title {
@@ -13429,7 +13497,20 @@ Faqs Section
   position: relative;
   padding: 100px 0;
 }
-
+.auto-container-faq {
+  position: relative;
+ margin-left: auto;
+ margin-right: auto;
+  width: 65vw;
+}
+@media(max-width:320px){
+.auto-container-faq{
+  margin-left: 15%;
+}
+.accordion-box .block .acc-btn{
+  padding: 5px 10px;
+}
+}
 .faqs-section h3 {
   font-weight: 500;
   font-size: 26px;
@@ -14020,7 +14101,9 @@ Ls Outer
 }
 
 .top-filters .chosen-container-single .chosen-single div:after {
+
   color: rgba(115, 79, 149, 255);
+
   content: "\f17c";
   font-family: 'Flaticon';
   font-size: 10px;
@@ -14284,7 +14367,7 @@ Ls Section / style Three
 
 ***/
 .ls-section.style-three {
-  background: #F0F5F7;
+  background: #E6E6FA;
 }
 
 .ls-section.style-three .ls-switcher .sort-by .chosen-single {
@@ -17684,6 +17767,14 @@ Product Tabs
 
 .theme-btn.-blue {
   background-color: #1967D2;
+  color: white;
+  padding: 15px 50px;
+  border-radius: 8px;
+  transition: all 0.15s ease-in-out;
+}
+
+.theme-btn.-black {
+  background-color: #000;
   color: white;
   padding: 15px 50px;
   border-radius: 8px;
@@ -21898,7 +21989,7 @@ Work Section
 }
 
 .work-section.style-two {
-  background: #F5F7FC;
+  background-color: #E6E6FA;
 }
 
 .work-block {
@@ -22192,6 +22283,9 @@ Work Section
 .testimonial-style2 .nav-link.active {
   background-color: transparent;
 }
+#index21-test-img{
+  border-radius: 50%;
+}
 .testimonial-style2 .nav-link.active img {
   border-radius: 50%;
   outline: 2px solid #202124;
@@ -22338,4 +22432,15 @@ Work Section
 
 .overflow-hidden {
   overflow: hidden;
+}
+
+
+
+@media (min-width: 1200px) { /* Targeting desktop screens */
+  .candidate .image img {
+    width: 230px;
+    height: 301px;
+    object-fit: cover; /* Ensures the image covers the area without distorting */
+    border-radius: 5%;
+  }
 }

@@ -5811,7 +5811,8 @@ readers do not read off random characters that represent icons */
   content: "\f1f6"; }
 
 .la.la-trash:before {
-  content: "\f2ed"; }
+  content: "\f2ed";
+}
 
 .la.la-copyright {
   font-family: 'Line Awesome Free';

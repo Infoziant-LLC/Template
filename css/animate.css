@@ -122,6 +122,7 @@ Copyright (c) 2015 Daniel Eden
 .flash {
   -webkit-animation-name: flash;
   animation-name: flash;
+  z-index: 3;
 }
 
 /* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
