@@ -3,15 +3,15 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Superio | Just another HTML Template | Change Password</title>
+  <title>Superio | Just another HTML Template | FAQ's</title>
 
   <!-- Stylesheets -->
-  <link href="css/bootstrap.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
-  <link href="css/responsive.css" rel="stylesheet">
+  <link href="../static/css/bootstrap.css" rel="stylesheet">
+  <link href="../static/css/style.css" rel="stylesheet">
+  <link href="../static/css/responsive.css" rel="stylesheet">
 
-  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
-  <link rel="icon" href="images/favicon.png" type="image/x-icon">
+  <link rel="shortcut icon" href="../static/images/favicon.png" type="image/x-icon">
+  <link rel="icon" href="../static/images/favicon.png" type="image/x-icon">
 
   <!-- Responsive -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -22,7 +22,7 @@
 
 <body>
 
-  <div class="page-wrapper dashboard ">
+  <div class="page-wrapper">
 
     <!-- Preloader -->
     <div class="preloader"></div>
@@ -38,7 +38,7 @@
           <!--Nav Outer -->
           <div class="nav-outer">
             <div class="logo-box">
-              <div class="logo"><a href="index.html"><img src="images/enbott-logo.png" alt="" title=""></a></div>
+              <div class="logo"><a href="index.html"><img src="../static/images/enbott-logo.png" alt="" title=""></a></div>
             </div>
 
             <nav class="nav main-menu">
@@ -198,8 +198,7 @@
                     <li><a href="candidate-dashboard.html">Candidates Dashboard</a></li>
                   </ul>
                 </li>
-                <li><a href="sme-dashboard.html">SME</a></li>
-                <!-- <li class="dropdown">
+                <li class="dropdown">
                   <span>Blog</span>
                   <ul>
                     <li><a href="blog-list-v1.html">Blog LIst v1</a></li>
@@ -207,12 +206,12 @@
                     <li><a href="blog-list-v3.html">Blog LIst v3</a></li>
                     <li><a href="blog-single.html">Blog Single</a></li>
                   </ul>
-                </li> -->
+                </li>
 
-                <li class="dropdown">
+                <li class="current dropdown">
                   <span>Pages</span>
                   <ul>
-                    <li class="dropdown">
+                    <li class="current dropdown">
                       <span>Shop</span>
                       <ul>
                         <li><a href="shop.html">Shop List</a></li>
@@ -257,37 +256,10 @@
           </div>
 
           <div class="outer-box">
-
-            <button class="menu-btn">
-              <span class="count">1</span>
-              <span class="icon la la-heart-o"></span>
-            </button>
-
-            <button class="menu-btn">
-              <span class="icon la la-bell"></span>
-            </button>
-
-            <!-- Dashboard Option -->
-            <div class="dropdown dashboard-option">
-              <a class="dropdown-toggle" role="button" data-toggle="dropdown" aria-expanded="false">
-                <img src="images/resource/company-6.png" alt="avatar" class="thumb">
-                <span class="name">My Account</span>
-              </a>
-              <ul class="dropdown-menu">
-                <li><a href="dashboard.html"> <i class="la la-home"></i> Dashboard</a></li>
-                <li><a href="dashboard-company-profile.html"><i class="la la-user-tie"></i>Company Profile</a></li>
-                <li><a href="dashboard-post-job.html"><i class="la la-paper-plane"></i>Post a New Job</a></li>
-                <li><a href="dashboard-manage-job.html"><i class="la la-briefcase"></i> Manage Jobs </a></li>
-                <li><a href="dashboard-applicants.html"><i class="la la-file-invoice"></i> All Applicants</a></li>
-                <li><a href="dashboard-resumes.html"><i class="la la-bookmark-o"></i>Shortlisted Resumes</a></li>
-                <li><a href="dashboard-packages.html"><i class="la la-box"></i>Packages</a></li>
-                <li><a href="dashboard-messages.html"><i class="fa-light fa-network-wired"></i>SME Connect</a></li>
-                <li><a href="dashboard-resume-alerts.html"><i class="la la-bell"></i>Resume Alerts</a></li>
-                <li class="active"><a href="dashboard-change-password.html"><i class="la la-lock"></i>Change Password</a></li>
-                <li><a href="dashboard-company-profile.html"><i class="la la-user-alt"></i>View Profile</a></li>
-                <li><a href="index.html"><i class="la la-sign-out"></i>Logout</a></li>
-                <li><a href="index.html"><i class="la la-trash"></i>Delete Profile</a></li>
-              </ul>
+            <!-- Login/Register -->
+            <div class="btn-box">
+              <a href="login-popup.html" class="theme-btn btn-style-three call-modal">Login / Register</a>
+              <a href="#" class="theme-btn btn-style-one"><span class="btn-title">Job Post</span></a>
             </div>
           </div>
         </div>
@@ -295,7 +267,7 @@
 
       <!-- Mobile Header -->
       <div class="mobile-header">
-        <div class="logo"><a href="index.html"><img src="images/logo.svg" alt="" title=""></a></div>
+        <div class="logo"><a href="index.html"><img src="../static/images/enbott-logo.png" alt="" title=""></a></div>
 
         <!--Nav Box-->
         <div class="nav-outer clearfix">
@@ -306,11 +278,9 @@
               <a href="login-popup.html" class="call-modal"><span class="icon-user"></span></a>
             </div>
 
-            <button id="toggle-user-sidebar"><img src="images/resource/company-6.png" alt="avatar" class="thumb"></button>
             <a href="#nav-mobile" class="mobile-nav-toggler navbar-trigger"><span class="flaticon-menu-1"></span></a>
           </div>
         </div>
-
       </div>
 
       <!-- Mobile Nav -->
@@ -318,102 +288,244 @@
     </header>
     <!--End Main Header -->
 
-    <!-- Sidebar Backdrop -->
-    <div class="sidebar-backdrop"></div>
-
-    <!-- User Sidebar -->
-    <div class="user-sidebar">
-
-      <div class="sidebar-inner">
-        <ul class="navigation">
-          <li><a href="dashboard.html"> <i class="la la-home"></i> Dashboard</a></li>
-          <li><a href="dashboard-company-profile.html"><i class="la la-user-tie"></i>Company Profile</a></li>
-          <li><a href="dashboard-post-job.html"><i class="la la-paper-plane"></i>Post a New Job</a></li>
-          <li><a href="dashboard-manage-job.html"><i class="la la-briefcase"></i> Manage Jobs </a></li>
-          <li><a href="dashboard-applicants.html"><i class="la la-file-invoice"></i> All Applicants</a></li>
-          <li><a href="dashboard-resumes.html"><i class="la la-bookmark-o"></i>Shortlisted Resumes</a></li>
-          <li><a href="dashboard-packages.html"><i class="la la-box"></i>Packages</a></li>
-          <li><a href="dashboard-messages.html"><i class="fa-light fa-network-wired"></i>SME Connect</a></li>
-          <li><a href="dashboard-resume-alerts.html"><i class="la la-bell"></i>Resume Alerts</a></li>
-          <li class="active"><a href="dashboard-change-password.html"><i class="la la-lock"></i>Change Password</a></li>
-          <li><a href="dashboard-company-profile.html"><i class="la la-user-alt"></i>View Profile</a></li>
-          <li><a href="index.html"><i class="la la-sign-out"></i>Logout</a></li>
-          <li><a href="index.html"><i class="la la-trash"></i>Delete Profile</a></li>
-        </ul>
-      </div>
-    </div>
-    <!-- End User Sidebar -->
-
-    <!-- Dashboard -->
-    <section class="user-dashboard">
-      <div class="dashboard-outer">
-        <div class="upper-title-box">
-          <h3>Change Password</h3>
-          <div class="text"></div>
+    <!-- Faqs Section -->
+    <section class="faqs-section">
+      <div class="auto-container-faq">
+        <div class="sec-title text-center">
+          <h2>Frequently Asked Questions</h2>
+          <div class="text">Home / Faq</div>
         </div>
 
-        <!-- Ls widget -->
-        <div class="ls-widget">
-          <div class="widget-title">
-            <h4>Change Password</h4>
-          </div>
-
-          <div class="widget-content">
-            <form class="default-form">
-              <div class="row">
-                <!-- Input -->
-                <div class="form-group col-lg-7 col-md-12">
-                  <label>Old Password </label>
-                  <input type="password" name="name" placeholder="">
-                </div>
-
-                <!-- Input -->
-                <div class="form-group col-lg-7 col-md-12">
-                  <label>New Password</label>
-                  <input type="password" name="name" placeholder="">
-                </div>
-
-                <!-- Input -->
-                <div class="form-group col-lg-7 col-md-12">
-                  <label>Confirm Password</label>
-                  <input type="password" name="name" placeholder="">
-                </div>
-
-                <!-- Input -->
-                <div class="form-group col-lg-6 col-md-12">
-                  <button class="theme-btn btn-style-one">Update</button>
-                </div>
+        <!-- <h3>Payments</h3> -->
+        <!--Accordian Box-->
+        <ul class="accordion-box">
+          <!--Block-->
+          <li class="accordion block active-block">
+            <div class="acc-btn active">What do we do? <span class="icon flaticon-add"></span></div>
+            <div class="acc-content current">
+              <div class="content">
+                <p>Enbott is a comprehensive career development platform that empowers individuals to achieve their full potential. We offer a range of services including AI-powered job matching, personalized learning paths, expert mentorship, and skill development assessments. Whether you're a job seeker looking to advance your career, a recruiter seeking top talent, an SME sharing expertise, or an institution focused on student success, Enbott has the tools and resources to help you reach your goals. </p>
               </div>
-            </form>
-          </div>
-        </div>
+            </div>
+          </li>
+
+          <!--Block-->
+          <li class="accordion block">
+            <div class="acc-btn"> What courses are covered in Enbott?  <span class="icon flaticon-add"></span></div>
+            <div class="acc-content">
+              <div class="content">
+                <p>Enbott offers a diverse range of courses covering various in-demand skills and industries. Our courses are curated based on industry trends and job market demands. You can find courses in areas such as programming, data science, digital marketing, design, finance, and more. We partner with industry-leading experts and institutions to deliver high-quality and up-to-date content. </p>
+              </div>
+            </div>
+          </li>
+
+          <!--Block-->
+          <li class="accordion block">
+            <div class="acc-btn">How does the Enbott courses help job seekers and recruiters on finding the best fit?<span class="icon flaticon-add"></span></div>
+            <div class="acc-content">
+              <div class="content">
+                <p>The courses are designed to bridge the gap between academia and the workplace. By acquiring in-demand skills through our platform, job seekers can enhance their resumes, stand out to recruiters, and increase their employability. For recruiters, these courses provide a pool of skilled candidates with certified competencies, making the hiring process more efficient and effective. </p>
+              </div>
+            </div>
+          </li>
+
+          <!--Block-->
+          <li class="accordion block">
+            <div class="acc-btn">How SME support can help the students/job seekers? <span class="icon flaticon-add"></span></div>
+            <div class="acc-content">
+              <div class="content">
+                <p>Our SME network offers invaluable guidance and mentorship to students and job seekers. SMEs provide personalized career advice, share industry insights, and offer support on specific projects or challenges. By connecting with SMEs, users can gain a deeper understanding of their desired industry and accelerate their career progression. </p>
+              </div>
+            </div>
+          </li>
+        </ul>
+
+        <!-- <h3>Suggestions</h3>
+        
+        <ul class="accordion-box">
+          <li class="accordion block active-block">
+            <div class="acc-btn active">Why won't my payment go through? <span class="icon flaticon-add"></span></div>
+            <div class="acc-content current">
+              <div class="content">
+                <p>Pharetra nulla ullamcorper sit lectus. Fermentum mauris pellentesque nec nibh sed et, vel diam, massa. Placerat quis vel fames interdum urna lobortis sagittis sed pretium. Aliquam eget posuere sit enim elementum nulla vulputate magna. Morbi sed arcu proin quis tortor non risus.</p>
+                <p>Elementum lectus a porta commodo suspendisse arcu, aliquam lectus faucibus.</p>
+              </div>
+            </div>
+          </li>
+
+          
+          <li class="accordion block">
+            <div class="acc-btn"> How do I get a refund? <span class="icon flaticon-add"></span></div>
+            <div class="acc-content">
+              <div class="content">
+                <p>Pharetra nulla ullamcorper sit lectus. Fermentum mauris pellentesque nec nibh sed et, vel diam, massa. Placerat quis vel fames interdum urna lobortis sagittis sed pretium. Aliquam eget posuere sit enim elementum nulla vulputate magna. Morbi sed arcu proin quis tortor non risus.</p>
+                <p>Elementum lectus a porta commodo suspendisse arcu, aliquam lectus faucibus.</p>
+              </div>
+            </div>
+          </li>
+
+          
+          <li class="accordion block">
+            <div class="acc-btn">How do I redeem a coupon? <span class="icon flaticon-add"></span></div>
+            <div class="acc-content">
+              <div class="content">
+                <p>Pharetra nulla ullamcorper sit lectus. Fermentum mauris pellentesque nec nibh sed et, vel diam, massa. Placerat quis vel fames interdum urna lobortis sagittis sed pretium. Aliquam eget posuere sit enim elementum nulla vulputate magna. Morbi sed arcu proin quis tortor non risus.</p>
+                <p>Elementum lectus a porta commodo suspendisse arcu, aliquam lectus faucibus.</p>
+              </div>
+            </div>
+          </li>
+
+          
+          <li class="accordion block">
+            <div class="acc-btn">Changing account name <span class="icon flaticon-add"></span></div>
+            <div class="acc-content">
+              <div class="content">
+                <p>Pharetra nulla ullamcorper sit lectus. Fermentum mauris pellentesque nec nibh sed et, vel diam, massa. Placerat quis vel fames interdum urna lobortis sagittis sed pretium. Aliquam eget posuere sit enim elementum nulla vulputate magna. Morbi sed arcu proin quis tortor non risus.</p>
+                <p>Elementum lectus a porta commodo suspendisse arcu, aliquam lectus faucibus.</p>
+              </div>
+            </div>
+          </li>
+        </ul> -->
       </div>
     </section>
-    <!-- End Dashboard -->
+    <!-- End Faqs Section -->
 
-    <!-- Copyright -->
-    <div class="copyright-text">
-      <p>© 2021 Superio. All Right Reserved.</p>
-    </div>
+    <!-- Main Footer -->
+    <footer class="main-footer alternate5">
+      <div class="auto-container">
+        <!--Widgets Section-->
+        <div class="widgets-section">
+          <div class="row">
+            <div class="big-column col-xl-4 col-lg-3 col-md-12">
+              <div class="footer-column about-widget">
+                <div class="logo"><a href="#"><img src="../static/images/enbott-logo.png" alt=""></a></div>
+                <p class="phone-num"><span>Call us </span>
+                  <a href="thebeehost@support.com">1 (314) 732 0300</a><br/>
+                  <a href="thebeehost@support.com">+91 96000 85988</a>
+                </p>
+                <p class="address">
+                  Akshaya HQ, Rajiv Gandhi Salai, Kazhipattur,<br />
+                  Tamil Nadu, Chennai - 603103, India. <br />
+                  <p class="address">
+                    1401, 21st ST STE 6310,<br/>
+                    Sacramento, CA 95811, USA.
+                  </p>
+                  <a
+                    href="mailto:support@superio.com"
+                    class="email"
+                    >support@infoziant.com</a
+                  >
+              </div>
+            </div>
+
+            <div class="big-column col-xl-8 col-lg-9 col-md-12">
+              <div class="row">
+                <div class="footer-column col-lg-3 col-md-6 col-sm-12">
+                  <div class="footer-widget links-widget">
+                    <h4 class="widget-title">For Candidates</h4>
+                    <div class="widget-content">
+                      <ul class="list">
+                        <li><a href="#">Browse Jobs</a></li>
+                        <li><a href="#">Browse Categories</a></li>
+                        <li><a href="#">Candidate Dashboard</a></li>
+                        <li><a href="#">Job Alerts</a></li>
+                        <li><a href="#">My Bookmarks</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="footer-column col-lg-3 col-md-6 col-sm-12">
+                  <div class="footer-widget links-widget">
+                    <h4 class="widget-title">For Employers</h4>
+                    <div class="widget-content">
+                      <ul class="list">
+                        <li><a href="#">Browse Candidates</a></li>
+                        <li><a href="#">Employer Dashboard</a></li>
+                        <li><a href="#">Add Job</a></li>
+                        <li><a href="#">Job Packages</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="footer-column col-lg-3 col-md-6 col-sm-12">
+                  <div class="footer-widget links-widget">
+                    <h4 class="widget-title">About Us</h4>
+                    <div class="widget-content">
+                      <ul class="list">
+                        <li><a href="#">Job Page</a></li>
+                        <li><a href="#">Job Page Alternative</a></li>
+                        <li><a href="#">Resume Page</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="footer-column col-lg-3 col-md-6 col-sm-12">
+                  <div class="footer-widget links-widget">
+                    <h4 class="widget-title">Helpful Resources</h4>
+                    <div class="widget-content">
+                      <ul class="list">
+                        <li><a href="#">Site Map</a></li>
+                        <li><a href="#">Terms of Use</a></li>
+                        <li><a href="#">Privacy Center</a></li>
+                        <li><a href="#">Security Center</a></li>
+                        <li><a href="#">Accessibility Center</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!--Bottom-->
+      <div class="footer-bottom">
+        <div class="auto-container">
+          <div class="outer-box">
+            <div class="copyright-text">© 2021 <a href="#">Superio</a>. All Right Reserved.</div>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scroll To Top -->
+      <div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-angle-up"></span></div>
+    </footer>
+    <!-- End Main Footer -->
+
 
   </div><!-- End Page Wrapper -->
 
 
-  <script src="js/jquery.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/chosen.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/jquery-ui.min.js"></script>
-  <script src="js/jquery.fancybox.js"></script>
-  <script src="js/jquery.modal.min.js"></script>
-  <script src="js/mmenu.polyfills.js"></script>
-  <script src="js/mmenu.js"></script>
-  <script src="js/appear.js"></script>
-  <script src="js/ScrollMagic.min.js"></script>
-  <script src="js/rellax.min.js"></script>
-  <script src="js/owl.js"></script>
-  <script src="js/wow.js"></script>
-  <script src="js/script.js"></script>
+  <script src="../static/js/jquery.js"></script>
+  <script src="../static/js/popper.min.js"></script>
+  <script src="../static/js/chosen.min.js"></script>
+  <script src="../static/js/bootstrap.min.js"></script>
+  <script src="../static/js/jquery-ui.min.js"></script>
+  <script src="../static/js/jquery.fancybox.js"></script>
+  <script src="../static/js/jquery.modal.min.js"></script>
+  <script src="../static/js/mmenu.polyfills.js"></script>
+  <script src="../static/js/mmenu.js"></script>
+  <script src="../static/js/appear.js"></script>
+  <script src="../static/js/ScrollMagic.min.js"></script>
+  <script src="../static/js/rellax.min.js"></script>
+  <script src="../static/js/owl.js"></script>
+  <script src="../static/js/wow.js"></script>
+  <script src="../static/js/script.js"></script>
 
 </body>
 
