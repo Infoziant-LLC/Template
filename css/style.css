@@ -12741,6 +12741,16 @@ margin-left: 20px;
 }
 
 /* Media Query for Small Screens */
+/* @media (min-width: 599px) {
+  .close {
+    font-size: 20px; 
+    color: red;
+font-weight: bolder;
+float: right;
+cursor: pointer;
+  }
+} */
+
 @media (max-width: 600px) {
   .delete_cont {
     width: 80%;
@@ -12750,6 +12760,10 @@ margin-left: 20px;
 
   .close {
     font-size: 20px; 
+    color: red;
+font-weight: bolder;
+float: right;
+cursor: pointer;
   }
 
   .cancel, .delete {
