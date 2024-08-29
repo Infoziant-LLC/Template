@@ -12743,25 +12743,25 @@ margin-left: 20px;
 /* Media Query for Small Screens */
 @media (max-width: 600px) {
   .delete_cont {
-    width: 80%; /* Make the modal wider on small screens */
-    max-width: 300px; /* Ensure it doesn't exceed 300px */
-    margin: 40% auto; /* Center it vertically with more margin */
+    width: 80%;
+    max-width: 300px; 
+    margin: 40% auto; 
   }
 
   .close {
-    font-size: 20px; /* Smaller close button font size */
+    font-size: 20px; 
   }
 
   .cancel, .delete {
-    width: 25%; /* Wider buttons on small screens */
-    height: 4vh; /* Slightly reduced height */
-    font-size: 14px; /* Smaller font size */
-    margin: 0 10px; /* Reduced margin between buttons */
+    width: 25%; 
+    height: 4vh; 
+    font-size: 14px; 
+    margin: 0 10px; 
   }
 
   .delete_cont h5 {
-    font-size: 16px; /* Smaller heading font size */
-    margin-bottom: 20px; /* Adjusted margin */
+    font-size: 16px; 
+    margin-bottom: 20px; 
   }
   .delete_actions
   {
