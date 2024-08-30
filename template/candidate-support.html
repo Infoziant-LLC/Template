@@ -378,7 +378,7 @@
                 <span class="icon la la-heart-o"></span>
               </button>
 
-              <button class="menu-btn">
+              <button class="menu-btn" onclick="notifyToggleSupport()">
                 <span class="icon la la-bell"></span>
               </button>
 
@@ -519,6 +519,26 @@
         <!-- Mobile Nav -->
         <div id="nav-mobile"></div>
       </header>
+      <!-- notification box -->
+    <div class="notify">
+      <div class="col-lg-5">
+          <div class="notification-widget ls-widget">
+              <div class="widget-title">
+                <h4>Notifications</h4>
+              </div>
+              <div class="widget-content">
+                <ul class="notification-list">
+                  <li><span class="icon flaticon-briefcase"></span> <strong>Wade Warren</strong> applied for a job <span class="colored">Web Developer</span></li>
+                  <li><span class="icon flaticon-briefcase"></span> <strong>Henry Wilson</strong> applied for a job <span class="colored">Senior Product Designer</span></li>
+                  <li class="success"><span class="icon flaticon-briefcase"></span> <strong>Raul Costa</strong> applied for a job <span class="colored">Product Manager, Risk</span></li>
+                  <li><span class="icon flaticon-briefcase"></span> <strong>Jack Milk</strong> applied for a job <span class="colored">Technical Architect</span></li>
+                  <li class="success"><span class="icon flaticon-briefcase"></span> <strong>Michel Arian</strong> applied for a job <span class="colored">Software Engineer</span></li>
+                  <li><span class="icon flaticon-briefcase"></span> <strong>Ali Tufan</strong> applied for a job <span class="colored">UI Designer</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+    </div>
       <!--End Main Header -->
 
       <!-- Sidebar Backdrop -->
@@ -687,6 +707,7 @@
       defer
     ></script> -->
 
+    <script src="../static/js/notification.js"></script>
     <script src="../static/js/jquery.js"></script>
     <script src="../static/js/popper.min.js"></script>
     <script src="../static/js/chosen.min.js"></script>

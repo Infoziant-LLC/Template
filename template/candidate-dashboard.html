@@ -221,7 +221,7 @@
               <span class="icon la la-heart-o"></span>
             </button>
 
-            <button class="menu-btn">
+            <button class="menu-btn" onclick="notifyToggle()">
               <span class="icon la la-bell"></span>
             </button>
 
@@ -276,6 +276,26 @@
       <!-- Mobile Nav -->
       <div id="nav-mobile"></div>
     </header>
+    <!-- notification box -->
+    <div class="notify">
+      <div class="col-lg-5">
+          <div class="notification-widget ls-widget">
+              <div class="widget-title">
+                <h4>Notifications</h4>
+              </div>
+              <div class="widget-content">
+                <ul class="notification-list">
+                  <li><span class="icon flaticon-briefcase"></span> <strong>Wade Warren</strong> applied for a job <span class="colored">Web Developer</span></li>
+                  <li><span class="icon flaticon-briefcase"></span> <strong>Henry Wilson</strong> applied for a job <span class="colored">Senior Product Designer</span></li>
+                  <li class="success"><span class="icon flaticon-briefcase"></span> <strong>Raul Costa</strong> applied for a job <span class="colored">Product Manager, Risk</span></li>
+                  <li><span class="icon flaticon-briefcase"></span> <strong>Jack Milk</strong> applied for a job <span class="colored">Technical Architect</span></li>
+                  <li class="success"><span class="icon flaticon-briefcase"></span> <strong>Michel Arian</strong> applied for a job <span class="colored">Software Engineer</span></li>
+                  <li><span class="icon flaticon-briefcase"></span> <strong>Ali Tufan</strong> applied for a job <span class="colored">UI Designer</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+    </div>
     <!--End Main Header -->
 
     <!-- Sidebar Backdrop -->
@@ -383,7 +403,7 @@
                       <li class="job-logo"><img src="../static/images/clients/1-10.png"/></li>
                       <li><p>2d ago</p></li>
                      </ul>
-                     <h6>Python Developer</h6>
+                     <a href="job-single.html"><h6>Python Developer</h6></a>
                      <ul class="rcmd-ul-1">
                       <li>Dymax</li>
                       <li><span>&#11088;</span> 4.5</li>
@@ -397,7 +417,7 @@
                         <li class="job-logo"><img src="../static/images/clients/1-1.png"/></li>
                         <li><p>2d ago</p></li>
                        </ul>
-                       <h6>Software Developer</h6>
+                       <a href="job-single.html"><h6>Software Developer</h6></a>
                        <ul class="rcmd-ul-1">
                         <li>Virtusa</li>
                         <li><span>&#11088;</span> 4.5</li>
@@ -411,7 +431,7 @@
                         <li class="job-logo"><img src="../static/images/clients/1-2.png"/></li>
                         <li><p>2d ago</p></li>
                        </ul>
-                       <h6>Sales Executive</h6>
+                       <a href="job-single.html"><h6>Sales Executive</h6></a>
                        <ul class="rcmd-ul-1">
                         <li>Aspire</li>
                         <li><span>&#11088;</span> 4.5</li>
@@ -425,7 +445,7 @@
                         <li class="job-logo"><img src="../static/images/clients/1-3.png"/></li>
                         <li><p>2d ago</p></li>
                        </ul>
-                       <h6>React developer</h6>
+                       <a href="job-single.html"><h6>React developer</h6></a>
                        <ul class="rcmd-ul-1">
                         <li>Keenan</li>
                         <li><span>&#11088;</span> 4.5</li>
@@ -439,7 +459,7 @@
                         <li class="job-logo"><img src="../static/images/clients/1-4.png"/></li>
                         <li><p>2d ago</p></li>
                        </ul>
-                       <h6>Software Engineer</h6>
+                       <a href="job-single.html"><h6>Software Engineer</h6></a>
                        <ul class="rcmd-ul-1">
                         <li>Amazon</li>
                         <li><span>&#11088;</span> 4.5</li>
@@ -453,7 +473,7 @@
                         <li class="job-logo"><img src="../static/images/clients/1-5.png"/></li>
                         <li><p>2d ago</p></li>
                        </ul>
-                       <h6>Python Developer</h6>
+                       <a href="job-single.html"><h6>Python Developer</h6></a>
                        <ul class="rcmd-ul-1">
                         <li>Swipelah</li>
                         <li><span>&#11088;</span> 4.5</li>
@@ -467,7 +487,7 @@
                         <li class="job-logo"><img src="../static/images/clients/1-6.png"/></li>
                         <li><p>2d ago</p></li>
                        </ul>
-                       <h6>Software Developer</h6>
+                       <a href="job-single.html"><h6>Software Developer</h6></a>
                        <ul class="rcmd-ul-1">
                         <li>Oro</li>
                         <li><span>&#11088;</span> 4.5</li>
@@ -481,7 +501,7 @@
                         <li class="job-logo"><img src="../static/images/clients/1-7.png"/></li>
                         <li><p>2d ago</p></li>
                        </ul>
-                       <h6>Backend Developer</h6>
+                       <a href="job-single.html"><h6>Backend Developer</h6></a>
                        <ul class="rcmd-ul-1">
                         <li>Techmango</li>
                         <li><span>&#11088;</span> 4.5</li>
@@ -495,7 +515,7 @@
                         <li class="job-logo"><img src="../static/images/clients/1-8.png"/></li>
                         <li><p>2d ago</p></li>
                        </ul>
-                       <h6>Android Developer</h6>
+                       <a href="job-single.html"><h6>Android Developer</h6></a>
                        <ul class="rcmd-ul-1">
                         <li>Aptivo</li>
                         <li><span>&#11088;</span> 4.5</li>
@@ -563,26 +583,6 @@
         </div>
 
         <div class="row">
-
-          <div class="col-lg-5">
-            <!-- Notification Widget -->
-            <div class="notification-widget ls-widget">
-              <div class="widget-title">
-                <h4>Notifications</h4>
-              </div>
-              <div class="widget-content">
-                <ul class="notification-list">
-                  <li><span class="icon flaticon-briefcase"></span> <strong>Wade Warren</strong> applied for a job <span class="colored">Web Developer</span></li>
-                  <li><span class="icon flaticon-briefcase"></span> <strong>Henry Wilson</strong> applied for a job <span class="colored">Senior Product Designer</span></li>
-                  <li class="success"><span class="icon flaticon-briefcase"></span> <strong>Raul Costa</strong> applied for a job <span class="colored">Product Manager, Risk</span></li>
-                  <li><span class="icon flaticon-briefcase"></span> <strong>Jack Milk</strong> applied for a job <span class="colored">Technical Architect</span></li>
-                  <li class="success"><span class="icon flaticon-briefcase"></span> <strong>Michel Arian</strong> applied for a job <span class="colored">Software Engineer</span></li>
-                  <li><span class="icon flaticon-briefcase"></span> <strong>Ali Tufan</strong> applied for a job <span class="colored">UI Designer</span></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
 
           <div class="col-lg-12">
             <!-- applicants Widget -->
@@ -739,7 +739,7 @@
 
   </div><!-- End Page Wrapper -->
 
-  
+  <script src="../static/js/notification.js"></script>
   <script src="../static/js/jquery.js"></script>
   <script src="../static/js/popper.min.js"></script>
   <script src="../static/js/chosen.min.js"></script>

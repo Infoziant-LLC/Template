@@ -374,3 +374,11 @@ nav {
     border: 1px solid rgb(218, 216, 216);
     border-radius: 10px;
 }
+
+/* notification */
+.notify{
+    position: relative;
+    left: 59%;
+    top: -10%;
+    display: none;
+}
