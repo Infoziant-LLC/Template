@@ -540,13 +540,29 @@
           <div class="col-xl-5 col-lg-5 video-alignment">
             <div class="courses_sidebar">
               <div class="video_thumb">
-                <div class="video_AI-3">
-                  <img src="img/latest_blog/video.png" alt="">
-                  <a class="popup-video" href="https://www.youtube.com/watch?v=gKpqKwWvms8&list=PLWuU6fjQgQLbwGxB8nB7IME83WUSkotxz">
-                    <i class="fa fa-play"></i>
-                  </a>
+                <div class="responsive-iframe-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+                  <iframe id="videoIframe" class="videoIframe" src="https://www.youtube.com/embed/gKpqKwWvms8?controls=0&showinfo=0&autoplay=0&si=qyKVqxna4AUb1pC4" 
+                          title="YouTube video player" frameborder="0" 
+                          allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen 
+                          style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
                 </div>
+                <a id="videoTrigger" class="popup-video videoTrigger" onclick="playVideo();">
+                  <i class="fa fa-play"></i> <!-- Play icon for indication -->
+                </a>
               </div>
+           
+          
+          <script>
+            function playVideo() {
+              var videoIframe = document.getElementById('videoIframe');
+              videoIframe.src = "https://www.youtube.com/embed/gKpqKwWvms8?controls=0&showinfo=0&autoplay=1&si=qyKVqxna4AUb1pC4";
+              
+              var videoTrigger = document.getElementById('videoTrigger');
+              videoTrigger.style.display = 'none';
+            }
+          </script>
+          
               <!-- <div class="author_info">
                             <div class="auhor_header">
                                 <div class="thumb">
