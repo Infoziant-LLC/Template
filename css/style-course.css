@@ -636,6 +636,7 @@ h3 {
   .section_title h3 {
     font-size: 23px;
     line-height: 30px;
+    margin-top:25px;
   }
 }
 
@@ -3121,7 +3122,7 @@ h3 {
 @media (max-width: 767px) {
   /* line 97, C:/Users/SPN Graphics/Desktop/CL September/Edu mark/207 Education/HTML/scss/_course_details.scss */
   .courses_details_info .courses_sidebar {
-    margin-top: 0;
+    margin-top: -280px;
   }
 }
 

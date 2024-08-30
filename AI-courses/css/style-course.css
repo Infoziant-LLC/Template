@@ -2574,6 +2574,9 @@ h3 {
   .courses_details_info #accordion .card .card-header h5 .btn-link {
       font-size: 1rem ; 
       text-align: left;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
   }
 }
 
@@ -3086,8 +3089,32 @@ h3 {
 @media (max-width: 767px) {
   /* line 75, C:/Users/SPN Graphics/Desktop/CL September/Edu mark/207 Education/HTML/scss/_course_details.scss */
   .courses_details_info {
-    padding: 50px 0 50px 0;
+    padding: 15px 0 15px 0;
   }
+}
+@media (max-width: 767px)
+{
+ .video_AI-1 
+ {
+     margin-right:20px;
+     margin-bottom: -30px
+ } 
+}
+@media (max-width: 767px)
+{
+ .video_AI-2
+ {
+     margin-right:20px;
+     margin-bottom: -30px
+ } 
+}
+@media (max-width: 767px)
+{
+ .video_AI-3 
+ {
+     margin-right:20px;
+     margin-bottom: -30px
+ } 
 }
 
 /* line 82, C:/Users/SPN Graphics/Desktop/CL September/Edu mark/207 Education/HTML/scss/_course_details.scss */
@@ -3100,7 +3127,7 @@ h3 {
 
 /* line 87, C:/Users/SPN Graphics/Desktop/CL September/Edu mark/207 Education/HTML/scss/_course_details.scss */
 .courses_details_info .single_courses h3.second_title {
-  margin-top: 52px;
+  margin-top: 25px;
 }
 
 /* line 91, C:/Users/SPN Graphics/Desktop/CL September/Edu mark/207 Education/HTML/scss/_course_details.scss */
@@ -3114,13 +3141,13 @@ h3 {
 /* line 97, C:/Users/SPN Graphics/Desktop/CL September/Edu mark/207 Education/HTML/scss/_course_details.scss */
 .courses_details_info .courses_sidebar {
   position: relative;
-  margin-top: -400px;
+  margin-top: -480px;
 }
 
 @media (max-width: 767px) {
   /* line 97, C:/Users/SPN Graphics/Desktop/CL September/Edu mark/207 Education/HTML/scss/_course_details.scss */
   .courses_details_info .courses_sidebar {
-    margin-top: 0;
+    margin-top: -280px;
   }
 }
 
@@ -3132,19 +3159,46 @@ h3 {
 }
 
 
-.video_AI
+.video_AI-1
 {
   position: relative;
-  background: url("./../images/courses/course-1.jpg") no-repeat center center;
+  background: url("./../images/courses/AI-1-photo.jpg") no-repeat center center;
   background-size: cover;
   height: 300px;
   border-radius: 8px;
   transition: transform 0.3s ease; 
 }
 
-.video_AI:hover {
+.video_AI-1:hover {
   transform: scale(1.05); /* Slightly zooms in the image on hover */
 }
+.video_AI-2
+{
+  position: relative;
+  background: url("./../AI-2-image.jpg") no-repeat center center;
+  background-size: cover;
+  height: 300px;
+  border-radius: 8px;
+  transition: transform 0.3s ease; 
+}
+
+.video_AI-2:hover {
+  transform: scale(1.05); /* Slightly zooms in the image on hover */
+}
+.video_AI-3
+{
+  position: relative;
+  background: url("./../AI-3-image.webp") no-repeat center center;
+  background-size: cover;
+  height: 300px;
+  border-radius: 8px;
+  transition: transform 0.3s ease; 
+}
+
+.video_AI-3:hover {
+  transform: scale(1.05); /* Slightly zooms in the image on hover */
+}
+
 .video_ML
 {
   background:url("./../images/courses/course-2.jpg") no-repeat center center !important;
