@@ -636,6 +636,7 @@ h3 {
   .section_title h3 {
     font-size: 23px;
     line-height: 30px;
+  
   }
 }
 
@@ -3086,7 +3087,7 @@ h3 {
 @media (max-width: 767px) {
   /* line 75, C:/Users/SPN Graphics/Desktop/CL September/Edu mark/207 Education/HTML/scss/_course_details.scss */
   .courses_details_info {
-    padding: 50px 0 50px 0;
+    padding: 15px 0 15px 0;
   }
 }
 
@@ -3100,8 +3101,33 @@ h3 {
 
 /* line 87, C:/Users/SPN Graphics/Desktop/CL September/Edu mark/207 Education/HTML/scss/_course_details.scss */
 .courses_details_info .single_courses h3.second_title {
-  margin-top: 52px;
+  margin-top: 25px;
 }
+@media (max-width: 767px)
+{
+ .video_Python-1
+ {
+     margin-right:20px;
+     margin-bottom: -30px
+ } 
+}
+@media (max-width: 767px)
+{
+ .video_Python-2
+ {
+     margin-right:20px;
+     margin-bottom: -30px
+ } 
+}
+@media (max-width: 767px)
+{
+ .video_Python-3
+ {
+     margin-right:20px;
+     margin-bottom: -30px
+ } 
+}
+
 
 /* line 91, C:/Users/SPN Graphics/Desktop/CL September/Edu mark/207 Education/HTML/scss/_course_details.scss */
 .courses_details_info .single_courses p {
@@ -3114,13 +3140,13 @@ h3 {
 /* line 97, C:/Users/SPN Graphics/Desktop/CL September/Edu mark/207 Education/HTML/scss/_course_details.scss */
 .courses_details_info .courses_sidebar {
   position: relative;
-  margin-top: -400px;
+  margin-top: -480px;
 }
 
 @media (max-width: 767px) {
   /* line 97, C:/Users/SPN Graphics/Desktop/CL September/Edu mark/207 Education/HTML/scss/_course_details.scss */
   .courses_details_info .courses_sidebar {
-    margin-top: 0;
+    margin-top: -280px;
   }
 }
 
@@ -3132,10 +3158,11 @@ h3 {
 }
 
 
+/* Python images and utube */
 .video_AI
 {
   position: relative;
-  background: url("./../images/courses/course-1.jpg") no-repeat center center;
+  background: url("./../images/courses/AI-1-image.jpg") no-repeat center center;
   background-size: cover;
   height: 300px;
   border-radius: 8px;
@@ -3145,97 +3172,317 @@ h3 {
 .video_AI:hover {
   transform: scale(1.05); /* Slightly zooms in the image on hover */
 }
-.video_ML
+.video_AI-2
 {
-  background:url("./../images/courses/course-2.jpg") no-repeat center center !important;
   position: relative;
-  background-size: cover ! important;
+  background: url("./../images/courses/AI-2-image.jpg") no-repeat center center;
+  background-size: cover;
   height: 300px;
   border-radius: 8px;
+  transition: transform 0.3s ease; 
 }
-.video_ML:hover {
+
+.video_AI-2:hover {
   transform: scale(1.05); /* Slightly zooms in the image on hover */
 }
-.video_NLP
+.video_AI-3
 {
-  background:url("./../images/courses/course-3.jpg") no-repeat center center !important;
   position: relative;
-  background-size: cover ! important;
+  background: url("./../images/courses/AI-3-image.webp") no-repeat center center;
+  background-size: cover;
   height: 300px;
   border-radius: 8px;
+  transition: transform 0.3s ease; 
 }
-.video_NLP:hover {
-  transform: scale(1.05); /* Slightly zooms in the image on hover */
-}
-.video_Iot
-{
-  background:url("./../images/courses/course-4.jpg") no-repeat center center !important;
-  position: relative;
-  background-size: cover ! important;
-  height: 300px;
-  border-radius: 8px;
-}
-.video_Iot:hover {
+.video_AI-3:hover {
   transform: scale(1.05); /* Slightly zooms in the image on hover */
 }
 
-.video_InfoSecurity
+/* Python images and utube */
+.video_ML-1
 {
-  background:url("./../images/courses/course-5.webp") no-repeat center center !important;
+  background:url("./../images/courses/ML-1-image.jpg") no-repeat center center !important;
   position: relative;
   background-size: cover ! important;
   height: 300px;
   border-radius: 8px;
 }
-.video_InfoSecurity:hover {
+.video_ML-1:hover {
   transform: scale(1.05); /* Slightly zooms in the image on hover */
 }
-.video_ERC
+.video_ML-2
 {
-  background:url("./../images/courses/course-6.jpg") no-repeat center center !important;
+  background:url("./../images/courses/ML-2-image.jpg") no-repeat center center !important;
   position: relative;
   background-size: cover ! important;
   height: 300px;
   border-radius: 8px;
 }
-.video_ERC:hover {
+.video_ML-2:hover {
+  transform: scale(1.05); /* Slightly zooms in the image on hover */
+}
+.video_ML-3
+{
+  background:url("./../images/courses/ML-3-image.png") no-repeat center center !important;
+  position: relative;
+  background-size: cover ! important;
+  height: 300px;
+  border-radius: 8px;
+}
+.video_ML-3:hover {
+  transform: scale(1.05); /* Slightly zooms in the image on hover */
+}
+
+
+
+/* Python images and utube */
+.video_NLP-1
+{
+  background:url("./../images/courses/NLP-1-image.avif") no-repeat center center !important;
+  position: relative;
+  background-size: cover ! important;
+  height: 300px;
+  border-radius: 8px;
+}
+.video_NLP-1:hover {
+  transform: scale(1.05); /* Slightly zooms in the image on hover */
+}
+.video_NLP-2
+{
+  background:url("./../images/courses/NLP-2-image.jpg") no-repeat center center !important;
+  position: relative;
+  background-size: cover ! important;
+  height: 300px;
+  border-radius: 8px;
+}
+.video_NLP-2:hover {
+  transform: scale(1.05); /* Slightly zooms in the image on hover */
+}
+.video_NLP-3
+{
+  background:url("./../images/courses/NLP-3-image.png") no-repeat center center !important;
+  position: relative;
+  background-size: cover ! important;
+  height: 300px;
+  border-radius: 8px;
+}
+.video_NLP-3:hover {
   transform: scale(1.05); /* Slightly zooms in the image on hover */
 }
 
 
-.video_DeepLearning
+/* Python images and utube */
+.video_Iot-1
 {
-  background:url("./../images/courses/course-7.jpg") no-repeat center center !important;
+  background:url("./../images/courses/Iot-1-image.png") no-repeat center center !important;
   position: relative;
   background-size: cover ! important;
   height: 300px;
   border-radius: 8px;
 }
-.video_DeepLearning:hover {
+.video_Iot-1:hover {
+  transform: scale(1.05); /* Slightly zooms in the image on hover */
+}
+.video_Iot-2
+{
+  background:url("./../images/courses/Iot-2-image.webp") no-repeat center center !important;
+  position: relative;
+  background-size: cover ! important;
+  height: 300px;
+  border-radius: 8px;
+}
+.video_Iot-2:hover {
+  transform: scale(1.05); /* Slightly zooms in the image on hover */
+}
+.video_Iot-3
+{
+  background:url("./../images/courses/Iot-3-image.png") no-repeat center center !important;
+  position: relative;
+  background-size: cover ! important;
+  height: 300px;
+  border-radius: 8px;
+}
+.video_Iot-3:hover {
   transform: scale(1.05); /* Slightly zooms in the image on hover */
 }
 
-.video_Python
+
+/* Python images and utube */
+.video_InfoSecurity-1
 {
-  background:url("./../images/courses/course-8.png") no-repeat center center !important;
+  background:url("./../images/courses/InfoSecurity-1-image.jpg") no-repeat center center !important;
   position: relative;
   background-size: cover ! important;
   height: 300px;
   border-radius: 8px;
 }
-.video_Python:hover {
+.video_InfoSecurity-1:hover {
+  transform: scale(1.05); /* Slightly zooms in the image on hover */
+}
+.video_InfoSecurity-2
+{
+  background:url("./../images/courses/InfoSecurity-2-image.jpg") no-repeat center center !important;
+  position: relative;
+  background-size: cover ! important;
+  height: 300px;
+  border-radius: 8px;
+}
+.video_InfoSecurity-2:hover {
+  transform: scale(1.05); /* Slightly zooms in the image on hover */
+}
+.video_InfoSecurity-3
+{
+  background:url("./../images/courses/InfoSecurity-3-image.jpg") no-repeat center center !important;
+  position: relative;
+  background-size: cover ! important;
+  height: 300px;
+  border-radius: 8px;
+}
+.video_InfoSecurity-3:hover {
   transform: scale(1.05); /* Slightly zooms in the image on hover */
 }
 
-.video_AVR
+
+/* Python images and utube */
+.video_ERC-1
 {
-  background:url("./../images/courses/course-9.avif") no-repeat center center !important;
+  background:url("./../images/courses/ERC-1-image.jpg") no-repeat center center !important;
   position: relative;
   background-size: cover ! important;
   height: 300px;
   border-radius: 8px;
 }
-.video_AVR:hover {
+.video_ERC-1:hover {
+  transform: scale(1.05); /* Slightly zooms in the image on hover */
+}
+.video_ERC-2
+{
+  background:url("./../images/courses/ERC-2-image.png") no-repeat center center !important;
+  position: relative;
+  background-size: cover ! important;
+  height: 300px;
+  border-radius: 8px;
+}
+.video_ERC-2:hover {
+  transform: scale(1.05); /* Slightly zooms in the image on hover */
+}
+.video_ERC-3
+{
+  background:url("./../images/courses/ERC-3-image.png") no-repeat center center !important;
+  position: relative;
+  background-size: cover ! important;
+  height: 300px;
+  border-radius: 8px;
+}
+.video_ERC-3:hover {
+  transform: scale(1.05); /* Slightly zooms in the image on hover */
+}
+
+/* Python images and utube */
+.video_DeepLearning-1
+{
+  background:url("./../images/courses/DeepLearning-1-image.jpg") no-repeat center center !important;
+  position: relative;
+  background-size: cover ! important;
+  height: 300px;
+  border-radius: 8px;
+}
+.video_DeepLearning-1:hover {
+  transform: scale(1.05); /* Slightly zooms in the image on hover */
+}
+.video_DeepLearning-2
+{
+  background:url("./../images/courses/DeepLearning-2-image.jpg") no-repeat center center !important;
+  position: relative;
+  background-size: cover ! important;
+  height: 300px;
+  border-radius: 8px;
+}
+.video_DeepLearning-2:hover {
+  transform: scale(1.05); /* Slightly zooms in the image on hover */
+}.video_DeepLearning-3
+{
+  background:url("./../images/courses/DeepLearning-3-image.jpg") no-repeat center center !important;
+  position: relative;
+  background-size: cover ! important;
+  height: 300px;
+  border-radius: 8px;
+}
+.video_DeepLearning-3:hover {
+  transform: scale(1.05); /* Slightly zooms in the image on hover */
+}
+
+/* Python images and utube */
+.video_Python-1
+{
+  background:url("./../images/courses/Python-1-image.jpg") no-repeat center center !important;
+  position: relative;
+  background-size: cover ! important;
+  height: 300px;
+  border-radius: 8px;
+}
+.video_Python-1:hover {
+  transform: scale(1.05); 
+}
+.video_Python-2
+{
+  background:url("./../images/courses/Python-2-image.png") no-repeat center center !important;
+  position: relative;
+  background-size: cover ! important;
+  height: 300px;
+  border-radius: 8px;
+}
+.video_Python-2:hover {
+  transform: scale(1.05); 
+}
+
+.video_Python-3
+{
+  background:url("./../images/courses/Python-3-image.png") no-repeat center center !important;
+  position: relative;
+  background-size: cover ! important;
+  height: 300px;
+  border-radius: 8px;
+}
+.video_Python-3:hover {
+  transform: scale(1.05); /* Slightly zooms in the image on hover */
+}
+
+
+
+/* Python images and utube */
+.video_AVR-1
+{
+  background:url("./../images/courses/AVR-1-image.jpg") no-repeat center center !important;
+  position: relative;
+  background-size: cover ! important;
+  height: 300px;
+  border-radius: 8px;
+}
+.video_AVR-1:hover {
+  transform: scale(1.05); /* Slightly zooms in the image on hover */
+}
+
+.video_AVR-2
+{
+  background:url("./../images/courses/AVR-2-image.jpg") no-repeat center center !important;
+  position: relative;
+  background-size: cover ! important;
+  height: 300px;
+  border-radius: 8px;
+}
+.video_AVR-2:hover {
+  transform: scale(1.05); /* Slightly zooms in the image on hover */
+}
+.video_AVR-3
+{
+  background:url("./../images/courses/AVR-3-image.avif") no-repeat center center !important;
+  position: relative;
+  background-size: cover ! important;
+  height: 300px;
+  border-radius: 8px;
+}
+.video_AVR-3:hover {
   transform: scale(1.05); /* Slightly zooms in the image on hover */
 }
 
