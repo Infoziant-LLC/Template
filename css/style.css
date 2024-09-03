@@ -11703,6 +11703,16 @@ Testimonial Section Two
   color: white;
   margin-bottom: 35px;
 }
+.text-abt{
+  color: black;
+  font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 35px;
+
+}
+.designation-abt{
+  color: black;
+}
 
 .testimonial-block-two .info-box {
   position: relative;
