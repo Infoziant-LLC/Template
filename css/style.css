@@ -22765,3 +22765,15 @@ Work Section
     border-radius: 5%;
   }
 }
+
+
+.option-icons{
+  margin: 20px 0px 0px 10px;
+}
+ 
+.summarise-button{
+  margin-top: 10px;
+  width: 150px;
+  height: 30px;
+  font-size:smaller;
+}
