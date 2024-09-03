@@ -11692,7 +11692,7 @@ Testimonial Section Two
   position: relative;
   font-size: 18px;
   line-height: 24px;
-  color: #9e32b1;
+  color: #2f0b63;
   font-weight: 400;
   margin-bottom: 10px;
 }
@@ -11700,7 +11700,7 @@ Testimonial Section Two
 .testimonial-block-two .text {
   font-size: 16px;
   line-height: 26px;
-  color: #696969;
+  color: white;
   margin-bottom: 35px;
 }
 
@@ -11713,7 +11713,7 @@ Testimonial Section Two
 
 .testimonial-block-two .name {
   font-size: 18px;
-  color: #202124;
+  color: #2f0b63;
   font-weight: 500;
 }
 
@@ -11721,7 +11721,7 @@ Testimonial Section Two
   position: relative;
   display: block;
   font-size: 14px;
-  color: #696969;
+  color: white;
 }
 
 .testimonial-carousel .owl-dots {
