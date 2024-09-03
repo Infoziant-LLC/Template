@@ -17,8 +17,15 @@
 />
 
 
-  <link rel="shortcut icon" href="../static/images/favicon.png" type="image/x-icon">
-  <link rel="icon" href="../static/images/favicon.png" type="image/x-icon">
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+  <link rel="icon" href="images/favicon.png" type="image/x-icon">
+  
+  <!-- animate.css -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
 
   <!-- Responsive -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -107,8 +114,8 @@
           <div class="outer-box">
             <!-- Login/Register -->
             <div class="btn-box">
-              <a href="register.html" class="theme-btn dark-color theme-clone bdrs30">Register</a>
-              <a href="login.html" class="theme-btn theme-clone home21-jp-btn btn-style-dark bdrs30" >Login</a>
+              <a href="register.html" class="theme-btn theme-clone bdrs30">Register</a>
+              <a href="login.html" class="home21-jp-btn login-btn bdrs30" >Login</a>
             </div>
           </div>
         </div>
@@ -118,7 +125,7 @@
       <div class="mobile-header">
         <div class="logo">
           <a href="index.html"
-            ><img src="images/logo.svg" alt="" title=""
+            ><img src="images/enbott-logo.png" alt="" title=""
           /></a>
         </div>
 
@@ -152,7 +159,8 @@
             <div class="inner-column">
               <div class="title-box text-center wow fadeInUp">
                 <h3>Elevate Your Career with <span class="gradient-text">enbott</span> - All in one Career Catalyst</h3>
-                <div class="text">Empowering Individuals and Transforming Organizations</div>
+                <!-- <div class="text">Empowering Individuals and Transforming Organizations</div> -->
+                <div class="typing-container" id="typing-text"></div>
             </div>
             
               <!-- Job Search Form -->
@@ -186,7 +194,7 @@
                     </div>
                     <!-- Form Group -->
                     <div class="form-group col-lg-2 col-md-12 col-sm-12 text-right">
-                      <button type="submit" class="theme-btn btn-style-two btn-style-dark bdrs120 theme-clone">Find Jobs</button>
+                      <button class="theme-btn btn-style-two btn-style-dark bdrs120 theme-clone"><a href="jobs.html" style="color: white;">Find Jobs</a></button>
                     </div>
                   </div>
                 </form>
@@ -195,7 +203,14 @@
             </div>
           </div>
         </div>
-        <img class="home21-hero-img wow fadeInUp" src="images/index-21/home21-hero-peoples.png" alt="" data-wow-delay="300ms">
+        <img class="home21-hero-img wow fadeInUp" src="images/home-banner-icon.png" alt="" data-wow-delay="300ms">
+        <div class="banner-circle">
+          <div class="animate__animated animate__backInUp animate__delay-1s animate__slow banner-circle-1"><p class="circle-title">Boost<br/>Your Skills</p></div>
+          <div class="animate__animated animate__backInUp animate__delay-1s animate__slow banner-circle-2"><p class="circle-title">Elevate<br/>Your Profile</p></div>
+          <div class="animate__animated animate__backInUp animate__delay-1s animate__slow banner-circle-3"><p class="circle-title">AI - Powered<br/>Job<br/>Matching</p></div>
+          <div class="animate__animated animate__backInUp animate__delay-1s animate__slow banner-circle-4"><p class="circle-title">Mentor<br/>Connect</p></div>
+          <div class="animate__animated animate__backInUp animate__delay-1s animate__slow banner-circle-5"><p class="circle-title">Hiring<br/> Reimagined</p></div>
+        </div>
       </div>
     </section>
     <!-- End Banner Section Three-->
@@ -245,7 +260,7 @@
     
 
     <!-- CTA Section -->
-    <section class="about-section-two cta-home21-1 bgc-home21 layout-pt-120 layout-pb-40 ">
+    <section class="about-section-two cta-home21-1 bgc-home21 layout-pt-120 layout-pb-40" id="feature-1">
       <div class="auto-container">
         <div class="row align-items-center">
           <!-- Content Column -->
@@ -271,7 +286,7 @@
                   <p>Gain insights from industry leaders and accelerate your career.</p>
                 </div>
               </div>
-              <a href="#" class="theme-btn theme-clone -black">Get Started Now <i class="fal fa-long-arrow-right ms-3"></i></a>
+              <a href="login.html" class="theme-btn theme-clone -black">Get Started Now <i class="fal fa-long-arrow-right ms-3"></i></a>
             </div>
           </div>
 
@@ -297,8 +312,8 @@
             <div class="content-column col-xl-4 col-lg-5 col-md-12 col-sm-12 order-2 order-lg-1">
               <div class="inner-column -no-padding wow fadeInLeft">
                 <div class="sec-title">
-                  <h2 class="fw-700">Unique Learning <br> Path</h2>
-                  <div class="text mt-30">Start your job search with confidence by exploring various avenues</div>
+                  <h3 class="fw-700 feature-title">Unique Learning <br> Path</h3>
+                  <!-- <div class="text mt-30">Start your job search with confidence by exploring various avenues</div> -->
                 </div>
                 <ul class="list-style-one mt-24 mb-24">
                   <li>Chart your course to success</li>
@@ -337,8 +352,7 @@
             <div class="content-column col-xl-4 offset-xl-2 col-lg-5 offset-lg-1 col-md-12 col-sm-12">
               <div class="wow fadeInLeft">
                 <div class="sec-title">
-                  <h2 class="fw-700">Optimize Your<br> Hiring Process</h2>
-                  <div class="text mt-30">Our advanced tools streamline every step, ensuring a seamless and effective hiring process. Elevate your recruitment strategy to attract and onboard the validated skilled candidates with ease.</div>
+                  <h3 class="fw-700 feature-title">Optimize Your<br> Hiring Process</h3>
                   <ul class="list-style-one mt-24 mb-24">
                     <li>Streamline your recruitment, from sourcing to onboarding</li>
                     <li>Hire top talent faster with AI-powered insights</li>
@@ -362,7 +376,7 @@
               <div class="content-column">
                 <div class="inner-column -no-padding wow fadeInLeft">
                   <div class="sec-title">
-                    <h2 class="color-blue-dark fw-700">Project Support and <br> Ideation</h2>
+                    <h3 class="fw-700 feature-title">Project Support and <br> Ideation</h3>
                   </div>
                   <ul class="list-style-one mt-24 mb-24">
                     <li>Transform your ideas into reality. </li>
@@ -384,7 +398,7 @@
       <!-- End About Section -->
     </div>
     <!-- Job Categories -->
-    <section class="layout-pt-60 layout-pb-120 at-home21 bgc-home21 layout-pb-70">
+    <section class="layout-pt-60 layout-pb-120 at-home21 bgc-home21 layout-pb-70" id="feature-1">
       <div class="auto-container">
         <div class="row justify-content-between align-items-end">
           <div class="col-lg-6">
@@ -477,7 +491,7 @@
       <div class="auto-container">
         <div class="text-center wow fadeInUp">
           <div class="sec-title">
-            <h2>Unlock Your Career Potential with Our Comprehensive Features</h2>
+            <h3 class="popular-jobs">Unlock Your Career Potential with Our Comprehensive Features</h3>
             <div class="text"></div>
           </div>
         </div>
@@ -518,7 +532,7 @@
     <!-- End List Of USA Jobs -->
 
     <!-- Browse by Category -->
-    <section class="layout-pt-60 layout-pb-60 border-bottom-none at-home21 bgc-home21 layout-pb-70">
+    <section class="layout-pt-60 layout-pb-60 border-bottom-none at-home21 bgc-home21 layout-pb-70" id="feature-1">
       <div class="auto-container">
         <div class="d-flex align-items-center justify-content-between wow fadeInUp">
           <div class="sec-title">
@@ -530,20 +544,22 @@
         <div class="row wow fadeInUp">
           <!-- Category Block -->
           <div class="category-block-two at-home21 col-xl-2 col-lg-3 col-md-4 col-sm-6">
+            <a href="jobs.html"></a>
             <div class="inner-box">
               <div class="content">
                 <span class="icon flaticon-money-1"></span>
-                <h4><a href="#">Marketing</a></h4>
+                <h4><a href="jobs.html">Marketing</a></h4>
                 <p>(86 open positions)</p>
               </div>
             </div>
+          </a>
           </div>
           <!-- Category Block -->
           <div class="category-block-two at-home21 col-xl-2 col-lg-3 col-md-4 col-sm-6">
             <div class="inner-box">
               <div class="content">
                 <span class="icon flaticon-promotion"></span>
-                <h4><a href="#">Design</a></h4>
+                <h4><a href="jobs.html">Design</a></h4>
                 <p>(43 open positions)</p>
               </div>
             </div>
@@ -553,7 +569,7 @@
             <div class="inner-box">
               <div class="content">
                 <span class="icon flaticon-vector"></span>
-                <h4><a href="#">Development</a></h4>
+                <h4><a href="jobs.html">Development</a></h4>
                 <p>(12 open positions)</p>
               </div>
             </div>
@@ -563,7 +579,7 @@
             <div class="inner-box">
               <div class="content">
                 <span class="icon flaticon-web-programming"></span>
-                <h4><a href="#">Customer Service</a></h4>
+                <h4><a href="jobs.html">Customer Service</a></h4>
                 <p>(72 open positions)</p>
               </div>
             </div>
@@ -573,7 +589,7 @@
             <div class="inner-box">
               <div class="content">
                 <span class="icon flaticon-headhunting"></span>
-                <h4><a href="#">Health and Care</a></h4>
+                <h4><a href="jobs.html">Health and Care</a></h4>
                 <p>(25 open positions)</p>
               </div>
             </div>
@@ -583,7 +599,7 @@
             <div class="inner-box">
               <div class="content">
                 <span class="icon flaticon-rocket-ship"></span>
-                <h4><a href="#">Automotive Jobs</a></h4>
+                <h4><a href="jobs.html">Automotive Jobs</a></h4>
                 <p>(92 open positions)</p>
               </div>
             </div>
@@ -596,7 +612,7 @@
     <section class="job-section alternate ">
       <div class="auto-container">
         <div class="sec-title text-center">
-          <h2 >Most Popular Jobs</h2>
+          <h3 class="popular-jobs">Most Popular Jobs</h3>
           <div class="text">Know your worth and find the job that qualify your life</div>
         </div>
 
@@ -619,7 +635,7 @@
                   <div class="inner-box">
                     <div class="content">
                       <span class="company-logo"><img src="images/resource/company-logo/1-1.png" alt=""></span>
-                      <h4><a href="#">Software Engineer (Android), Libraries</a></h4>
+                      <h4><a href="job-single.html">Software Engineer (Android), Libraries</a></h4>
                       <ul class="job-info">
                         <li><span class="icon flaticon-briefcase"></span> Segment</li>
                         <li><span class="icon flaticon-map-locator"></span> London, UK</li>
@@ -641,7 +657,7 @@
                   <div class="inner-box">
                     <div class="content">
                       <span class="company-logo"><img src="images/resource/company-logo/1-2.png" alt=""></span>
-                      <h4><a href="#">Recruiting Coordinator</a></h4>
+                      <h4><a href="job-single.html">Recruiting Coordinator</a></h4>
                       <ul class="job-info">
                         <li><span class="icon flaticon-briefcase"></span> Segment</li>
                         <li><span class="icon flaticon-map-locator"></span> London, UK</li>
@@ -663,7 +679,7 @@
                   <div class="inner-box">
                     <div class="content">
                       <span class="company-logo"><img src="images/resource/company-logo/1-3.png" alt=""></span>
-                      <h4><a href="#">Product Manager, Studio</a></h4>
+                      <h4><a href="job-single.html">Product Manager, Studio</a></h4>
                       <ul class="job-info">
                         <li><span class="icon flaticon-briefcase"></span> Segment</li>
                         <li><span class="icon flaticon-map-locator"></span> London, UK</li>
@@ -685,7 +701,7 @@
                   <div class="inner-box">
                     <div class="content">
                       <span class="company-logo"><img src="images/resource/company-logo/1-4.png" alt=""></span>
-                      <h4><a href="#">Senior Product Designer</a></h4>
+                      <h4><a href="job-single.html">Senior Product Designer</a></h4>
                       <ul class="job-info">
                         <li><span class="icon flaticon-briefcase"></span> Segment</li>
                         <li><span class="icon flaticon-map-locator"></span> London, UK</li>
@@ -707,7 +723,7 @@
                   <div class="inner-box">
                     <div class="content">
                       <span class="company-logo"><img src="images/resource/company-logo/1-5.png" alt=""></span>
-                      <h4><a href="#">Senior Full Stack Engineer, Creator Success</a></h4>
+                      <h4><a href="job-single.html">Senior Full Stack Engineer, Creator Success</a></h4>
                       <ul class="job-info">
                         <li><span class="icon flaticon-briefcase"></span> Segment</li>
                         <li><span class="icon flaticon-map-locator"></span> London, UK</li>
@@ -729,7 +745,7 @@
                   <div class="inner-box">
                     <div class="content">
                       <span class="company-logo"><img src="images/resource/company-logo/1-6.png" alt=""></span>
-                      <h4><a href="#">Software Engineer (Android), Libraries</a></h4>
+                      <h4><a href="job-single.html">Software Engineer (Android), Libraries</a></h4>
                       <ul class="job-info">
                         <li><span class="icon flaticon-briefcase"></span> Segment</li>
                         <li><span class="icon flaticon-map-locator"></span> London, UK</li>
@@ -756,7 +772,7 @@
                   <div class="inner-box">
                     <div class="content">
                       <span class="company-logo"><img src="images/resource/company-logo/1-1.png" alt=""></span>
-                      <h4><a href="#">Software Engineer (Android), Libraries</a></h4>
+                      <h4><a href="job-single.html">Software Engineer (Android), Libraries</a></h4>
                       <ul class="job-info">
                         <li><span class="icon flaticon-briefcase"></span> Segment</li>
                         <li><span class="icon flaticon-map-locator"></span> London, UK</li>
@@ -778,7 +794,7 @@
                   <div class="inner-box">
                     <div class="content">
                       <span class="company-logo"><img src="images/resource/company-logo/1-2.png" alt=""></span>
-                      <h4><a href="#">Recruiting Coordinator</a></h4>
+                      <h4><a href="job-single.html">Recruiting Coordinator</a></h4>
                       <ul class="job-info">
                         <li><span class="icon flaticon-briefcase"></span> Segment</li>
                         <li><span class="icon flaticon-map-locator"></span> London, UK</li>
@@ -800,7 +816,7 @@
                   <div class="inner-box">
                     <div class="content">
                       <span class="company-logo"><img src="images/resource/company-logo/1-3.png" alt=""></span>
-                      <h4><a href="#">Product Manager, Studio</a></h4>
+                      <h4><a href="job-single.html">Product Manager, Studio</a></h4>
                       <ul class="job-info">
                         <li><span class="icon flaticon-briefcase"></span> Segment</li>
                         <li><span class="icon flaticon-map-locator"></span> London, UK</li>
@@ -822,7 +838,7 @@
                   <div class="inner-box">
                     <div class="content">
                       <span class="company-logo"><img src="images/resource/company-logo/1-4.png" alt=""></span>
-                      <h4><a href="#">Senior Product Designer</a></h4>
+                      <h4><a href="job-single.html">Senior Product Designer</a></h4>
                       <ul class="job-info">
                         <li><span class="icon flaticon-briefcase"></span> Segment</li>
                         <li><span class="icon flaticon-map-locator"></span> London, UK</li>
@@ -844,7 +860,7 @@
                   <div class="inner-box">
                     <div class="content">
                       <span class="company-logo"><img src="images/resource/company-logo/1-5.png" alt=""></span>
-                      <h4><a href="#">Senior Full Stack Engineer, Creator Success</a></h4>
+                      <h4><a href="job-single.html">Senior Full Stack Engineer, Creator Success</a></h4>
                       <ul class="job-info">
                         <li><span class="icon flaticon-briefcase"></span> Segment</li>
                         <li><span class="icon flaticon-map-locator"></span> London, UK</li>
@@ -866,7 +882,7 @@
                   <div class="inner-box">
                     <div class="content">
                       <span class="company-logo"><img src="images/resource/company-logo/1-6.png" alt=""></span>
-                      <h4><a href="#">Software Engineer (Android), Libraries</a></h4>
+                      <h4><a href="job-single.html">Software Engineer (Android), Libraries</a></h4>
                       <ul class="job-info">
                         <li><span class="icon flaticon-briefcase"></span> Segment</li>
                         <li><span class="icon flaticon-map-locator"></span> London, UK</li>
@@ -893,7 +909,7 @@
                   <div class="inner-box">
                     <div class="content">
                       <span class="company-logo"><img src="images/resource/company-logo/1-1.png" alt=""></span>
-                      <h4><a href="#">Software Engineer (Android), Libraries</a></h4>
+                      <h4><a href="job-single.html">Software Engineer (Android), Libraries</a></h4>
                       <ul class="job-info">
                         <li><span class="icon flaticon-briefcase"></span> Segment</li>
                         <li><span class="icon flaticon-map-locator"></span> London, UK</li>
@@ -915,7 +931,7 @@
                   <div class="inner-box">
                     <div class="content">
                       <span class="company-logo"><img src="images/resource/company-logo/1-2.png" alt=""></span>
-                      <h4><a href="#">Recruiting Coordinator</a></h4>
+                      <h4><a href="job-single.html">Recruiting Coordinator</a></h4>
                       <ul class="job-info">
                         <li><span class="icon flaticon-briefcase"></span> Segment</li>
                         <li><span class="icon flaticon-map-locator"></span> London, UK</li>
@@ -937,7 +953,7 @@
                   <div class="inner-box">
                     <div class="content">
                       <span class="company-logo"><img src="images/resource/company-logo/1-3.png" alt=""></span>
-                      <h4><a href="#">Product Manager, Studio</a></h4>
+                      <h4><a href="job-single.html">Product Manager, Studio</a></h4>
                       <ul class="job-info">
                         <li><span class="icon flaticon-briefcase"></span> Segment</li>
                         <li><span class="icon flaticon-map-locator"></span> London, UK</li>
@@ -959,7 +975,7 @@
                   <div class="inner-box">
                     <div class="content">
                       <span class="company-logo"><img src="images/resource/company-logo/1-4.png" alt=""></span>
-                      <h4><a href="#">Senior Product Designer</a></h4>
+                      <h4><a href="job-single.html">Senior Product Designer</a></h4>
                       <ul class="job-info">
                         <li><span class="icon flaticon-briefcase"></span> Segment</li>
                         <li><span class="icon flaticon-map-locator"></span> London, UK</li>
@@ -981,7 +997,7 @@
                   <div class="inner-box">
                     <div class="content">
                       <span class="company-logo"><img src="images/resource/company-logo/1-5.png" alt=""></span>
-                      <h4><a href="#">Senior Full Stack Engineer, Creator Success</a></h4>
+                      <h4><a href="job-single.html">Senior Full Stack Engineer, Creator Success</a></h4>
                       <ul class="job-info">
                         <li><span class="icon flaticon-briefcase"></span> Segment</li>
                         <li><span class="icon flaticon-map-locator"></span> London, UK</li>
@@ -1003,7 +1019,7 @@
                   <div class="inner-box">
                     <div class="content">
                       <span class="company-logo"><img src="images/resource/company-logo/1-6.png" alt=""></span>
-                      <h4><a href="#">Software Engineer (Android), Libraries</a></h4>
+                      <h4><a href="job-single.html">Software Engineer (Android), Libraries</a></h4>
                       <ul class="job-info">
                         <li><span class="icon flaticon-briefcase"></span> Segment</li>
                         <li><span class="icon flaticon-map-locator"></span> London, UK</li>
@@ -1030,7 +1046,7 @@
                   <div class="inner-box">
                     <div class="content">
                       <span class="company-logo"><img src="images/resource/company-logo/1-1.png" alt=""></span>
-                      <h4><a href="#">Software Engineer (Android), Libraries</a></h4>
+                      <h4><a href="job-single.html">Software Engineer (Android), Libraries</a></h4>
                       <ul class="job-info">
                         <li><span class="icon flaticon-briefcase"></span> Segment</li>
                         <li><span class="icon flaticon-map-locator"></span> London, UK</li>
@@ -1052,7 +1068,7 @@
                   <div class="inner-box">
                     <div class="content">
                       <span class="company-logo"><img src="images/resource/company-logo/1-2.png" alt=""></span>
-                      <h4><a href="#">Recruiting Coordinator</a></h4>
+                      <h4><a href="job-single.html">Recruiting Coordinator</a></h4>
                       <ul class="job-info">
                         <li><span class="icon flaticon-briefcase"></span> Segment</li>
                         <li><span class="icon flaticon-map-locator"></span> London, UK</li>
@@ -1074,7 +1090,7 @@
                   <div class="inner-box">
                     <div class="content">
                       <span class="company-logo"><img src="images/resource/company-logo/1-3.png" alt=""></span>
-                      <h4><a href="#">Product Manager, Studio</a></h4>
+                      <h4><a href="job-single.html">Product Manager, Studio</a></h4>
                       <ul class="job-info">
                         <li><span class="icon flaticon-briefcase"></span> Segment</li>
                         <li><span class="icon flaticon-map-locator"></span> London, UK</li>
@@ -1096,7 +1112,7 @@
                   <div class="inner-box">
                     <div class="content">
                       <span class="company-logo"><img src="images/resource/company-logo/1-4.png" alt=""></span>
-                      <h4><a href="#">Senior Product Designer</a></h4>
+                      <h4><a href="job-single.html">Senior Product Designer</a></h4>
                       <ul class="job-info">
                         <li><span class="icon flaticon-briefcase"></span> Segment</li>
                         <li><span class="icon flaticon-map-locator"></span> London, UK</li>
@@ -1118,7 +1134,7 @@
                   <div class="inner-box">
                     <div class="content">
                       <span class="company-logo"><img src="images/resource/company-logo/1-5.png" alt=""></span>
-                      <h4><a href="#">Senior Full Stack Engineer, Creator Success</a></h4>
+                      <h4><a href="job-single.html">Senior Full Stack Engineer, Creator Success</a></h4>
                       <ul class="job-info">
                         <li><span class="icon flaticon-briefcase"></span> Segment</li>
                         <li><span class="icon flaticon-map-locator"></span> London, UK</li>
@@ -1140,7 +1156,7 @@
                   <div class="inner-box">
                     <div class="content">
                       <span class="company-logo"><img src="images/resource/company-logo/1-6.png" alt=""></span>
-                      <h4><a href="#">Software Engineer (Android), Libraries</a></h4>
+                      <h4><a href="job-single.html">Software Engineer (Android), Libraries</a></h4>
                       <ul class="job-info">
                         <li><span class="icon flaticon-briefcase"></span> Segment</li>
                         <li><span class="icon flaticon-map-locator"></span> London, UK</li>
@@ -1167,7 +1183,7 @@
                   <div class="inner-box">
                     <div class="content">
                       <span class="company-logo"><img src="images/resource/company-logo/1-1.png" alt=""></span>
-                      <h4><a href="#">Software Engineer (Android), Libraries</a></h4>
+                      <h4><a href="job-single.html">Software Engineer (Android), Libraries</a></h4>
                       <ul class="job-info">
                         <li><span class="icon flaticon-briefcase"></span> Segment</li>
                         <li><span class="icon flaticon-map-locator"></span> London, UK</li>
@@ -1189,7 +1205,7 @@
                   <div class="inner-box">
                     <div class="content">
                       <span class="company-logo"><img src="images/resource/company-logo/1-2.png" alt=""></span>
-                      <h4><a href="#">Recruiting Coordinator</a></h4>
+                      <h4><a href="job-single.html">Recruiting Coordinator</a></h4>
                       <ul class="job-info">
                         <li><span class="icon flaticon-briefcase"></span> Segment</li>
                         <li><span class="icon flaticon-map-locator"></span> London, UK</li>
@@ -1211,7 +1227,7 @@
                   <div class="inner-box">
                     <div class="content">
                       <span class="company-logo"><img src="images/resource/company-logo/1-3.png" alt=""></span>
-                      <h4><a href="#">Product Manager, Studio</a></h4>
+                      <h4><a href="job-single.html">Product Manager, Studio</a></h4>
                       <ul class="job-info">
                         <li><span class="icon flaticon-briefcase"></span> Segment</li>
                         <li><span class="icon flaticon-map-locator"></span> London, UK</li>
@@ -1233,7 +1249,7 @@
                   <div class="inner-box">
                     <div class="content">
                       <span class="company-logo"><img src="images/resource/company-logo/1-4.png" alt=""></span>
-                      <h4><a href="#">Senior Product Designer</a></h4>
+                      <h4><a href="job-single.html">Senior Product Designer</a></h4>
                       <ul class="job-info">
                         <li><span class="icon flaticon-briefcase"></span> Segment</li>
                         <li><span class="icon flaticon-map-locator"></span> London, UK</li>
@@ -1255,7 +1271,7 @@
                   <div class="inner-box">
                     <div class="content">
                       <span class="company-logo"><img src="images/resource/company-logo/1-5.png" alt=""></span>
-                      <h4><a href="#">Senior Full Stack Engineer, Creator Success</a></h4>
+                      <h4><a href="job-single.html">Senior Full Stack Engineer, Creator Success</a></h4>
                       <ul class="job-info">
                         <li><span class="icon flaticon-briefcase"></span> Segment</li>
                         <li><span class="icon flaticon-map-locator"></span> London, UK</li>
@@ -1277,7 +1293,7 @@
                   <div class="inner-box">
                     <div class="content">
                       <span class="company-logo"><img src="images/resource/company-logo/1-6.png" alt=""></span>
-                      <h4><a href="#">Software Engineer (Android), Libraries</a></h4>
+                      <h4><a href="job-single.html">Software Engineer (Android), Libraries</a></h4>
                       <ul class="job-info">
                         <li><span class="icon flaticon-briefcase"></span> Segment</li>
                         <li><span class="icon flaticon-map-locator"></span> London, UK</li>
@@ -1302,7 +1318,7 @@
     <!-- End Job Section -->
 
     <!-- Testimonial Section Two -->
-    <section class="testimonial-section-two at-home21 bgc-home21 layout-pb-test">
+    <section class="testimonial-section-two at-home21 bgc-home21 layout-pb-test" id="feature-1">
       <div class="container-fluid">
         <div class="testimonial-left"><img src="images/resource/left-group.png" alt=""></div>
         <div class="testimonial-right"><img src="images/resource/right-group.png" alt=""></div>

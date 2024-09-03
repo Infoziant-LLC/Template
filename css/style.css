@@ -280,7 +280,7 @@ p,
   max-width: 1290px;
 }
 .ud-btn2{
-  color: #202124;
+  color: white;
   font-size: 15px;
   font-family: Jost;
   font-style: normal;
@@ -520,6 +520,7 @@ p,
 }
 .mb10{
   margin-bottom: 10px;
+  color: #2f0b63;
 }
 .mb15{
   margin-bottom: 15px;
@@ -1339,6 +1340,16 @@ Content Elements
   margin-right: 20px;
   margin-bottom: 20px;
 }
+.login-btn{
+  background: linear-gradient(to right,#8641f8,#9D30b1);
+  color: white;
+  text-align: center;
+  font-size: 14px;
+}
+.login-btn:hover{
+  color: white;
+  background: linear-gradient(to right,#7739db,#722380);
+}
 
 /*==========================
 Icons
@@ -1655,6 +1666,11 @@ About Section
   margin-bottom: 0;
 }
 
+.feature-title{
+  font-size: 40px;
+  color: #2f0b63;
+}
+
 .play-btn {
   position: absolute;
   left: 0;
@@ -1783,6 +1799,13 @@ About Section Two
 ====================================================================
 
 ***/
+#feature-1{
+  background-image: url('../images/home-banner-bg.png');
+  background-repeat: no-repeat;  /* Prevents the image from repeating */
+    background-size: cover;        /* Scales the image to cover the entire element */
+    background-position: center; 
+    color: white;
+}
 .about-section-two {
   position: relative;
   padding: 100px 0;
@@ -1806,7 +1829,7 @@ About Section Two
 .about-section-two .sec-title h2 {
   font-size: 40px;
   line-height: 54px;
-  color: #202124;
+  color: white;
 }
 
 .about-section-two .sec-title .text {
@@ -6001,14 +6024,14 @@ Main Header
   font-size: 15px;
   line-height: 30px;
   font-weight: 400;
-  color: #202124;
+  color: #b3afaf;
   cursor: pointer;
   transition: all 300ms ease;
 }
 
 .main-menu .navigation > li.current > a,
 .main-menu .navigation > li.current > span {
-  color: #4C7FF1;
+  color: #9D30b1;
   /* text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3); */
 }
 
@@ -6217,7 +6240,7 @@ Main Header
 
 .main-header .outer-box .btn-box a {
   margin-left: 20px;
-  min-width: 140px;
+  min-width: 100px;
 }
 
 .main-header .menu-btn {
@@ -6892,8 +6915,13 @@ Job Categories
 }
 
 .category-block-two h4 a {
-  color: #202124;
+  color: #2f0b63;
   transition: all 300ms ease;
+}
+
+.popular-jobs{
+  color: black;
+  font-size: 30px;
 }
 
 .category-block-two h4 a:hover {
@@ -8991,7 +9019,14 @@ Login Section
 .login-form .field-outer label {
   margin-bottom: 0;
 }
-
+.reg-btns{
+  color: white;
+  background: linear-gradient(to right,#8641f8,#9D30b1);
+  padding: 3% 6%;
+  width: 50%;
+  border-radius: 10px;
+  text-align: center;
+}
 .login-form .field-outer .pwd {
   position: relative;
   display: block;
@@ -10640,7 +10675,7 @@ Section Title
   display: block;
   font-size: 30px;
   line-height: 1.2em;
-  color: #202124;
+  color: white;
   font-weight: 500;
 }
 
@@ -10649,7 +10684,7 @@ Section Title
   margin-top: 15px;
   font-size: 15px;
   line-height: 26px;
-  color: black;
+  color: #adafb3;
 }
 
 .sec-title.light h2,
@@ -11665,7 +11700,7 @@ Testimonial Section Two
   position: relative;
   font-size: 18px;
   line-height: 24px;
-  color: #9e32b1;
+  color: #2f0b63;
   font-weight: 400;
   margin-bottom: 10px;
 }
@@ -11673,8 +11708,49 @@ Testimonial Section Two
 .testimonial-block-two .text {
   font-size: 16px;
   line-height: 26px;
-  color: #696969;
+  color: white;
   margin-bottom: 35px;
+}
+.text-abt{
+  color: black;
+  font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 35px;
+
+}
+.designation-abt{
+  color: black;
+}
+
+.typing-container {
+  font-size: 19px;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0; /* Initial width */
+  animation: typing 2s steps(40, end) forwards, blink-caret .75s step-end infinite;
+  margin: 50px auto;
+  max-width: 80%;
+  color: white;
+  margin-top: -1%;
+}
+
+/* Typing animation */
+@keyframes typing {
+  from { width: 0; }
+  to { width: 50%; }
+}
+
+/* Cursor blink animation */
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: white; }
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .typing-container {
+    font-size: 1.5em;
+  }
 }
 
 .testimonial-block-two .info-box {
@@ -11686,7 +11762,7 @@ Testimonial Section Two
 
 .testimonial-block-two .name {
   font-size: 18px;
-  color: #202124;
+  color: #2f0b63;
   font-weight: 500;
 }
 
@@ -11694,7 +11770,7 @@ Testimonial Section Two
   position: relative;
   display: block;
   font-size: 14px;
-  color: #696969;
+  color: white;
 }
 
 .testimonial-carousel .owl-dots {
@@ -17850,12 +17926,14 @@ Product Tabs
   height: 950px;
 }
 .banner-section-three.at-home21 .content-column .inner-column{
-  padding-top: 200px;
+  padding-top: 150px;
 }
 .banner-section-three.at-home21{
-  background-color: #E6E6FA;
-  background-image: inherit;
-  height: 960px;
+  height: 950px;
+  background-image: url('../images/home-banner-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover; /* Scales the image to cover the entire element */
+    background-position: center;
 }
 .home21-hero-img{
   bottom: 0;
@@ -17863,6 +17941,9 @@ Product Tabs
   margin: 0 auto;
   position: absolute;
   right: 0;
+  z-index: 1;
+  height: 30vw;
+  width: 100%;
 }
 .banner-section-three.at-home18{
   background-image: url(../images/index-18/hero-bg.png);
@@ -17898,7 +17979,7 @@ Product Tabs
 
 .mt-9 {
   margin-top: 9px !important;
-  color: black;
+  color: #adafb3;
 }
 
 .mt-50 {
@@ -17944,7 +18025,7 @@ Product Tabs
   margin-top: 48px;
 }
 #browse-all{
-  color: black;
+  color: white;
 }
 .theme-btn.-blue {
   background-color: #1967D2;
@@ -18225,7 +18306,7 @@ Product Tabs
   font-size: 18px;
   font-weight: 500;
   line-height: 30px;
-  color: #202124;
+  color: white;
 }
 
 .candidate.-type-1 .content p {
@@ -20832,9 +20913,68 @@ Banner Section Three
   position: relative;
   display: block;
   padding: 0 55px 0;
-  background-color: #ffffff;
 }
+.banner-circle{
+  display: flex;
+  justify-content: space-between;
+}
+.banner-circle-1, .banner-circle-2, .banner-circle-3, .banner-circle-4, .banner-circle-5{
+  width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    background: #abbaab; 
+background: -webkit-linear-gradient(to right, #ffffff, #abbaab);  
+background: linear-gradient(to right, #ffffff, #abbaab); 
+z-index: 2;
 
+}
+.banner-circle-1{
+  margin-top: 2%;
+    margin-left: -3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.banner-circle-2{
+  margin-top: -6.2%;
+  margin-left: 1.9%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.banner-circle-3{
+  margin-top: -3%;
+    margin-left: 2.5%;
+    position: relative;
+    left: -1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.banner-circle-4{
+  margin-top: 5%;
+  position: relative;
+    left: -0.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.banner-circle-5{
+  margin-top: -6.3%;
+    margin-right: -1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.circle-title{
+  color: black;
+  font-weight: 600;
+}
 .banner-section-three .content-column {
   position: relative;
   z-index: 3;
@@ -20858,7 +20998,7 @@ Banner Section Three
 .banner-section-three .content-column h3 {
   font-size: 50px;
   line-height: 60px;
-  color: #202124;
+  color: white;
   font-weight: 500;
   margin-bottom: 20px;
 }
@@ -20869,7 +21009,7 @@ Banner Section Three
 
 .banner-section-three .content-column .text {
   font-size: 15px;
-  color: #696969;
+  color: white;
   line-height: 25px;
 }
 
@@ -22508,7 +22648,7 @@ Work Section
   color: #fff;
 }
 .findjob-process .wrapper .title{
-  color: #202124;
+  color: white;
   font-family: Jost;
   font-size: 22px;
   font-style: normal;
@@ -22517,7 +22657,7 @@ Work Section
   margin-bottom: 15px;
 }
 .findjob-process .wrapper p{
-  color: #202124;
+  color: #adafb3;
   font-family: Jost;
   font-size: 16px;
   font-style: normal;

@@ -151,6 +151,7 @@
 		min-width: 100px;
 		padding: 8px 20px;
 		font-size: 14px;
+		color: #b3afaf;
 	}
 
 	.header-style-five .outer-box{
@@ -885,7 +886,7 @@
 
 	.banner-section-seven,
 	.banner-section-three{
-		background: #E5EBF5;
+		/* background: #E5EBF5; */
 		padding: 0;
 	}
 
@@ -1721,8 +1722,59 @@
 	.banner-section-three .content-column h3,
 	.banner-section-two .content-column h3,
 	.banner-section .content-column h3{
-		font-size: 26px;
+		font-size: 22px;
 		margin-bottom: 6px;
+		margin-top: 10px;
+	}
+
+	.banner-section-three .content-column .text {
+		font-size: 13px;
+		color: white;
+		line-height: 18px;
+	}
+	.job-search-form .form-group input{
+		height: 0;
+	}
+	.job-search-form .chosen-container-single .chosen-single{
+		height: 0;
+	}
+	.chosen-container-single .chosen-single span{
+		margin-top: -5%;
+	}
+	.banner-section-three.at-home21{
+		height: 700px;
+	}
+	.home21-hero-img{
+		height: 50vw;
+	}
+	.circle-title{
+		font-size: 6px;
+    line-height: 10px;
+	padding: 2px;
+	}
+	.banner-circle-1, .banner-circle-2, .banner-circle-3, .banner-circle-4, .banner-circle-5{
+		width: 12vw;
+		height: 12vw;
+	}
+	.banner-circle-1{
+		margin-top: -19%;
+    margin-left: -10%;
+	}
+	.banner-circle-2{
+		margin-top: -35%;
+    margin-left: 1.5%;
+	}
+	.banner-circle-3{
+		margin-top: -29%;
+    margin-left: 3%;
+	}
+	.banner-circle-4{
+		margin-top: -15%;
+    left: 2.5%;
+	}
+	.banner-circle-5{
+		margin-top: -35%;
+    margin-right: -8%;
 	}
 
 	.job-search-form .form-group .theme-btn{
