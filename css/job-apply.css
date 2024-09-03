@@ -105,3 +105,8 @@ button.back-btn {
 .edit-btn:hover{
     color: black;
 }
+.job-form-intro{
+    background-color: #E6E6FA;
+    padding-bottom: 1%;
+    margin-bottom: 1%;
+}
