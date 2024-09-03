@@ -137,7 +137,7 @@ h3,
 h4,
 h5,
 h6 {
-  position: relative;
+ 
   font-weight: normal;
   margin: 0px;
   background: none;
@@ -4912,6 +4912,7 @@ Chat Widget
   border-radius: 8px;
   box-shadow: 0px 6px 15px rgba(64, 79, 104, 0.05);
   margin-bottom: 30px;
+  z-index: 2;
 }
 
 .ls-widget .widget-title {
@@ -12361,6 +12362,7 @@ Candidates Section
 }
 .user-dashboard{
   padding-top: 4%;
+  z-index: -1;
 }
 .candidates-section {
   position: relative;
@@ -12915,7 +12917,7 @@ cursor: pointer;
 }
 
 .resume-action .dropdown-menu button .la {
-  color: #1967D2;
+  color: #9D30b1;
 }
 
 /* Candidate block Four */
@@ -13094,6 +13096,34 @@ cursor: pointer;
 .candidate-block-four .theme-btn {
   display: block;
   width: 100%;
+}
+
+.hiring-process-anm{
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2%;
+  width: 50vw;
+}
+.hiring-process-anm img{
+  width: 330px;
+  height: 130px;
+}
+.manage{
+  width: 100%;
+}
+.manage img{
+  width: 500px;
+}
+/* Initially hide all the list items */
+.hiring-process-anm li, .manage {
+  opacity: 0;
+}
+
+/* When the animation starts, make the element visible */
+.animate__animated.animate__fadeInLeft,
+.animate__animated.animate__fadeInUp {
+  opacity: 1 !important;
 }
 
 /*** 

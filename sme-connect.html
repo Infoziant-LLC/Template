@@ -9,6 +9,7 @@
     <link href="../static/css/style.css" rel="stylesheet" />
     <link href="../static/css/responsive.css" rel="stylesheet" />
     <link href="../static/css/chatbot.css" rel="stylesheet" />
+    <link href="../static/css/jobseekerLanding.css" rel="stylesheet" />
 
     <link rel="shortcut icon" href="../static/images/favicon.png" type="image/x-icon" />
     <link rel="icon" href="../static/images/favicon.png" type="image/x-icon" />
@@ -47,52 +48,7 @@
               <nav class="nav main-menu">
                 <ul class="navigation" id="navbar">
                   <li class="dropdown">
-                    <span>Home</span>
-                    <div class="mega-menu">
-                      <div class="mega-menu-bar row pt-0">
-                        <div class="column col-lg-3 col-md-3 col-sm-12">
-                          <ul>
-                            <li><a href="index.html">Home Page 01</a></li>
-                            <li><a href="index-2.html">Home Page 02</a></li>
-                            <li><a href="index-3.html">Home Page 03</a></li>
-                            <li><a href="index-4.html">Home Page 04</a></li>
-                            <li><a href="index-5.html">Home Page 05</a></li>
-                          </ul>
-                        </div>
-
-                        <div class="column col-lg-3 col-md-3 col-sm-12">
-                          <ul>
-                            <li><a href="index-6.html">Home Page 06</a></li>
-                            <li><a href="index-7.html">Home Page 07</a></li>
-                            <li><a href="index-8.html">Home Page 08</a></li>
-                            <li><a href="index-9.html">Home Page 09</a></li>
-                            <li><a href="index-10.html">Home Page 10</a></li>
-                          </ul>
-                        </div>
-
-                        <div class="column col-lg-3 col-md-3 col-sm-12">
-                          <ul>
-                            <li><a href="index-11.html">Home Page 11</a></li>
-                            <li><a href="index-12.html">Home Page 12</a></li>
-                            <li><a href="index-13.html">Home Page 13</a></li>
-                            <li><a href="index-14.html">Home Page 14</a></li>
-                            <li><a href="index-15.html">Home Page 15</a></li>
-                          </ul>
-                        </div>
-
-                        <div class="column col-lg-3 col-md-3 col-sm-12">
-                          <ul>
-                            <li><a href="index-16.html">Home Page 16</a></li>
-                            <li><a href="index-17.html">Home Page 17</a></li>
-                            <li><a href="index-18.html">Home Page 18</a></li>
-                            <li><a href="index-19.html">Home Page 19</a></li>
-                            <li><a href="index-20.html">Home Page 20</a></li>
-                            <li><a href="index-21.html">Home Page 21</a></li>
-                            <li><a href="index-22.html">Home Page 22</a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
+                    <a href="index.html"><span>Home</span></a>
                   </li>
 
                   <li class="dropdown has-mega-menu" id="has-mega-menu">
@@ -374,18 +330,12 @@
                     >
                     <span>
                       <span class="contact-info">
-                        <span class="phone-num"
-                          ><span>Call us</span
-                          ><a href="tel:1234567890">123 456 7890</a></span
-                        >
-                        <span class="address"
-                          >329 Queensberry Street, North Melbourne VIC
-                          <br />3051, Australia.</span
-                        >
-                        <a href="mailto:support@superio.com" class="email"
-                          >support@superio.com</a
-                        >
-                      </span>
+                        <span class="contact-info">
+                          <span class="phone-num"><span>Call us</span><a href="tel:1234567890">1 (314) 732 0300 <br/>+91 96000 85988</a></span>
+                          <span class="address">Akshaya HQ, Rajiv Gandhi Salai, Kazhipattur,<br>Tamil Nadu, Chennai - 603103, India.</span>
+                          <span class="address">1401, 21st ST STE 6310,<br>Sacramento, CA 95811, USA.</span>
+                          <a href="mailto:support@superio.com" class="email">support@infoziant.com</a>
+                        </span>
                       <span class="social-links">
                         <a href="#"><span class="fab fa-facebook-f"></span></a>
                         <a href="#"><span class="fab fa-twitter"></span></a>
@@ -405,7 +355,7 @@
                 <span class="icon la la-heart-o"></span>
               </button>
 
-              <button class="menu-btn">
+              <button class="menu-btn" onclick="notifyToggleSmeConnect()">
                 <span class="icon la la-bell"></span>
               </button>
 
@@ -426,13 +376,69 @@
                 </a>
                 <ul class="dropdown-menu">
                   <li>
-                    <a href="sme-dashboard.html">
-                      <i class="fa-light fa-envelopes-bulk"></i> Query</a
+                    <a href="candidate-dashboard.html">
+                      <i class="la la-home"></i> Dashboard</a
                     >
                   </li>
                   <li>
-                    <a href="dashboard-company-profile.html"
-                      ><i class="la la-user-tie"></i> My Profile</a
+                    <a href="candidate-dashboard-profile.html"
+                      ><i class="la la-user-tie"></i>My Profile</a
+                    >
+                  </li>
+                  <li>
+                    <a href="candidate-dashboard-resume.html"
+                      ><i class="la la-file-invoice"></i>My Resume</a
+                    >
+                  </li>
+                  <li>
+                    <a href="candidate-dashboard-applied-job.html"
+                      ><i class="la la-briefcase"></i>Applied Jobs</a
+                    >
+                  </li>
+                  <li>
+                    <a href="candidate-dashboard-job-alerts.html"
+                      ><i class="la la-bell"></i>Job Alerts</a
+                    >
+                  </li>
+                  <li><a href="candidate-inbox.html"><i class="fa-light fa-envelope"></i> Messages</a></li>
+                  <li>
+                    <a href="candidate-career-path.html"
+                      ><i class="fa-light fa-street-view"></i>Career Path</a
+                    >
+                  </li>
+                  <li>
+                    <a href="candidate-dashboard-shortlisted-resume.html"
+                      ><i class="la la-bookmark-o"></i>Shortlisted Jobs</a
+                    >
+                  </li>
+                  <li>
+                    <a href="candidate-dashboard-cv-manager.html"
+                      ><i class="la la-file-invoice"></i>CV manager</a
+                    >
+                  </li>
+                  <!-- <li>
+                    <a href="dashboard-packages.html"
+                      ><i class="la la-box"></i>Packages</a
+                    >
+                  </li> -->
+                  <li class="active">
+                    <a href="sme-connect.html"
+                      ><i class="fa-light fa-network-wired"></i>SME Connect</a
+                    >
+                  </li>
+                  <li>
+                    <a href="candidate-support.html"
+                      ><i class="fa-light fa-circle-question"></i>Support</a
+                    >
+                  </li>
+                  <li>
+                    <a href="dashboard-change-password.html"
+                      ><i class="la la-lock"></i>Change Password</a
+                    >
+                  </li>
+                  <li>
+                    <a href="dashboard-profile.html"
+                      ><i class="la la-user-alt"></i>View Profile</a
                     >
                   </li>
                   <li>
@@ -441,7 +447,7 @@
                     >
                   </li>
                   <li>
-                    <a href="index.html"
+                    <a href="dashboard-delete.html"
                       ><i class="la la-trash"></i>Delete Profile</a
                     >
                   </li>
@@ -455,7 +461,7 @@
         <div class="mobile-header">
           <div class="logo">
             <a href="index.html"
-              ><img src="images/logo.svg" alt="" title=""
+              ><img src="../static/images/enbott-logo.png" alt="" title=""
             /></a>
           </div>
 
@@ -486,6 +492,26 @@
         <!-- Mobile Nav -->
         <div id="nav-mobile"></div>
       </header>
+      <!-- notification box -->
+    <div class="notify">
+      <div class="col-lg-5">
+          <div class="notification-widget ls-widget">
+              <div class="widget-title">
+                <h4>Notifications</h4>
+              </div>
+              <div class="widget-content">
+                <ul class="notification-list">
+                  <li><span class="icon flaticon-briefcase"></span> <strong>Wade Warren</strong> applied for a job <span class="colored">Web Developer</span></li>
+                  <li><span class="icon flaticon-briefcase"></span> <strong>Henry Wilson</strong> applied for a job <span class="colored">Senior Product Designer</span></li>
+                  <li class="success"><span class="icon flaticon-briefcase"></span> <strong>Raul Costa</strong> applied for a job <span class="colored">Product Manager, Risk</span></li>
+                  <li><span class="icon flaticon-briefcase"></span> <strong>Jack Milk</strong> applied for a job <span class="colored">Technical Architect</span></li>
+                  <li class="success"><span class="icon flaticon-briefcase"></span> <strong>Michel Arian</strong> applied for a job <span class="colored">Software Engineer</span></li>
+                  <li><span class="icon flaticon-briefcase"></span> <strong>Ali Tufan</strong> applied for a job <span class="colored">UI Designer</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+    </div>
       <!--End Main Header -->
 
       <!-- Sidebar Backdrop -->
@@ -495,12 +521,70 @@
       <div class="user-sidebar">
         <div class="sidebar-inner">
           <ul class="navigation">
-            <li class="active">
-              <a href="sme-dashboard.html"> <i class="fa-light fa-envelopes-bulk"></i> Query</a>
+            <li>
+              <a href="candidate-dashboard.html">
+                <i class="la la-home"></i> Dashboard</a
+              >
             </li>
             <li>
               <a href="candidate-dashboard-profile.html"
                 ><i class="la la-user-tie"></i>My Profile</a
+              >
+            </li>
+            <li>
+              <a href="candidate-dashboard-resume.html"
+                ><i class="la la-file-invoice"></i>My Resume</a
+              >
+            </li>
+            <li>
+              <a href="candidate-dashboard-applied-job.html"
+                ><i class="la la-briefcase"></i>Applied Jobs</a
+              >
+            </li>
+            <li>
+              <a href="candidate-dashboard-job-alerts.html"
+                ><i class="la la-bell"></i>Job Alerts</a
+              >
+            </li>
+            <li><a href="candidate-inbox.html"><i class="fa-light fa-envelope"></i> Messages</a></li>
+            <li>
+              <a href="candidate-career-path.html"
+                ><i class="fa-light fa-street-view"></i>Career Path</a
+              >
+            </li>
+            <li>
+              <a href="candidate-dashboard-shortlisted-resume.html"
+                ><i class="la la-bookmark-o"></i>Shortlisted Jobs</a
+              >
+            </li>
+            <li>
+              <a href="candidate-dashboard-cv-manager.html"
+                ><i class="la la-file-invoice"></i>CV manager</a
+              >
+            </li>
+            <!-- <li>
+              <a href="dashboard-packages.html"
+                ><i class="la la-box"></i>Packages</a
+              >
+            </li> -->
+            <li class="active">
+              <a href="sme-connect.html"
+                ><i class="fa-light fa-network-wired"></i>SME Connect</a
+              >
+            </li>
+            <li>
+              <a href="candidate-support.html"
+                ><i class="fa-light fa-circle-question"></i>Support</a
+              >
+            </li>
+            <li>
+              <a href="dashboard-change-password.html"
+                ><i class="la la-lock"></i>Change Password</a
+              >
+            </li>
+            <li>
+              <a href="dashboard-profile.html"
+                ><i class="la la-user-alt"></i>View Profile</a
               >
             </li>
             <li>
@@ -518,30 +602,28 @@
 
       <!-- Dashboard -->
       <section class="user-dashboard">
-        <div class="sme-dashboard-main">
-        <h2>Queries</h2>
-        <div class="response-container">
-          <div class="responses">
-            <div><strong>Domain:</strong> <span id="domain"></span></div>
-            <div><strong>Query Type:</strong> <span id="queryType"></span></div>
-            <div><strong>Message:</strong> <span id="userMessage"></span></div>
-            <div>
-              <strong>Attached Files:</strong> <span id="attachedFiles"></span>
+        <div class="sme-connect-main">
+          <h2>Welcome to SME Connect</h2>
+          <div class="chatbox">
+            <div id="questionBox" class="question-box">
+              <!-- Question will appear here -->
             </div>
-            <div class="answer-container">
-              <textarea
-                id="mentorAnswer"
-                placeholder="Enter your answer here"
-              ></textarea><br/><br/>
-              <input type="file" id="mentorFileInput" multiple /><br/><br/>
-              <button class="submit-ans" onclick="submitAnswer()">Submit</button>
+            <div class="input-area">
+              <input
+                type="text"
+                id="userInput"
+                placeholder="Enter your response here"
+              />
+              <input
+                type="file"
+                id="fileInput"
+                multiple
+                style="display: none"
+              />
+              <button onclick="handleSubmit()">Send</button>
             </div>
-          </div>
-          <div class="answer-btn">
-            <button id="toggleButton"><i class="fa-light fa-pen-to-square"></i> Answer</button>
           </div>
         </div>
-    </div>
       </section>
       <!-- End Dashboard -->
 
@@ -552,7 +634,7 @@
     </div>
     <!-- End Page Wrapper -->
 
-    <script src="../static/js/sme-dashboard.js"></script>
+    <script src="../static/js/notification.js"></script>
     <script src="../static/js/jquery.js"></script>
     <script src="../static/js/popper.min.js"></script>
     <script src="../static/js/chosen.min.js"></script>

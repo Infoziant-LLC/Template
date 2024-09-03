@@ -1468,7 +1468,7 @@ h3 {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 30vh;
+  height: 20vh;
   width: 100vw;
   text-align: center;
   font-family: 'Jost', sans-serif;
@@ -3529,7 +3529,7 @@ h3 {
   -moz-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
-  height: 20vw;
+  height: 250px;
 }
 .courses_info{
   background-color: white;
