@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Superio | Just another HTML Template | Register</title>
+  <title>Enbott - Register</title>
 
   <!-- Stylesheets -->
   <link href="css/bootstrap.css" rel="stylesheet">
@@ -26,24 +26,27 @@
 
     <!-- Preloader -->
     <div class="preloader"></div>
-
+    <span class="header-span"></span>
     <!-- Main Header-->
     <header class="main-header">
       <div class="container-fluid">
         <!-- Main box -->
+         
         <div class="main-box">
           <!--Nav Outer -->
+          
           <div class="nav-outer">
             <div class="logo-box">
-              <div class="logo"><a href="index.html"><img src="images/logo-2.svg" alt="" title=""></a></div>
+              <div class="logo"><a href="index.html"><img src="images/enbott-logo.png" alt="" title=""style="width: 150px; height: auto;"></a>
+              </div>
             </div>
           </div>
 
           <div class="outer-box">
             <!-- Login/Register -->
             <div class="btn-box">
-              <a href="login-popup.html" class="theme-btn btn-style-three call-modal">Login / Register</a>
-              <a href="dashboard-post-job.html" class="theme-btn btn-style-one"><span class="btn-title">Job Post</span></a>
+              <a href="login.html" class="theme-btn btn-style-three">Login</a>
+              <!-- <a href="dashboard-post-job.html" class="theme-btn btn-style-one"><span class="btn-title">Job Post</span></a> -->
             </div>
           </div>
         </div>
@@ -51,7 +54,8 @@
 
       <!-- Mobile Header -->
       <div class="mobile-header">
-        <div class="logo"><a href="index.html"><img src="images/logo.svg" alt="" title=""></a></div>
+        <!-- <div class="logo"><a href="index.html"><img src="images/white.logo.png" alt="" title=""style="width: 150px; height: auto;"></a> -->
+        </div>
 
         <!--Nav Box-->
         <div class="nav-outer clearfix">
@@ -59,7 +63,7 @@
           <div class="outer-box">
             <!-- Login/Register -->
             <div class="login-box">
-              <a href="login-popup.html" class="call-modal"><span class="icon-user"></span></a>
+              <a href="register.html" class="call-modal"><span class="icon-user"></span></a>
             </div>
 
             <a href="#nav-mobile" class="mobile-nav-toggler navbar-trigger"><span class="flaticon-menu-1"></span></a>
@@ -74,25 +78,38 @@
 
     <!-- Info Section -->
     <div class="login-section">
-      <div class="image-layer" style="background-image: url(images/background/12.jpg);"></div>
+      <div class="image-layer" style="background-image: url(images/Register.png);"></div>
       <div class="outer-box">
         <!-- Login Form -->
         <div class="login-form default-form">
           <div class="form-inner">
-            <h3>Create a Free Superio Account</h3>
+            <h3>Create a Free Enbott Account</h3>
 
             <!--Login Form-->
+            
             <form method="post" action="add-parcel.html">
               <div class="form-group">
                 <div class="btn-box row">
-                  <div class="col-lg-6 col-md-12">
-                    <a href="#" class="theme-btn btn-style-seven"><i class="la la-user"></i> Candidate </a>
+                    <div class="col-lg-6 col-md-12">                  
+                        <a href="#" class="theme-btn candidate-button" onclick="toggleColor('candidate')"><i class="la la-user"></i> Candidate </a>
+                    </div>
+                    <div class="col-lg-6 col-md-12">                  
+                        <a href="#" class="theme-btn employer-button" onclick="toggleColor('employer')"><i class="la la-building"></i> Employer </a>
+                    </div>
+                </div>
+            </div>
+              
+              <!-- <div class="form-group">
+                <div class="btn-box row">
+                  <div class="col-lg-6 col-md-12">                  
+                    <a href="#" class="theme-btn candidate-button" ><i class="la la-user"></i> Candidate </a>
                   </div>
+                 
                   <div class="col-lg-6 col-md-12">
-                    <a href="#" class="theme-btn btn-style-four"><i class="la la-briefcase"></i> Employer </a>
+                    <a href="#" class="theme-btn employer-button" ><i class="la la-briefcase"></i> Employer </a>
                   </div>
                 </div>
-              </div>
+              </div> -->
 
               <div class="form-group">
                 <label>Email Address</label>
@@ -146,6 +163,19 @@
   <script src="js/owl.js"></script>
   <script src="js/wow.js"></script>
   <script src="js/script.js"></script>
+
+  <script>
+    function toggleColor(buttonType) {
+      if (buttonType === 'candidate') {
+        document.querySelector('.employer-button').classList.add('red-bg');
+        document.querySelector('.candidate-button').classList.remove('red-bg');
+      } else if (buttonType === 'employer') {
+        document.querySelector('.candidate-button').classList.add('red-bg');
+        document.querySelector('.employer-button').classList.remove('red-bg');
+      }
+    }
+    </script>
+    
 
 </body>
 
