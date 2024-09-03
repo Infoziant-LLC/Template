@@ -1091,6 +1091,23 @@
       });
     }
 
+	// typing animation in homepage
+	const text = "Empowering Individuals and Transforming Organizations";
+    const typingElement = document.getElementById('typing-text');
+    const typingSpeed = 100; // milliseconds per character
+    let index = 0;
+
+    function type() {
+      if (index < text.length) {
+        typingElement.innerHTML += text.charAt(index);
+        index++;
+        setTimeout(type, typingSpeed);
+      }
+    }
+
+    // Start the typing effect on page load
+    window.onload = type;
+
 
 
 /* ==========================================================================

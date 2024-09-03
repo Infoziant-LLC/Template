@@ -11714,6 +11714,38 @@ Testimonial Section Two
   color: black;
 }
 
+.typing-container {
+  font-size: 19px;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: .15em solid white; /* Cursor */
+  width: 0; /* Initial width */
+  animation: typing 4s steps(40, end) forwards, blink-caret .75s step-end infinite;
+  margin: 50px auto;
+  max-width: 80%;
+  color: white;
+  margin-top: -1%;
+}
+
+/* Typing animation */
+@keyframes typing {
+  from { width: 0; }
+  to { width: 50%; }
+}
+
+/* Cursor blink animation */
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: white; }
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .typing-container {
+    font-size: 1.5em;
+  }
+}
+
 .testimonial-block-two .info-box {
   position: relative;
   display: flex;
