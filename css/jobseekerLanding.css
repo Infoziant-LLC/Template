@@ -341,3 +341,44 @@ nav {
         right: 32%;
     }
 }
+
+/* job recommend */
+.rcmnd-section{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 3%;
+}
+.rcmnd-section h3{
+    text-align: center;
+}
+.rcmd-ul-1{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 2%;
+}
+.rcmd-card{
+    padding: 5%;
+}
+.rcmd-card h6{
+    color: #9D30b1;
+    font-weight: 500;
+    font-size: 20px;
+}
+.rcmd-ul-1 li img{
+   width: 55px;
+   height: 19px;
+    border-radius: 50%;
+}
+.job-logo{
+    padding: 1%;
+    border: 1px solid rgb(218, 216, 216);
+    border-radius: 10px;
+}
+
+/* notification */
+.notify{
+    position: relative;
+    left: 59%;
+    top: -10%;
+    display: none;
+}
