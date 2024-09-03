@@ -8041,7 +8041,7 @@ Job Detail Section
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-size: cover; */
+  background-size: cover; 
   padding: 80px 0 70px;
 }
 .job-detail-section.at-jsv7 .upper-box,
@@ -12841,7 +12841,7 @@ cursor: pointer;
 }
 
 .resume-action .dropdown-menu button .la {
-  color: #1967D2;
+  color: #9D30b1;
 }
 
 /* Candidate block Four */
@@ -13020,6 +13020,34 @@ cursor: pointer;
 .candidate-block-four .theme-btn {
   display: block;
   width: 100%;
+}
+
+.hiring-process-anm{
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2%;
+  width: 50vw;
+}
+.hiring-process-anm img{
+  width: 330px;
+  height: 130px;
+}
+.manage{
+  width: 100%;
+}
+.manage img{
+  width: 500px;
+}
+/* Initially hide all the list items */
+.hiring-process-anm li, .manage {
+  opacity: 0;
+}
+
+/* When the animation starts, make the element visible */
+.animate__animated.animate__fadeInLeft,
+.animate__animated.animate__fadeInUp {
+  opacity: 1 !important;
 }
 
 /*** 
