@@ -2574,6 +2574,9 @@ h3 {
   .courses_details_info #accordion .card .card-header h5 .btn-link {
       font-size: 1rem ; 
       text-align: left;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
   }
 }
 
@@ -3003,6 +3006,7 @@ h3 {
   line-height: 56px;
   font-weight: 400;
   font-family: "Poppins", sans-serif;
+  /* width:50vw; */
 }
 
 @media (max-width: 767px) {
@@ -3086,8 +3090,32 @@ h3 {
 @media (max-width: 767px) {
   /* line 75, C:/Users/SPN Graphics/Desktop/CL September/Edu mark/207 Education/HTML/scss/_course_details.scss */
   .courses_details_info {
-    padding: 50px 0 50px 0;
+    padding: 15px 0 15px 0;
   }
+}
+@media (max-width: 767px)
+{
+ .video_ML-1
+ {
+     margin-right:20px;
+     margin-bottom: -30px
+ } 
+}
+@media (max-width: 767px)
+{
+ .video_ML-2
+ {
+     margin-right:20px;
+     margin-bottom: -30px
+ } 
+}
+@media (max-width: 767px)
+{
+ .video_ML-3
+ {
+     margin-right:20px;
+     margin-bottom: -30px
+ } 
 }
 
 /* line 82, C:/Users/SPN Graphics/Desktop/CL September/Edu mark/207 Education/HTML/scss/_course_details.scss */
@@ -3100,7 +3128,7 @@ h3 {
 
 /* line 87, C:/Users/SPN Graphics/Desktop/CL September/Edu mark/207 Education/HTML/scss/_course_details.scss */
 .courses_details_info .single_courses h3.second_title {
-  margin-top: 52px;
+  margin-top: 25px;
 }
 
 /* line 91, C:/Users/SPN Graphics/Desktop/CL September/Edu mark/207 Education/HTML/scss/_course_details.scss */
@@ -3114,13 +3142,13 @@ h3 {
 /* line 97, C:/Users/SPN Graphics/Desktop/CL September/Edu mark/207 Education/HTML/scss/_course_details.scss */
 .courses_details_info .courses_sidebar {
   position: relative;
-  margin-top: -400px;
+  margin-top: -480px;
 }
 
 @media (max-width: 767px) {
   /* line 97, C:/Users/SPN Graphics/Desktop/CL September/Edu mark/207 Education/HTML/scss/_course_details.scss */
   .courses_details_info .courses_sidebar {
-    margin-top: 0;
+    margin-top: -280px;
   }
 }
 
@@ -3145,17 +3173,41 @@ h3 {
 .video_AI:hover {
   transform: scale(1.05); /* Slightly zooms in the image on hover */
 }
-.video_ML
+.video_ML-1
 {
-  background:url("./../images/courses/course-2.jpg") no-repeat center center !important;
+  background:url("./../ML-1-image.jpg") no-repeat center center !important;
   position: relative;
   background-size: cover ! important;
   height: 300px;
   border-radius: 8px;
 }
-.video_ML:hover {
+.video_ML-1:hover {
   transform: scale(1.05); /* Slightly zooms in the image on hover */
 }
+.video_ML-2
+{
+  background:url("./../ML-2-image.jpg") no-repeat center center !important;
+  position: relative;
+  background-size: cover ! important;
+  height: 300px;
+  border-radius: 8px;
+}
+.video_ML-2:hover {
+  transform: scale(1.05); /* Slightly zooms in the image on hover */
+}
+.video_ML-3
+{
+  background:url("./../ML-3-image.png") no-repeat center center !important;
+  position: relative;
+  background-size: cover ! important;
+  height: 300px;
+  border-radius: 8px;
+}
+.video_ML-3:hover {
+  transform: scale(1.05); /* Slightly zooms in the image on hover */
+}
+
+
 .video_NLP
 {
   background:url("./../images/courses/course-3.jpg") no-repeat center center !important;

@@ -1110,6 +1110,18 @@
 	});	
 
 })(window.jQuery);
+document.getElementById("year").textContent = new Date().getFullYear();
+
+// notification toggle
+document.querySelector('.menu-btn').addEventListener('click', function() {
+    const notificationBox = document.querySelector('.notify');
+    if (notificationBox.style.display === 'none' || notificationBox.style.display === '') {
+        notificationBox.style.display = 'block';
+    } else {
+        notificationBox.style.display = 'none';
+    }
+});
+
 
 
 

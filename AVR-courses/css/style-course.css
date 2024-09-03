@@ -636,6 +636,7 @@ h3 {
   .section_title h3 {
     font-size: 23px;
     line-height: 30px;
+    
   }
 }
 
@@ -2574,7 +2575,34 @@ h3 {
   .courses_details_info #accordion .card .card-header h5 .btn-link {
       font-size: 1rem ; 
       text-align: left;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
   }
+}
+@media (max-width: 767px)
+{
+ .video_AVR-1 
+ {
+     margin-right:20px;
+     margin-bottom: -30px
+ } 
+}
+@media (max-width: 767px)
+{
+ .video_AVR-2
+ {
+     margin-right:20px;
+     margin-bottom: -30px
+ } 
+}
+@media (max-width: 767px)
+{
+ .video_AVR-3
+ {
+     margin-right:20px;
+     margin-bottom: -30px
+ } 
 }
 
 /* line 85, C:/Users/SPN Graphics/Desktop/CL September/Edu mark/207 Education/HTML/scss/_faq.scss */
@@ -3086,7 +3114,7 @@ h3 {
 @media (max-width: 767px) {
   /* line 75, C:/Users/SPN Graphics/Desktop/CL September/Edu mark/207 Education/HTML/scss/_course_details.scss */
   .courses_details_info {
-    padding: 50px 0 50px 0;
+    padding: 15px 0 15px 0;
   }
 }
 
@@ -3100,7 +3128,7 @@ h3 {
 
 /* line 87, C:/Users/SPN Graphics/Desktop/CL September/Edu mark/207 Education/HTML/scss/_course_details.scss */
 .courses_details_info .single_courses h3.second_title {
-  margin-top: 52px;
+  margin-top: 25px;
 }
 
 /* line 91, C:/Users/SPN Graphics/Desktop/CL September/Edu mark/207 Education/HTML/scss/_course_details.scss */
@@ -3114,13 +3142,13 @@ h3 {
 /* line 97, C:/Users/SPN Graphics/Desktop/CL September/Edu mark/207 Education/HTML/scss/_course_details.scss */
 .courses_details_info .courses_sidebar {
   position: relative;
-  margin-top: -400px;
+  margin-top: -480px;
 }
 
 @media (max-width: 767px) {
   /* line 97, C:/Users/SPN Graphics/Desktop/CL September/Edu mark/207 Education/HTML/scss/_course_details.scss */
   .courses_details_info .courses_sidebar {
-    margin-top: 0;
+    margin-top: -280px;
   }
 }
 
@@ -3227,15 +3255,37 @@ h3 {
   transform: scale(1.05); /* Slightly zooms in the image on hover */
 }
 
-.video_AVR
+.video_AVR-1
 {
-  background:url("./../images/courses/course-9.avif") no-repeat center center !important;
+  background:url("./../AVR-1-image.jpg") no-repeat center center !important;
   position: relative;
   background-size: cover ! important;
   height: 300px;
   border-radius: 8px;
 }
-.video_AVR:hover {
+.video_AVR-1:hover {
+  transform: scale(1.05); /* Slightly zooms in the image on hover */
+}
+.video_AVR-2
+{
+  background:url("./../AVR-2-image.jpg") no-repeat center center !important;
+  position: relative;
+  background-size: cover ! important;
+  height: 300px;
+  border-radius: 8px;
+}
+.video_AVR-2:hover {
+  transform: scale(1.05); /* Slightly zooms in the image on hover */
+}
+.video_AVR-3
+{
+  background:url("./../AVR-3-image.avif") no-repeat center center !important;
+  position: relative;
+  background-size: cover ! important;
+  height: 300px;
+  border-radius: 8px;
+}
+.video_AVR-3:hover {
   transform: scale(1.05); /* Slightly zooms in the image on hover */
 }
 
