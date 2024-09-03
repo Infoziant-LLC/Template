@@ -10,7 +10,6 @@
   <link href="css/style.css" rel="stylesheet">
   <link href="css/responsive.css" rel="stylesheet">
   <link href="css/employerLanding.css" rel="stylesheet">
-  <link href="css/style-dashboard.css" rel="stylesheet">
 
   <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
   <link rel="icon" href="images/favicon.png" type="image/x-icon">
@@ -1062,16 +1061,14 @@
       }
     };
 
-    var showCand = null;
+    let showCand = null;
 
-    function showCandidate(candidateId) {
-      showCand = candidateId;
+function showCandidate(candidateId) {
+    showCand = candidateId;
 
-      const candidate = candidates[candidateId];
-      console.log(candidate);
+    const candidate = candidates[candidateId];
 
-
-      if (candidate) {
+    if (candidate) {
         document.querySelector("#candidate-image").src = candidate.imageUrl;
         document.querySelector("#candidate-name").innerText = candidate.name;
         document.querySelector("#candidate-designation").innerText = candidate.designation;
@@ -1083,23 +1080,23 @@
         const educationSection = document.querySelector("#education-section");
         educationSection.innerHTML = "";
         candidate.education.forEach(item => {
-          educationSection.innerHTML += `
-              <div class="resume-block">
-                <div class="inner">
-                  <div class="title-box">
-                    <div class="info-box">
-                      <h3>${item.degree}</h3>
-                      <span>${item.institution}</span>
+            educationSection.innerHTML += `
+                <div class="resume-block">
+                    <div class="inner">
+                        <div class="title-box">
+                            <div class="info-box">
+                                <h3>${item.degree}</h3>
+                                <span>${item.institution}</span>
+                            </div>
+                            <div class="edit-box">
+                                <span class="year">${item.year}</span>
+                            </div>
+                        </div>
+                        <div>
+                            <p>${item.content}</p>
+                        </div>
                     </div>
-                    <div class="edit-box">
-                      <span class="year">${item.year}</span>
-                    </div>
-                  </div>
-                  <div>
-                      <p>${item.content}</p>
-                  </div>
                 </div>
-              </div>
             `;
         });
 
@@ -1107,23 +1104,23 @@
         const experienceSection = document.querySelector("#experience-section");
         experienceSection.innerHTML = "";
         candidate.experience.forEach(item => {
-          experienceSection.innerHTML += `
-              <div class="resume-block">
-                <div class="inner">
-                  <div class="title-box">
-                    <div class="info-box">
-                      <h3>${item.title}</h3>
-                      <span>${item.company}</span>
+            experienceSection.innerHTML += `
+                <div class="resume-block">
+                    <div class="inner">
+                        <div class="title-box">
+                            <div class="info-box">
+                                <h3>${item.title}</h3>
+                                <span>${item.company}</span>
+                            </div>
+                            <div class="edit-box">
+                                <span class="year">${item.year}</span>
+                            </div>
+                        </div>
+                        <div>
+                            <p>${item.learned}</p>
+                        </div>
                     </div>
-                    <div class="edit-box">
-                      <span class="year">${item.year}</span>
-                    </div>
-                  </div>
-                  <div>
-                      <p>${item.learned}</p>
-                  </div>
                 </div>
-              </div>
             `;
         });
 
@@ -1131,14 +1128,14 @@
         const skillsSection = document.querySelector("#candidate-skills");
         skillsSection.innerHTML = "";
         candidate.skills.forEach(skill => {
-          skillsSection.innerHTML += `<li><a href="#">${skill}</a></li>`;
+            skillsSection.innerHTML += `<li><a href="#">${skill}</a></li>`;
         });
 
         // Populate Main Skills
         const mainSkillsSection = document.querySelector("#candidate-tags");
         mainSkillsSection.innerHTML = "";
         candidate.mainSkill.forEach(mainSkill => {
-          mainSkillsSection.innerHTML += `<li><a href="#">${mainSkill}</a></li>`;
+            mainSkillsSection.innerHTML += `<li><a href="#">${mainSkill}</a></li>`;
         });
 
         // Populate other details
@@ -1152,20 +1149,18 @@
 
         // Add event listener for the Summarise Candidate button
         document.querySelector("#candidate-summarise").addEventListener("click", () => {
-          showCandidateSummary(candidate.summarsieData);
+            summaryCandidate(showCand);
         });
-      }
     }
+}
 
-    function summaryCandidate(Id) {
-      const candidate = candidates[Id];
-      if (candidate) {
+function summaryCandidate(Id) {
+    const candidate = candidates[Id];
+    if (candidate) {
         document.querySelector("#candidate-about").innerText = candidate.summarsieData;
-
 
         const educationSection = document.querySelector("#education-section");
         educationSection.innerHTML = "";
-
 
         const experienceSection = document.querySelector("#experience-section");
         experienceSection.innerHTML = "";
@@ -1178,9 +1173,13 @@
         document.querySelector("#candidate-expected-salary").innerText = candidate.expectedSalary;
         document.querySelector("#candidate-gender").innerText = candidate.gender;
         document.querySelector("#candidate-education-level").innerText = candidate.educationLevel;
-
-      }
     }
+}
+
+// Automatically show candidate1 on page load
+window.onload = function() {
+    showCandidate('candidate1');
+};
 
 
   </script>
