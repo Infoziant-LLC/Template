@@ -12362,7 +12362,6 @@ Candidates Section
 }
 .user-dashboard{
   padding-top: 4%;
-  z-index: -1;
 }
 .candidates-section {
   position: relative;
