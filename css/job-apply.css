@@ -1,6 +1,8 @@
 .job-apply{
     height: 100%;
     width: 100vw;
+    background-color: #E6E6FA;
+    margin-top: -1%;
 }
 .job-apply h2{
     text-align: center;
@@ -18,6 +20,8 @@
     padding-top: 3%;
     padding-bottom: 3%;
     border-top: 1px solid rgb(212, 210, 210);
+    background-color: white;
+    border-radius: 10px;
 }
 .job-apply-form h4{
     color: rgb(66, 64, 64);
@@ -38,11 +42,11 @@
 }
 .form-align li input{
     width: 100%;
-    padding: 3px 7px;
+    padding: 4px 8px;
     border-radius: 10px;
     color: rgb(66, 64, 64);
     font-size: 15px;
-    border: 1px solid rgb(189, 187, 187);
+    background-color: #efeff9;
 }
 .form-align li textarea{
     width: 100%;
