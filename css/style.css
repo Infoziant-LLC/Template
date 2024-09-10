@@ -2411,6 +2411,12 @@ Buttons Styles
   font-weight: 400;
   padding: 18px 35px 15px 35px;
 }
+
+
+.btn-style-one-1{
+  background: linear-gradient(to right,#8641f8,#9D30b1);
+}
+
 .btn-style-one i,
 .btn-style-three i{
   transform: rotate(-45deg);
@@ -12837,6 +12843,15 @@ Candidates Section Two
   margin-left: 40px;
 }
 
+.option-box .delete-btn-1 {
+  position: relative;
+  display: block;
+  font-size: 20px;
+  color: #9D30b1;
+  font-weight: 400;
+  /* margin-left: 40px; */
+}
+
 
 /* pop up window */
 .button-cand {
@@ -12924,6 +12939,19 @@ height: 100%;
 overflow: auto;
 background-color: rgba(0, 0, 0, 0.4);
 }
+
+.delete_m_dashboard{
+  padding: 5%;
+  display: none; /* Hidden by default */
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  }
 
 .delete_cont h5{
 text-align: center;
