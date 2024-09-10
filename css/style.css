@@ -11785,24 +11785,23 @@ Testimonial Section Two
   white-space: nowrap;
   overflow: hidden;
   width: 0; /* Initial width */
-  animation: typing 2s steps(40, end) forwards, blink-caret .75s step-end infinite;
+  animation: typing 1s steps(40, end) forwards, blink-caret .75s step-end infinite; /* Reduced to 1s */
   margin: 50px auto;
   max-width: 80%;
   color: white;
   margin-top: -1%;
 }
 
-/* Typing animation */
 @keyframes typing {
   from { width: 0; }
-  to { width: 50%; }
+  to { width: 100%; }
 }
 
-/* Cursor blink animation */
 @keyframes blink-caret {
   from, to { border-color: transparent; }
   50% { border-color: white; }
 }
+
 
 /* Responsive adjustments */
 @media (max-width: 600px) {
