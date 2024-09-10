@@ -379,9 +379,6 @@ p,
 }
 .color-home20{
   color: #4653b4;}
-.bgc-home21{
-  background-color: #E6E6FA;
-}
 .color-home21{
   color: #120e03;
 }
@@ -1799,8 +1796,14 @@ About Section Two
 ====================================================================
 
 ***/
+.unlock-career{
+  background-color: #2f0b63;
+}
+#feature-top{
+  background: url("../images/home-banner-bg.png");
+}
 #feature-1{
-  background-image: url('../images/home-banner-bg.png');
+  background: url("../images/home-banner-bg.png");
   background-repeat: no-repeat;  /* Prevents the image from repeating */
     background-size: cover;        /* Scales the image to cover the entire element */
     background-position: center; 
@@ -2424,7 +2427,7 @@ Buttons Styles
   text-align: center;
   white-space: nowrap;
   color: white !important;
-  background-color: #732281;
+  background: linear-gradient(to right,#8641f8,#9D30b1);
   font-size: 15px;
   line-height: 20px;
   border-radius: 8px;
@@ -2437,20 +2440,32 @@ Buttons Styles
   background-color: #581a63;
 }
 
+.loginReg-btn{
+  color: white;
+  background: transparent;
+  border: 2px solid #9D30b1;
+  border-radius: 10px;
+  padding: 6px 15px;
+  font-size: 14px;
+}
+.loginReg-btn:hover{
+  color: white;
+  background: linear-gradient(to right,#8641f8,#9D30b1);
+}
 /* Btn Style Three */
 .btn-style-three {
   position: relative;
   text-align: center;
   white-space: nowrap;
 
-  color: #9D30b1;
-  background-color: #E2EAF8;
-
+  color: white;
+  background-color: transparent;
+  border: 2px solid #9D30b1;
   font-size: 15px;
   line-height: 20px;
   border-radius: 8px;
   font-weight: 400;
-  padding: 18px 35px 15px 35px;
+  padding: 15px 15px 15px 15px;
 }
 
 .btn-style-three:hover {
@@ -3550,7 +3565,7 @@ Contact Section
 .dashboard-option .name {
   position: relative;
   display: block;
-  color: #202124;
+  color: white;
   font-size: 15px;
   line-height: 28px;
   margin-left: 20px;
@@ -5959,6 +5974,7 @@ Main Header
   padding: 0 60px;
   max-width: 1920px;
   margin: 0 auto;
+  background: url("../images/home-banner-bg.png");
 }
 
 .main-header .nav-outer {
@@ -6024,14 +6040,14 @@ Main Header
   font-size: 15px;
   line-height: 30px;
   font-weight: 400;
-  color: #b3afaf;
+  color: white;
   cursor: pointer;
   transition: all 300ms ease;
 }
 
 .main-menu .navigation > li.current > a,
 .main-menu .navigation > li.current > span {
-  color: #9D30b1;
+  color: #d566e9;
   /* text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3); */
 }
 
@@ -6228,7 +6244,7 @@ Main Header
 .main-header .upload-cv {
   position: relative;
   font-size: 15px;
-  color: #9D30b1;
+  color: white;
   font-weight: 400;
   white-space: nowrap;
 }
@@ -6250,7 +6266,7 @@ Main Header
 
 .main-header .menu-btn .icon {
   font-size: 24px;
-  color: #696969;
+  color: white;
 }
 
 .main-header .menu-btn .count {
@@ -6259,7 +6275,7 @@ Main Header
   top: -4px;
   height: 16px;
   width: 16px;
-  background: #1967D2;
+  background: linear-gradient(to right,#8641f8,#9D30b1);
   border-radius: 50%;
   color: #ffffff;
   line-height: 16px;
@@ -6835,9 +6851,41 @@ Job Categories
 }
 
 /*=== Category Blcok Two ===*/
+
 .category-block-two {
   position: relative;
   margin-bottom: 30px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  cursor: pointer;
+}
+.category-block-3{
+  position: relative;
+  margin-bottom: 30px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  cursor: pointer;
+}
+/* Scaling effect on hover */
+.category-block-two .d-block:hover {
+  transform: scale(1.05); /* Slightly scale the card */
+}
+
+/* Optional styling for text and heading */
+.details h5 {
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.details p {
+  color: #555;
+}
+
+.details{
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+.cards-3{
+  margin-right: 3%;
+  border: 3px solid white;
 }
 
 .category-block-two .inner-box {
@@ -6920,8 +6968,11 @@ Job Categories
 }
 
 .popular-jobs{
-  color: black;
+  color: white;
   font-size: 30px;
+}
+.popular-jobs-1{
+  color: black;
 }
 
 .category-block-two h4 a:hover {
@@ -6930,7 +6981,7 @@ Job Categories
 
 .category-block-two p {
   font-size: 14px;
-  color: #696969;
+  color: #adafb3;
   font-weight: 400;
 }
 
@@ -8058,6 +8109,7 @@ Job Detail Section
 ***/
 .job-detail-section {
   position: relative;
+  margin-top: -1%;
 }
 
 .job-detail-section .upper-box {
@@ -11708,7 +11760,7 @@ Testimonial Section Two
 .testimonial-block-two .text {
   font-size: 16px;
   line-height: 26px;
-  color: white;
+  color: grey;
   margin-bottom: 35px;
 }
 .text-abt{
@@ -11770,7 +11822,7 @@ Testimonial Section Two
   position: relative;
   display: block;
   font-size: 14px;
-  color: white;
+  color: grey;
 }
 
 .testimonial-carousel .owl-dots {
@@ -12787,12 +12839,84 @@ Candidates Section Two
 
 
 /* pop up window */
+.button-cand {
+  padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 5px;
+}
+
+.modal-cand {
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%;
+    overflow: auto; 
+    background-color: rgba(0, 0, 0, 0.9); /* Black with opacity */
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content-cand {
+  background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    text-align: center;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+.close-btn-cand {
+  position: absolute;
+    top: 10px;
+    right: 20px;
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-btn-cand:hover,
+.close-btn-cand:focus {
+  color: #000;
+}
+
+.h2-cand {
+  margin-top: 0;
+  color: #333;
+}
+
+.p-cand {
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.action-btn-cand {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  background-color: #28a745;
+  color: white;
+  border-radius: 5px;
+}
+
+.action-btn-cand:hover {
+  background-color: #218838;
+}
 
 .delete_m {
 padding: 5%;
+z-index: 1;
 display: none; /* Hidden by default */
 position: fixed;
-z-index: 1;
 left: 0;
 top: 0;
 width: 100%;
@@ -12809,7 +12933,7 @@ margin-bottom: 30px;
 .delete_cont {
 width: 35%;
 padding: 2%;
-margin: 15% auto;
+margin: 15% 43%;
 background: white;
 border-radius: 10px;
 }
@@ -12823,7 +12947,7 @@ height: 100%;
 
 .close {
 font-size: 30px;
-color: red;
+color: #c9c1c1;
 font-weight: bolder;
 float: right;
 cursor: pointer;
@@ -12838,13 +12962,25 @@ cursor: pointer;
 }
 
 .cancel {
-background: rgb(58, 174, 212);
+background: linear-gradient(to right,#8641f8,#9D30b1);
+color: white;
 margin-right: 20px;
+border-radius: 10px;
 }
 
 .delete {
-background: red;
+background-color: white;
+border: 2px solid #9D30b1;
+color: #9D30b1;
 margin-left: 20px;
+border-radius: 10px;
+}
+
+.cancel:hover{
+  background-color: #9D30b1;
+}
+.delete:hover{
+  background-color: #e7e1e1;
 }
 
 /* Media Query for Small Screens */
@@ -13123,6 +13259,9 @@ cursor: pointer;
 .animate__animated.animate__fadeInLeft,
 .animate__animated.animate__fadeInUp {
   opacity: 1 !important;
+}
+.banner-circle-1.animate__fadeInLeft {
+  animation: none !important;
 }
 
 /*** 
@@ -13602,7 +13741,7 @@ Call To Action Two
   background-size: cover;
   padding: 170px 0 160px;
   text-align: center;
-  background: linear-gradient(to right, #8641f8, #9D30b1);
+  background-image: url("../images/home-banner-bg.png");
 }
 
 .call-to-action-two .sec-title {
@@ -16497,6 +16636,19 @@ Cart Section
 .cart-section .cart-options {
   position: relative;
   margin: 30px 0 10px;
+}
+
+.apply{
+  background: linear-gradient(to right,#8641f8,#9D30b1);
+  color: white;
+  padding: 0.3vw 1vw;
+  font-weight: 400;
+  font-size: 15px;
+  border-radius: 10px;
+}
+
+.ja-td{
+  cursor: pointer;
 }
 
 .cart-section .apply-coupon {
