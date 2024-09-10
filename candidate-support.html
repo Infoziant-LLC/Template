@@ -474,7 +474,7 @@
                     >
                   </li>
                   <li>
-                    <a href="dashboard-delete.html"
+                    <a onclick="showCandModal()"
                       ><i class="la la-trash"></i>Delete Profile</a
                     >
                   </li>
@@ -617,7 +617,7 @@
               <a href="index.html"><i class="la la-sign-out"></i>Logout</a>
             </li>
             <li>
-              <a href="index.html"><i class="la la-trash"></i>Delete Profile</a>
+              <a onclick="showCandModal()"><i class="la la-trash"></i>Delete Profile</a>
             </li>
           </ul>
 
@@ -681,6 +681,23 @@
     </div>
     <!-- End Page Wrapper -->
 
+    <!-- modal box for delete candidate -->
+    <div id="myModal-cand" class="modal-cand">
+      <div class="modal-content-cand">
+          <span class="close-btn-cand" onclick="closeCandModal()">&times;</span>
+          <br/>
+          <h5>Are you sure want to delete your profile ?</h5><br/>
+          <div class="delete_actions">
+            <button class="cancel" id="cancelBtn-1" onclick="closeCandModal()">Delete</button>
+            <button class="delete" id="cancelBtnNo-1" onclick="closeCandModal()">Cancel</button>
+          </div>
+      </div>
+    </div>
+
+
+    <script src="js/deleteCandidateModal.js"></script>
+
+
     <!-- chatbase script -->
     <script>
       window.embeddedChatbotConfig = {
@@ -694,18 +711,6 @@
       domain="www.chatbase.co"
       defer>
       </script>
-    <!-- <script>
-      window.embeddedChatbotConfig = {
-        chatbotId: "KTTJDfkmPN6NHx1APN8h0",
-        domain: "www.chatbase.co",
-      };
-    </script>
-    <script
-      src="https://www.chatbase.co/embed.min.js"
-      chatbotId="KTTJDfkmPN6NHx1APN8h0"
-      domain="www.chatbase.co"
-      defer
-    ></script> -->
 
     <script src="js/notification.js"></script>
     <script src="js/jquery.js"></script>
