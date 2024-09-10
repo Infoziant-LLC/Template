@@ -406,14 +406,16 @@
                     <div class="option-box">
                       <!-- Dashboard Option -->
                       <div class="dropdown resume-action">
-                        <button class="dropdown-toggle theme-btn btn-style-three" role="button" data-toggle="dropdown"
+                        <button class="dropdown-toggle btn-style-one theme-btn btn-style-three" role="button" data-toggle="dropdown"
                           aria-expanded="false">Action <i class="fa fa-angle-down"></i></button>
 
                         <ul class="dropdown-menu">
 
                           <a href="candidates-single.html"><li><button data-text="View Aplication"><span class="la la-eye"></span> View Aplication</button></li></a>
-                          <li><button data-text="Approve Aplication"><span class="la la-check"></span> Approve Aplication</button></li>
-                          <li><button data-text="Reject Aplication"><span class="la la-times-circle"></span> Reject Aplication</button></li>
+                          <li><button id="openModalBtn-Approval-1" data-text="Approve Application"><span
+                            class="la la-check"></span> Approve Application</button></li>
+                            <li><button id="openModalBtn-Reject-3" data-text="Reject Application"><span
+                              class="la la-times-circle"></span> Reject Application</button></li>
 
                         </ul>
                       </div>
@@ -445,14 +447,16 @@
                     <div class="option-box">
                       <!-- Dashboard Option -->
                       <div class="dropdown resume-action">
-                        <button class="dropdown-toggle theme-btn btn-style-three" role="button" data-toggle="dropdown"
+                        <button class="dropdown-toggle btn-style-one theme-btn btn-style-three" role="button" data-toggle="dropdown"
                           aria-expanded="false">Action <i class="fa fa-angle-down"></i></button>
 
                         <ul class="dropdown-menu">
 
                           <a href="candidates-single.html"><li><button data-text="View Aplication"><span class="la la-eye"></span> View Aplication</button></li></a>
-                          <li><button data-text="Approve Aplication"><span class="la la-check"></span> Approve Aplication</button></li>
-                          <li><button data-text="Reject Aplication"><span class="la la-times-circle"></span> Reject Aplication</button></li>
+                          <li><button id="openModalBtn-Approval-1" data-text="Approve Application"><span
+                            class="la la-check"></span> Approve Application</button></li>
+                            <li><button id="openModalBtn-Reject-3" data-text="Reject Application"><span
+                              class="la la-times-circle"></span> Reject Application</button></li>
 
                         </ul>
                       </div>
@@ -483,14 +487,16 @@
                     <div class="option-box">
                       <!-- Dashboard Option -->
                       <div class="dropdown resume-action">
-                        <button class="dropdown-toggle theme-btn btn-style-three" role="button" data-toggle="dropdown"
+                        <button class="dropdown-toggle btn-style-one theme-btn btn-style-three" role="button" data-toggle="dropdown"
                           aria-expanded="false">Action <i class="fa fa-angle-down"></i></button>
 
                         <ul class="dropdown-menu">
 
                           <a href="candidates-single.html"><li><button data-text="View Aplication"><span class="la la-eye"></span> View Aplication</button></li></a>
-                          <li><button data-text="Approve Aplication"><span class="la la-check"></span> Approve Aplication</button></li>
-                          <li><button data-text="Reject Aplication"><span class="la la-times-circle"></span> Reject Aplication</button></li>
+                          <li><button id="openModalBtn-Approval-1" data-text="Approve Application"><span
+                            class="la la-check"></span> Approve Application</button></li>
+                            <li><button id="openModalBtn-Reject-3" data-text="Reject Application"><span
+                              class="la la-times-circle"></span> Reject Application</button></li>
 
                         </ul>
                       </div>
@@ -522,14 +528,16 @@
                     <div class="option-box">
                       <!-- Dashboard Option -->
                       <div class="dropdown resume-action">
-                        <button class="dropdown-toggle theme-btn btn-style-three" role="button" data-toggle="dropdown"
+                        <button class="dropdown-toggle theme-btn btn-style-three btn-style-one" role="button" data-toggle="dropdown"
                           aria-expanded="false">Action <i class="fa fa-angle-down"></i></button>
 
                         <ul class="dropdown-menu">
 
                           <a href="candidates-single.html"><li><button data-text="View Aplication"><span class="la la-eye"></span> View Aplication</button></li></a>
-                          <li><button data-text="Approve Aplication"><span class="la la-check"></span> Approve Aplication</button></li>
-                          <li><button data-text="Reject Aplication"><span class="la la-times-circle"></span> Reject Aplication</button></li>
+                          <li><button id="openModalBtn-Approval-1" data-text="Approve Application"><span
+                            class="la la-check"></span> Approve Application</button></li>
+                            <li><button id="openModalBtn-Reject-3" data-text="Reject Application"><span
+                              class="la la-times-circle"></span> Reject Application</button></li> 
 
                         </ul>
                       </div>
@@ -601,140 +609,9 @@
     </div>
   </div>
 
-  <script>
-    var modal_1 = document.getElementById("deleteModal-1");
-
-    var btn_1 = document.getElementById("openModalBtn-1");
-    var btn_2 = document.getElementById("openModalBtn-2");
-    var btn_3 = document.getElementById("openModalBtn-3");
-    var btn_4 = document.getElementById("openModalBtn-4");
-
-    var span_1 = document.getElementById("closeModalBtn-1");
-    var cancelBtn_1 = document.getElementById("cancelBtn-1");
-    var cancelBtnNo_1 = document.getElementById("cancelBtnNo-1");
-
-    btn_1.onclick = function () {
-      modal_1.style.display = "block";
-    }
-    btn_2.onclick = function () {
-      modal_1.style.display = "block";
-    }
-    btn_3.onclick = function () {
-      modal_1.style.display = "block";
-    }
-    btn_4.onclick = function () {
-      modal_1.style.display = "block";
-    }
-
-    span_1.onclick = function () {
-      modal_1.style.display = "none";
-    }
-
-    cancelBtn_1.onclick = function () {
-      modal_1.style.display = "none";
-    }
-    cancelBtnNo_1.onclick = function () {
-      modal_1.style.display = "none";
-    }
-    window.onclick = function (event) {
-      if (event.target == modal_1) {
-        modal_1.style.display = "none";
-      }
-    }
-  </script>
-
-  <script>
-
-    // Approval Prompt window  
-    var modal_Approval_1 = document.getElementById("deleteModal-Approval-1");
-    var btn_Approval_1 = document.getElementById("openModalBtn-Approval-1");
-    var btn_Approval_2 = document.getElementById("openModalBtn-Approval-2");
-    var btn_Approval_3 = document.getElementById("openModalBtn-Approval-3");
-    var btn_Approval_4 = document.getElementById("openModalBtn-Approval-4");
-
-    var span_Approval_1 = document.getElementById("closeModalBtn-Approval-1");
-    var cancelBtn_Approval_1 = document.getElementById("cancelBtn-Approval-1");
-    var cancelBtnNo_Approval_1 = document.getElementById("cancelBtnNo-Approval-1");
-
-    btn_Approval_1.onclick = function () {
-      modal_Approval_1.style.display = "block";
-    }
-    btn_Approval_2.onclick = function () {
-      modal_Approval_1.style.display = "block";
-    }
-    btn_Approval_3.onclick = function () {
-      modal_Approval_1.style.display = "block";
-    }
-    btn_Approval_4.onclick = function () {
-      modal_Approval_1.style.display = "block";
-    }
-
-    span_Approval_1.onclick = function () {
-      modal_Approval_1.style.display = "none";
-    }
-
-    cancelBtn_Approval_1.onclick = function () {
-      modal_Approval_1.style.display = "none";
-    }
-
-    cancelBtnNo_Approval_1.onclick = function () {
-      modal_Approval_1.style.display = "none";
-    }
-
-    window.onclick = function (event) {
-      if (event.target == modal_Approval_1) {
-        modal_Approval_1.style.display = "none";
-      }
-
-    }
-  </script>
-
-  <!-- // RejectPrompt window  -->
-  <script>
-    var modal_Reject_1 = document.getElementById("deleteModal-Reject-1");
-
-    var btn_Reject_1 = document.getElementById("openModalBtn-Reject-1");
-    var btn_Reject_2 = document.getElementById("openModalBtn-Reject-2");
-    var btn_Reject_3 = document.getElementById("openModalBtn-Reject-3");
-    var btn_Reject_4 = document.getElementById("openModalBtn-Reject-4");
-
-    var span_Reject_1 = document.getElementById("closeModalBtn-Reject-1");
-    var cancelBtn_Reject_1 = document.getElementById("cancelBtn-Reject-1");
-    var cancelBtnNo_Reject_1 = document.getElementById("cancelBtnNo-Reject-1");
-
-    btn_Reject_1.onclick = function () {
-      modal_Reject_1.style.display = "block";
-    }
-    btn_Reject_2.onclick = function () {
-      modal_Reject_1.style.display = "block";
-    }
-    btn_Reject_3.onclick = function () {
-      modal_Reject_1.style.display = "block";
-    }
-    btn_Reject_4.onclick = function () {
-      modal_Reject_1.style.display = "block";
-    }
-
-    span_Reject_1.onclick = function () {
-      modal_Reject_1.style.display = "none";
-    }
-
-    cancelBtn_Reject_1.onclick = function () {
-      modal_Reject_1.style.display = "none";
-    }
-
-    cancelBtnNo_Reject_1.onclick = function () {
-      modal_Reject_1.style.display = "none";
-    }
-
-    window.onclick = function (event) {
-      if (event.target == modal_Reject_1) {
-        modal_Reject_1.style.display = "none";
-      }
-
-    }
-  </script>
-
+  <script src="js/deleteModal.js"></script>
+  <script src="js/ApprovalModal.js"></script>
+  <script src="js/rejectmodal.js"></script>
   <script src="js/jquery.js"></script>
   <script src="js/popper.min.js"></script>
   <script src="js/chosen.min.js"></script>
