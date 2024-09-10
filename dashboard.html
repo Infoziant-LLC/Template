@@ -157,19 +157,22 @@
 
       <div class="sidebar-inner">
         <ul class="navigation">
-          <li class="active"><a href="dashboard.html"> <i class="la la-home"></i> Dashboard</a></li>
-          <li><a href="dashboard-company-profile.html"><i class="la la-user-tie"></i>Company Profile</a></li>
-          <li><a href="dashboard-post-job.html"><i class="la la-paper-plane"></i>Post a New Job</a></li>
-          <li><a href="dashboard-manage-job.html"><i class="la la-briefcase"></i> Manage Jobs </a></li>
-          <li><a href="dashboard-applicants.html"><i class="la la-file-invoice"></i> All Applicants</a></li>
-          <li><a href="dashboard-resumes.html"><i class="la la-bookmark-o"></i>Shortlisted Resumes</a></li>
-          <li><a href="dashboard-packages.html"><i class="la la-box"></i>Packages</a></li>
-          <li><a href="dashboard-messages.html"><i class="la la-comment-o"></i>Messages</a></li>
-          <li><a href="dashboard-resume-alerts.html"><i class="la la-bell"></i>Resume Alerts</a></li>
-          <li><a href="dashboard-change-password.html"><i class="la la-lock"></i>Change Password</a></li>
-          <li><a href="dashboard-company-profile.html"><i class="la la-user-alt"></i>View Profile</a></li>
+          <li><a href="candidate-dashboard.html"> <i class="la la-home"></i> Dashboard</a></li>
+          <li><a href="candidate-dashboard-profile.html"><i class="la la-user-tie"></i>My Profile</a></li>
+          <li><a href="candidate-dashboard-resume.html"><i class="la la-file-invoice"></i>My Resume</a></li>
+          <li><a href="candidate-dashboard-applied-job.html"><i class="la la-briefcase"></i> Applied Jobs </a></li>
+          <li><a href="candidate-dashboard-job-alerts.html"><i class="la la-bell"></i>Job Alerts</a></li>
+          <li><a href="candidate-inbox.html"><i class="fa-light fa-envelope"></i> Messages</a></li>
+          <li><a href="candidate-career-path.html"><i class="fa-light fa-street-view"></i>Career Path</a></li>
+          <li><a href="candidate-dashboard-shortlisted-resume.html"><i class="la la-bookmark-o"></i>Shortlisted Jobs</a></li>
+          <li><a href="candidate-dashboard-cv-manager.html"><i class="la la-file-invoice"></i> CV manager</a></li>
+          <!-- <li><a href="dashboard-packages.html"><i class="la la-box"></i>Packages</a></li> -->
+          <li><a href="dashboard-messages.html"><i class="la la-comment-o"></i>SME Connect</a></li>
+          <li><a href="candidate-support.html"><i class="fa-light fa-circle-question"></i>Support</a></li>
+          <li class="active"><a href="dashboard-change-password.html"><i class="la la-lock"></i>Change Password</a></li>
+          <!-- <li><a href="dashboard-profile.html"><i class="la la-user-alt"></i>View Profile</a></li> -->
           <li><a href="index.html"><i class="la la-sign-out"></i>Logout</a></li>
-          <li><a href="index.html"><i class="la la-trash"></i>Delete Profile</a></li>
+          <li><a onclick="showCandModal()"><i class="la la-trash"></i>Delete Profile</a></li>
         </ul>
       </div>
     </div>
@@ -331,13 +334,18 @@
                           <div class="option-icons">
                             <div class="option-box">
                               <ul class="option-list">
-                                <li><button data-text="View application"><span class="la la-eye"></span></button></li>
-                                <li><button data-text="Approve application"><span class="la la-check"></span></button>
-                                </li>
-                                <li><button data-text="Reject application"><span
+                                <li><a href="candidates-single.html" data-text="View application"><span
+                                      class="la la-eye"></span></a></li>
+                                <li><button id="openModalBtn-Approval-1" data-text="Approve Application"><span
+                                      class="la la-check"></span></button></li>
+                                <li><button id="openModalBtn-Reject-1" data-text="Reject Application"><span
                                       class="la la-times-circle"></span></button></li>
-                                <li><button data-text="Delete application"><span class="la la-trash"></span></button>
-                                </li>
+                                      <li>
+                                        <button id="openModalBtn-1" class="delete-btn-1" data-id="1" data-text="Delete Application">
+                                          <span class="la la-trash"></span>
+                                        </button>
+                                      </li>
+                                
                               </ul>
                             </div>
                           </div>
@@ -368,13 +376,18 @@
                           <div class="option-icons">
                             <div class="option-box">
                               <ul class="option-list">
-                                <li><button data-text="View application"><span class="la la-eye"></span></button></li>
-                                <li><button data-text="Approve application"><span class="la la-check"></span></button>
-                                </li>
-                                <li><button data-text="Reject application"><span
+                                <li><a href="candidates-single.html" data-text="View application"><span
+                                      class="la la-eye"></span></a></li>
+                                <li><button id="openModalBtn-Approval-1" data-text="Approve Application"><span
+                                      class="la la-check"></span></button></li>
+                                <li><button id="openModalBtn-Reject-1" data-text="Reject Application"><span
                                       class="la la-times-circle"></span></button></li>
-                                <li><button data-text="Delete application"><span class="la la-trash"></span></button>
-                                </li>
+                                      <li>
+                                        <button id="openModalBtn-1" class="delete-btn-1" data-id="1" data-text="Delete Application">
+                                          <span class="la la-trash"></span>
+                                        </button>
+                                      </li>
+                                
                               </ul>
                             </div>
                           </div>
@@ -406,13 +419,18 @@
                           <div class="option-icons">
                             <div class="option-box">
                               <ul class="option-list">
-                                <li><button data-text="View application"><span class="la la-eye"></span></button></li>
-                                <li><button data-text="Approve application"><span class="la la-check"></span></button>
-                                </li>
-                                <li><button data-text="Reject application"><span
+                                <li><a href="candidates-single.html" data-text="View application"><span
+                                      class="la la-eye"></span></a></li>
+                                <li><button id="openModalBtn-Approval-1" data-text="Approve Application"><span
+                                      class="la la-check"></span></button></li>
+                                <li><button id="openModalBtn-Reject-1" data-text="Reject Application"><span
                                       class="la la-times-circle"></span></button></li>
-                                <li><button data-text="Delete application"><span class="la la-trash"></span></button>
-                                </li>
+                                      <li>
+                                        <button id="openModalBtn-1" class="delete-btn-1" data-id="1" data-text="Delete Application">
+                                          <span class="la la-trash"></span>
+                                        </button>
+                                      </li>
+                                
                               </ul>
                             </div>
                           </div>
@@ -444,13 +462,18 @@
                           <div class="option-icons">
                             <div class="option-box">
                               <ul class="option-list">
-                                <li><button data-text="View application"><span class="la la-eye"></span></button></li>
-                                <li><button data-text="Approve application"><span class="la la-check"></span></button>
-                                </li>
-                                <li><button data-text="Reject application"><span
+                                <li><a href="candidates-single.html" data-text="View application"><span
+                                      class="la la-eye"></span></a></li>
+                                <li><button id="openModalBtn-Approval-1" data-text="Approve Application"><span
+                                      class="la la-check"></span></button></li>
+                                <li><button id="openModalBtn-Reject-1" data-text="Reject Application"><span
                                       class="la la-times-circle"></span></button></li>
-                                <li><button data-text="Delete application"><span class="la la-trash"></span></button>
-                                </li>
+                                      <li>
+                                        <button id="openModalBtn-1" class="delete-btn-1" data-id="1" data-text="Delete Application">
+                                          <span class="la la-trash"></span>
+                                        </button>
+                                      </li>
+                               
                               </ul>
                             </div>
                           </div>
@@ -482,13 +505,18 @@
                           <div class="option-icons">
                             <div class="option-box">
                               <ul class="option-list">
-                                <li><button data-text="View application"><span class="la la-eye"></span></button></li>
-                                <li><button data-text="Approve application"><span class="la la-check"></span></button>
-                                </li>
-                                <li><button data-text="Reject application"><span
+                                <li><a href="candidates-single.html" data-text="View application"><span
+                                      class="la la-eye"></span></a></li>
+                                <li><button id="openModalBtn-Approval-1" data-text="Approve Application"><span
+                                      class="la la-check"></span></button></li>
+                                <li><button id="openModalBtn-Reject-1" data-text="Reject Application"><span
                                       class="la la-times-circle"></span></button></li>
-                                <li><button data-text="Delete application"><span class="la la-trash"></span></button>
-                                </li>
+                                      <li>
+                                        <button id="openModalBtn-1" class="delete-btn-1" data-id="1" data-text="Delete Application">
+                                          <span class="la la-trash"></span>
+                                        </button>
+                                      </li>
+                                
                               </ul>
                             </div>
                           </div>
@@ -520,13 +548,18 @@
                           <div class="option-icons">
                             <div class="option-box">
                               <ul class="option-list">
-                                <li><button data-text="View application"><span class="la la-eye"></span></button></li>
-                                <li><button data-text="Approve application"><span class="la la-check"></span></button>
-                                </li>
-                                <li><button data-text="Reject application"><span
+                                <li><a href="candidates-single.html" data-text="View application"><span
+                                      class="la la-eye"></span></a></li>
+                                <li><button id="openModalBtn-Approval-1" data-text="Approve Application"><span
+                                      class="la la-check"></span></button></li>
+                                <li><button id="openModalBtn-Reject-1" data-text="Reject Application"><span
                                       class="la la-times-circle"></span></button></li>
-                                <li><button data-text="Delete application"><span class="la la-trash"></span></button>
-                                </li>
+                                      <li>
+                                        <button id="openModalBtn-1" class="delete-btn-1" data-id="1" data-text="Delete Application">
+                                          <span class="la la-trash"></span>
+                                        </button>
+                                      </li>
+                               
                               </ul>
                             </div>
                           </div>
@@ -666,10 +699,17 @@
                   </div>
                   <div class="option-box">
                     <ul class="option-list">
-                      <li><button data-text="View Application"><span class="la la-eye"></span></button></li>
-                      <li><button data-text="Approve Application"><span class="la la-check"></span></button></li>
-                      <li><button data-text="Reject Application"><span class="la la-times-circle"></span></button></li>
-                      <li><button data-text="Delete Application"><span class="la la-trash"></span></button></li>
+                      <li><a href="candidates-single.html" data-text="View application"><span
+                            class="la la-eye"></span></a></li>
+                      <li><button id="openModalBtn-Approval-1" data-text="Approve Application"><span
+                            class="la la-check"></span></button></li>
+                      <li><button id="openModalBtn-Reject-1" data-text="Reject Application"><span
+                            class="la la-times-circle"></span></button></li>
+                            <li>
+                              <button id="openModalBtn-1" class="delete-btn-1" data-id="1" data-text="Delete Application">
+                                <span class="la la-trash"></span>
+                              </button>
+                            </li>
                     </ul>
                   </div>
                 </div>
@@ -694,10 +734,17 @@
                   </div>
                   <div class="option-box">
                     <ul class="option-list">
-                      <li><button data-text="View application"><span class="la la-eye"></span></button></li>
-                      <li><button data-text="Approve application"><span class="la la-check"></span></button></li>
-                      <li><button data-text="Reject application"><span class="la la-times-circle"></span></button></li>
-                      <li><button data-text="Delete application"><span class="la la-trash"></span></button></li>
+                      <li><a href="candidates-single.html" data-text="View application"><span
+                            class="la la-eye"></span></a></li>
+                      <li><button id="openModalBtn-Approval-1" data-text="Approve Application"><span
+                            class="la la-check"></span></button></li>
+                      <li><button id="openModalBtn-Reject-1" data-text="Reject Application"><span
+                            class="la la-times-circle"></span></button></li>
+                            <li>
+                              <button id="openModalBtn-1" class="delete-btn-1" data-id="1" data-text="Delete Application">
+                                <span class="la la-trash"></span>
+                              </button>
+                            </li>
                     </ul>
                   </div>
                 </div>
@@ -721,10 +768,17 @@
                   </div>
                   <div class="option-box">
                     <ul class="option-list">
-                      <li><button data-text="View application"><span class="la la-eye"></span></button></li>
-                      <li><button data-text="Approve application"><span class="la la-check"></span></button></li>
-                      <li><button data-text="Reject application"><span class="la la-times-circle"></span></button></li>
-                      <li><button data-text="Delete application"><span class="la la-trash"></span></button></li>
+                      <li><a href="candidates-single.html" data-text="View application"><span
+                            class="la la-eye"></span></a></li>
+                      <li><button id="openModalBtn-Approval-1" data-text="Approve Application"><span
+                            class="la la-check"></span></button></li>
+                      <li><button id="openModalBtn-Reject-1" data-text="Reject Application"><span
+                            class="la la-times-circle"></span></button></li>
+                            <li>
+                              <button id="openModalBtn-1" class="delete-btn-1" data-id="1" data-text="Delete Application">
+                                <span class="la la-trash"></span>
+                              </button>
+                            </li>
                     </ul>
                   </div>
                 </div>
@@ -748,10 +802,17 @@
                   </div>
                   <div class="option-box">
                     <ul class="option-list">
-                      <li><button data-text="View application"><span class="la la-eye"></span></button></li>
-                      <li><button data-text="Approve application"><span class="la la-check"></span></button></li>
-                      <li><button data-text="Reject application"><span class="la la-times-circle"></span></button></li>
-                      <li><button data-text="Delete application"><span class="la la-trash"></span></button></li>
+                      <li><a href="candidates-single.html" data-text="View application"><span
+                            class="la la-eye"></span></a></li>
+                      <li><button id="openModalBtn-Approval-1" data-text="Approve Application"><span
+                            class="la la-check"></span></button></li>
+                      <li><button id="openModalBtn-Reject-1" data-text="Reject Application"><span
+                            class="la la-times-circle"></span></button></li>
+                            <li>
+                              <button id="openModalBtn-1" class="delete-btn-1" data-id="1" data-text="Delete Application">
+                                <span class="la la-trash"></span>
+                              </button>
+                            </li>
                     </ul>
                   </div>
                 </div>
@@ -775,10 +836,17 @@
                   </div>
                   <div class="option-box">
                     <ul class="option-list">
-                      <li><button data-text="View application"><span class="la la-eye"></span></button></li>
-                      <li><button data-text="Approve application"><span class="la la-check"></span></button></li>
-                      <li><button data-text="Reject application"><span class="la la-times-circle"></span></button></li>
-                      <li><button data-text="Delete application"><span class="la la-trash"></span></button></li>
+                      <li><a href="candidates-single.html" data-text="View application"><span
+                            class="la la-eye"></span></a></li>
+                      <li><button id="openModalBtn-Approval-1" data-text="Approve Application"><span
+                            class="la la-check"></span></button></li>
+                      <li><button id="openModalBtn-Reject-1" data-text="Reject Application"><span
+                            class="la la-times-circle"></span></button></li>
+                            <li>
+                              <button id="openModalBtn-1" class="delete-btn-1" data-id="1" data-text="Delete Application">
+                                <span class="la la-trash"></span>
+                              </button>
+                            </li>
                     </ul>
                   </div>
                 </div>
@@ -802,10 +870,17 @@
                   </div>
                   <div class="option-box">
                     <ul class="option-list">
-                      <li><button data-text="View application"><span class="la la-eye"></span></button></li>
-                      <li><button data-text="Approve application"><span class="la la-check"></span></button></li>
-                      <li><button data-text="Reject application"><span class="la la-times-circle"></span></button></li>
-                      <li><button data-text="Delete application"><span class="la la-trash"></span></button></li>
+                      <li><a href="candidates-single.html" data-text="View application"><span
+                            class="la la-eye"></span></a></li>
+                      <li><button id="openModalBtn-Approval-1" data-text="Approve Application"><span
+                            class="la la-check"></span></button></li>
+                      <li><button id="openModalBtn-Reject-1" data-text="Reject Application"><span
+                            class="la la-times-circle"></span></button></li>
+                      <li>
+                        <button id="openModalBtn-1" class="delete-btn-1" data-id="1" data-text="Delete Application">
+                          <span class="la la-trash"></span>
+                        </button>
+                      </li>
                     </ul>
                   </div>
                 </div>
@@ -826,6 +901,46 @@
   </div><!-- End Page Wrapper -->
 
 
+
+  <div id="deleteModal-1" class="delete_m_dashboard">
+    <div class="delete_cont">
+      <span class="close" data-id="1">&times;</span>
+      <h5>Are you sure you want to delete the applicant?</h5>
+      <div class="delete_actions">
+        <button class="cancel" data-id="1">Yes</button>
+        <button class="delete" data-id="1">No</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Approval button prompt -->
+  <div id="deleteModal-Approval-1" class="delete_m_dashboard">
+    <div class="delete_cont">
+      <span class="close" id="closeModalBtn-Approval-1">&times;</span>
+      <h5>Do you want to confirm the approval of this applicant?</h5>
+      <div class="delete_actions">
+        <button class="cancel" id="cancelBtn-Approval-1">Yes</button>
+        <button class="delete" id="cancelBtnNo-Approval-1">No</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Reject button prompt -->
+  <div id="deleteModal-Reject-1" class="delete_m_dashboard">
+    <div class="delete_cont">
+      <span class="close" id="closeModalBtn-Reject-1">&times;</span>
+      <h5>Are you sure you want to proceed with rejecting this applicant?</h5>
+      <div class="delete_actions">
+        <button class="cancel" id="cancelBtn-Reject-1">Yes</button>
+        <button class="delete" id="cancelBtnNo-Reject-1">No</button>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="js/deleteModal.js"></script>
+  <script src="js/ApprovalModal.js"></script>
+  <script src="js/rejectmodal.js"></script>
   <script src="js/jquery.js"></script>
   <script src="js/popper.min.js"></script>
   <script src="js/chosen.min.js"></script>
@@ -1063,12 +1178,12 @@
 
     let showCand = null;
 
-function showCandidate(candidateId) {
-    showCand = candidateId;
+    function showCandidate(candidateId) {
+      showCand = candidateId;
 
-    const candidate = candidates[candidateId];
+      const candidate = candidates[candidateId];
 
-    if (candidate) {
+      if (candidate) {
         document.querySelector("#candidate-image").src = candidate.imageUrl;
         document.querySelector("#candidate-name").innerText = candidate.name;
         document.querySelector("#candidate-designation").innerText = candidate.designation;
@@ -1080,7 +1195,7 @@ function showCandidate(candidateId) {
         const educationSection = document.querySelector("#education-section");
         educationSection.innerHTML = "";
         candidate.education.forEach(item => {
-            educationSection.innerHTML += `
+          educationSection.innerHTML += `
                 <div class="resume-block">
                     <div class="inner">
                         <div class="title-box">
@@ -1104,7 +1219,7 @@ function showCandidate(candidateId) {
         const experienceSection = document.querySelector("#experience-section");
         experienceSection.innerHTML = "";
         candidate.experience.forEach(item => {
-            experienceSection.innerHTML += `
+          experienceSection.innerHTML += `
                 <div class="resume-block">
                     <div class="inner">
                         <div class="title-box">
@@ -1128,14 +1243,14 @@ function showCandidate(candidateId) {
         const skillsSection = document.querySelector("#candidate-skills");
         skillsSection.innerHTML = "";
         candidate.skills.forEach(skill => {
-            skillsSection.innerHTML += `<li><a href="#">${skill}</a></li>`;
+          skillsSection.innerHTML += `<li><a href="#">${skill}</a></li>`;
         });
 
         // Populate Main Skills
         const mainSkillsSection = document.querySelector("#candidate-tags");
         mainSkillsSection.innerHTML = "";
         candidate.mainSkill.forEach(mainSkill => {
-            mainSkillsSection.innerHTML += `<li><a href="#">${mainSkill}</a></li>`;
+          mainSkillsSection.innerHTML += `<li><a href="#">${mainSkill}</a></li>`;
         });
 
         // Populate other details
@@ -1149,14 +1264,14 @@ function showCandidate(candidateId) {
 
         // Add event listener for the Summarise Candidate button
         document.querySelector("#candidate-summarise").addEventListener("click", () => {
-            summaryCandidate(showCand);
+          summaryCandidate(showCand);
         });
+      }
     }
-}
 
-function summaryCandidate(Id) {
-    const candidate = candidates[Id];
-    if (candidate) {
+    function summaryCandidate(Id) {
+      const candidate = candidates[Id];
+      if (candidate) {
         document.querySelector("#candidate-about").innerText = candidate.summarsieData;
 
         const educationSection = document.querySelector("#education-section");
@@ -1173,13 +1288,13 @@ function summaryCandidate(Id) {
         document.querySelector("#candidate-expected-salary").innerText = candidate.expectedSalary;
         document.querySelector("#candidate-gender").innerText = candidate.gender;
         document.querySelector("#candidate-education-level").innerText = candidate.educationLevel;
+      }
     }
-}
 
-// Automatically show candidate1 on page load
-window.onload = function() {
-    showCandidate('candidate1');
-};
+    // Automatically show candidate1 on page load
+    window.onload = function () {
+      showCandidate('candidate1');
+    };
 
 
   </script>

@@ -1,32 +1,37 @@
+// Collect all delete buttons
+var deleteBtns = document.querySelectorAll(".delete-btn-1");
 
-var modal1 = document.getElementById("deleteModal-1");
+// Loop through all delete buttons and add event listeners
+deleteBtns.forEach(function (btn) {
+  btn.addEventListener("click", function () {
+    var id = btn.getAttribute("data-id"); // Get the data-id from the button
+    var modal = document.getElementById("deleteModal-" + id); // Dynamically select the correct modal
 
-
-var closeModalBtn1 = document.getElementById("closeModalBtn-1");
-var cancelBtn1 = document.getElementById("cancelBtn-1");
-var cancelBtnNo1 = document.getElementById("cancelBtnNo-1");
-function openModal() {
-    modal1.style.display = "block";
-}
-
-function closeModal() {
-    modal1.style.display = "none";
-}
-
-closeModalBtn1.onclick = function() {
-    closeModal();
-}
-
-cancelBtnNo1.onclick = function() {
-    closeModal();
-}
-
-cancelBtn1.onclick = function(){
-    closeModal();
-}
-
-window.onclick = function(event) {
-    if (event.target == modal1) {
-        closeModal();
+    if (modal) {
+      modal.style.display = "block"; // Display the correct modal
     }
-}
+
+    // Close modal when 'x' is clicked
+    document.querySelector(`[data-id="${id}"].close`).onclick = function () {
+      modal.style.display = "none";
+    };
+
+    // Close modal when Yes button is clicked
+    document.querySelector(`[data-id="${id}"].cancel`).onclick = function () {
+      modal.style.display = "none";
+      // Additional functionality for Yes (e.g., deleting the applicant) can go here
+    };
+
+    // Close modal when No button is clicked
+    document.querySelector(`[data-id="${id}"].delete`).onclick = function () {
+      modal.style.display = "none";
+    };
+
+    // Close modal when clicking outside the modal
+    window.onclick = function (event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    };
+  });
+});
