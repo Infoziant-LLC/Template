@@ -7,7 +7,7 @@ function animateOnScroll(entries, observer) {
                 }, index * 1000);
             } else {
                 setTimeout(() => {
-                    entry.target.classList.add('animate__fadeInLeft');
+                    entry.target.classList.add('none');
                 }, index * 1000);
             }
             observer.unobserve(entry.target);
