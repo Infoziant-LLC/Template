@@ -3412,6 +3412,65 @@ Top Companies
 .top-companies.style-two {
   background: #F3F7FB;
 }
+.candidate-button
+{
+  position: relative;
+text-align: center;
+white-space: nowrap;
+color: #ffffff;
+background: linear-gradient(#8641f8,#9d30b1);
+line-height: 20px;
+border-radius: 8px;
+font-weight: 400;
+padding: 15px 35px;
+}
+
+/* .candidate-button:hover
+{
+  background:  #E6E6FA;
+} */
+
+
+.employer-button {
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  color: white;
+  background: linear-gradient(#8641f8,#9d30b1);
+  font-size: 16px;
+  line-height: 20px;
+  border-radius: 8px;
+  font-weight: 400;
+  padding: 15px 35px;
+}
+/* .employer-button:hover
+{
+  background:  #E6E6FA;
+} */
+
+/* .active {
+  background-color: red !important;
+  background: none !important;
+  color: #ffffff !important;
+} */
+
+.red-bg {
+  background:   #E6E6FA !important;
+}
+/* .btn-box:hover .candidate-button {
+  background:   #E6E6FA;
+}
+
+.btn-box:hover .employer-button {
+  background:   #E6E6FA;
+} */
+
+/* .btn-box:hover .candidate-button:hover,
+.btn-box:hover .employer-button:hover {
+  background: #8363b9;
+} */
+
+
 
 .top-companies.style-two .company-block .image img {
   border-radius: 50%;
