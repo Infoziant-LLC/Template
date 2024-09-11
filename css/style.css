@@ -2519,6 +2519,9 @@ Buttons Styles
   background-color: transparent;
 }
 
+.red-bg {
+  background:   #E6E6FA !important;
+}
 /* Btn Style Six */
 .btn-style-six {
   position: relative;
