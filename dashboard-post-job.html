@@ -69,7 +69,7 @@
                 <li><a href="dashboard-change-password.html"><i class="la la-lock"></i>Change Password</a></li>
                 <li><a href="dashboard-company-profile.html"><i class="la la-user-alt"></i>View Profile</a></li>
                 <li><a href="index.html"><i class="la la-sign-out"></i>Logout</a></li>
-                <li><a href="index.html"><i class="la la-trash"></i>Delete Profile</a></li>
+                <li><a onclick="showCandModal()"><i class="la la-trash"></i>Delete Profile</a></li>
               </ul>
             </div>
           </div>
@@ -121,7 +121,7 @@
           <li><a href="dashboard-change-password.html"><i class="la la-lock"></i>Change Password</a></li>
           <li><a href="dashboard-company-profile.html"><i class="la la-user-alt"></i>View Profile</a></li>
           <li><a href="index.html"><i class="la la-sign-out"></i>Logout</a></li>
-          <li><a href="index.html"><i class="la la-trash"></i>Delete Profile</a></li>
+          <li><a onclick="showCandModal()"><i class="la la-trash"></i>Delete Profile</a></li>
         </ul>
       </div>
     </div>
@@ -356,6 +356,19 @@
 
   </div><!-- End Page Wrapper -->
 
+  <!-- modal box for delete candidate -->
+  <div id="myModal-cand" class="modal-cand">
+    <div class="modal-content-cand">
+        <span class="close-btn-cand" onclick="closeCandModal()">&times;</span>
+        <br/>
+        <h5>Are you sure want to delete your profile ?</h5><br/>
+        <div class="delete_actions">
+          <button class="cancel" id="cancelBtn-1" onclick="closeCandModal()">Delete</button>
+          <button class="delete" id="cancelBtnNo-1" onclick="closeCandModal()">Cancel</button>
+        </div>
+    </div>
+  </div>
+
   <!-- notification box -->
 <div class="notify">
   <div class="col-lg-5">
@@ -379,6 +392,7 @@
 
 
   <script src="js/jquery.js"></script>
+  <script src="js/deleteCandidateModal.js"></script>
   <script src="js/popper.min.js"></script>
   <script src="js/chosen.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
