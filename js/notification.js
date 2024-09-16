@@ -8,7 +8,6 @@ function notifyToggle() {
         boxHead.style.marginTop = '0'; 
     } else {
         notificationBox.style.display = 'block';
-        boxHead.style.marginTop = '-40.6%';
     }
 }
 
@@ -21,7 +20,6 @@ function notifyToggleProfile() {
         myProfile.style.marginTop = '0'; 
     } else {
         notificationBox.style.display = 'block';
-        myProfile.style.marginTop = '-40.6%';
     }
 }
 
@@ -34,7 +32,6 @@ function notifyToggleResume() {
         myProfile.style.marginTop = '0'; 
     } else {
         notificationBox.style.display = 'block';
-        myProfile.style.marginTop = '-40.6%';
     }
 }
 
@@ -47,7 +44,6 @@ function notifyToggleAppliedJob() {
         myProfile.style.marginTop = '0'; 
     } else {
         notificationBox.style.display = 'block';
-        myProfile.style.marginTop = '-40.6%';
     }
 }
 
@@ -60,7 +56,6 @@ function notifyToggleJobAlert() {
         myProfile.style.marginTop = '0'; 
     } else {
         notificationBox.style.display = 'block';
-        myProfile.style.marginTop = '-40.6%';
     }
 }
 
@@ -73,7 +68,6 @@ function notifyToggleInbox() {
         myProfile.style.marginTop = '0'; 
     } else {
         notificationBox.style.display = 'block';
-        myProfile.style.marginTop = '-40.6%';
     }
 }
 
@@ -86,7 +80,6 @@ function notifyToggleCareerPath() {
         myProfile.style.marginTop = '0'; 
     } else {
         notificationBox.style.display = 'block';
-        myProfile.style.marginTop = '-40.6%';
     }
 }
 
@@ -99,7 +92,6 @@ function notifyToggleShortlistResume() {
         myProfile.style.marginTop = '0'; 
     } else {
         notificationBox.style.display = 'block';
-        myProfile.style.marginTop = '-40.6%';
     }
 }
 
@@ -112,7 +104,6 @@ function notifyToggleCvManager() {
         myProfile.style.marginTop = '0'; 
     } else {
         notificationBox.style.display = 'block';
-        myProfile.style.marginTop = '-40.6%';
     }
 }
 
@@ -125,7 +116,6 @@ function notifyToggleSmeConnect() {
         myProfile.style.marginTop = '0'; 
     } else {
         notificationBox.style.display = 'block';
-        myProfile.style.marginTop = '-40.6%';
     }
 }
 
@@ -138,7 +128,6 @@ function notifyToggleSupport() {
         myProfile.style.marginTop = '0'; 
     } else {
         notificationBox.style.display = 'block';
-        myProfile.style.marginTop = '-40.6%';
     }
 }
 
@@ -151,7 +140,30 @@ function notifyToggleChangePassword() {
         myProfile.style.marginTop = '0'; 
     } else {
         notificationBox.style.display = 'block';
-        myProfile.style.marginTop = '-40.6%';
+    }
+}
+
+function notifyToggleEmp1() {
+    const notificationBox = document.querySelector('.notify');
+    const myProfile = document.querySelector('.user-dashboard');
+
+    if (notificationBox.style.display === 'block') {
+        notificationBox.style.display = 'none';
+        myProfile.style.marginTop = '0'; 
+    } else {
+        notificationBox.style.display = 'block';
+    }
+}
+
+function notifyToggleEmp2() {
+    const notificationBox = document.querySelector('.notify');
+    const myProfile = document.querySelector('.user-dashboard');
+
+    if (notificationBox.style.display === 'block') {
+        notificationBox.style.display = 'none';
+        myProfile.style.marginTop = '0'; 
+    } else {
+        notificationBox.style.display = 'block';
     }
 }
 

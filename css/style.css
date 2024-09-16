@@ -2463,9 +2463,35 @@ Buttons Styles
   position: relative;
   text-align: center;
   white-space: nowrap;
-
   color: white;
   background-color: transparent;
+  border: 2px solid #9D30b1;
+  font-size: 15px;
+  line-height: 20px;
+  border-radius: 8px;
+  font-weight: 400;
+  padding: 15px 15px 15px 15px;
+}
+.btn-style-three-pricing{
+  text-align: center;
+    white-space: nowrap;
+    color: white;
+    background-color: #2f0b63;
+    font-size: 15px;
+    line-height: 20px;
+    border-radius: 8px;
+    font-weight: 400;
+    padding: 15px 15px 15px 15px;
+}
+.btn-style-three-pricing:hover{
+  background: linear-gradient(to right,#8641f8,#9D30b1);
+}
+.btn-style-three-bg{
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  color: white;
+  background: linear-gradient(to right,#8641f8,#9D30b1);
   border: 2px solid #9D30b1;
   font-size: 15px;
   line-height: 20px;
@@ -6327,6 +6353,11 @@ Main Header
   min-width: 100px;
 }
 
+.menu-btn-1{
+  color: white;
+  font-size: 24px;
+}
+
 .main-header .menu-btn {
   position: relative;
   margin-left: 30px;
@@ -6679,6 +6710,10 @@ Sticky Header
 .sticky-header .main-menu .navigation > li.current.dropdown > a:after,
 .sticky-header .main-menu .navigation > li.current > a {
   color: #1967D2;
+}
+
+.text-resume{
+  color: grey;
 }
 
 /*** 
@@ -9897,7 +9932,7 @@ Page Title
   background-position: center;
   background-size: cover;
   text-align: center;
-  padding: 50px 0 40px;
+  padding: 10px 0 10px;
   background: #E6E6FA;
 }
 
@@ -9970,9 +10005,9 @@ Page Title
 }
 
 /* Style Two */
-.page-title.style-two {
+/* .page-title.style-two {
   padding: 100px 0;
-}
+} */
 .page-title.style-two.at-jlv17{
   background-image: url(../images/background/job-list-17.jpg);
   background-size: cover;
@@ -11579,7 +11614,9 @@ Default Tabs
   color: #1967D2;
   border-bottom: 3px solid #5c6770;
 }
-
+.text-cand{
+  color: #464242;
+}
 /*** 
 
 ====================================================================
@@ -12927,13 +12964,13 @@ Candidates Section Two
 
 .modal-cand {
     position: fixed; 
-    z-index: 1; 
+    z-index: 2; 
     left: 0;
     top: 0;
     width: 100%; 
     height: 100%;
     overflow: auto; 
-    background-color: rgba(0, 0, 0, 0.9); /* Black with opacity */
+    background-color: rgba(0, 0, 0, 0.9);
     display: none;
     justify-content: center;
     align-items: center;
@@ -12947,6 +12984,17 @@ Candidates Section Two
     text-align: center;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
     position: relative;
+}
+
+.modal-content-cand-half{
+  background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    text-align: center;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    position: relative;
+    left: 9%;
 }
 
 .close-btn-cand {
@@ -12997,7 +13045,7 @@ left: 0;
 top: 0;
 width: 100%;
 height: 100%;
-overflow: auto;
+overflow: hidden;
 background-color: rgba(0, 0, 0, 0.4);
 }
 
@@ -13022,9 +13070,10 @@ margin-bottom: 30px;
 .delete_cont {
 width: 35%;
 padding: 2%;
-margin: 15% 43%;
+margin: 15% 33%;
 background: white;
 border-radius: 10px;
+margin-left: 43%;
 }
 
 .delete_actions {
@@ -15316,9 +15365,14 @@ Pricing Section
 ====================================================================
 
 ***/
+.pricing-h3{
+  color: black;
+}
 .pricing-section {
   position: relative;
-  padding: 100px 0 70px;
+    padding: 30px 0 10px;
+    background-color: #E6E6FA;
+    margin-top: -1%;
 }
 
 .pricing-tabs {
@@ -15413,7 +15467,7 @@ Pricing Section
 
 .pricing-table .inner-box:hover,
 .pricing-table.tagged .inner-box {
-  border: 1px solid #1967D2;
+  /* border: 1px solid #1967D2; */
   box-shadow: 0px 6px 15px rgba(64, 79, 104, 0.05);
 }
 
@@ -15446,7 +15500,7 @@ Pricing Section
   font-weight: 500;
   font-size: 18px;
   line-height: 24px;
-  color: #1967D2;
+  color: #9D30b1;
   margin-bottom: 10px;
 }
 
@@ -16719,6 +16773,9 @@ Cart Section
 
 .cart-item .product-remove {
   color: #949DA6;
+}
+.pro{
+  padding: 10px;
 }
 
 /* Cart Option */
@@ -23076,5 +23133,401 @@ Work Section
   height: auto;
 }
 /*course-video-popup-style-end */
+.logout-section {
+  margin-top:180px;
+  text-align: center;
+}
+
+.logout-button {
+  background-color: #ffcccc; /* Light red color */
+  color: #e60000; /* Darker red for the text */
+  padding: 10px 30px;
+  border-radius: 10px;
+  width: 220px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.logout-button:hover {
+  background-color: #ff9999; /* Slightly darker red on hover */
+}
+
+
+/* Main Dashboard Container */
+.dashboard-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  padding: 30px;
+  background-color: #f9f9f9;
+}
+.dashboard-container h4{
+  margin-bottom: 20px;
+}
+
+/* User Greeting */
+.user-greeting {
+  grid-column: span 2;
+  text-align: left;
+  padding: 20px;
+  text-align: center;
+  border-radius: 5px 5px 10px 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  border-top: solid purple 5px;
+  width: 100%;
+  background-color: #E6E6FA;
+}
+
+/* Stats Section */
+.stats-section {
+  display: grid;
+  grid-template-columns: repeat(4, 2fr); /* Two columns by default */
+  gap: 10px;
+}
+
+/* Stat Items */
+.stat-item {
+  background-color: #ffffff;
+  padding: 20px;
+  text-align: center;
+  border-radius: 5px 5px 10px 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+.item-1 {
+  border-top: solid 5px #2d75ff;
+  background-color: rgba(145, 183, 255, 1);
+}
+
+.item-3 {
+  border-top: solid 5px green;
+  background-color: rgba(185, 255, 188, 1);
+}
+
+.item-2 {
+  border-top: solid 5px orange;
+  background-color: rgba(255, 220, 167, 1);
+}
+
+.item-4 {
+  border-top: solid 5px gray;
+  background-color: rgba(219, 219, 219, 1);
+}
+
+/* Responsive Styles for different screen sizes */
+
+/* Large screens (desktops) */
+@media (max-width: 1200px) {
+  .dashboard-container {
+    grid-template-columns: 1fr; /* Single-column layout */
+    gap: 20px;
+  }
+  .user-greeting {
+    font-size: 1.2rem;
+  }
+  .stat-item h4 {
+    font-size: 1rem;
+  }
+  .stat-item p {
+    font-size: 0.9rem;
+  }
+
+}
+/* Tablets */
+@media (max-width: 768px) {
+  .dashboard-container {
+    display: block;
+    
+  }
+  .stat-item {
+    width: calc(100% - 20px);
+  }
+  .stat-item h4 {
+    font-size: 0.9rem;
+  }
+  .stat-item p {
+    font-size: 0.8rem;
+  }
+  .user-greeting {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  
+  .stats-section {
+    display: grid;
+    grid-template-columns: repeat(4, 2fr); /* Two columns by default */
+    gap: 10px; /* Single column layout for stats items */
+    margin-bottom: 10px;
+  }
+
+  .stat-item {
+    width: 100%; /* Full width for stat items on smaller screens */
+  }
+  .charts-section{
+    margin-top: 20px;
+  }
+  .popular-courses ul li, .upcoming-assessments ul li{
+    flex-direction: column; /* Stack title and button on smaller screens */
+    align-items: flex-start;
+  }
+
+  .view-btn {
+    margin-top: 10px; /* Add space above the button when stacked */
+    width: 100%; /* Make button take full width for small screens */
+    text-align: center;
+  }
+}
+
+/* Mobile screens */
+@media (max-width: 480px) {
+  .dashboard-container {
+    padding: 15px;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  .stat-item {
+    padding: 15px;
+    font-size: 0.8rem;
+  }
+  .stat-item h4 {
+    font-size: 0.8rem;
+  }
+  .stat-item p {
+    font-size: 0.7rem;
+  }
+  .user-greeting {
+    padding: 15px;
+    font-size: 0.9rem;
+  }
+  .view-btn {
+    width: 80px;
+    padding: 4px;
+    font-size: 0.8rem;
+    text-align: center;
+  }
+  .charts-section{
+    margin-top: 20px;
+  }
+}
+
+/* Content Section */
+.content-section {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  grid-column: span 3;
+}
+
+.upcoming-assessments, .popular-courses {
+  background-color: #E6E6FA;
+  display: flex;
+  flex-direction: column  ;
+  border-radius: 5px 5px 10px 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  border-top: solid purple 5px;
+}
+
+.popular-courses ul li, .upcoming-assessments ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  background-color: white;
+  padding: 10px 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.view-btn {
+  background:linear-gradient(to right, #8641f8, #9D30b1);;
+  color: black;
+  padding: 2px 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  width: auto;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-align: center;
+}
+
+.view-btn:hover {
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+
+/* Charts Section */
+.charts-section {
+  display: flex;
+  justify-content: space-between;
+  grid-column: span 3;
+  gap: 20px; /* Space between the charts */
+  
+}
+
+.hours-spent, .performance-section {
+  background-color: #E6E6FA;
+  padding: 20px;
+  border-radius: 5px 5px 10px 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  border-top: solid purple 5px;
+  width: calc(50% - 10px); /* Adjust width for spacing */
+  position: relative;
+}
+
+
+
+
+.performance-section,.hours-spent{
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center-align the content */
+  justify-content: center; /* Center-align the content */
+}
+
+.canvas-container {
+  height: 300px; /* Adjust height as needed */
+  width: 100%; /* Full width within its container */
+  position: relative;
+}
+
+/* Ensure the label text is centered */
+.progress-meter p {
+  text-align: center;
+  margin: 10px 0; /* Margin for spacing */
+}
+
+@media (max-width: 1200px) {
+  .canvas-container {
+    height: 250px; /* Adjust height for larger tablets and smaller desktops */
+  }
+}
+
+@media (max-width: 768px) {
+  .canvas-container {
+    height: 200px; /* Adjust height for tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  .canvas-container {
+    height: 150px; /* Adjust height for mobile devices */
+  }
+}
+
+/* Time Frame Selector Styles */
+#timeFrameSelector {
+  appearance: none; 
+  background-color: #ffffff;
+  color: #333;
+  font-size: 1rem; 
+  padding: 10px 15px; 
+  border: 2px solid #9D30b1; 
+  border-radius: 5px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  cursor: pointer; 
+  transition: all 0.3s ease; 
+  width: 100px; 
+  margin-bottom: 20px;
+}
+
+
+
+/* On Hover */
+#timeFrameSelector:hover {
+  background-color: #f0f0f0; /* Lighter background on hover */
+  border-color: #9D30b1; /* Slightly darker border on hover */
+}
+
+/* On Focus */
+#timeFrameSelector:focus {
+  outline: none; /* Remove the default outline */
+  box-shadow: 0 0 5px 2px rgba(134, 65, 248, 0.5); /* Add glow on focus */
+}
+
+/* Mobile Specific Adjustments */
+@media (max-width: 768px) {
+  #timeFrameSelector {
+    width: 100%; /* Full width on mobile devices */
+    font-size: 0.9rem; /* Slightly smaller text for mobile */
+  }
+  
+}
+/* Progress Bar Styling */
+.progress-bar {
+  width: 100%; /* Full width of the container */
+  height: 30px; /* Height of the progress bar */
+  background-color:white; /* Background for the empty portion */
+  position: relative;
+  border-radius: 5px; /* Rounded corners */
+  overflow: hidden; /* To ensure the progress fill stays within bounds */
+}
+
+.progress-fill {
+  height: 100%; /* Full height */
+  background-color:rgb(50, 168, 82); /* Color for the filled portion */
+  width: 0; /* Width will be dynamically set based on progress */
+  transition: width 0.3s ease; /* Smooth transition for progress changes */
+}
+
+.percent-text {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  z-index: 1; /* Ensure it stays above the progress bar */
+}
+
+.fliter-h{
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  font-family: 'Jost', sans-serif;
+  font-style: normal;
+}
+
+/* Layout Styling */
+.single_courses {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.single_courses .thumb img {
+  width: 100%; /* Ensure image scales properly */
+}
+
+.courses_info {
+  padding: 10px 20px;
+}
+
+.star_prise {
+  margin-top: 10px;
+}
+
+.wishlist-btn {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.wishlist-btn:hover {
+  background-color: #218838;
+}
+
+
 
 
