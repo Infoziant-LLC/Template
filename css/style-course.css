@@ -3007,6 +3007,38 @@ h3 {
   font-family: "Poppins", sans-serif;
 }
 
+.wishlist-btn.r {
+  padding:10px 15px;
+  width: auto;
+  background-color: #ff5a5f;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.wishlist-btn.r:hover{
+  background-color:red;
+}
+
+#course-title {
+  font-size: 36px; 
+  font-weight: bold;
+  color: #000;
+  line-height: 1.2;
+}
+
+.wishlist-btn i {
+  margin-right: 5px;
+}
+
+.wishlist-btn:hover {
+  background-color: #e94c4f;
+}
+
 @media (max-width: 767px) {
   /* line 13, C:/Users/SPN Graphics/Desktop/CL September/Edu mark/207 Education/HTML/scss/_course_details.scss */
   .courses_details_banner .course_text h3 {
@@ -3457,8 +3489,7 @@ h3 {
 
 /* line 1, C:/Users/SPN Graphics/Desktop/CL September/Edu mark/207 Education/HTML/scss/_popular_courses.scss */
 .popular_courses {
-  padding-top: 3%;
-  padding-bottom: 3%;
+  padding: 20px;
 }
 
 /* line 4, C:/Users/SPN Graphics/Desktop/CL September/Edu mark/207 Education/HTML/scss/_popular_courses.scss */
@@ -3505,19 +3536,33 @@ h3 {
 
 /* line 24, C:/Users/SPN Graphics/Desktop/CL September/Edu mark/207 Education/HTML/scss/_popular_courses.scss */
 .popular_courses .single_courses {
-  margin-bottom: 50px;
-  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
-  -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+  margin-bottom: 20px;
+  border-radius: 5px;
+  background-color: #E6E6FA;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+
+}
+.popular_courses .single_courses:hover{
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+@media (min-width: 768px){
+  .popular_courses .single_courses .thumb {
+    overflow: hidden;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+  
+
 }
 
 /* line 27, C:/Users/SPN Graphics/Desktop/CL September/Edu mark/207 Education/HTML/scss/_popular_courses.scss */
+@media (max-width: 768px){
 .popular_courses .single_courses .thumb {
   overflow: hidden;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
-
+}
 /* line 31, C:/Users/SPN Graphics/Desktop/CL September/Edu mark/207 Education/HTML/scss/_popular_courses.scss */
 .popular_courses .single_courses .thumb img {
   width: 100%;
@@ -6668,6 +6713,10 @@ h6 {
   box-shadow: -7.552px 9.326px 20px 0px rgba(1, 84, 85, 0.1);
   border-radius: 10px;
 }
+@media (max-width:768) {
+  
+  
+}
 
 @media (max-width: 576px) {
   /* line 48, C:/Users/SPN Graphics/Desktop/CL September/Edu mark/207 Education/HTML/scss/_blog_part.scss */
@@ -6860,3 +6909,94 @@ h6 {
 }
 
 /*# sourceMappingURL=style.css.map */
+/* CSS for the new certificate button */
+.certificate-btn {
+  margin-top: 10px;
+  padding: 10px 15px;
+  background-color: #28a745; /* Green color */
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.certificate-btn i {
+  margin-right: 5px;
+}
+
+.certificate-btn:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+
+/* LMS-Pages */
+.hours-spent-all{
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 66%;
+}
+.filter-section{
+  position: fixed;
+  right:10px;
+  bottom:10px;
+  background-color: #E6E6FA;
+  padding:30px;
+  border-radius: 10px;
+}
+.single_courses.list-format.allcc{
+  width: 75%;
+}
+.search-icon {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 16px;
+  color: #888;
+}
+
+.dashboard-container-course {
+  display: inline;
+  padding: 20px;
+  background-color: #f9f9f9;
+  /* Light background color for the whole dashboard */
+}
+
+.search-sort-container {
+  display: inline;
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+
+.courses-search-bar {
+  width: 50%;
+  padding: 10px;
+  border-radius: 50px;
+  border: 1px solid #ccc;
+}
+
+.search-bar-incourese {
+  display: inline;
+}
+
+.course-sort-by {
+  display: inline;
+  margin-left: 50px;
+}
+
+.course-dropdown {
+  margin-left: 6px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.card-image {
+  width: 150px;
+  height: 150px;
+  background-color: #f0f0f0;
+}
