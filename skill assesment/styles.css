@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Jost', sans-serif;
+}
+
+body {
+    background-color: #f0f4f8;
+}
+
+.skill-container {
+    max-width: 1200px;
+    margin: 50px 150px;
+    padding: 20px;
+
+}
+
+.dashboard-header {
+    text-align: center;
+    margin-bottom: 40px;
+    background-color: transparent;
+}
+
+.dashboard-header h1 {
+    font-size: 36px;
+    color: #333;
+    font-weight: 700;
+    animation: fadeIn 1s ease-out;
+}
+
+.dashboard-header p {
+    font-size: 18px;
+    color: #555;
+}
+
+.skill-analytics {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+    gap: 20px;
+}
+
+.skill-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    animation: slideIn 1s ease-out;
+}
+
+.skill-card:hover{
+    transform: translateY(-10px);
+}
+
+.skill-card .h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #555;
+    font-weight: bold;
+}
+
+.skill-card p {
+    font-size: 24px;
+    color: #A479FC;
+    font-weight: bold;
+}
+
+.progress-section {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.progress-section .h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+/* Container for recommendation cards to display them in a grid */
+.skill-recommendation-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+/* Individual recommendation card styles */
+.skill-recommendation-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%; /* Ensure cards fit the container width */
+    max-width: 350px; /* Limit the width of cards */
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Hover effect for recommendation cards */
+.skill-recommendation-card:hover {
+    transform: translateY(-10px);
+    background-color: #eaf2fa;
+}
+
+/* Test details styles */
+.skill-recommendation-card .skill-test-details {
+    font-size: 14px;
+    color: #555;
+    margin-top: 10px;
+    font-weight: bold;
+}
+.skill-recommendations-section h2{
+    font-size:x-large;
+    font-weight: bold;
+}
+.skill-recommendation-card .h3{
+    font-weight: bold;
+    font-size:larger;
+
+
+}
+
+/* Button styles */
+.skill-recommendation-card button {
+    background-color: #A479FC;
+    color: white;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.skill-recommendation-card button:hover {
+    background-color: #7F5DCF;
+}
+
+.career-tips-section {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.career-tip {
+    background-color: #eaf2fa;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 10px;
+    animation: fadeIn 1s ease-out;
+}
+
+.career-tip p {
+    font-size: 16px;
+    color: #A479FC;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.career-tip i {
+    margin-right: 10px;
+}
+
+.badges-section {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.badges-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.badges-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.badge {
+     background: linear-gradient(135deg, #d4af37, #f7c600);
+    color: white;
+    padding: 15px 25px;
+    border-radius: 20px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: transform 0.3s ease;
+    animation: fadeIn 1s ease-out;
+}
+
+.badge:hover {
+    transform: scale(1.1);
+}
+
+.badge i {
+    font-size: 24px;
+}
+
+/* Keyframes for animations */
+@keyframes slideIn {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
