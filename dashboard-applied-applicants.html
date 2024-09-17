@@ -9,6 +9,7 @@
   <link href="css/bootstrap.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
   <link href="css/responsive.css" rel="stylesheet">
+  <link href="css/scheduledMeetings.css" rel="stylesheet">
 
   <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
   <link rel="icon" href="images/favicon.png" type="image/x-icon">
@@ -69,7 +70,7 @@
                 <li><a href="dashboard-resumes.html"><i class="la la-bookmark-o"></i>Shortlisted Resumes</a></li>
                 <li><a href="dashboard-packages.html"><i class="la la-box"></i>Packages</a></li>
                 <li><a href="dashboard-messages.html"><i class="la la-comment-o"></i>Messages</a></li>
-                <li><a href="dashboard-resume-alerts.html"><i class="la la-bell"></i>Resume Alerts</a></li>
+                <li><a href="scheduled-meetings.html"><i class="fa-light fa-calendar-days"></i>Scheduled Meetings</a></li>
                 <li><a href="dashboard-change-password.html"><i class="la la-lock"></i>Change Password</a></li>
                 <li><a href="dashboard-company-profile.html"><i class="la la-user-alt"></i>View Profile</a></li>
                 <li><a href="index.html"><i class="la la-sign-out"></i>Logout</a></li>
@@ -121,7 +122,7 @@
           <li><a href="dashboard-resumes.html"><i class="la la-bookmark-o"></i>Shortlisted Resumes</a></li>
           <li><a href="dashboard-packages.html"><i class="la la-box"></i>Packages</a></li>
           <li><a href="dashboard-messages.html"><i class="la la-comment-o"></i>Messages</a></li>
-          <li><a href="dashboard-resume-alerts.html"><i class="la la-bell"></i>Resume Alerts</a></li>
+          <li><a href="scheduled-meetings.html"><i class="fa-light fa-calendar-days"></i>Scheduled Meetings</a></li>
           <li><a href="dashboard-change-password.html"><i class="la la-lock"></i>Change Password</a></li>
           <li><a href="dashboard-company-profile.html"><i class="la la-user-alt"></i>View Profile</a></li>
           <li><a href="index.html"><i class="la la-sign-out"></i>Logout</a></li>
@@ -200,7 +201,7 @@
 
                         <ul class="dropdown-menu">
                           <a href="candidates-single.html"><li><button data-text="View Aplication"><span class="la la-eye"></span> View Aplication</button></li></a>
-                          <li><button id="openModalBtn-Approval-1" data-text="Approve Aplication"><span class="la la-check"></span> Approve Aplication</button></li>
+                          <li><button id="createEventBtn" data-text="Approve Aplication"><span class="la la-check"></span> Approve Aplication</button></li>
                           <li><button id="openModalBtn-Reject-3" data-text="Reject Aplication"><span class="la la-times-circle"></span> Reject Aplication</button></li>
                         </ul>
                       </div>
@@ -233,7 +234,7 @@
 
                         <ul class="dropdown-menu">
                           <a href="candidates-single.html"><li><button data-text="View Aplication"><span class="la la-eye"></span> View Aplication</button></li></a>
-                          <li><button id="openModalBtn-Approval-1" data-text="Approve Aplication"><span class="la la-check"></span> Approve Aplication</button></li>
+                          <li><button id="createEventBtn" data-text="Approve Aplication"><span class="la la-check"></span> Approve Aplication</button></li>
                           <li><button id="openModalBtn-Reject-3" data-text="Reject Aplication"><span class="la la-times-circle"></span> Reject Aplication</button></li>
                         </ul>
                       </div>
@@ -266,7 +267,7 @@
 
                         <ul class="dropdown-menu">
                           <a href="candidates-single.html"><li><button data-text="View Aplication"><span class="la la-eye"></span> View Aplication</button></li></a>
-                          <li><button id="openModalBtn-Approval-1" data-text="Approve Aplication"><span class="la la-check"></span> Approve Aplication</button></li>
+                          <li><button id="createEventBtn7" data-text="Approve Aplication"><span class="la la-check"></span> Approve Aplication</button></li>
                           <li><button id="openModalBtn-Reject-3" data-text="Reject Aplication"><span class="la la-times-circle"></span> Reject Aplication</button></li>
                         </ul>
                       </div>
@@ -326,8 +327,106 @@
   </div>
 </div>
 
+<!-- start scheduled meetings -->
+<div id="meetingBox" class="hidden">
+  <div class="event-intro">
+    <h5 style="float: left; font-weight: 600;">Create Event</h5>
+    <button id="closeBtn"><i class="fa-solid fa-xmark"></i></button>
+  </div>
+
+  <form>
+    <li class="ev-li">
+      <label class="el">Candidate Email:</label>
+      <input type="email" class="ef" value="fiza@gmail.com" readonly />
+    </li>
+
+    <h6 class="ev-head">
+      <i class="fa-regular fa-calendar-days"></i> Event Details
+    </h6>
+
+    <li class="ev-li">
+      <label class="el">Event Name:</label><br />
+      <input type="text" class="ef" />
+    </li>
+
+    <li class="ev-li">
+      <label class="el">Description/Instructions:</label><br />
+      <textarea class="ef" style="overflow-y: scroll;"></textarea>
+    </li>
+
+    <h6 class="ev-head">
+      <i class="fa-regular fa-earth-americas"></i> Time & Location
+    </h6>
+
+    <li class="ev-li">
+      <label class="el" for="timezone">Select Time Zone:</label>
+      <select id="timezone" class="ef">
+        <option>IST (India Standard Time): UTC +05:30 (Asia/Kolkata)</option>
+        <option>UTC (Coordinated Universal Time): UTC ± 00:00</option>
+        <option>EST (Eastern Standard Time): UTC -05:00 (America/New_York)</option>
+        <option>CST (Central Standard Time): UTC -06:00 (America/Chicago)</option>
+        <option>PST (Pacific Standard Time): UTC -08:00 (America/Los_Angeles)</option>
+        <option>GMT (Greenwich Mean Time): UTC +00:00 (Europe/London)</option>
+        <option>CET (Central European Time): UTC +01:00 (Europe/Berlin, Europe/Paris)</option>
+        <option>CST (China Standard Time): UTC +08:00 (Asia/Shanghai)</option>
+        <option>JST (Japan Standard Time): UTC +09:00 (Asia/Tokyo)</option>
+        <option>AEST (Australian Eastern Standard Time): UTC +10:00 (Australia/Sydney)</option>
+      </select>
+    </li>
+
+    <li class="ev-li">
+      <!-- Start Date and Time -->
+      <div class="date-time-group">
+        <ul class="time-1">
+          <li>
+            <label class="el" for="start-date">Start:</label><br />
+            <input type="date" id="start-date" class="ef-1" />
+          </li>
+
+          <li>
+            <label class="el" for="start-time"></label><br />
+            <input type="time" id="start-time" class="ef-1" />
+          </li>
+
+          <li>
+            <label class="el" for="end-date">End:</label><br/>
+            <input type="date" id="end-date" class="ef-1"/>
+          </li>
+
+          <li>
+            <label class="el" for="end-time"></label><br/>
+            <input type="time" id="end-time" class="ef-1"/>
+          </li>
+
+        </ul>
+      </div>
+    </li>
+
+    <li>
+      <label class="el">Location</label>
+      <select class="ef">
+        <option value="UTC">Virtual</option>
+        <option>New York, USA (Eastern Standard Time - EST)</option>
+        <option>London, UK (Greenwich Mean Time - GMT)</option>
+        <option>Paris, France (Central European Time - CET)</option>
+        <option>Berlin, Germany (Central European Time - CET)</option>
+        <option>Tokyo, Japan (Japan Standard Time - JST)</option>
+        <option>Sydney, Australia (Australian Eastern Standard Time - AEST)</option>
+        <option>Shanghai, China (China Standard Time - CST)</option>
+        <option>Moscow, Russia (Moscow Standard Time - MSK)</option>
+        <option>Dubai, UAE (Gulf Standard Time - GST)</option>
+        <option>New Delhi, India (India Standard Time - IST)</option>
+      </select>
+    </li>
+
+  </form>
+  <button class="schedule-btn">Schedule</button>
+</div>
+<!-- End scheduled meetings -->
+
 
   <script src="js/jquery.js"></script>
+  <script src="js/scheduledMeetings.js"></script>
   <script src="js/ApprovalModal.js"></script>
   <script src="js/rejectmodal.js"></script>
   <script src="js/popper.min.js"></script>
