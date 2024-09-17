@@ -1650,7 +1650,7 @@ export const coursesData = [
                     content: "Apply your skills to create a fully functional webpage."
                 }
             ],
-           videoId: "E0QLVj9FJ0A"
+           videoId: "qz0aGYrrlhU"
         },
         {
             id: 83,
@@ -1684,7 +1684,7 @@ export const coursesData = [
                     content: "Put it all together by creating a fully responsive webpage as a project."
                 }
             ],
-            videoId: "E0QLVj9FJ0A"
+            videoId: "srvUrASNj0s"
         },
         {
             id: 84,
@@ -1722,7 +1722,7 @@ export const coursesData = [
                     content: "Apply your skills to create a fully interactive web application."
                 }
             ],
-            videoId: "E0QLVj9FJ0A"
+            videoId: "LO5eTH4Pe8E"
         },
         {
             id: 85,
@@ -1760,7 +1760,7 @@ export const coursesData = [
                     content: "Build a fully interactive web page that responds to user actions by manipulating the DOM."
                 }
             ],
-            videoId: "E0QLVj9FJ0A"
+            videoId: "5fb2aPlgoys"
         },             
         {
             id: 86,
@@ -1798,7 +1798,7 @@ export const coursesData = [
                     content: "Apply your knowledge to build a fully responsive web layout using both Grid and Flexbox."
                 }
             ],
-            videoId: "E0QLVj9FJ0A"
+            videoId: "DXxt4oIAI4Y"
         },
         {
             id: 87,
@@ -1836,7 +1836,7 @@ export const coursesData = [
                     content: "Create a comparison project to understand the strengths and weaknesses of each framework."
                 }
             ],
-            videoId: "E0QLVj9FJ0A"
+            videoId: "Ka77djMkSwg"
         },
         {
             id: 88,
@@ -1874,10 +1874,10 @@ export const coursesData = [
                     content: "Apply your knowledge to automate the build process and deploy a web application."
                 }
             ],
-            videoId: "E0QLVj9FJ0A"
+            videoId: "Dgqsp57LmHc"
         },
         {
-            id: 89,
+            id: 101,
             name: "design-thinking",
             title: "Design Thinking",
             image: "images/courses/design-thinking.jpg",
@@ -1912,10 +1912,10 @@ export const coursesData = [
                     content: "Apply design thinking to solve a real-world problem and create user-centric solutions."
                 }
             ],
-            videoId: "E0QLVj9FJ0A"
+            videoId: "4nTh3AP6knM"
         },
         {
-            id: 90,
+            id: 102,
             name: "wireframing-prototyping",
             title: "Wireframing & Prototyping",
             image: "images/courses/wireframing-prototyping.jpg",
@@ -1950,10 +1950,10 @@ export const coursesData = [
                     content: "Apply wireframing and prototyping skills to design a complete user interface for a real-world project."
                 }
             ],
-            videoId: "E0QLVj9FJ0A"
+            videoId: "Dh14MmPBvZA"
         },
         {
-            id: 91,
+            id: 103,
             name: "user-research",
             title: "User Research Methods",
             image: "images/courses/user-research.jpg",
@@ -1988,10 +1988,10 @@ export const coursesData = [
                     content: "Apply user research methods to a real-world project and use insights to enhance the design."
                 }
             ],
-            videoId: "E0QLVj9FJ0A"
+            videoId: "kQ_6faxhyIw"
         },
         {
-            id: 92,
+            id: 104,
             name: "interaction-design",
             title: "Interaction Design",
             image: "images/courses/interaction-design.jpg",
@@ -2026,10 +2026,10 @@ export const coursesData = [
                     content: "Apply interaction design principles to create a responsive and engaging user experience for a real-world project."
                 }
             ],
-           videoId: "E0QLVj9FJ0A"
+           videoId: "DlQ75eTM_AM"
         },
         {
-            id: 93,
+            id: 105,
             name: "visual-design",
             title: "Visual Design Principles",
             image: "images/courses/visual-design.jpg",
@@ -2068,7 +2068,7 @@ export const coursesData = [
                     content: "Apply visual design principles to create a cohesive and attractive design for a real-world project."
                 }
             ],
-            videoId: "E0QLVj9FJ0A"
+            videoId: "yNDgFK2Jj1E"
         },
         {
             id: 106,
@@ -2106,6 +2106,6 @@ export const coursesData = [
                     content: "Apply usability testing techniques to evaluate and enhance a real-world design."
                 }
             ],
-            videoId: "E0QLVj9FJ0A"
+            videoId: "nYCJTea1AUQ"
         }        
 ];
