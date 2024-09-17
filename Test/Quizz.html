@@ -33,7 +33,7 @@
   <div id="quiz" class="quiz">
     <div class="quiz-header">
         <div class="header-left">
-          <span>Topic : <span id="topic">Topic: Quiz</span></span>
+          <span>Topic : <span id="topic">Quiz</span></span>
         </div>
         <div class="header-center">
             <span id="timer">Time Left: 20:00</span>
@@ -57,17 +57,11 @@
 
 <!-- Quiz Result -->
 <div id="result" class="result-container hidden">
-    <h2>Quiz Completed!</h2>
-    <h3 id="score-percent">Your Score: 0%</h3>
-    <button id="back-home-btn" class="quiz-btn" onclick="backtohome()">Back to Home</button>
+  <h2>Quiz Completed!</h2>
+  <h3 id="score-percent">Your Score: 0%</h3>
+  <h2 id="result-message"></h2> <!-- Use result-message for custom messages -->
+  <button id="back-home-btn" class="quiz-btn" onclick="backtohome()">Back to Home</button>
 </div>
-<script>
-  function backtohome() {
-    // Navigate to the Quizz.html page
-    window.location.href = '../taketest.html'; // Update with the correct path if necessary
-  }
-</script>
-
       <script src="Script.js"></script>
 </body>
 </html>

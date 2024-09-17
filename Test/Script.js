@@ -1,30 +1,7 @@
-function requestFullScreen() {
-  const element = document.documentElement; // You can use any element here (e.g., the quiz container)
-  
-  if (element.requestFullscreen) {
-    element.requestFullscreen();
-  } else if (element.mozRequestFullScreen) { // Firefox
-    element.mozRequestFullScreen();
-  } else if (element.webkitRequestFullscreen) { // Chrome, Safari, and Opera
-    element.webkitRequestFullscreen();
-  } else if (element.msRequestFullscreen) { // IE/Edge
-    element.msRequestFullscreen();
-  }
+function backtohome() {
+  // Navigate to the Quizz.html page
+  window.location.href = '../taketest.html'; // Update with the correct path if necessary
 }
-
-function exitFullScreen() {
-  if (document.exitFullscreen) {
-    document.exitFullscreen();
-  } else if (document.mozCancelFullScreen) { // Firefox
-    document.mozCancelFullScreen();
-  } else if (document.webkitExitFullscreen) { // Chrome, Safari, and Opera
-    document.webkitExitFullscreen();
-  } else if (document.msExitFullscreen) { // IE/Edge
-    document.msExitFullscreen();
-  }
-}
-
-
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -37,6 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const backHomeBtn = document.getElementById('back-home-btn');
   const timerElement = document.getElementById('timer');
   const prevBtn = document.getElementById('prev-btn'); // New Previous button
+  const topic=document.getElementById('topic')
 
   let currentQuiz = null;
   let currentQuestionIndex = 0;
@@ -235,8 +213,8 @@ document.addEventListener('DOMContentLoaded', () => {
     score = 0;
     quizElement.classList.remove('hidden');
     resultElement.classList.add('hidden');
+    topic.innerHTML=currentQuiz.topic
     loadQuestion();
-    
     updateButtons();
     startTimer();
   }
@@ -286,30 +264,47 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Update button visibility (Previous, Next, Finish)
   function updateButtons() {
-    // Show or hide Previous button based on the current question index
+    // Disable Previous button on the first question
     if (currentQuestionIndex === 0) {
-      prevBtn.classList.add('hidden');
+      prevBtn.disabled = true;
+      prevBtn.classList.add('disabled'); // Add disabled class
     } else {
-      prevBtn.classList.remove('hidden');
+      prevBtn.disabled = false;
+      prevBtn.classList.remove('disabled'); // Remove disabled class
     }
-
-    // Show finish button on the last question
+  
+    // Disable Next button on the last question
     if (currentQuestionIndex === currentQuiz.questions.length - 1) {
-      nextBtn.classList.add('hidden');
-      finishBtn.classList.remove('hidden');
+      nextBtn.disabled = true;
+      nextBtn.classList.add('disabled'); // Add disabled class
     } else {
-      nextBtn.classList.remove('hidden');
-      finishBtn.classList.add('hidden');
+      nextBtn.disabled = false;
+      nextBtn.classList.remove('disabled'); // Remove disabled class
     }
   }
+  
 
   function finishQuiz() {
     clearInterval(countdown); // Stop the timer
     quizElement.classList.add('hidden');
     resultElement.classList.remove('hidden');
+    
     const scorePercent = ((score / currentQuiz.questions.length) * 100).toFixed(2);
+    const scorePercentElement = document.getElementById('score-percent');
+    const resultMessageElement = document.getElementById('result-message');
+    
+    // Display the score
     scorePercentElement.innerText = `Your Score: ${scorePercent}%`;
-  }
+
+    // Check if the score is 60% or higher
+    if (scorePercent >= 60) {
+        scorePercentElement.style.color = 'green'; // Set text color to green
+        resultMessageElement.innerText = "Congratulations! You passed!";
+    } else {
+        scorePercentElement.style.color = 'red'; // Set text color to red
+        resultMessageElement.innerText = "Sorry, you failed. Better luck next time!";
+    }
+}
 
   backHomeBtn.addEventListener('click', () => {
     resultElement.classList.add('hidden');

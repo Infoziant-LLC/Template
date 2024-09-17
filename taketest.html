@@ -34,8 +34,7 @@
   <div class="test-container" id="test-container">
 
     <!-- Header Span -->
-    <span class="header-span"></span>
-
+     
     <!-- Main Header-->
     <header class="main-header header-shaddow">
       <div class="container-fluid">
@@ -77,11 +76,6 @@
 
           <div class="outer-box">
 
-            <button class="menu-btn">
-              <span class="count">1</span>
-              <span class="icon la la-heart-o"></span>
-            </button>
-
             <button class="menu-btn" onclick="notifyToggle()">
               <span class="icon la la-bell"></span>
             </button>
@@ -89,7 +83,6 @@
             <!-- Dashboard Option -->
             <div class="dropdown dashboard-option">
               <a class="dropdown-toggle" role="button" data-toggle="dropdown" aria-expanded="false">
-                <img src="images/resource/company-6.png" alt="avatar" class="thumb">
                 <span class="name">My Account</span>
               </a>
               <ul class="dropdown-menu">
@@ -141,14 +134,15 @@
       <div id="nav-mobile"></div>
     </header>
     <h1 class="title">Enbott Assessment</h1>
-
     <div class="test-content-wrapper">
       <!-- Left Content - Test Cards -->
       <div class="test-left-content">
         <!-- Test 1: JQuery Test -->
         <div class="test-card">
           <div class="card-header">
+            <button class="take-test-btn" onclick="goback()">Back </button>
             <h2>JQuery Test</h2>
+            
             <button class="take-test-btn" onclick="taketest()">Start Test</button>
           </div>
           <div class="test-details">
@@ -211,6 +205,7 @@
             <p>Allocate dedicated time for preparation and review your answers for accuracy.</p>
           </div>
         </div>
+        
       </div>
     </div>
   </div>
@@ -220,6 +215,10 @@
   function taketest() {
     // Navigate to the Quizz.html page
     window.location.href = './Test/Quizz.html'; // Update with the correct path if necessary
+  }
+  function goback() {
+    // Navigate to the Quizz.html page
+    window.location.href = 'skill assesment.html'; // Update with the correct path if necessary
   }
 </script>
 <script src="js/deleteCandidateModal.js"></script>
