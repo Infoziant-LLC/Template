@@ -27,6 +27,9 @@
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a64eee', endColorstr='#3c35ce',GradientType=1 );
   /* IE6-9 */
 }
+.hidden_C{
+  display: none;
+}
 
 /* Normal desktop :1200px. */
 /* Normal desktop :992px. */
