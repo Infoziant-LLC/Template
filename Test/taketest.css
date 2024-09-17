@@ -201,7 +201,7 @@ body {
 .quiz-header {
   display: flex;
   align-items: center;
-  background-color: #9936d7cd;
+  background-color: #9a6afc;
   font-weight: bold;
   padding: 10px;
   color: white;
@@ -262,7 +262,7 @@ body {
 }
 
 .option:hover {
-  background-color: #9936d7cd;
+  background-color: #A479FC;
   color: rgb(255, 255, 255);
   font: bold;
 }
@@ -275,7 +275,7 @@ body {
 }
 
 .quiz-btn {
-     background-color: #A479FC;;
+     background-color: #c9afff;;
   border: none;
   padding: 10px 20px;
   border-radius: 5px;
@@ -285,7 +285,7 @@ body {
 }
 
 .quiz-btn:hover {
-  background-color: #9936d7cd;
+  background-color: #A479FC;
 
   
 }
