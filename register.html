@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Enbott | Just another HTML Template | Register</title>
+  <title>Enbott | Register</title>
 
   <!-- Stylesheets -->
   <link href="css/bootstrap.css" rel="stylesheet">
@@ -87,15 +87,16 @@
             
             <form method="post" action="add-parcel.html">
               <div class="form-group">
-                <div class="btn-box row">
-                    <div class="col-lg-6 col-md-12">                  
-                        <a href="#" class="theme-btn candidate-button" onclick="toggleColor('candidate')"><i class="la la-user"></i> Candidate </a>
-                    </div>
-                    <div class="col-lg-6 col-md-12">                  
-                        <a href="#" class="theme-btn employer-button" onclick="toggleColor('employer')"><i class="la la-building"></i> Employer </a>
-                    </div>
-                </div>
-            </div>
+                  <div class="btn-box row">
+                      <div class="col-lg-6 col-md-12">
+                          <a href="#" class="theme-btn candidate-button" onclick="toggleColor('candidate')"><i class="la la-user"></i> Candidate </a>
+                      </div>
+                      <div class="col-lg-6 col-md-12">
+                          <a href="#" class="theme-btn employer-button" onclick="redirectEmployer(); toggleColor('employer')"><i class="la la-building"></i> Employer </a>
+                      </div>
+                  </div>
+              </div>
+          </form>
               
               <!-- <div class="form-group">
                 <div class="btn-box row">
@@ -163,7 +164,11 @@
   <script src="js/owl.js"></script>
   <script src="js/wow.js"></script>
   <script src="js/script.js"></script>
-
+  <script>
+    function redirectEmployer() {
+        window.location.href = 'employer-register.html';
+    }
+</script>
   <script>
     function toggleColor(buttonType) {
       if (buttonType === 'candidate') {
