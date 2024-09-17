@@ -201,7 +201,8 @@ body {
 .quiz-header {
   display: flex;
   align-items: center;
-  background-color: #A479FC;;font-weight: bold;
+  background-color: #9936d7cd;
+  font-weight: bold;
   padding: 10px;
   color: white;
   box-shadow: 0px  5px 5px rgba(0, 0, 0, 0.2);
