@@ -46,7 +46,7 @@
           <!--Nav Outer -->
           <div class="nav-outer">
             <div class="logo-box">
-              <div class="logo"><a href="index.html"><img src="images/enbott-logo.png" alt="logo" title=""></a></div>
+              <div class="logo"><a href=""><img src="images/enbott-logo.png" alt="logo" title=""></a></div>
             </div>
 
             <nav class="nav main-menu">
@@ -76,38 +76,31 @@
           </div>
 
           <div class="outer-box">
-
-            <button class="menu-btn">
-              <span class="count">1</span>
-              <span class="icon la la-heart-o"></span>
-            </button>
-
-            <button class="menu-btn" onclick="notifyToggle()">
+             
+            <button class="menu-btn-1" onclick="notifyToggleAppliedJob()">
               <span class="icon la la-bell"></span>
             </button>
 
             <!-- Dashboard Option -->
             <div class="dropdown dashboard-option">
-              <a class="dropdown-toggle" role="button" data-toggle="dropdown" aria-expanded="false">
-                <img src="images/resource/company-6.png" alt="avatar" class="thumb">
+              <a
+                class="dropdown-toggle"
+                role="button"
+                data-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img
+                  src="images/resource/company-6.png"
+                  alt="avatar"
+                  class="thumb"
+                />
                 <span class="name">My Account</span>
               </a>
               <ul class="dropdown-menu">
-                <li class="active"><a href="candidate-dashboard.html"> <i class="la la-home"></i> Dashboard</a></li>
-                <li><a href="candidate-dashboard-profile.html"><i class="la la-user-tie"></i>My Profile</a></li>
-                <li><a href="candidate-dashboard-resume.html"><i class="la la-file-invoice"></i>My Resume</a></li>
-                <li><a href="candidate-dashboard-applied-job.html"><i class="la la-briefcase"></i> Applied Jobs </a></li>
-                <li><a href="candidate-dashboard-job-alerts.html"><i class="la la-bell"></i>Job Alerts</a></li>
-                <li><a href="candidate-inbox.html"><i class="fa-light fa-envelope"></i> Messages</a></li>
-                <li><a href="candidate-inbox.html"><i class="la la-user-tie"></i>Messages</a></li>
-                <li><a href="candidate-dashboard-shortlisted-resume.html"><i class="la la-bookmark-o"></i>Shortlisted Jobs</a></li>
-                <li><a href="candidate-dashboard-cv-manager.html"><i class="la la-file-invoice"></i> CV manager</a></li>
-                <!-- <li><a href="dashboard-packages.html"><i class="la la-box"></i>Packages</a></li> -->
-                <li><a href="sme-connect.html"><i class="la la-comment-o"></i>SME Connect</a></li>
-                <li><a href="dashboard-change-password.html"><i class="la la-lock"></i>Change Password</a></li>
-                <!-- <li><a href="dashboard-profile.html"><i class="la la-user-alt"></i>View Profile</a></li> -->
-                <li><a href="index.html"><i class="la la-sign-out"></i>Logout</a></li>
-                <li><a onclick="showCandModal()"><i class="la la-trash"></i>Delete Profile</a></li>
+
+                <li><a href="account.html"><i class="fa fa-cog"></i>Settings</a></li>
+              <li><a href="index.html"><i class="la la-sign-out"></i>Logout</a></li>
+
               </ul>
             </div>
           </div>
@@ -138,7 +131,7 @@
       <div id="nav-mobile"></div>
     </header>
     <!-- notification box -->
-    <div class="notify">
+    <div class="notify" id="notify-2">
       <div class="col-lg-5">
           <div class="notification-widget ls-widget">
               <div class="widget-title">
@@ -178,7 +171,7 @@
           <li><a href="candidate-dashboard-cv-manager.html"><i class="la la-file-invoice"></i> CV manager</a></li>
           <li><a href="sme-connect.html"><i class="fa-light fa-network-wired"></i>SME Connect</a></li>
           <li><a href="candidate-support.html"><i class="fa-light fa-circle-question"></i>Support</a></li>
-          <li><a href="dashboard-change-password.html"><i class="la la-lock"></i>Change Password</a></li>
+          <li><a href="candidate-changepassword.html"><i class="la la-lock"></i>Change Password</a></li>
           <!-- <li><a href="dashboard-profile.html"><i class="la la-user-alt"></i>View Profile</a></li> -->
           <li><a href="index.html"><i class="la la-sign-out"></i>Logout</a></li>
           <li><a onclick="showCandModal()"><i class="la la-trash"></i>Delete Profile</a></li>
@@ -202,7 +195,7 @@
 
     <!-- 4 boxes -->
     <div class="box-head">
-      <h2>Find the perfect job for you</h2>
+      <h2 style="font-weight: 3000;">Find the perfect job for you</h2>
       <section class="boxes-section">
         <div class="box pastel-blue">
           <div class="flash box-content">
@@ -239,6 +232,7 @@
             <div class="shape circle2"></div>
           </div>
         </div>
+
         <div class="box pastel-yellow">
           
             <a href="SkillAssesmentdashboard.html">
@@ -254,12 +248,14 @@
             <div class="shape circle2"></div>
           </div>
         </div>
+
+
       </section>
 
       <!-- job recommendation section -->
        <section class="job-recommendation">
         <div class="rcmnd-section">
-          <h3>Recommended jobs for you</h3>
+          <h3 style="font-weight: 3000;">Recommended jobs for you</h3>
           <div class="swiffy-slider slider-item-show3 slider-item-reveal slider-nav-dark slider-nav-outside-expand">
             <ul class="slider-container py-4" id="slider2">
                 <li>

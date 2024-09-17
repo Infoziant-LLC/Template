@@ -39,7 +39,7 @@
           <!--Nav Outer -->
           <div class="nav-outer">
             <div class="logo-box">
-              <div class="logo"><a href="index.html"><img src="images/enbott-logo.png" alt="" title=""></a></div>
+              <div class="logo"><a href=""><img src="images/enbott-logo.png" alt="" title=""></a></div>
             </div>
 
             <nav class="nav main-menu">
@@ -214,39 +214,31 @@
           </div>
 
           <div class="outer-box">
-
-            <button class="menu-btn">
-              <span class="count">1</span>
-              <span class="icon la la-heart-o"></span>
-            </button>
-
-            <button class="menu-btn" onclick="notifyToggleResume()">
+             
+            <button class="menu-btn-1" onclick="notifyToggleAppliedJob()">
               <span class="icon la la-bell"></span>
             </button>
 
             <!-- Dashboard Option -->
             <div class="dropdown dashboard-option">
-              <a class="dropdown-toggle" role="button" data-toggle="dropdown" aria-expanded="false">
-                <img src="images/resource/company-6.png" alt="avatar" class="thumb">
+              <a
+                class="dropdown-toggle"
+                role="button"
+                data-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img
+                  src="images/resource/company-6.png"
+                  alt="avatar"
+                  class="thumb"
+                />
                 <span class="name">My Account</span>
               </a>
               <ul class="dropdown-menu">
-                <li><a href="candidate-dashboard.html"> <i class="la la-home"></i> Dashboard</a></li>
-                <li><a href="candidate-dashboard-profile.html"><i class="la la-user-tie"></i>My Profile</a></li>
-                <li class="active"><a href="candidate-dashboard-resume.html"><i class="la la-file-invoice"></i>My Resume</a></li>
-                <li><a href="candidate-dashboard-applied-job.html"><i class="la la-briefcase"></i> Applied Jobs </a></li>
-                <li><a href="candidate-dashboard-job-alerts.html"><i class="la la-bell"></i>Job Alerts</a></li>
-                <li><a href="candidate-inbox.html"><i class="fa-light fa-envelope"></i> Messages</a></li>
-                <li><a href="career-path.html"><i class="fa-light fa-street-view"></i>Career Path</a></li>
-                <li><a href="candidate-dashboard-shortlisted-resume.html"><i class="la la-bookmark-o"></i>Shortlisted Jobs</a></li>
-                <li><a href="candidate-dashboard-cv-manager.html"><i class="la la-file-invoice"></i> CV manager</a></li>
-                <!-- <li><a href="dashboard-packages.html"><i class="la la-box"></i>Packages</a></li> -->
-                <li><a href="sme-connect.html"><i class="la la-comment-o"></i>SME Connect</a></li>
-                <li><a href="support.html"><i class="fa-light fa-circle-question"></i>Support</a></li>
-                <li><a href="dashboard-change-password.html"><i class="la la-lock"></i>Change Password</a></li>
-                <!-- <li><a href="dashboard-profile.html"><i class="la la-user-alt"></i>View Profile</a></li> -->
-                <li><a href="index.html"><i class="la la-sign-out"></i>Logout</a></li>
-                <li><a onclick="showCandModal()"><i class="la la-trash"></i>Delete Profile</a></li>
+
+                <li><a href="account.html"><i class="fa fa-cog"></i>Settings</a></li>
+              <li><a href="index.html"><i class="la la-sign-out"></i>Logout</a></li>
+
               </ul>
             </div>
           </div>
@@ -276,26 +268,7 @@
       <!-- Mobile Nav -->
       <div id="nav-mobile"></div>
     </header>
-    <!-- notification box -->
-    <div class="notify">
-      <div class="col-lg-5">
-          <div class="notification-widget ls-widget">
-              <div class="widget-title">
-                <h4>Notifications</h4>
-              </div>
-              <div class="widget-content">
-                <ul class="notification-list">
-                  <li><span class="icon flaticon-briefcase"></span> <strong>Wade Warren</strong> applied for a job <span class="colored">Web Developer</span></li>
-                  <li><span class="icon flaticon-briefcase"></span> <strong>Henry Wilson</strong> applied for a job <span class="colored">Senior Product Designer</span></li>
-                  <li class="success"><span class="icon flaticon-briefcase"></span> <strong>Raul Costa</strong> applied for a job <span class="colored">Product Manager, Risk</span></li>
-                  <li><span class="icon flaticon-briefcase"></span> <strong>Jack Milk</strong> applied for a job <span class="colored">Technical Architect</span></li>
-                  <li class="success"><span class="icon flaticon-briefcase"></span> <strong>Michel Arian</strong> applied for a job <span class="colored">Software Engineer</span></li>
-                  <li><span class="icon flaticon-briefcase"></span> <strong>Ali Tufan</strong> applied for a job <span class="colored">UI Designer</span></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-    </div>
+    
     <!--End Main Header -->
 
     <!-- Sidebar Backdrop -->
@@ -318,7 +291,7 @@
           <!-- <li><a href="dashboard-packages.html"><i class="la la-box"></i>Packages</a></li> -->
           <li><a href="sme-connect.html"><i class="la la-comment-o"></i>SME Connect</a></li>
           <li><a href="candidate-support.html"><i class="fa-light fa-circle-question"></i>Support</a></li>
-          <li><a href="dashboard-change-password.html"><i class="la la-lock"></i>Change Password</a></li>
+          <li><a href="candidate-changepassword.html"><i class="la la-lock"></i>Change Password</a></li>
           <!-- <li><a href="dashboard-profile.html"><i class="la la-user-alt"></i>View Profile</a></li> -->
           <li><a href="index.html"><i class="la la-sign-out"></i>Logout</a></li>
           <li><a onclick="showCandModal()"><i class="la la-trash"></i>Delete Profile</a></li>
@@ -379,7 +352,7 @@
                         <div class="resume-outer">
                           <div class="upper-title">
                             <h4>Education</h4>
-                            <button class="add-info-btn"><span class="icon flaticon-plus"></span> Add Aducation</button>
+                            <button class="add-info-btn"><span class="icon flaticon-plus"></span> Add Education</button>
                           </div>
                           <!-- Resume BLock -->
                           <div class="resume-block">
@@ -394,11 +367,11 @@
                                   <span class="year">2012 - 2014</span>
                                   <div class="edit-btns">
                                     <button><span class="la la-pencil"></span></button>
-                                    <button><span class="la la-trash"></span></button>
+                                    <button onclick="showCandModal()"><span class="la la-trash"></span></button>
                                   </div>
                                 </div>
                               </div>
-                              <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a ipsum tellus. Interdum et malesuada fames ac ante<br> ipsum primis in faucibus.</div>
+                              <div class="text-resume">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a ipsum tellus. Interdum et malesuada fames ac ante<br> ipsum primis in faucibus.</div>
                             </div>
                           </div>
 
@@ -419,7 +392,7 @@
                                   </div>
                                 </div>
                               </div>
-                              <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a ipsum tellus. Interdum et malesuada fames ac ante<br> ipsum primis in faucibus.</div>
+                              <div class="text-resume">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a ipsum tellus. Interdum et malesuada fames ac ante<br> ipsum primis in faucibus.</div>
                             </div>
                           </div>
                         </div>
@@ -447,7 +420,7 @@
                                   </div>
                                 </div>
                               </div>
-                              <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a ipsum tellus. Interdum et malesuada fames ac ante<br> ipsum primis in faucibus.</div>
+                              <div class="text-resume">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a ipsum tellus. Interdum et malesuada fames ac ante<br> ipsum primis in faucibus.</div>
                             </div>
                           </div>
 
@@ -468,7 +441,7 @@
                                   </div>
                                 </div>
                               </div>
-                              <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a ipsum tellus. Interdum et malesuada fames ac ante<br> ipsum primis in faucibus.</div>
+                              <div class="text-resume">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a ipsum tellus. Interdum et malesuada fames ac ante<br> ipsum primis in faucibus.</div>
                             </div>
                           </div>
                         </div>
@@ -508,7 +481,7 @@
                                   </div>
                                 </div>
                               </div>
-                              <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a ipsum tellus. Interdum et malesuada fames ac ante<br> ipsum primis in faucibus.</div>
+                              <div class="text-resume">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a ipsum tellus. Interdum et malesuada fames ac ante<br> ipsum primis in faucibus.</div>
                             </div>
                           </div>
 
@@ -530,7 +503,7 @@
                                   </div>
                                 </div>
                               </div>
-                              <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a ipsum tellus. Interdum et malesuada fames ac ante<br> ipsum primis in faucibus.</div>
+                              <div class="text-resume">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a ipsum tellus. Interdum et malesuada fames ac ante<br> ipsum primis in faucibus.</div>
                             </div>
                           </div>
                         </div>
@@ -583,6 +556,27 @@
           <button class="delete" id="cancelBtnNo-1" onclick="closeCandModal()">Cancel</button>
         </div>
     </div>
+  </div>
+
+  <!-- notification box -->
+  <div class="notify">
+    <div class="col-lg-5">
+        <div class="notification-widget ls-widget">
+            <div class="widget-title">
+              <h4>Notifications</h4>
+            </div>
+            <div class="widget-content">
+              <ul class="notification-list">
+                <li><span class="icon flaticon-briefcase"></span> <strong>Wade Warren</strong> applied for a job <span class="colored">Web Developer</span></li>
+                <li><span class="icon flaticon-briefcase"></span> <strong>Henry Wilson</strong> applied for a job <span class="colored">Senior Product Designer</span></li>
+                <li class="success"><span class="icon flaticon-briefcase"></span> <strong>Raul Costa</strong> applied for a job <span class="colored">Product Manager, Risk</span></li>
+                <li><span class="icon flaticon-briefcase"></span> <strong>Jack Milk</strong> applied for a job <span class="colored">Technical Architect</span></li>
+                <li class="success"><span class="icon flaticon-briefcase"></span> <strong>Michel Arian</strong> applied for a job <span class="colored">Software Engineer</span></li>
+                <li><span class="icon flaticon-briefcase"></span> <strong>Ali Tufan</strong> applied for a job <span class="colored">UI Designer</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
   </div>
 
 
