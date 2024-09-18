@@ -484,6 +484,7 @@ function handleSubmit() {
     closeButton.className = "close-button";
     closeButton.addEventListener("click", function () {
       document.getElementById("popup").style.display = "none";
+      document.getElementById('popularCourses').style.display="block"
     });
 
     // Append message and button to the popup

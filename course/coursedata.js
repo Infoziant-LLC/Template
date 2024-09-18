@@ -1445,16 +1445,667 @@ export const coursesData = [
         ],
         videoThumbnail: "https://img.youtube.com/vi/pHS1E5t0nAs/maxresdefault.jpg",
         videoId: "7LNl2JlZKHA"
-    }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    },
+    {
+        id: 73,
+        name: "networking-fundamentals",
+        title: "Networking Fundamentals",
+        image: "images/courses/networking-fundamentals.jpg",
+        detailsLink: "course/singlecourse-detail.html?course=73&name=networking-fundamentals",
+        rating: 4.6,
+        originalPrice: "$90.00",
+        currentPrice: "$65.00",
+        objective: "Learn the basics of computer networking, including protocols, IP addressing, and network configurations.",
+        outline: [
+          { title: "Introduction to Networking", content: "Understanding networks, LAN, WAN, and the internet." },
+          { title: "IP Addressing", content: "Learn about IP addresses, subnetting, and network masks." },
+          { title: "Protocols", content: "Explore TCP/IP, HTTP, and other essential protocols." },
+          { title: "Network Devices", content: "Understand routers, switches, and firewalls." },
+          { title: "Network Security", content: "Basic concepts in securing a network." }
+        ],
+        videoId:"oHQvWa6J8dU",
+        
+      },
+      {
+        id: 74,
+        name: "ui-ux",
+        title: "UI/UX Design Fundamentals",
+        image: "images/courses/ui-ux.jpg",
+        detailsLink: "course/singlecourse-detail.html?course=74&name=ui-ux",
+        rating: 4.8,
+        originalPrice: "$120.00",
+        currentPrice: "$85.00",
+        objective: "Understand the principles of UI and UX design, and how to create user-friendly interfaces.",
+        outline: [
+          { title: "What is UI/UX?", content: "Learn the difference between UI and UX." },
+          { title: "Design Principles", content: "Understand key design principles and best practices." },
+          { title: "Wireframing", content: "Create wireframes and prototypes for web and mobile apps." },
+          { title: "User Research", content: "Understand user needs through research and testing." },
+          { title: "UI Tools", content: "Learn tools like Figma and Adobe XD for designing interfaces." }
+        ],
+        videoId:"NTmh8l-Xl4c"
+      },
+      {
+        id: 75,
+        name: "git-github",
+        title: "Git & GitHub Essentials",
+        image: "images/courses/git-github.jpg",
+        detailsLink: "course/singlecourse-detail.html?course=75&name=git-github",
+        rating: 4.7,
+        originalPrice: "$80.00",
+        currentPrice: "$50.00",
+        objective: "Master version control with Git and GitHub, from setup to advanced collaboration.",
+        outline: [
+          { title: "Introduction to Git", content: "Learn what Git is and how it works." },
+          { title: "Version Control", content: "Understand the basics of version control." },
+          { title: "GitHub Workflow", content: "Collaborate using GitHub and pull requests." },
+          { title: "Branching & Merging", content: "Learn how to work with branches in Git." },
+          { title: "Advanced Git Techniques", content: "Explore rebasing, stashing, and resolving conflicts." }
+        ],
+        videoId:"VIBWdLLq9kQ"
+      },
+      {
+        id: 76,
+        name: "html",
+        title: "HTML Fundamentals",
+        image: "images/courses/html.jpg",
+        detailsLink: "course/singlecourse-detail.html?course=76&name=html",
+        rating: 4.9,
+        originalPrice: "$60.00",
+        currentPrice: "$40.00",
+        objective: "Learn the basics of HTML and how to structure web pages.",
+        outline: [
+          { title: "Introduction to HTML", content: "What is HTML and how to use it?" },
+          { title: "Elements & Tags", content: "Learn about various HTML elements and tags." },
+          { title: "Forms & Inputs", content: "Create forms for user input." },
+          { title: "Images & Media", content: "Embed images and multimedia in your web pages." },
+          { title: "Best Practices", content: "Learn best practices for writing HTML." }
+        ],
+       videoId: "MDLn5-zSQQI"
+      },
+      {
+        id: 77,
+        name: "css",
+        title: "CSS Fundamentals",
+        image: "images/courses/css.jpg",
+        detailsLink: "course/singlecourse-detail.html?course=77&name=css",
+        rating: 4.7,
+        originalPrice: "$70.00",
+        currentPrice: "$50.00",
+        objective: "Learn how to style websites using CSS, including layout, colors, and typography.",
+        outline: [
+          { title: "Introduction to CSS", content: "What is CSS and how to use it?" },
+          { title: "Selectors & Properties", content: "Learn how to select elements and apply styles." },
+          { title: "Box Model", content: "Understand padding, borders, and margins." },
+          { title: "Flexbox & Grid", content: "Layout websites using Flexbox and Grid." },
+          { title: "Responsive Design", content: "Make your websites mobile-friendly." }
+        ],
+        videoId: "vfs1wBDoqBY"
+      },
+      {
+        id: 78,
+        name: "javascript",
+        title: "JavaScript Basics",
+        image: "images/courses/javascript.jpg",
+        detailsLink: "course/singlecourse-detail.html?course=78&name=javascript",
+        rating: 4.8,
+        originalPrice: "$80.00",
+        currentPrice: "$55.00",
+        objective: "Learn the fundamentals of JavaScript, the programming language of the web.",
+        outline: [
+          { title: "Introduction to JavaScript", content: "Learn the basics of JavaScript syntax." },
+          { title: "Variables & Data Types", content: "Work with variables, strings, numbers, and booleans." },
+          { title: "Functions & Scope", content: "Create reusable functions and understand scope." },
+          { title: "DOM Manipulation", content: "Interact with and manipulate web pages dynamically." },
+          { title: "Events", content: "Learn how to handle user input with events." }
+        ],
+        videoId: "LO5eTH4Pe8E"
+      },
+      {
+        id: 79,
+        name: "react-basics",
+        title: "React.js Basics",
+        image: "images/courses/react-basics.jpg",
+        detailsLink: "course/singlecourse-detail.html?course=79&name=react-basics",
+        rating: 4.8,
+        originalPrice: "$100.00",
+        currentPrice: "$70.00",
+        objective: "Learn the basics of React.js, including JSX, components, props, and state.",
+        outline: [
+          { title: "Introduction to React", content: "What is React and why it's used." },
+          { title: "JSX", content: "Learn JSX and how it integrates with JavaScript." },
+          { title: "Components & Props", content: "Understand React components and props." },
+          { title: "State Management", content: "Learn how to manage state in React components." },
+          { title: "Event Handling", content: "Handle user input through React event handlers." }
+        ],
+        videoId: "Y6aYx_KKM7A"
+      },
+      {
+        id: 80,
+        name: "advanced-react",
+        title: "Advanced React",
+        image: "images/courses/advanced-react.jpg",
+        detailsLink: "course/singlecourse-detail.html?course=80&name=advanced-react",
+        rating: 4.9,
+        originalPrice: "$140.00",
+        currentPrice: "$110.00",
+        objective: "Master advanced React topics such as hooks, context API, and performance optimization.",
+        outline: [
+          { title: "React Hooks", content: "Learn advanced hooks like useEffect and useContext." },
+          { title: "Context API", content: "Manage global state with the Context API." },
+          { title: "React Memo", content: "Optimize performance with memoization." },
+          { title: "Custom Hooks", content: "Create and use custom hooks for reusable logic." },
+          { title: "Code Splitting", content: "Improve performance through code splitting and lazy loading." }
+        ],
+        videoId: "ipOYH_Wi9Xw"
+      },
+        {
+            id: 81,
+            name: "interview-preparation",
+            title: "React Interview Preparation",
+            image: "images/courses/interview-preparation.jpg",
+            detailsLink: "course/singlecourse-detail.html?course=81&name=interview-preparation",
+            rating: 4.9,
+            originalPrice: "$150.00",
+            currentPrice: "$120.00",
+            objective: "Prepare for React.js interviews with common questions and hands-on coding exercises.",
+            outline: [
+            { title: "React Core Concepts", content: "Review React fundamentals such as components, state, and props." },
+            { title: "Advanced Concepts", content: "Prepare for questions on hooks, lifecycle methods, and context." },
+            { title: "Algorithm Challenges", content: "Solve common coding problems that appear in interviews." },
+            { title: "Behavioral Interview", content: "Prepare for soft skills and behavioral interview questions." },
+            { title: "Mock Interviews", content: "Practice with mock interviews to improve your confidence." }
+            ],
+            videoId: "erIUGj4NYDw"
+        },
+        {
+            id: 82,
+            name: "html-css-basics",
+            title: "HTML & CSS Basics",
+            image: "images/courses/html-css-basics.jpg",
+            detailsLink: "course/singlecourse-detail.html?course=82&name=html-css-basics",
+            rating: 4.8,
+            originalPrice: "$100.00",
+            currentPrice: "$80.00",
+            objective: "Learn the basics of HTML and CSS to create and style web pages.",
+            outline: [
+                {
+                    title: "Introduction to HTML",
+                    content: "Learn the structure of HTML documents and basic tags."
+                },
+                {
+                    title: "CSS Fundamentals",
+                    content: "Understand how to style HTML elements with CSS."
+                },
+                {
+                    title: "Forms and Tables",
+                    content: "Build and style forms and tables using HTML and CSS."
+                },
+                {
+                    title: "Responsive Design",
+                    content: "Learn to create responsive web pages using media queries."
+                },
+                {
+                    title: "Project: Build a Webpage",
+                    content: "Apply your skills to create a fully functional webpage."
+                }
+            ],
+           videoId: "qz0aGYrrlhU"
+        },
+        {
+            id: 83,
+            name: "responsive-design",
+            title: "Responsive Design",
+            image: "images/courses/responsive-design.jpg",
+            detailsLink: "course/singlecourse-detail.html?course=83&name=responsive-design",
+            rating: 4.7,
+            originalPrice: "$120.00",
+            currentPrice: "$90.00",
+            objective: "Understand how to make your web pages look great on all devices with responsive design techniques.",
+            outline: [
+                {
+                    title: "Introduction to Responsive Design",
+                    content: "Learn the core concepts behind responsive design and why it's essential."
+                },
+                {
+                    title: "CSS Flexbox and Grid",
+                    content: "Master the flexible layout modules like Flexbox and Grid for building responsive UIs."
+                },
+                {
+                    title: "Media Queries",
+                    content: "Learn how to use CSS media queries to adapt layouts for different screen sizes."
+                },
+                {
+                    title: "Responsive Images and Videos",
+                    content: "Understand how to optimize media to ensure they scale properly across devices."
+                },
+                {
+                    title: "Building a Responsive Web Page",
+                    content: "Put it all together by creating a fully responsive webpage as a project."
+                }
+            ],
+            videoId: "srvUrASNj0s"
+        },
+        {
+            id: 84,
+            name: "javascript-essentials",
+            title: "JavaScript Essentials",
+            image: "images/courses/javascript-essentials.jpg",
+            detailsLink: "course/singlecourse-detail.html?course=84&name=javascript-essentials",
+            rating: 4.9,
+            originalPrice: "$140.00",
+            currentPrice: "$110.00",
+            objective: "Learn essential JavaScript skills for creating interactive web experiences.",
+            outline: [
+                {
+                    title: "JavaScript Basics",
+                    content: "Understand variables, data types, and basic syntax in JavaScript."
+                },
+                {
+                    title: "Functions and Scope",
+                    content: "Learn how to write reusable functions and understand scope in JavaScript."
+                },
+                {
+                    title: "DOM Manipulation",
+                    content: "Use JavaScript to interact with and manipulate the Document Object Model (DOM)."
+                },
+                {
+                    title: "Events and Event Handling",
+                    content: "Learn how to handle user interactions and events like clicks and form submissions."
+                },
+                {
+                    title: "Asynchronous JavaScript",
+                    content: "Master concepts like promises, async/await, and working with APIs."
+                },
+                {
+                    title: "Project: Interactive Web Application",
+                    content: "Apply your skills to create a fully interactive web application."
+                }
+            ],
+            videoId: "LO5eTH4Pe8E"
+        },
+        {
+            id: 85,
+            name: "dom-manipulation",
+            title: "DOM Manipulation",
+            image: "images/courses/dom-manipulation.jpg",
+            detailsLink: "course/singlecourse-detail.html?course=85&name=dom-manipulation",
+            rating: 4.7,
+            originalPrice: "$130.00",
+            currentPrice: "$100.00",
+            objective: "Explore how to manipulate the Document Object Model (DOM) to dynamically change web content.",
+            outline: [
+                {
+                    title: "Understanding the DOM",
+                    content: "Learn what the Document Object Model (DOM) is and how it represents HTML in a tree structure."
+                },
+                {
+                    title: "Selecting Elements",
+                    content: "Discover how to select and target elements in the DOM using JavaScript."
+                },
+                {
+                    title: "Changing Content and Styles",
+                    content: "Learn how to dynamically change text, HTML content, and CSS styles using JavaScript."
+                },
+                {
+                    title: "Creating and Removing Elements",
+                    content: "Understand how to create, append, and remove elements from the DOM dynamically."
+                },
+                {
+                    title: "Handling DOM Events",
+                    content: "Explore how to respond to user interactions by adding event listeners to DOM elements."
+                },
+                {
+                    title: "Project: Dynamic Web Page",
+                    content: "Build a fully interactive web page that responds to user actions by manipulating the DOM."
+                }
+            ],
+            videoId: "5fb2aPlgoys"
+        },             
+        {
+            id: 86,
+            name: "css-grid-flexbox",
+            title: "CSS Grid & Flexbox",
+            image: "images/courses/css-grid-flexbox.jpg",
+            detailsLink: "course/singlecourse-detail.html?course=86&name=css-grid-flexbox",
+            rating: 4.9,
+            originalPrice: "$160.00",
+            currentPrice: "$130.00",
+            objective: "Master advanced CSS layout techniques with Grid and Flexbox.",
+            outline: [
+                {
+                    title: "Introduction to CSS Layouts",
+                    content: "Understand the evolution of CSS layout techniques and why Grid and Flexbox are essential."
+                },
+                {
+                    title: "CSS Flexbox Basics",
+                    content: "Learn how Flexbox makes it easier to design flexible and responsive layouts."
+                },
+                {
+                    title: "CSS Grid Basics",
+                    content: "Discover the power of Grid for creating two-dimensional layouts."
+                },
+                {
+                    title: "Advanced Flexbox Techniques",
+                    content: "Master advanced Flexbox properties like alignment, ordering, and flexible boxes."
+                },
+                {
+                    title: "Advanced Grid Techniques",
+                    content: "Learn how to create complex grid layouts, spanning, and responsive grids."
+                },
+                {
+                    title: "Project: Responsive Layout",
+                    content: "Apply your knowledge to build a fully responsive web layout using both Grid and Flexbox."
+                }
+            ],
+            videoId: "DXxt4oIAI4Y"
+        },
+        {
+            id: 87,
+            name: "frontend-frameworks",
+            title: "Frontend Frameworks Overview",
+            image: "images/courses/frontend-frameworks.jpg",
+            detailsLink: "course/singlecourse-detail.html?course=87&name=frontend-frameworks",
+            rating: 4.8,
+            originalPrice: "$180.00",
+            currentPrice: "$140.00",
+            objective: "Get an overview of popular frontend frameworks and libraries such as React, Angular, and Vue.",
+            outline: [
+                {
+                    title: "Introduction to Frontend Frameworks",
+                    content: "Learn why frontend frameworks are important and how they simplify modern web development."
+                },
+                {
+                    title: "React Overview",
+                    content: "Explore the core concepts of React, including components, state, and hooks."
+                },
+                {
+                    title: "Angular Overview",
+                    content: "Understand Angular's architecture, including modules, components, and services."
+                },
+                {
+                    title: "Vue.js Overview",
+                    content: "Discover Vue.js basics, including directives, reactive data, and the component system."
+                },
+                {
+                    title: "When to Use Each Framework",
+                    content: "Get practical advice on when to choose React, Angular, or Vue for your projects."
+                },
+                {
+                    title: "Project: Frontend Framework Comparison",
+                    content: "Create a comparison project to understand the strengths and weaknesses of each framework."
+                }
+            ],
+            videoId: "Ka77djMkSwg"
+        },
+        {
+            id: 88,
+            name: "build-tools-deployment",
+            title: "Build Tools & Deployment",
+            image: "images/courses/build-tools-deployment.jpg",
+            detailsLink: "course/singlecourse-detail.html?course=88&name=build-tools-deployment",
+            rating: 4.7,
+            originalPrice: "$170.00",
+            currentPrice: "$140.00",
+            objective: "Learn about build tools and deployment processes to efficiently manage and deploy your frontend projects.",
+            outline: [
+                {
+                    title: "Introduction to Build Tools",
+                    content: "Understand the importance of build tools in modern web development."
+                },
+                {
+                    title: "Working with Webpack",
+                    content: "Learn how to bundle your frontend assets using Webpack."
+                },
+                {
+                    title: "Automating Tasks with Gulp",
+                    content: "Explore how Gulp can automate repetitive tasks like minifying files and optimizing images."
+                },
+                {
+                    title: "Version Control with Git",
+                    content: "Discover how to manage code versions and collaborate with others using Git."
+                },
+                {
+                    title: "Deploying Projects to the Web",
+                    content: "Learn the steps involved in deploying frontend projects to hosting platforms."
+                },
+                {
+                    title: "Project: Automating and Deploying a Web Application",
+                    content: "Apply your knowledge to automate the build process and deploy a web application."
+                }
+            ],
+            videoId: "Dgqsp57LmHc"
+        },
+        {
+            id: 101,
+            name: "design-thinking",
+            title: "Design Thinking",
+            image: "images/courses/design-thinking.jpg",
+            detailsLink: "course/singlecourse-detail.html?course=101&name=design-thinking",
+            rating: 4.9,
+            originalPrice: "$200.00",
+            currentPrice: "$170.00",
+            objective: "Learn the design thinking process to solve complex problems and innovate user-centric solutions.",
+            outline: [
+                {
+                    title: "Introduction to Design Thinking",
+                    content: "Understand the core principles of design thinking and its importance in innovation."
+                },
+                {
+                    title: "Empathy and User Research",
+                    content: "Learn how to conduct user research and develop empathy to understand user needs."
+                },
+                {
+                    title: "Defining the Problem",
+                    content: "Learn how to synthesize user insights to clearly define the problem."
+                },
+                {
+                    title: "Ideation Techniques",
+                    content: "Explore various ideation techniques to brainstorm innovative solutions."
+                },
+                {
+                    title: "Prototyping and Testing",
+                    content: "Learn how to create prototypes and test solutions to refine your ideas."
+                },
+                {
+                    title: "Project: Solving a Real-world Problem",
+                    content: "Apply design thinking to solve a real-world problem and create user-centric solutions."
+                }
+            ],
+            videoId: "4nTh3AP6knM"
+        },
+        {
+            id: 102,
+            name: "wireframing-prototyping",
+            title: "Wireframing & Prototyping",
+            image: "images/courses/wireframing-prototyping.jpg",
+            detailsLink: "course/singlecourse-detail.html?course=102&name=wireframing-prototyping",
+            rating: 4.8,
+            originalPrice: "$180.00",
+            currentPrice: "$150.00",
+            objective: "Master the skills of wireframing and prototyping to create effective and engaging user interfaces.",
+            outline: [
+                {
+                    title: "Introduction to Wireframing",
+                    content: "Learn the fundamentals of wireframing and its importance in the design process."
+                },
+                {
+                    title: "Creating Wireframes",
+                    content: "Understand how to create wireframes that effectively communicate the layout and structure of your designs."
+                },
+                {
+                    title: "Prototyping Basics",
+                    content: "Explore the basics of prototyping, including different types and tools used."
+                },
+                {
+                    title: "Building Interactive Prototypes",
+                    content: "Learn how to build interactive prototypes that simulate the user experience and gather feedback."
+                },
+                {
+                    title: "User Testing and Feedback",
+                    content: "Discover how to conduct user testing and use feedback to refine your prototypes."
+                },
+                {
+                    title: "Project: Designing a User Interface",
+                    content: "Apply wireframing and prototyping skills to design a complete user interface for a real-world project."
+                }
+            ],
+            videoId: "Dh14MmPBvZA"
+        },
+        {
+            id: 103,
+            name: "user-research",
+            title: "User Research Methods",
+            image: "images/courses/user-research.jpg",
+            detailsLink: "course/singlecourse-detail.html?course=103&name=user-research",
+            rating: 4.7,
+            originalPrice: "$190.00",
+            currentPrice: "$160.00",
+            objective: "Explore various methods for conducting user research and gathering insights to inform design decisions.",
+            outline: [
+                {
+                    title: "Introduction to User Research",
+                    content: "Understand the importance of user research in the design process and its impact on decision-making."
+                },
+                {
+                    title: "Qualitative Research Methods",
+                    content: "Learn about qualitative research methods such as interviews, observations, and usability testing."
+                },
+                {
+                    title: "Quantitative Research Methods",
+                    content: "Explore quantitative research methods including surveys, experiments, and data analysis."
+                },
+                {
+                    title: "Analyzing Research Data",
+                    content: "Learn how to analyze and interpret research data to derive meaningful insights."
+                },
+                {
+                    title: "Applying Research Findings",
+                    content: "Discover how to apply research findings to design decisions and improve user experiences."
+                },
+                {
+                    title: "Project: Conducting User Research",
+                    content: "Apply user research methods to a real-world project and use insights to enhance the design."
+                }
+            ],
+            videoId: "kQ_6faxhyIw"
+        },
+        {
+            id: 104,
+            name: "interaction-design",
+            title: "Interaction Design",
+            image: "images/courses/interaction-design.jpg",
+            detailsLink: "course/singlecourse-detail.html?course=104&name=interaction-design",
+            rating: 4.6,
+            originalPrice: "$210.00",
+            currentPrice: "$175.00",
+            objective: "Understand the principles of interaction design to create intuitive and responsive user experiences.",
+            outline: [
+                {
+                    title: "Introduction to Interaction Design",
+                    content: "Learn the fundamentals of interaction design and its role in creating effective user interfaces."
+                },
+                {
+                    title: "Designing Interactive Elements",
+                    content: "Explore techniques for designing interactive elements such as buttons, forms, and menus."
+                },
+                {
+                    title: "User Flow and Navigation",
+                    content: "Understand how to design user flows and navigation systems that guide users through an application."
+                },
+                {
+                    title: "Feedback and Response",
+                    content: "Learn how to provide feedback and response to user actions to enhance the interaction experience."
+                },
+                {
+                    title: "Design Patterns and Best Practices",
+                    content: "Discover design patterns and best practices for creating intuitive and consistent interactions."
+                },
+                {
+                    title: "Project: Designing an Interactive Experience",
+                    content: "Apply interaction design principles to create a responsive and engaging user experience for a real-world project."
+                }
+            ],
+           videoId: "DlQ75eTM_AM"
+        },
+        {
+            id: 105,
+            name: "visual-design",
+            title: "Visual Design Principles",
+            image: "images/courses/visual-design.jpg",
+            detailsLink: "course/singlecourse-detail.html?course=105&name=visual-design",
+            rating: 4.9,
+            originalPrice: "$220.00",
+            currentPrice: "$180.00",
+            objective: "Learn visual design principles to enhance the aesthetics and usability of your designs.",
+            outline: [
+                {
+                    title: "Introduction to Visual Design",
+                    content: "Understand the key concepts and importance of visual design in creating appealing user interfaces."
+                },
+                {
+                    title: "Color Theory",
+                    content: "Explore color theory, including color wheel, harmony, and how to use color effectively in design."
+                },
+                {
+                    title: "Typography",
+                    content: "Learn about typography principles, font selection, and text layout to improve readability and visual appeal."
+                },
+                {
+                    title: "Layout and Composition",
+                    content: "Discover how to use layout and composition techniques to organize and present content effectively."
+                },
+                {
+                    title: "Visual Hierarchy",
+                    content: "Understand visual hierarchy and how to use it to guide users’ attention and enhance user experience."
+                },
+                {
+                    title: "Designing for Different Devices",
+                    content: "Learn how to adapt visual design principles for various devices and screen sizes."
+                },
+                {
+                    title: "Project: Creating a Visual Design",
+                    content: "Apply visual design principles to create a cohesive and attractive design for a real-world project."
+                }
+            ],
+            videoId: "yNDgFK2Jj1E"
+        },
+        {
+            id: 106,
+            name: "usability-testing",
+            title: "Usability Testing",
+            image: "images/courses/usability-testing.jpg",
+            detailsLink: "course/singlecourse-detail.html?course=106&name=usability-testing",
+            rating: 4.8,
+            originalPrice: "$200.00",
+            currentPrice: "$165.00",
+            objective: "Conduct usability testing to evaluate and improve the user experience of your designs.",
+            outline: [
+                {
+                    title: "Introduction to Usability Testing",
+                    content: "Understand the purpose and importance of usability testing in the design process."
+                },
+                {
+                    title: "Planning Usability Tests",
+                    content: "Learn how to plan and prepare for usability testing, including defining goals and selecting participants."
+                },
+                {
+                    title: "Conducting Usability Tests",
+                    content: "Explore methods for conducting usability tests, including observation techniques and test facilitation."
+                },
+                {
+                    title: "Analyzing Usability Test Results",
+                    content: "Discover how to analyze usability test data and identify usability issues."
+                },
+                {
+                    title: "Reporting and Implementing Findings",
+                    content: "Learn how to report usability findings and use them to make design improvements."
+                },
+                {
+                    title: "Project: Usability Testing for a Design",
+                    content: "Apply usability testing techniques to evaluate and enhance a real-world design."
+                }
+            ],
+            videoId: "nYCJTea1AUQ"
+        }        
 ];
