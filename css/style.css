@@ -23537,3 +23537,80 @@ Work Section
 }
 
 
+/* Shortlist-popup */
+.shortlist_m_dashboard {
+  display: none; /* Initially hidden */
+  position: fixed; /* Stay in place */
+  z-index: 1000; /* Make sure it's on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.5); /* Black background with transparency */
+}
+
+/* Modal Content Box */
+.shortlist_cont {
+  width: 35%;
+  padding: 2%;
+  margin: 15% 33%;
+  background: white;
+  border-radius: 10px;
+  margin-left: 43%;
+}
+
+.shortlist_cont h5{
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.shortlist_actions{
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  height: 100%; 
+  }
+  
+  
+  .short-listed {
+    background: linear-gradient(to right,#8641f8,#9D30b1);
+    color: white;
+    margin-right: 20px;
+    border-radius: 10px;
+
+    width: 20%;
+  height: 5vh;
+  border: none;
+  color: white;
+  cursor: pointer;
+    }
+    
+
+    .shortlist-notification-popup {
+      visibility: hidden;
+      width: 400px; 
+      background: linear-gradient(to right,#8641f8,#9D30b1);
+      color: white;
+      text-align: center;
+      padding: 15px;
+      position: fixed;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 1000;
+      font-size: 16px;
+      border-radius: 10px;
+  }
+  
+  .shortlist-notification-popup.show-shortlist {
+      visibility: visible;
+  }
+  
+  .close-shortlist-popup {
+      margin-left: 15px;
+      cursor: pointer;
+      font-weight: bold;
+      color: white;
+  }
+  
