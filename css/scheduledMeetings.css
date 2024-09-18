@@ -95,6 +95,11 @@
     justify-content: space-between;
 }
 .meeting-list{
+    display: flex;
+    justify-content: flex-start;
+    gap: 2%;
+}
+.added-meet{
     background-color: white;
     padding: 1%;
     width: 30%;
@@ -125,4 +130,18 @@
     font-weight: 500;
     padding-left: 2%;
     padding-right: 2%;
+}
+.empty-meet{
+    background: transparent;
+    padding: 1%;
+    width: 30%;
+    border-radius: 5px;
+    margin-top: 2%;
+    border: 1px dashed rgb(158, 156, 156);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.empty-meet button{
+    color: #2f0b63;
 }

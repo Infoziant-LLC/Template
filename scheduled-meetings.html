@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Superio | Just another HTML Template | Change Password</title>
+    <title>Enbott | Dashboard | Scheduled Interviews</title>
 
     <!-- Stylesheets -->
     <link href="css/bootstrap.css" rel="stylesheet" />
@@ -229,7 +229,7 @@
                 ><i class="la la-comment-o"></i>Messages</a
               >
             </li>
-            <li class="active"><a href="scheduled-meetings.html"><i class="fa-light fa-calendar-days"></i>Scheduled Meetings</a></li>
+            <li class="active"><a href="scheduled-meetings.html"><i class="fa-light fa-calendar-days"></i>Scheduled Interviews</a></li>
             <li>
               <a href="dashboard-change-password.html"
                 ><i class="la la-lock"></i>Change Password</a
@@ -257,23 +257,27 @@
       <section class="scheduled-meetings">
 
         <ul class="meet-title">
-          <li><h2 style="float: left;">Meeting Events</h2></li>
+          <li><h2 style="float: left;">Scheduled Interviews</h2></li>
           <br/>
-          <li><button id="createEventBtn" class="create-ev">Create Meeting</button></li>
+          <li><button id="createEventBtn" class="create-ev"><i class="fa-solid fa-circle-plus"></i> Create Interview</button></li>
         </ul>
        
         
         
 
         <ul class="meeting-list">
-          <li>
-            <h6>60 min - Product Demo</h6>
+          <li class="added-meet">
+            <h6>Internship - Software Developer</h6>
             <p class="ul-time">1-to-1</p>
             <br/>
             <p class="ul-time"><i class="fa-solid fa-clock"></i> 30 min, 60 min</p>
             <div class="link-div">
               <button class="copy-btn">Copy Link</button>
             </div>
+          </li>
+
+          <li class="empty-meet">
+            <button id="createEventBtn1"><i class="fa-solid fa-circle-plus"></i> Create Interview</button>
           </li>
         </ul>
 
