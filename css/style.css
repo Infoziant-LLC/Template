@@ -3643,7 +3643,7 @@ Contact Section
 
 .dashboard-option .dropdown-toggle::after {
   margin-left: 12px;
-  content: "\f107";
+  /* content: "\f107"; */
   font-family: 'Font Awesome 5 Free';
   font-weight: 900;
   border: 0;
@@ -23529,5 +23529,11 @@ Work Section
 }
 
 
+.scroll-to-top {
+  position: fixed;
+  bottom: 125px; /* Increase this value to move it upwards */
+  right: 35px;  /* Adjust this as per your layout */
+  z-index: 999; /* Ensures it's on top */
+}
 
 
