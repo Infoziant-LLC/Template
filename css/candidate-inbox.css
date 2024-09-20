@@ -9,6 +9,10 @@
     display: flex;
     margin: 0;
 }
+.candidate-inbox{
+    margin-left: 20%;
+    height: 100vh;
+}
 
 .sidebar {
     width: 23vw;
