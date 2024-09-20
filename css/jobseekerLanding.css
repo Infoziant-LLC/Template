@@ -365,8 +365,8 @@ nav {
     font-size: 20px;
 }
 .rcmd-ul-1 li img{
-   width: 55px;
-   height: 19px;
+    width: 55px;
+    height: 19px;
     border-radius: 50%;
 }
 .job-logo{
@@ -410,4 +410,8 @@ nav {
     top: 4% !important; 
     display: none;
     width: 70vw;
+}
+
+@media (max-width: 368px){
+    
 }
