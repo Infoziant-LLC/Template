@@ -11,7 +11,18 @@
 }
 .candidate-inbox{
     margin-left: 20%;
-    height: 100vh;
+}
+
+@media(max-width:363px){
+    .candidate-inbox{
+        margin-top: 10%;
+    }
+    #more-btn{
+        font-size: 10px;
+    }
+    .dropdown{
+        top: 50%;
+    }
 }
 
 .sidebar {
@@ -78,7 +89,7 @@
 .dropdown {
     display: none;
     position: absolute;
-    top: 17%;
+    top: 30%;
     background-color: white;
     border: 1px solid #ccc;
     padding: 10px;
