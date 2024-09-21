@@ -139,3 +139,35 @@ body {
     display: block;
     margin-top: 10px;
 }
+
+
+/* Mobile view */
+@media screen and (max-width: 768px) {
+    /* Stack sections vertically */
+    .full-screen-container {
+        display: block;
+        margin: 10px;
+    }
+
+    .right-section, .left-section {
+        width: 100%; /* Full width on smaller screens */
+        padding: 10px;
+        margin-bottom: 20px; /* Add spacing between sections */
+    }
+
+    .course-title {
+        font-size: 1.6em; /* Slightly reduce font size on mobile */
+    }
+
+    .learning-modules h1 {
+        font-size: 1.5em; /* Reduce module title size */
+    }
+
+    .description-container {
+        font-size: 1em; /* Reduce font size for descriptions */
+    }
+
+    .course-image {
+        border-radius: 8px; /* Slightly reduce the border radius */
+    }
+}

@@ -1,3 +1,4 @@
+/* Global reset */
 * {
     margin: 0;
     padding: 0;
@@ -9,35 +10,39 @@ body {
     background-color: #f0f4f8;
 }
 
+/* Skill container */
 .skill-container {
-    max-width: 1200px;
-    margin: 50px 150px;
-    padding: 20px;
+    margin: 30px 200px;
+    padding: 10px;
 
 }
 
+/* Header styles */
 .dashboard-header {
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     background-color: transparent;
 }
 
 .dashboard-header h1 {
-    font-size: 36px;
+    font-size: 28px;
     color: #333;
     font-weight: 700;
     animation: fadeIn 1s ease-out;
 }
 
 .dashboard-header p {
-    font-size: 18px;
+    font-size: 16px;
     color: #555;
 }
 
+/* Skill analytics */
 .skill-analytics {
     display: flex;
-    justify-content: space-around;
-    margin-bottom: 40px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
     gap: 20px;
 }
 
@@ -45,18 +50,19 @@ body {
     background-color: #fff;
     border-radius: 10px;
     padding: 20px;
-    width: 250px;
+    width: 100%;
+    max-width: 300px;
     text-align: center;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
     animation: slideIn 1s ease-out;
 }
 
-.skill-card:hover{
+.skill-card:hover {
     transform: translateY(-10px);
 }
 
-.skill-card .h2 {
+.skill-card h2 {
     font-size: 18px;
     margin-bottom: 10px;
     color: #555;
@@ -69,63 +75,54 @@ body {
     font-weight: bold;
 }
 
+/* Progress section */
 .progress-section {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     text-align: center;
 }
 
-.progress-section .h2 {
+.progress-section h2 {
     margin-bottom: 20px;
-    font-size: 24px;
+    font-size: 22px;
 }
 
-/* Container for recommendation cards to display them in a grid */
+/* Recommendations grid */
 .skill-recommendation-cards {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
     justify-items: center;
 }
 
-/* Individual recommendation card styles */
+/* Recommendation card styles */
 .skill-recommendation-card {
     background-color: #fff;
     border-radius: 10px;
     padding: 20px;
-    width: 100%; /* Ensure cards fit the container width */
-    max-width: 350px; /* Limit the width of cards */
+    width: 100%;
+    max-width: 300px;
     text-align: center;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, background-color 0.3s ease;
-    position: relative;
-    overflow: hidden;
 }
 
-/* Hover effect for recommendation cards */
 .skill-recommendation-card:hover {
     transform: translateY(-10px);
     background-color: #eaf2fa;
 }
 
-/* Test details styles */
 .skill-recommendation-card .skill-test-details {
     font-size: 14px;
     color: #555;
     margin-top: 10px;
     font-weight: bold;
 }
-.skill-recommendations-section h2{
-    font-size:x-large;
-    font-weight: bold;
-}
-.skill-recommendation-card .h3{
-    font-weight: bold;
-    font-size:larger;
 
-
+.skill-recommendation-card h3 {
+    font-weight: bold;
+    font-size: 18px;
 }
 
-/* Button styles */
 .skill-recommendation-card button {
     background-color: #A479FC;
     color: white;
@@ -141,8 +138,9 @@ body {
     background-color: #7F5DCF;
 }
 
+/* Career tips section */
 .career-tips-section {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     text-align: center;
 }
 
@@ -166,28 +164,30 @@ body {
     margin-right: 10px;
 }
 
+/* Badges section */
 .badges-section {
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 .badges-section h2 {
-    font-size: 24px;
+    font-size: 22px;
     margin-bottom: 20px;
 }
 
 .badges-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
 }
 
 .badge {
-     background: linear-gradient(135deg, #d4af37, #f7c600);
+    background: linear-gradient(135deg, #d4af37, #f7c600);
     color: white;
-    padding: 15px 25px;
+    padding: 10px 20px;
     border-radius: 20px;
-    font-size: 18px;
+    font-size: 16px;
     display: flex;
     align-items: center;
     gap: 10px;
@@ -200,26 +200,85 @@ body {
 }
 
 .badge i {
-    font-size: 24px;
+    font-size: 20px;
 }
 
-/* Keyframes for animations */
-@keyframes slideIn {
-    0% {
-        transform: translateY(20px);
-        opacity: 0;
+/* Button styles */
+.take-test-btn {
+    background: linear-gradient(90deg, #6A1B9A, #A479FC);
+    color: white;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 30px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.take-test-btn:hover {
+    background: linear-gradient(90deg, #A479FC, #6A1B9A);
+}
+
+/* Media Queries for Mobile */
+@media (max-width: 768px) {
+    .skill-container {
+        margin: 20px 10px;
     }
-    100% {
-        transform: translateY(0);
-        opacity: 1;
+
+    .dashboard-header h1 {
+        font-size: 24px;
+    }
+
+    .skill-analytics {
+        flex-direction: column;
+    }
+
+    .skill-card {
+        width: 100%;
+    }
+
+    .skill-recommendation-cards {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+
+    .badge {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+
+    .take-test-btn {
+        padding: 5px 15px;
     }
 }
 
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
+@media (max-width: 480px) {
+    .dashboard-header h1 {
+        font-size: 20px;
     }
-    100% {
-        opacity: 1;
+
+    .skill-card p {
+        font-size: 20px;
     }
+
+    .skill-recommendation-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .badge {
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+}
+.back-con{
+    position: fixed;
+    top:120px;
+    left:30px;
+}
+@media (max-width: 768px) {
+    .back-con{
+        position: fixed;
+        top:180px;
+        left:10px;
+    }
+
 }

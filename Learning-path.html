@@ -15,7 +15,7 @@
     <link href="css/career-path.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="css/style-course.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
     <link rel="icon" href="images/favicon.png" type="image/x-icon">
@@ -113,8 +113,7 @@
 
             <!-- Mobile Header -->
             <div class="mobile-header">
-                <div class="logo"><a href="index.html"><img src="images/enbott logo.png" alt="" title=""
-                            style="width: 150px; height: auto;"></a></div>
+                <div class="logo"><a href="index.html"><img src="images/enbott-logo.png" alt="logo" title=""></a></div>
 
                 <!--Nav Box-->
                 <div class="nav-outer clearfix">
@@ -134,8 +133,8 @@
 
             </div>
 
-            <!-- Mobile Nav -->
-            <div id="nav-mobile"></div>
+        <!-- Mobile Nav -->
+        <div id="nav-mobile"></div>
         </header>
         <!--End Main Header -->
 
@@ -157,63 +156,63 @@
             </div>
         </div>
         <!-- End User Sidebar -->
-        
-        
+
+
         <div class="popular_courses plus_padding hidden_C" id="popularCourses" ">
+            <div class=" container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="section_title text-center mb-10">
+                        <h3 id="course-title" class="title-bold capitalize">Here is Your Learning Path!</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="all_courses">
             <div class="container">
-                <div class="row">
-                    <div class="col-xl-12">
-                        <div class="section_title text-center mb-10">
-                            <h3 id="course-title" class="title-bold capitalize">Here is Your Learning Path!</h3>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                        <div class="row">
+                            <!-- Course items will be dynamically added here -->
                         </div>
-                    </div>
-                </div>
-            </div>
-            <div class="all_courses">
-                <div class="container">
-                    <div class="tab-content" id="myTabContent">
-                        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                            <div class="row">
-                                <!-- Course items will be dynamically added here -->
-                            </div>
-                            <div class="col-xl-12">
-                                <div class="more_courses text-center">
-                                    <a href="#" class="boxed_btn_rev">View More</a>
-                                </div>
+                        <div class="col-xl-12">
+                            <div class="more_courses text-center">
+                                <a href="#" class="boxed_btn_rev">View More</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <section class="career-path "></section>
-            <div id="popup" class="popup">
-                <div class="animate__animated animate__zoomIn animate__slow popup-content">
-                    <h2 class="intro-ques">What are you looking for?</h2>
-                    <div id="questionContainer">
-                        <button class="optionBtn" onclick="selectOption('job')">Internship</button>
-                        <button class="optionBtn" onclick="selectOption('skill')">Skill Development</button>
-                        <button class="optionBtn" onclick="selectOption('placement')">Job Assistance</button>
-                    </div>
-                    <div id="thankYouMessage" style="display: none;">
-                        <p>Thank you for your response!</p>
-                        <button id="closePopup" onclick="closePopup()">Close</button>
-                    </div>
-                </div>
+    </div>
+    <section class="career-path "></section>
+    <div id="popup" class="popup">
+        <div class="animate__animated animate__zoomIn animate__slow popup-content">
+            <h2 class="intro-ques">What are you looking for?</h2>
+            <div id="questionContainer">
+                <button class="optionBtn" onclick="selectOption('job')">Internship</button>
+                <button class="optionBtn" onclick="selectOption('skill')">Skill Development</button>
+                <button class="optionBtn" onclick="selectOption('placement')">Job Assistance</button>
             </div>
-        </section>
-        
-        
-
-        <!-- main content -->
-
-
-
-
-        <!-- Copyright -->
-        <div class="copyright-text">
-            <p>©<span id="year"></span> Enbott. All Right Reserved.</p>
+            <div id="thankYouMessage" style="display: none;">
+                <p>Thank you for your response!</p>
+                <button id="closePopup" onclick="closePopup()">Close</button>
+            </div>
         </div>
+    </div>
+    </section>
+
+
+
+    <!-- main content -->
+
+
+
+
+    <!-- Copyright -->
+    <div class="copyright-text">
+        <p>©<span id="year"></span> Enbott. All Right Reserved.</p>
+    </div>
 
     </div><!-- End Page Wrapper -->
 
@@ -253,14 +252,6 @@
     <script src="js/knob.js"></script>
     <script src="js/script.js"></script>
     <script src="js/career-path.js"></script>
-  
-
-
-
- 
-
-
-
 
 
 
