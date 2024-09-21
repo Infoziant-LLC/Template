@@ -201,6 +201,7 @@ body {
 
 .badge i {
     font-size: 20px;
+
 }
 
 /* Button styles */
@@ -219,6 +220,27 @@ body {
     background: linear-gradient(90deg, #A479FC, #6A1B9A);
 }
 
+
+/* } */
+
+/* Button styles */
+/* hariraj_MobileView */
+/* .take-test-btn {
+    background: linear-gradient(90deg, #6A1B9A, #A479FC);
+    color: white;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 30px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.take-test-btn:hover {
+    background: linear-gradient(90deg, #A479FC, #6A1B9A);
+}
+ */
+
 /* Media Queries for Mobile */
 @media (max-width: 768px) {
     .skill-container {
@@ -227,6 +249,7 @@ body {
 
     .dashboard-header h1 {
         font-size: 24px;
+
     }
 
     .skill-analytics {
@@ -241,7 +264,23 @@ body {
         grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     }
 
-    .badge {
+
+/*     }
+hariraj_MobileView
+    .skill-analytics {
+        flex-direction: column;
+    }
+
+    .skill-card {
+        width: 100%;
+    }
+
+    .skill-recommendation-cards {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+ */
+
+/*     .badge {
         padding: 10px 15px;
         font-size: 14px;
     }
@@ -253,7 +292,8 @@ body {
 
 @media (max-width: 480px) {
     .dashboard-header h1 {
-        font-size: 20px;
+        font-size: 20px; */
+
     }
 
     .skill-card p {
@@ -273,6 +313,35 @@ body {
     position: fixed;
     top:120px;
     left:30px;
+
+/*     }
+
+    .skill-card p {
+        font-size: 20px;
+    }
+hariraj_MobileView
+    .skill-recommendation-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .badge {
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+}
+.back-con{
+    position: fixed;
+    top:120px;
+    left:30px;
+}
+@media (max-width: 768px) {
+    .back-con{
+        position: fixed;
+        top:180px;
+        left:10px;
+    }
+ */
+
 }
 @media (max-width: 768px) {
     .back-con{

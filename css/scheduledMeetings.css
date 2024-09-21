@@ -104,8 +104,11 @@
 .meeting-list{
     display: flex;
     justify-content: flex-start;
+
     gap: 3%;
-}
+
+/*     gap: 2%;  hariraj_MobileView*/
+
 .added-meet{
     background-color: white;
     padding: 1%;
@@ -151,4 +154,4 @@
 }
 .empty-meet button{
     color: #2f0b63;
-}
+
