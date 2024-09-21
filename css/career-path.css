@@ -192,3 +192,103 @@ input[type="text"] {
     }
 }
 
+@media only screen and (max-width: 768px) {
+    
+    /* Adjust header padding and font sizes */
+    .main-header .main-box {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .main-header .logo-box {
+        margin-bottom: 10px;
+    }
+
+    .nav.main-menu ul.navigation {
+        display: block;
+        text-align: center;
+    }
+
+    .nav.main-menu ul.navigation li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .outer-box {
+        margin-top: 10px;
+    }
+
+    .dropdown.dashboard-option .name {
+        font-size: 14px;
+    }
+    
+    /* Career Path Section */
+    .career-path {
+        height: auto;
+        padding: 20px 10px;
+    }
+
+    .popup {
+        top: 10%;
+        left: 0;
+        width: 100%;
+        height: auto;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .popup-content {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .intro-ques {
+        font-size: 18px;
+    }
+
+    .optionBtn {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    /* Courses Section */
+    .popular_courses.plus_padding {
+        padding: 20px 10px;
+    }
+
+    .popular_courses .section_title h3 {
+        font-size: 22px;
+    }
+
+    .all_courses .tab-content .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .more_courses .boxed_btn_rev {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    /* Footer */
+    .copyright-text {
+        text-align: center;
+        font-size: 12px;
+    }
+    
+    /* Popup Modal Adjustments */
+    .modal-cand .modal-content-cand {
+        width: 80%;
+        padding: 15px;
+    }
+
+    .modal-cand h5 {
+        font-size: 16px;
+    }
+
+    /* Chart */
+    #chart {
+        width: 100%;
+        height: auto;
+    }
+}

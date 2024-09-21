@@ -177,10 +177,19 @@ body {
   .left-content, .right-content {
     width: 100%;
   }
+  .test-card {
+    margin: 0px;
+
+  }
 
   .take-test-btn {
-    margin-top: 10px;
+    margin-top: 5px;
+    padding: 2px 13px;
     align-self: center;
+  }
+  .card-header .h2 {
+    margin: 0;
+    font-size:medium
   }
 }
 
@@ -424,4 +433,4 @@ button.disabled {
     flex-direction: column;
     gap: 10px;
   }
-}
+

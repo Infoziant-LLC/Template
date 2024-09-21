@@ -2,6 +2,13 @@
     height: 100vh;
     padding: 1% 2%;
 }
+@media(max-width:768px) {
+    .scheduled-meetings{
+        margin-top: 50px;
+        padding: 20px;
+    }
+    
+}
 .create-ev{
     background: linear-gradient(to right,#8641f8,#9D30b1);
     color: white;
@@ -97,8 +104,11 @@
 .meeting-list{
     display: flex;
     justify-content: flex-start;
-    gap: 2%;
-}
+
+    gap: 3%;
+
+/*     gap: 2%;  hariraj_MobileView*/
+
 .added-meet{
     background-color: white;
     padding: 1%;
@@ -144,4 +154,4 @@
 }
 .empty-meet button{
     color: #2f0b63;
-}
+

@@ -115,3 +115,9 @@ button.back-btn {
     padding-bottom: 1%;
     margin-bottom: 1%;
 }
+
+@media (max-width:768px){
+    .job-form-intro{
+        margin-top: 50px;
+    }
+}

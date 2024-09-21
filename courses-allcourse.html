@@ -126,7 +126,7 @@
 
             <!-- Mobile Header -->
             <div class="mobile-header">
-                <div class="logo"><a href="index.html"><img src="images/enbott logo.png" alt="" title=""
+                <div class="logo"><a href="index.html"><img src="images/enbott.png" alt="" title=""
                             style="width: 150px; height: auto;"></a></div>
 
                 <!--Nav Box-->
@@ -170,7 +170,6 @@
               
             </div>
           </div>
-
 
         <!-- End User Sidebar -->
         <div class="dashboard-container-course">
@@ -223,12 +222,17 @@
 
                 <!-- Performance -->
                 <div class="performance-section-all">
-                    <div class="filter-section">
+                    <!-- Filter icon for mobile -->
+                    <div class="filter-icon" id="filter-icon">
+                        <i class="fas fa-filter"></i> <!-- Use FontAwesome or other icon libraries -->
+                    </div>
+                
+                    <!-- Popup filter section -->
+                    <div class="filter-section" id="filter-section">
                         <div>
                             <h3 class="fliter-h" style="font-size: 25px; margin-bottom: 5px;">Level:</h3>
                             <label><input type="checkbox" value="beginner" class="level-filter"> Beginner</label><br>
-                            <label><input type="checkbox" value="intermediate" class="level-filter">
-                                Intermediate</label><br>
+                            <label><input type="checkbox" value="intermediate" class="level-filter"> Intermediate</label><br>
                             <label><input type="checkbox" value="advanced" class="level-filter"> Advanced</label>
                         </div>
                         <div>
@@ -238,25 +242,41 @@
                         </div>
                         <div>
                             <h3 class="fliter-h" style="font-size: 25px; margin-bottom: 5px;">Ratings :</h3>
-                            <label><input type="checkbox" value="5" class="rating-filter">
-                                &#9733;&#9733;&#9733;&#9733;&#9733;</label><br>
-                            <label><input type="checkbox" value="4" class="rating-filter">
-                                &#9733;&#9733;&#9733;&#9733;&#9734;</label><br>
-                            <label><input type="checkbox" value="3" class="rating-filter">
-                                &#9733;&#9733;&#9733;&#9734;&#9734;</label>
+                            <label><input type="checkbox" value="5" class="rating-filter">&#9733;&#9733;&#9733;&#9733;&#9733;</label><br>
+                            <label><input type="checkbox" value="4" class="rating-filter">&#9733;&#9733;&#9733;&#9733;&#9734;</label><br>
+                            <label><input type="checkbox" value="3" class="rating-filter">&#9733;&#9733;&#9733;&#9734;&#9734;</label>
                         </div>
-                        <button id="apply-filters"
-                            style="margin-top: 20px; padding: 10px 15px; background-color: purple; color: white; border: none; border-radius: 5px; width: 100%;">Apply
-                            Filters</button>
+                        <button id="apply-filters" style="margin-top: 20px; padding: 10px 15px; background-color: purple; color: white; border: none; border-radius: 5px; width: 100%;">Apply Filters</button>
+                
+                        <!-- Close icon -->
+                        <div class="close-icon" id="close-icon">
+                            <i class="fas fa-times"></i>
+                        </div>
                     </div>
                 </div>
-            </div>
+                
+                <!-- Add the script at the end of your HTML body -->
+                <script>
+                    // Toggle the filter popup when filter icon is clicked
+                    document.getElementById('filter-icon').addEventListener('click', function() {
+                        document.getElementById('filter-section').style.display = 'block';
+                        document.getElementById('filter-icon').style.display = 'none';
+                    });
+                
+                    // Close the popup when close icon is clicked
+                    document.getElementById('close-icon').addEventListener('click', function() {
+                        document.getElementById('filter-section').style.display = 'none';
+                        document.getElementById('filter-icon').style.display = 'block';
+                    });
+                </script>
+                
         </div><!-- End Page Wrapper -->
 
 
 
 
         <script type="module">
+            
             import { coursesData as courses } from './course/coursedata.js';  // Fix the import path and naming
 
             console.log(courses);
