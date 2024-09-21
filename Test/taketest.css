@@ -177,10 +177,19 @@ body {
   .left-content, .right-content {
     width: 100%;
   }
+  .test-card {
+    margin: 0px;
+
+  }
 
   .take-test-btn {
-    margin-top: 10px;
+    margin-top: 5px;
+    padding: 2px 13px;
     align-self: center;
+  }
+  .card-header .h2 {
+    margin: 0;
+    font-size:medium
   }
 }
 
@@ -367,3 +376,61 @@ button.disabled {
 
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 }
+@media screen and (max-width: 1366px) {
+  .title{
+    margin-top: 100px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .test-content-wrapper {
+    flex-direction: column;
+  }
+
+  .test-left-content, .test-right-content {
+    width: 100%;
+  }
+
+  .take-test-btn {
+    margin-top: 10px;
+    align-self: center;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .title {
+    font-size: 20px;
+  }
+
+  .card-header h2 {
+    font-size: 20px;
+  }
+
+  .test-section h3 {
+    font-size: 16px;
+  }
+
+  .test-section p {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .quiz-header {
+    flex-direction: column;
+  }
+
+  .options-container {
+    gap: 5px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .quiz-footer {
+    flex-direction: column;
+    gap: 10px;
+  }
+

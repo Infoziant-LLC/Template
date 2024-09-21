@@ -34,103 +34,98 @@
 
 <body>
     <span class="header-span"></span>
+    <!-- Main Header-->
     <header class="main-header header-shaddow">
-        <div class="container-fluid">
-          <!-- Main box -->
-          <div class="main-box">
-            <!--Nav Outer -->
-            <div class="nav-outer">
-              <div class="logo-box">
-                <div class="logo"><a href="index.html"><img src="images/enbott-logo.png" alt="logo" title=""></a></div>
-              </div>
+      <div class="container-fluid">
+        <!-- Main box -->
+        <div class="main-box">
+          <!--Nav Outer -->
+          <div class="nav-outer">
+            <div class="logo-box">
+              <div class="logo"><a href=""><img src="images/enbott-logo.png" alt="logo" title=""></a></div>
+            </div>
   
-              <nav class="nav main-menu">
-                <ul class="navigation" id="navbar">
+            <nav class="nav main-menu">
+              <ul class="navigation" id="navbar">         
   
-                  <!-- Only for Mobile View -->
-                  <li class="mm-add-listing">
-                    <a href="add-listing.html" class="theme-btn btn-style-one">Job Post</a>
-                    <span>
-                      <span class="contact-info">
-                        <span class="phone-num"><span>Call us</span><a href="tel:1234567890">1 (314) 732 0300 <br />+91
-                            96000 85988</a></span>
-                        <span class="address">Akshaya HQ, Rajiv Gandhi Salai, Kazhipattur,<br>Tamil Nadu, Chennai -
-                          603103, India.</span>
-                        <span class="address">1401, 21st ST STE 6310,<br>Sacramento, CA 95811, USA.</span>
-                        <a href="mailto:support@infoziant.com" class="email">support@infoziant.com</a>
-                      </span>
-                      <span class="social-links">
-                        <a href="#"><span class="fab fa-facebook-f"></span></a>
-                        <a href="#"><span class="fab fa-twitter"></span></a>
-                        <a href="#"><span class="fab fa-instagram"></span></a>
-                        <a href="#"><span class="fab fa-linkedin-in"></span></a>
-                      </span>
+                <!-- Only for Mobile View -->
+                <li class="mm-add-listing">
+                  <a href="add-listing.html" class="theme-btn btn-style-one">Job Post</a>
+                  <span>
+                    <span class="contact-info">
+                      <span class="phone-num"><span>Call us</span><a href="tel:1234567890">1 (314) 732 0300 <br/>+91 96000 85988</a></span>
+                      <span class="address">Akshaya HQ, Rajiv Gandhi Salai, Kazhipattur,<br>Tamil Nadu, Chennai - 603103, India.</span>
+                      <span class="address">1401, 21st ST STE 6310,<br>Sacramento, CA 95811, USA.</span>
+                      <a href="mailto:support@infoziant.com" class="email">support@infoziant.com</a>
                     </span>
-                  </li>
-                </ul>
-              </nav>
-              <!-- Main Menu End-->
-            </div>
+                    <span class="social-links">
+                      <a href="#"><span class="fab fa-facebook-f"></span></a>
+                      <a href="#"><span class="fab fa-twitter"></span></a>
+                      <a href="#"><span class="fab fa-instagram"></span></a>
+                      <a href="#"><span class="fab fa-linkedin-in"></span></a>
+                    </span>
+                  </span>
+                </li>
+              </ul>
+            </nav>
+            <!-- Main Menu End-->
+          </div>
   
-            <div class="outer-box">
+          <div class="outer-box">
+             
+            <button class="menu-btn-1" onclick="notifyToggleAppliedJob()">
+              <span class="icon la la-bell"></span>
+            </button>
   
-              <button class="menu-btn" onclick="notifyToggle()">
-                <span class="icon la la-bell"></span>
-              </button>
+            <!-- Dashboard Option -->
+            <div class="dropdown dashboard-option">
+              <a
+                class="dropdown-toggle"
+                role="button"
+                data-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img
+                  src="images/resource/company-6.png"
+                  alt="avatar"
+                  class="thumb"
+                />
+                <span class="name">My Account</span>
+              </a>
+              <ul class="dropdown-menu">
   
-              <!-- Dashboard Option -->
-              <div class="dropdown dashboard-option">
-                <a class="dropdown-toggle" role="button" data-toggle="dropdown" aria-expanded="false">
-                  <span class="name">My Account</span>
-                </a>
-                <ul class="dropdown-menu">
-                  <li class="active"><a href="candidate-dashboard.html"> <i class="la la-home"></i> Dashboard</a></li>
-                  <li><a href="candidate-dashboard-profile.html"><i class="la la-user-tie"></i>My Profile</a></li>
-                  <li><a href="candidate-dashboard-resume.html"><i class="la la-file-invoice"></i>My Resume</a></li>
-                  <li><a href="candidate-dashboard-applied-job.html"><i class="la la-briefcase"></i> Applied Jobs </a>
-                  </li>
-                  <li><a href="candidate-dashboard-job-alerts.html"><i class="la la-bell"></i>Job Alerts</a></li>
-                  <li><a href="candidate-inbox.html"><i class="fa-light fa-envelope"></i> Messages</a></li>
-                  <li><a href="candidate-inbox.html"><i class="la la-user-tie"></i>Messages</a></li>
-                  <li><a href="candidate-dashboard-shortlisted-resume.html"><i class="la la-bookmark-o"></i>Shortlisted
-                      Jobs</a></li>
-                  <li><a href="candidate-dashboard-cv-manager.html"><i class="la la-file-invoice"></i> CV manager</a></li>
-                  <!-- <li><a href="dashboard-packages.html"><i class="la la-box"></i>Packages</a></li> -->
-                  <li><a href="sme-connect.html"><i class="la la-comment-o"></i>SME Connect</a></li>
-                  <li><a href="dashboard-change-password.html"><i class="la la-lock"></i>Change Password</a></li>
-                  <!-- <li><a href="dashboard-profile.html"><i class="la la-user-alt"></i>View Profile</a></li> -->
-                  <li><a href="index.html"><i class="la la-sign-out"></i>Logout</a></li>
-                  <li><a onclick="showCandModal()"><i class="la la-trash"></i>Delete Profile</a></li>
-                </ul>
-              </div>
+                <li><a href="account.html"><i class="fa fa-cog"></i>Settings</a></li>
+              <li><a href="index.html"><i class="la la-sign-out"></i>Logout</a></li>
+  
+              </ul>
             </div>
           </div>
         </div>
+      </div>
   
-        <!-- Mobile Header -->
-        <div class="mobile-header">
-          <div class="logo"><a href="index.html"><img src="images/enbott-logo.png" alt="" title=""></a></div>
+      <!-- Mobile Header -->
+      <div class="mobile-header">
+        <div class="logo"><a href="index.html"><img src="images/enbott-logo.png" alt="" title=""></a></div>
   
-          <!--Nav Box-->
-          <div class="nav-outer clearfix">
+        <!--Nav Box-->
+        <div class="nav-outer clearfix">
   
-            <div class="outer-box">
-              <!-- Login/Register -->
-              <div class="login-box">
-                <a href="login-popup.html" class="call-modal"><span class="icon-user"></span></a>
-              </div>
-  
-              <button id="toggle-user-sidebar"><img src="images/resource/company-6.png" alt="avatar"
-                  class="thumb"></button>
-              <a href="#nav-mobile" class="mobile-nav-toggler navbar-trigger"><span class="flaticon-menu-1"></span></a>
+          <div class="outer-box">
+            <!-- Login/Register -->
+            <div class="login-box">
+              <a href="login-popup.html" class="call-modal"><span class="icon-user"></span></a>
             </div>
-          </div>
   
+            <button id="toggle-user-sidebar"></button>
+           
+          </div>
         </div>
   
-        <!-- Mobile Nav -->
-        <div id="nav-mobile"></div>
-      </header>
+      </div>
+  
+      <!-- Mobile Nav -->
+      <div id="nav-mobile"></div>
+    </header>
     
 
     <div class="skill-container">
@@ -245,10 +240,17 @@
             </div>
         </section>
     </div>
+    <div class="back-con">
+      <button class="take-test-btn" onclick="backtodashborad()">Back </button>
+    </div>
     <script>
         function redirect() {
             // Navigate to the Quizz.html page
             window.location.href = 'taketest.html'; // Update with the correct path if necessary
+        }
+        function backtodashborad() {
+            // Navigate to the Quizz.html page
+            window.location.href = 'candidate-dashboard.html'; // Update with the correct path if necessary
         }
     </script>
     <script src="js/deleteCandidateModal.js"></script>

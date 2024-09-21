@@ -27,6 +27,9 @@
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a64eee', endColorstr='#3c35ce',GradientType=1 );
   /* IE6-9 */
 }
+.hidden_C{
+  display: none;
+}
 
 /* Normal desktop :1200px. */
 /* Normal desktop :992px. */
@@ -3045,6 +3048,10 @@ h3 {
     font-size: 30px;
     line-height: 36px;
     margin-top:20px;
+  }
+  .wishlist-btn.g , .wishlist-btn.r{
+    margin-top: 10px;
+    width: 100%;
   }
 }
 
@@ -6938,17 +6945,92 @@ h6 {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width: 66%;
 }
-.filter-section{
+
+.filter-section {
   position: fixed;
-  right:10px;
-  bottom:10px;
+  right: 10px;
+  bottom: 10px;
   background-color: #E6E6FA;
-  padding:30px;
+  padding: 30px;
   border-radius: 10px;
+  z-index: 1000;
 }
 .single_courses.list-format.allcc{
   width: 75%;
 }
+/* Hide filter section and show icon on mobile */
+
+/* Default styles */
+.filter-section {
+  display: block;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  background-color: #E6E6FA;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+/* Hide filter icon by default */
+.filter-icon {
+  display: none;
+}
+
+/* Mobile styles (show filter icon, hide filter section) */
+@media screen and (max-width: 768px) {
+  .filter-section {
+      display: none; /* Hide filter section initially */
+      position: fixed;
+      right: 10px;
+      bottom: 10px;
+      background-color: #E6E6FA;
+      padding: 30px;
+      border-radius: 10px;
+      width: 100%;
+      max-width: 90%; /* Control the size of the popup */
+      z-index: 1000;
+  }
+  .single_courses.list-format.allcc{
+    width: 100%;
+  }
+
+  .filter-icon {
+      display: block;
+      position: fixed;
+      right: 15px;
+      bottom: 15px;
+      background-color: purple;
+      color: white;
+      padding: 10px;
+      border-radius: 50%;
+      font-size: 25px;
+      cursor: pointer;
+  }
+
+  .close-icon {
+      display: block;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 20px;
+      cursor: pointer;
+      color: purple;
+  }
+}
+
+/* Larger screens (show filter section, hide icon) */
+@media screen and (min-width: 769px) {
+
+
+  .filter-icon {
+      display: none; /* Hide filter icon */
+  }
+
+  .close-icon {
+      display: none; /* No close icon for large screens */
+  }
+}
+
 .search-icon {
   position: absolute;
   left: 15px;
@@ -6976,6 +7058,7 @@ h6 {
   padding: 10px;
   border-radius: 50px;
   border: 1px solid #ccc;
+  margin-top: 50px;
 }
 
 .search-bar-incourese {
@@ -7000,3 +7083,36 @@ h6 {
   height: 150px;
   background-color: #f0f0f0;
 }
+
+
+/* mobile view */
+
+/* enrolled page  */
+@media (max-width: 768px) {
+  .search-sort-container {
+    flex-direction: column;
+    align-items: stretch;
+    margin: 0;
+  }
+
+  .courses-search-bar {
+    width: 90%;
+    margin: 10px auto;
+    margin-top: 50px
+  }
+
+  .course-sort-by {
+    width: 90%;
+    margin: 10px auto;
+    text-align: center;
+    padding: 50px;
+  }
+
+  .course-dropdown {
+    width: 50%;
+    
+  }
+}
+
+
+/* end of mobile view */
