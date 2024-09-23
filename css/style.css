@@ -11866,6 +11866,7 @@ Testimonial Section Two
   font-size: 16px;
   line-height: 26px;
   color: grey;
+  padding: 15px;
   margin-bottom: 35px;
 }
 .text-abt{
@@ -11990,6 +11991,120 @@ Testimonial Section Two
   margin-top: 0;
   width: 100%;
   bottom: 38px;
+}
+
+
+@media only screen and (max-width: 768px) {
+  /* Hide desktop image and show mobile image */
+  .desktop-image,
+  .circle-title,
+  .banner-circle,
+  .banner-circle-5,
+  .banner-circle-4,
+  .banner-circle-3,
+  .banner-circle-2,
+  .banner-circle-1 {
+    display: none;
+  }
+
+  .mobile-image {
+    display: block;
+  }
+
+  /* Remove the banner-circle and its animations on mobile */
+  .banner-circle {
+    display: none;
+  }
+
+  /* Adjustments for the form and content on mobile */
+  .job-search-form {
+    margin-top: 20px;
+  }
+
+  .content-column {
+    padding: 0 15px; /* Adjust padding for a better mobile experience */
+  }
+}
+
+
+
+
+
+/* General styling for the clients section */
+.clients-section {
+  padding: 40px 0;
+  background-color: #f7f7f7;
+}
+
+.sponsors-outer {
+  width: 100%;
+}
+
+.sponsors-carousel {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.sponsors-carousel .slide-item {
+  display: inline-block;
+  margin: 20px;
+}
+
+.sponsors-carousel .image-box {
+  text-align: center;
+}
+
+.sponsors-carousel .image-box img {
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+/* Add hover effect to logos */
+.sponsors-carousel .image-box img:hover {
+  transform: scale(1.05);
+}
+
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+  .clients-section {
+    padding: 20px 0;
+  }
+
+  /* Change layout to grid for mobile screens */
+  .sponsors-carousel {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on mobile */
+    grid-gap: 20px;
+    justify-items: center;
+  }
+
+  .sponsors-carousel .slide-item {
+    margin: 10px 0;
+  }
+
+  .sponsors-carousel .image-box img {
+    max-width: 80px; /* Smaller image size on mobile */
+  }
+}
+
+/* Extra small screens (below 576px) */
+@media (max-width: 576px) {
+  /* Display logos in a single column */
+  .sponsors-carousel {
+    grid-template-columns: 1fr; /* 1 column on extra small screens */
+  }
+
+  .sponsors-carousel .image-box img {
+    max-width: 100px; /* Slightly larger images */
+  }
+
+  /* Add more space between logos for a cleaner look */
+  .sponsors-carousel .slide-item {
+    margin-bottom: 20px;
+  }
 }
 
 /*** 
@@ -21211,78 +21326,78 @@ Banner Section Three
   display: block;
   padding: 0 55px 0;
 }
-.banner-circle{
+
+/* Align the banner circles properly */
+.banner-circle {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
 }
-.banner-circle-1, .banner-circle-2, .banner-circle-3, .banner-circle-4, .banner-circle-5{
-  width: 110px;
-    height: 110px;
-    border-radius: 50%;
-    background: #abbaab; 
-background: -webkit-linear-gradient(to right, #ffffff, #abbaab);  
-background: linear-gradient(to right, #ffffff, #abbaab); 
-z-index: 2;
 
+/* Style for the banner circles */
+.banner-circle-1, .banner-circle-2, .banner-circle-3, .banner-circle-4, .banner-circle-5 {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  background: #abbaab;
+  background: -webkit-linear-gradient(to right, #ffffff, #abbaab);
+  background: linear-gradient(to right, #ffffff, #abbaab);
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
-.banner-circle-1{
+
+/* Adjust margins to align the circles */
+.banner-circle-1 {
   margin-top: 2%;
-    margin-left: -3%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+  margin-left: -3%;
 }
-.banner-circle-2{
+
+.banner-circle-2 {
   margin-top: -6.2%;
   margin-left: 1.9%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
 }
-.banner-circle-3{
+
+.banner-circle-3 {
   margin-top: -3%;
-    margin-left: 2.5%;
-    position: relative;
-    left: -1%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+  margin-left: 2.5%;
+  position: relative;
+  left: -1%;
 }
-.banner-circle-4{
+
+.banner-circle-4 {
   margin-top: 5%;
   position: relative;
-    left: -0.5%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+  left: -0.5%;
 }
-.banner-circle-5{
+
+.banner-circle-5 {
   margin-top: -6.3%;
-    margin-right: -1%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+  margin-right: -1%;
 }
-.circle-title{
+
+/* Circle title styling */
+.circle-title {
   color: black;
   font-weight: 600;
 }
+
+/* Content column adjustments */
 .banner-section-three .content-column {
   position: relative;
   z-index: 3;
 }
 
+/* Inner column adjustments */
 .banner-section-three .content-column .inner-column {
   position: relative;
   padding: 270px 0 150px;
 }
+
 @media (max-width: 991px) {
-  .banner-section-three.at-home19 .content-column .inner-column{
+  .banner-section-three .content-column .inner-column {
     padding: 170px 0 50px;
   }
 }
@@ -21328,6 +21443,7 @@ z-index: 2;
   font-size: 14px;
 }
 
+/* Image column adjustments */
 .banner-section-three .image-column {
   position: relative;
 }
@@ -21338,15 +21454,99 @@ z-index: 2;
   margin-left: -90px;
   margin-right: -280px;
 }
-.banner-section-three.at-home19 .image-column .image-box{
+
+.banner-section-three.at-home19 .image-column .image-box {
   margin-right: -165px;
 }
-.banner-section-three.at-home22 .image-column .image-box{
+
+.banner-section-three.at-home22 .image-column .image-box {
   margin-right: -80px;
 }
+
 .banner-section-three .image-column .image-box .image {
   margin-bottom: 0;
 }
+
+/* --- Mobile Specific Changes --- */
+@media (max-width: 768px) {
+  /* Hide animated circles on mobile */
+  .banner-circle {
+    display: none;
+  }
+
+  /* Adjust padding for the section on mobile */
+  .banner-section-three {
+    padding: 0 20px;
+  }
+
+  /* Adjust image box for better responsiveness */
+  .banner-section-three .image-column .image-box {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 60px 0 0;
+  }
+
+  /* Font size adjustments for text on mobile */
+  .banner-section-three .content-column h3 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .banner-section-three .content-column .text {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+/* Ensure the mobile header and nav trigger have higher z-index */
+.mobile-header {
+  position: relative;
+  z-index: 999; /* Ensure it appears above other elements */
+}
+
+/* Mobile Nav Styling */
+#nav-mobile {
+  position: fixed; /* Fixed so it takes over the screen */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; /* Full screen */
+  background-color: rgba(0, 0, 0, 0.9); /* Dark overlay for the nav */
+  z-index: 1000; /* Make sure this is above everything else */
+  display: none; /* Hidden by default */
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out; /* Smooth transition */
+}
+
+/* When the nav is active, make it visible */
+#nav-mobile.active {
+  display: block; /* Show when active */
+  opacity: 1; /* Fade in effect */
+  z-index: 1000;
+}
+
+/* Style the mobile nav items as needed */
+#nav-mobile ul {
+  padding: 20px;
+  list-style: none;
+  text-align: center;
+}
+
+#nav-mobile ul li {
+  margin-bottom: 15px;
+}
+
+#nav-mobile ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* Navbar trigger button should be above everything */
+.navbar-trigger {
+  z-index: 1001; /* Ensure it is clickable */
+  position: relative;
+}
+
 
 /*** 
 

@@ -1142,3 +1142,9 @@ document.querySelector('.menu-btn').addEventListener('click', function() {
 
 
 
+// Mobile nav toggle functionality
+document.querySelector('.navbar-trigger').addEventListener('click', function() {
+	const mobileNav = document.getElementById('nav-mobile');
+	mobileNav.classList.toggle('active'); // Add/remove 'active' class to show/hide the menu
+  });
+  
