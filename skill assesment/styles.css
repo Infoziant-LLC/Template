@@ -94,6 +94,84 @@ body {
     justify-items: center;
 }
 
+.skill-recommendation-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 20px; /* Space between the cards */
+    padding: 20px;
+}
+
+.skill-recommendation-card {
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.skill-recommendation-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.skill-recommendation-card .skill-test-details p {
+    margin: 5px 0;
+}
+
+.skill-recommendation-card button {
+    background-color: #A479FC;
+    color: white;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.skill-recommendation-card button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Design: Adjust for smaller screens */
+@media (max-width: 992px) {
+    .skill-recommendation-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    .skill-recommendation-grid {
+        grid-template-columns: 1fr; /* 1 column for mobile screens */
+    }
+}
+
+.back-con {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    
+    bottom: 20px; /* Distance from the bottom of the screen */
+    left: 0;
+    right: 0;
+    padding: 10px;
+    z-index: 1000; /* Ensure it's on top of other elements */
+}
+
+.take-test-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.take-test-btn:hover {
+    background-color: #0056b3;
+}
+
+
 /* Recommendation card styles */
 .skill-recommendation-card {
     background-color: #fff;
@@ -289,10 +367,10 @@ hariraj_MobileView
         padding: 5px 15px;
     }
 }
-
+ */
 @media (max-width: 480px) {
     .dashboard-header h1 {
-        font-size: 20px; */
+        font-size: 20px;
 
     }
 
@@ -309,10 +387,6 @@ hariraj_MobileView
         font-size: 12px;
     }
 }
-.back-con{
-    position: fixed;
-    top:120px;
-    left:30px;
 
 /*     }
 
@@ -341,13 +415,5 @@ hariraj_MobileView
         left:10px;
     }
  */
-
-}
-@media (max-width: 768px) {
-    .back-con{
-        position: fixed;
-        top:180px;
-        left:10px;
-    }
 
 }
